@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: 競争優位
-英語名称: Economic Moat
-略称: Moat
+official_name: 競争優位
+en_name: Economic Moat
+abbreviation: Moat
 観点:
   - NB
   - DM
   - LT
-階層: CORE
+layer: CORE
 tags:
   - mental-model
 ---
 # 競争優位（Economic Moat）
 
 ## 概要
-概要:: 競争環境において、長期的に利益を守り続けるための構造的な優位性を構築・維持するという戦略思想。
+競争環境において、長期的に利益を守り続けるための構造的な優位性を構築・維持するという戦略思想。
 
 ## 評価（1–5）
 応用度:: 5  

@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: 仮説思考
-英語名称: Hypothesis Driven Thinking
-略称: 仮説思考
+official_name: 仮説思考
+en_name: Hypothesis Driven Thinking
+abbreviation: 仮説思考
 観点:
   - PS
   - NB
-階層: CORE
+layer: CORE
 tags:
   - mental-model
 ---
 # 仮説思考（Hypothesis Driven Thinking）
 
 ## 概要
-概要:: 限られた時間と情報の中で、まず「答えの仮置き」を立て、検証を通じて思考と行動を高速に前進させるための思考モデル。
+限られた時間と情報の中で、まず「答えの仮置き」を立て、検証を通じて思考と行動を高速に前進させるための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

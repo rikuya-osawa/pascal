@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: プレモーテム分析
-英語名称: Premortem Analysis
-略称: プレモーテム
+official_name: プレモーテム分析
+en_name: Premortem Analysis
+abbreviation: プレモーテム
 観点:
   - DM
   - PS
   - NB
-階層: TOOL
+layer: TOOL
 tags:
   - mental-model
 ---
 # プレモーテム分析（Premortem Analysis）
 
 ## 概要
-概要:: 事前に「失敗した未来」を仮定し、なぜ失敗に至ったかを逆算的に洗い出すことで、潜在的リスクや盲点を明らかにするための思考モデル。
+事前に「失敗した未来」を仮定し、なぜ失敗に至ったかを逆算的に洗い出すことで、潜在的リスクや盲点を明らかにするための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

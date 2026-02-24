@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: イシューツリー
-英語名称: Issue Tree
-略称: イシューツリー
+official_name: イシューツリー
+en_name: Issue Tree
+abbreviation: イシューツリー
 観点:
   - LT
   - PS
   - DM
-階層: TOOL
+layer: TOOL
 tags:
   - mental-model
 ---
 # イシューツリー（Issue Tree）
 
 ## 概要
-概要:: 解くべき問い（イシュー）を起点に、「答えを出すために必要な論点」をツリー状に分解し、思考や分析の全体設計を行うための思考モデル。
+解くべき問い（イシュー）を起点に、「答えを出すために必要な論点」をツリー状に分解し、思考や分析の全体設計を行うための思考モデル。
 
 ![image](https://cdn-business.nikkei.com/atcl/report/15/260984/050200011/zu01.png?__scale=w:500,h:334,q:100&_sh=0fb04d0630)
 

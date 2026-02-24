@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: STP分析
-英語名称: Segmentation, Targeting, Positioning
-略称: STP
+official_name: STP分析
+en_name: Segmentation, Targeting, Positioning
+abbreviation: STP
 観点:
   - NB
   - DM
   - PS
-階層: TOOL
+layer: TOOL
 tags:
   - mental-model
 ---
 # STP分析（Segmentation, Targeting, Positioning）
 
 ## 概要
-概要:: 市場を分解し、狙う顧客を定め、どのような立ち位置で価値を提供するかを設計する戦略フレーム。
+市場を分解し、狙う顧客を定め、どのような立ち位置で価値を提供するかを設計する戦略フレーム。
 
 ## 評価（1–5）
 応用度:: 5  

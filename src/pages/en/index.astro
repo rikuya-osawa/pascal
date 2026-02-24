@@ -1,9 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 
-const models = await getCollection('ja/models');
+const models = await getCollection('en/models');
 ---
-<html lang="ja">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<title>Mental Model Atlas</title>
@@ -14,8 +14,8 @@ const models = await getCollection('ja/models');
 		<ul>
 		{models.map((model) => (
 			<li>
-			<a href={`/ja/models/${model.slug}/`}>
-				{model.data.正式名称}
+			<a href={`/en/models/${model.slug}/`}>
+				{model.data.official_name}
 			</a>
 			</li>
 		))}

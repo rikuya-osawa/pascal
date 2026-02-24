@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: バリューチェーン分析
-英語名称: Value Chain Analysis
-略称: VC
+official_name: バリューチェーン分析
+en_name: Value Chain Analysis
+abbreviation: VC
 観点:
   - NB
   - DM
   - PS
-階層: TOOL
+layer: TOOL
 tags:
   - mental-model
 ---
 # バリューチェーン分析（Value Chain Analysis）
 
 ## 概要
-概要:: 企業活動を価値創造プロセスごとに分解し、どこで競争優位が生まれているかを特定する分析フレーム。
+企業活動を価値創造プロセスごとに分解し、どこで競争優位が生まれているかを特定する分析フレーム。
 
 ## 評価（1–5）
 応用度:: 4  

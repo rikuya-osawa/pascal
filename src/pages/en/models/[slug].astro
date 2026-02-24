@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allModels = await getCollection('en/models');
+  
+  return allModels.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+// 2. getStaticPaths から渡された props を受け取る
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{entry.data.official_name}</title>
+  </head>
+  <body>
+    <article>
+      <Content />
+    </article>
+
+    <a href="/en">← Go back to list</a>
+  </body>
+</html>

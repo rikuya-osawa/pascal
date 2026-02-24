@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: ビジネスモデル・キャンバス
-英語名称: Business Model Canvas
-略称: BMC
+official_name: ビジネスモデル・キャンバス
+en_name: Business Model Canvas
+abbreviation: BMC
 観点:
   - NB
   - PS
   - DM
-階層: TOOL
+layer: TOOL
 tags:
   - mental-model
 ---
 # ビジネスモデル・キャンバス（Business Model Canvas）
 
 ## 概要
-概要:: 事業の構造を「顧客・提供価値・収益構造・コスト構造・主要活動」など9要素で可視化し、ビジネス全体を俯瞰・設計・検証するためのフレームワーク。
+事業の構造を「顧客・提供価値・収益構造・コスト構造・主要活動」など9要素で可視化し、ビジネス全体を俯瞰・設計・検証するためのフレームワーク。
 
 ## 評価（1–5）
 応用度:: 5  

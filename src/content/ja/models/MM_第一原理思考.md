@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: 第一原理思考
-英語名称: First Principles Thinking
-略称: 第一原理
+official_name: 第一原理思考
+en_name: First Principles Thinking
+abbreviation: 第一原理
 観点:
   - PS
   - LT
-階層: META
+layer: META
 tags:
   - mental-model
 ---
 # 第一原理思考（First Principles Thinking）
 
 ## 概要
-概要:: 常識や前提、慣習をいったん疑い、分解し、これ以上分解できない根本的な事実（第一原理）まで遡って再構築する思考モデル。
+常識や前提、慣習をいったん疑い、分解し、これ以上分解できない根本的な事実（第一原理）まで遡って再構築する思考モデル。
 
 ## 評価（1–5）
 応用度:: 4  

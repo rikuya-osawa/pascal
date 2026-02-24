@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: ベイズ思考
-英語名称: Bayesian Thinking
-略称: ベイズ思考
+official_name: ベイズ思考
+en_name: Bayesian Thinking
+abbreviation: ベイズ思考
 観点:
   - LT
   - DM
-階層: CORE
+layer: CORE
 tags:
   - mental-model
 ---
 # ベイズ思考（Bayesian Thinking）
 
 ## 概要
-概要:: 新しい情報が得られるたびに、これまでの前提（事前確率）を更新しながら、判断や信念を柔軟に修正していくための思考モデル。
+新しい情報が得られるたびに、これまでの前提（事前確率）を更新しながら、判断や信念を柔軟に修正していくための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

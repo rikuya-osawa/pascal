@@ -2,11 +2,11 @@ import { defineCollection, z } from "astro:content";
 
 const mentalModelSchema = z.object({
   type: z.string(),
-  正式名称: z.string(),
-  英語名称: z.string().optional(),
-  略称: z.string().optional(),
-  観点: z.array(z.string()).default([]),
-  階層: z.string(),
+  official_name: z.string(),
+  en_name: z.string().optional(),
+  abbreviation: z.string().optional(),
+  viewpoints: z.array(z.string()).default([]),
+  layer: z.string(),
   tags: z.array(z.string()).default([]),
 });
 

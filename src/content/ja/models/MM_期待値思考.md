@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: 期待値思考
-英語名称: Expected Value Thinking
-略称: 期待値
+official_name: 期待値思考
+en_name: Expected Value Thinking
+abbreviation: 期待値
 観点:
   - LT
   - DM
-階層: CORE
+layer: CORE
 tags:
   - mental-model
 ---
 # 期待値思考（Expected Value Thinking）
 
 ## 概要
-概要:: 不確実な選択肢に対して、「起こりうる結果 × その確率 × 影響の大きさ」を考慮し、短期の損得ではなく長期的に合理的な判断を行うための思考モデル。
+不確実な選択肢に対して、「起こりうる結果 × その確率 × 影響の大きさ」を考慮し、短期の損得ではなく長期的に合理的な判断を行うための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

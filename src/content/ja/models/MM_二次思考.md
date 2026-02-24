@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: 二次思考
-英語名称: Second-order Thinking
-略称: 二次思考
+official_name: 二次思考
+en_name: Second-order Thinking
+abbreviation: 二次思考
 観点:
   - LT
   - DM
-階層: CORE
+layer: CORE
 tags:
   - mental-model
 ---
 # 二次思考（Second-order Thinking）
 
 ## 概要
-概要:: ある行動や判断の「直接的な結果（一次効果）」だけでなく、その先に連鎖して起こる影響（二次・三次効果）まで考慮して意思決定するための思考モデル。
+ある行動や判断の「直接的な結果（一次効果）」だけでなく、その先に連鎖して起こる影響（二次・三次効果）まで考慮して意思決定するための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

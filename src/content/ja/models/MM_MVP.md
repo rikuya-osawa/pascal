@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: Minimum Viable Product
-英語名称: Minimum Viable Product
-略称: MVP
+official_name: Minimum Viable Product
+en_name: Minimum Viable Product
+abbreviation: MVP
 観点:
   - NB
   - PS
   - DM
-階層: TOOL
+layer: TOOL
 tags:
   - mental-model
 ---
 # Minimum Viable Product（MVP）
 
 ## 概要
-概要:: 仮説検証のために、最小限の機能で価値をテストするプロダクト設計思想。完成度より学習速度を優先するモデル。
+仮説検証のために、最小限の機能で価値をテストするプロダクト設計思想。完成度より学習速度を優先するモデル。
 
 ## 評価（1–5）
 応用度:: 4  

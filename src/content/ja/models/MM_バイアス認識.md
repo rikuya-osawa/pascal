@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: バイアス認識
-英語名称: Cognitive Bias Awareness
-略称: Bias Awareness
+official_name: バイアス認識
+en_name: Cognitive Bias Awareness
+abbreviation: Bias Awareness
 観点:
   - DM
   - PS
   - LIFE
-階層: META
+layer: META
 tags:
   - mental-model
 ---
 # バイアス認識（Cognitive Bias Awareness）
 
 ## 概要
-概要:: 人間の思考が無意識の偏り（バイアス）に影響されることを前提に、自分の判断を疑い、歪みを補正するためのメタ思考モデル。
+人間の思考が無意識の偏り（バイアス）に影響されることを前提に、自分の判断を疑い、歪みを補正するためのメタ思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

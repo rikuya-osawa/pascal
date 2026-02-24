@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: MECE
-英語名称: Mutually Exclusive, Collectively Exhaustive
-略称: MECE
+official_name: MECE
+en_name: Mutually Exclusive, Collectively Exhaustive
+abbreviation: MECE
 観点:
   - PS
   - LT
-階層: TOOL
+layer: TOOL
 tags:
   - mental-model
 ---
 # MECE（Mutually Exclusive, Collectively Exhaustive）
 
 ## 概要
-概要:: 抜け漏れなく、かつ重複しない形で物事を分解・整理するための基本的な思考モデル。複雑なテーマを構造化し、全体像を把握しやすくすることを目的とする。
+抜け漏れなく、かつ重複しない形で物事を分解・整理するための基本的な思考モデル。複雑なテーマを構造化し、全体像を把握しやすくすることを目的とする。
 
 ## 評価（1–5）
 応用度:: 5  

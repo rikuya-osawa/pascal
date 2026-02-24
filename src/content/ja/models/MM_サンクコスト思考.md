@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: サンクコスト思考
-英語名称: Sunk Cost Fallacy
-略称: サンクコスト
+official_name: サンクコスト思考
+en_name: Sunk Cost Fallacy
+abbreviation: サンクコスト
 観点:
   - DM
   - LIFE
-階層: CORE
+layer: CORE
 tags:
   - mental-model
 ---
 # サンクコスト思考（Sunk Cost Fallacy）
 
 ## 概要
-概要:: すでに支払って回収できないコスト（時間・お金・労力・感情）に引きずられず、将来の意思決定を合理的に行うための思考モデル。
+すでに支払って回収できないコスト（時間・お金・労力・感情）に引きずられず、将来の意思決定を合理的に行うための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

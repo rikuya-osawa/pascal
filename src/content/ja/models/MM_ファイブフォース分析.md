@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: ファイブフォース分析
-英語名称: Five Forces Analysis
-略称: 5Forces
+official_name: ファイブフォース分析
+en_name: Five Forces Analysis
+abbreviation: 5Forces
 観点:
   - NB
   - DM
   - LT
-階層: TOOL
+layer: TOOL
 tags:
   - mental-model
 ---
 # ファイブフォース分析（Five Forces Analysis）
 
 ## 概要
-概要:: 業界の収益性を決定する5つの競争要因を分析し、構造的な競争圧力を可視化するフレームワーク。
+業界の収益性を決定する5つの競争要因を分析し、構造的な競争圧力を可視化するフレームワーク。
 
 ## 評価（1–5）
 応用度:: 4  

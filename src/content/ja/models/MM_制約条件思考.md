@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: 制約条件思考
-英語名称: Constraint-based Thinking
-略称: 制約思考
+official_name: 制約条件思考
+en_name: Constraint-based Thinking
+abbreviation: 制約思考
 観点:
   - PS
   - DM
-階層: CORE
+layer: CORE
 tags:
   - mental-model
 ---
 # 制約条件思考（Constraint-based Thinking）
 
 ## 概要
-概要:: 「できない理由」として扱われがちな制約条件を前提として受け入れ、その中で最適な解や創造的な選択肢を見出すための思考モデル。
+「できない理由」として扱われがちな制約条件を前提として受け入れ、その中で最適な解や創造的な選択肢を見出すための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

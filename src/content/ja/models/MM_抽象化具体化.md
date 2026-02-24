@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: 抽象化・具体化
-英語名称: Abstraction & Concretization
-略称: 抽象⇄具体
+official_name: 抽象化・具体化
+en_name: Abstraction & Concretization
+abbreviation: 抽象⇄具体
 観点:
   - PS
   - DM
-階層: META
+layer: META
 tags:
   - mental-model
 ---
 # 抽象化・具体化（Abstraction & Concretization）
 
 ## 概要
-概要:: 物事を「上のレイヤー（抽象）」と「下のレイヤー（具体）」に行き来しながら理解・説明・設計するための思考モデル。
+物事を「上のレイヤー（抽象）」と「下のレイヤー（具体）」に行き来しながら理解・説明・設計するための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  
@@ -48,7 +48,7 @@ tags:
   - 具体例：
 - 図の形：
   - ピラミッド構造
-  - 階層ツリー
+  - layerツリー
 
 ## 使いどころ（活用例）
 - ビジネス：戦略⇄施策の接続、説明資料作成

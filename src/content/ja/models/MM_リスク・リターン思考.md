@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: リスク×リターン思考
-英語名称: Risk-Return Trade-off
-略称: R×R
+official_name: リスク×リターン思考
+en_name: Risk-Return Trade-off
+abbreviation: R×R
 観点:
   - DM
   - NB
   - LIFE
-階層: CORE
+layer: CORE
 tags:
   - mental-model
 ---
 # リスク×リターン思考（Risk-Return Trade-off）
 
 ## 概要
-概要:: 選択肢を「どれだけのリターンが期待できるか」と「どれだけのリスクを取る必要があるか」の二軸で評価し、リスクに見合ったリターンかどうかを判断するための思考モデル。
+選択肢を「どれだけのリターンが期待できるか」と「どれだけのリスクを取る必要があるか」の二軸で評価し、リスクに見合ったリターンかどうかを判断するための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

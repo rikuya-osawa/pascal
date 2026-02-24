@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: システム思考
-英語名称: Systems Thinking
-略称: システム思考
+official_name: システム思考
+en_name: Systems Thinking
+abbreviation: システム思考
 観点:
   - LT
   - PS
-階層: META
+layer: META
 tags:
   - mental-model
 ---
 # システム思考（Systems Thinking）
 
 ## 概要
-概要:: 物事を「要素」ではなく「要素同士の関係性・相互作用・循環構造」として捉え、部分最適ではなく全体最適を目指すための思考モデル。
+物事を「要素」ではなく「要素同士の関係性・相互作用・循環構造」として捉え、部分最適ではなく全体最適を目指すための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

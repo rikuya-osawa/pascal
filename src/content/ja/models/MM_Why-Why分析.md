@@ -1,18 +1,18 @@
 ---
 type: mental-model
-正式名称: Why-Why分析
-英語名称: Five Whys Analysis
-略称: Why-Why
+official_name: Why-Why分析
+en_name: Five Whys Analysis
+abbreviation: Why-Why
 観点:
   - PS
-階層: TOOL
+layer: TOOL
 tags:
   - mental-model
 ---
 # Why-Why分析（Five Whys Analysis）
 
 ## 概要
-概要:: 起きている問題に対して「なぜ？」を繰り返し問い、表面的な事象ではなく根本原因にたどり着くための原因深掘りの思考モデル。
+起きている問題に対して「なぜ？」を繰り返し問い、表面的な事象ではなく根本原因にたどり着くための原因深掘りの思考モデル。
 
 ## 評価（1–5）
 応用度:: 4  

@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: OODAループ
-英語名称: OODA Loop
-略称: OODA
+official_name: OODAループ
+en_name: OODA Loop
+abbreviation: OODA
 観点:
   - PS
   - DM
-階層: TOOL
+layer: TOOL
 tags:
   - mental-model
 ---
 # OODAループ（OODA Loop）
 
 ## 概要
-概要:: 状況を観察し（Observe）、意味づけし（Orient）、意思決定し（Decide）、行動する（Act）という循環を高速で回し続けることで、不確実な環境下で優位性を築くための思考モデル。
+状況を観察し（Observe）、意味づけし（Orient）、意思決定し（Decide）、行動する（Act）という循環を高速で回し続けることで、不確実な環境下で優位性を築くための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

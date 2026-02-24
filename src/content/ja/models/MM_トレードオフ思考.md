@@ -1,19 +1,19 @@
 ---
 type: mental-model
-正式名称: トレードオフ思考
-英語名称: Trade-off Thinking
-略称: トレードオフ
+official_name: トレードオフ思考
+en_name: Trade-off Thinking
+abbreviation: トレードオフ
 観点:
   - DM
   - LIFE
-階層: CORE
+layer: CORE
 tags:
   - mental-model
 ---
 # トレードオフ思考（Trade-off Thinking）
 
 ## 概要
-概要:: すべてを同時に満たそうとせず、「何を得て、何を捨てるのか」を明確にすることで、現実的で納得感のある意思決定を行うための思考モデル。
+すべてを同時に満たそうとせず、「何を得て、何を捨てるのか」を明確にすることで、現実的で納得感のある意思決定を行うための思考モデル。
 
 ## 評価（1–5）
 応用度:: 5  

@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: メタ認知
-英語名称: Metacognition
-略称: MetaCog
+official_name: メタ認知
+en_name: Metacognition
+abbreviation: MetaCog
 観点:
   - DM
   - LIFE
   - PS
-階層: META
+layer: META
 tags:
   - mental-model
 ---
 # メタ認知（Metacognition）
 
 ## 概要
-概要:: 自分の思考・感情・判断プロセスを一段上から観察し、コントロールする能力。思考のOSを監視するメタレイヤー。
+自分の思考・感情・判断プロセスを一段上から観察し、コントロールする能力。思考のOSを監視するメタレイヤー。
 
 ## 評価（1–5）
 応用度:: 5  

@@ -1,20 +1,20 @@
 ---
 type: mental-model
-正式名称: VRIO分析
-英語名称: VRIO Framework
-略称: VRIO
+official_name: VRIO分析
+en_name: VRIO Framework
+abbreviation: VRIO
 観点:
   - NB
   - DM
   - PS
-階層: TOOL
+layer: TOOL
 tags:
   - mental-model
 ---
 # VRIO分析（VRIO Framework）
 
 ## 概要
-概要:: 組織や事業の資源が競争優位を生むかどうかを、Value・Rarity・Imitability・Organizationの4視点で評価するフレームワーク。
+組織や事業の資源が競争優位を生むかどうかを、Value・Rarity・Imitability・Organizationの4視点で評価するフレームワーク。
 
 ## 評価（1–5）
 応用度:: 4  
