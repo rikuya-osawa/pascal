@@ -1,0 +1,125 @@
+---
+import { getCollection } from "astro:content";
+
+// 全データを取得（日本語）
+const allModels = await getCollection("ja/models");
+
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mental Model Atlas</title>
+    <style>
+      .active { font-weight: bold; background-color: #eee; border-radius: 4px; padding: 2px 6px; }
+      .filter-group { margin-bottom: 1.5rem; }
+      .filter-link { cursor: pointer; text-decoration: underline; color: blue; margin-right: 10px; }
+      /* 非表示にするためのクラス */
+      .hidden { display: none; }
+    </style>
+  </head>
+  <body>
+    <h1>Mental Model Atlas</h1>
+
+    <div class="filter-group">
+      <h3>Layer</h3>
+      <span class="filter-link" data-type="layer" data-value="">All</span>
+      <span class="filter-link" data-type="layer" data-value="META">META</span>
+      <span class="filter-link" data-type="layer" data-value="CORE">CORE</span>
+      <span class="filter-link" data-type="layer" data-value="TOOL">TOOL</span>
+    </div>
+
+    <div class="filter-group">
+      <h3>Viewpoints</h3>
+      <span class="filter-link" data-type="view" data-value="">All</span>
+      <span class="filter-link" data-type="view" data-value="NB">NB</span>
+      <span class="filter-link" data-type="view" data-value="DM">DM</span>
+      <span class="filter-link" data-type="view" data-value="PS">PS</span>
+    </div>
+
+    <hr />
+
+    <ul id="model-list">
+      {allModels.map((model) => (
+        <li 
+          class="model-item" 
+          data-layer={model.data.layer} 
+          data-views={model.data.viewpoints.join(',')}
+        >
+          <a href={`/models/${model.slug.split('/').pop()}`}>
+            {model.data.official_name}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <script>
+      // ブラウザ上で実行される処理
+      const links = document.querySelectorAll('.filter-link');
+      const items = document.querySelectorAll('.model-item');
+
+      function updateFilter() {
+        const url = new URL(window.location.href);
+        const activeLayer = url.searchParams.get('layer');
+        const activeView = url.searchParams.get('view');
+
+        // 1. リンクの見た目（active）を更新
+        links.forEach(link => {
+        const type = link.getAttribute('data-type');
+        const value = link.getAttribute('data-value');
+
+        // type が null の場合はスキップする
+        if (type === null) return;
+
+        const currentParam = url.searchParams.get(type);
+
+        if ((!currentParam && !value) || (currentParam === value)) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+        });
+
+        // 2. リストの表示・非表示を切り替え（AND条件）
+        items.forEach(item => {
+          const itemLayer = item.getAttribute('data-layer');
+          const itemViews = item.getAttribute('data-views').split(',');
+
+          const layerMatch = !activeLayer || itemLayer === activeLayer;
+          const viewMatch = !activeView || itemViews.includes(activeView);
+
+          if (layerMatch && viewMatch) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      }
+
+      // クリックイベントの設定
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          const type = link.getAttribute('data-type');
+          const value = link.getAttribute('data-value');
+          const url = new URL(window.location.href);
+
+          if (value) {
+            url.searchParams.set(type, value);
+          } else {
+            url.searchParams.delete(type);
+          }
+
+          // URLを書き換える（ページはリロードしない）
+          window.history.pushState({}, '', url);
+          updateFilter();
+        });
+      });
+
+      // ブラウザの「戻る」ボタンにも対応
+      window.addEventListener('popstate', updateFilter);
+
+      // 初回読み込み時にも実行
+      updateFilter();
+    </script>
+  </body>
+</html>

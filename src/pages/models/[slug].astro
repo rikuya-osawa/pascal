@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const allModels = await getCollection('en/models');
+  const allModels = await getCollection('ja/models');
   
   return allModels.map(entry => ({
     params: { slug: entry.slug },
@@ -15,16 +15,16 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <title>{entry.data.official_name}</title>
   </head>
   <body>
+    <a href="/models">← 一覧に戻る</a>
     <article>
       <Content />
     </article>
-
-    <a href="/en">← Go back to list</a>
+    <a href="/models">← 一覧に戻る</a>
   </body>
 </html>
