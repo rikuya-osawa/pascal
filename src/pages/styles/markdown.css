@@ -1,0 +1,112 @@
+@import './variables.css';
+
+/* 本文全体のラップ */
+.markdown-content {
+  margin: 0 auto;         /* 中央寄せ */
+  padding: 2rem 1rem;     /* 上下左右の余白 */
+  line-height: 1.7;       /* 読みやすい行間 */
+  font-size: 1rem;
+  color: #111;
+  background-color: #fff; /* 白基調 */
+}
+
+/* 見出しデザイン */
+.markdown-content h1,
+.markdown-content h2 {
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  color: #222;
+}
+
+.markdown-content h3,
+.markdown-content h4 {
+  text-align: left;       /* サブ見出しは左寄せ */
+  font-weight: 500;
+  margin: 1.5rem 0 0.75rem 0;
+  color: #333;
+}
+
+/* 段落 */
+.markdown-content p {
+  margin-bottom: 1.25rem;
+}
+
+/* リスト */
+.markdown-content ul,
+.markdown-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* 強調テキスト */
+.markdown-content em {
+  font-style: italic;
+  color: #555;
+}
+
+.markdown-content strong {
+  font-weight: 600;
+  color: #222;
+}
+
+/* リンク */
+.markdown-content a {
+  color: #1a73e8;
+  text-decoration: underline;
+}
+
+/* コードブロック */
+.markdown-content pre {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+}
+
+/* インラインコード */
+.markdown-content code {
+  background: #f1f1f1;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+}
+
+/* 引用ブロック */
+.markdown-content blockquote {
+  border-left: 4px solid #ddd;
+  padding-left: 1rem;
+  color: #666;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+/* バッジやメタ情報 */
+.markdown-content .badge {
+  display: inline-block;
+  background: #eee;
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 水平線 */
+.markdown-content hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+/* 画像 */
+.markdown-content img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  border-radius: 6px;
+}

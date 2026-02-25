@@ -1,10 +1,12 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/markdown.css";
 
 export async function getStaticPaths() {
-  const allModels = await getCollection('ja/models');
-  
-  return allModels.map(entry => ({
+  const allModels = await getCollection("ja/models");
+
+  return allModels.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
@@ -15,16 +17,15 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{entry.data.official_name}</title>
-  </head>
-  <body>
-    <a href="/models">← 一覧に戻る</a>
-    <article>
-      <Content />
-    </article>
-    <a href="/models">← 一覧に戻る</a>
-  </body>
-</html>
+<BaseLayout>
+  <a href="/models">← 一覧に戻る</a>
+  <article class="markdown-content">
+    <h1>{entry.data.official_name}</h1>
+    <div class="meta">
+      <span class="badge">{entry.data.layer}</span>
+      {entry.data.viewpoints.map((v) => <span class="badge">{v}</span>)}
+    </div>
+    <Content content={entry.body} />
+  </article>
+  <a href="/models">← 一覧に戻る</a>
+</BaseLayout>
