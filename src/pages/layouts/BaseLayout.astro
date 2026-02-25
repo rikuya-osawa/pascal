@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/components.css";
+import Header from "../../components/Header.astro";
 ---
 
 <html lang="ja">
@@ -9,8 +10,10 @@ import "../styles/components.css";
     <title>Mental Model Atlas</title>
   </head>
   <body>
+    <Header />
     <div class="container">
       <slot />
     </div>
   </body>
 </html>
+```
