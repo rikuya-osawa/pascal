@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "./layouts/BaseLayout.astro";
-import ModelCard from "./components/ModelCard.astro";
+import ModelCard from "../components/ModelCard.astro";
 
 // 全データを取得（日本語）
 const allModels = await getCollection("ja/models");
