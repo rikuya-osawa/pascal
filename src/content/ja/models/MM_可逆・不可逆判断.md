@@ -3,14 +3,14 @@ type: mental-model
 official_name: 可逆・不可逆判断
 en_name: Reversible / Irreversible Decision
 abbreviation: 可逆不可逆
-description: 統一文字列
+description: 意思決定を「やり直しがきく可逆的な判断」と「元に戻せない不可逆的な判断」に分けて捉え、判断のスピード・慎重さ・検討深度を適切に変えるための思考モデル。
 viewpoints:
-  - LT
-  - DM
-  - LIFE
+- LT
+- DM
+- LIFE
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # 可逆・不可逆判断（Reversible / Irreversible Decision）
 

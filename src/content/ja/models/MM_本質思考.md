@@ -3,13 +3,13 @@ type: mental-model
 official_name: 本質思考
 en_name: Essential Thinking
 abbreviation: 本質思考
-description: 統一文字列
+description: 表面的な事象や手段にとらわれず、「本当に解くべき問いは何か」「何が最も重要か」を見極めるための思考モデル。問題設定そのものの質を高めることを目的とする。
 viewpoints:
-  - PS
-  - DM
+- PS
+- DM
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # 本質思考（Essential Thinking）
 

@@ -3,14 +3,14 @@ type: mental-model
 official_name: フライホイール思考
 en_name: Flywheel Thinking
 abbreviation: フライホイール
-description: 統一文字列
+description: 要素同士が相互に強化し合い、回り始めると加速度的に成長する「自己強化構造」を設計・発見するための思考モデル。
 viewpoints:
-  - NB
-  - LT
-  - PS
+- NB
+- LT
+- PS
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # フライホイール思考（Flywheel Thinking）
 

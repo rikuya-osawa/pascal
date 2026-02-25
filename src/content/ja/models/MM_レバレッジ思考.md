@@ -3,13 +3,13 @@ type: mental-model
 official_name: レバレッジ思考
 en_name: Leverage Thinking
 abbreviation: レバレッジ
-description: 統一文字列
+description: 小さな投入（時間・資源・行動）で最大の効果を生むポイント（レバレッジポイント）を見極め、そこに集中するための思考モデル。
 viewpoints:
-  - PS
-  - LT
+- PS
+- LT
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # レバレッジ思考（Leverage Thinking）
 

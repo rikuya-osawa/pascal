@@ -3,14 +3,14 @@ type: mental-model
 official_name: メタ認知
 en_name: Metacognition
 abbreviation: MetaCog
-description: 統一文字列
+description: 自分の思考・感情・判断プロセスを一段上から観察し、コントロールする能力。思考のOSを監視するメタレイヤー。
 viewpoints:
-  - DM
-  - LIFE
-  - PS
+- DM
+- LIFE
+- PS
 layer: META
 tags:
-  - mental-model
+- mental-model
 ---
 # メタ認知（Metacognition）
 

@@ -3,13 +3,13 @@ type: mental-model
 official_name: システム思考
 en_name: Systems Thinking
 abbreviation: システム思考
-description: 統一文字列
+description: 物事を「要素」ではなく「要素同士の関係性・相互作用・循環構造」として捉え、部分最適ではなく全体最適を目指すための思考モデル。
 viewpoints:
-  - LT
-  - PS
+- LT
+- PS
 layer: META
 tags:
-  - mental-model
+- mental-model
 ---
 # システム思考（Systems Thinking）
 

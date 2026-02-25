@@ -3,13 +3,13 @@ type: mental-model
 official_name: トレードオフ思考
 en_name: Trade-off Thinking
 abbreviation: トレードオフ
-description: 統一文字列
+description: すべてを同時に満たそうとせず、「何を得て、何を捨てるのか」を明確にすることで、現実的で納得感のある意思決定を行うための思考モデル。
 viewpoints:
-  - DM
-  - LIFE
+- DM
+- LIFE
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # トレードオフ思考（Trade-off Thinking）
 

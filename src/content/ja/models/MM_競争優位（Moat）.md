@@ -3,14 +3,14 @@ type: mental-model
 official_name: 競争優位
 en_name: Economic Moat
 abbreviation: Moat
-description: 統一文字列
+description: 競争環境において、長期的に利益を守り続けるための構造的な優位性を構築・維持するという戦略思想。
 viewpoints:
-  - NB
-  - DM
-  - LT
+- NB
+- DM
+- LT
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # 競争優位（Economic Moat）
 

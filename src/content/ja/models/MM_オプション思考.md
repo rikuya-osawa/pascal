@@ -3,14 +3,14 @@ type: mental-model
 official_name: オプション思考
 en_name: Option Thinking
 abbreviation: オプション思考
-description: 統一文字列
+description: 不確実性が高い状況において、選択肢を「行使可能なオプション（権利）」として捉え、リスクを限定しつつ機会を最大化するための思考モデル。
 viewpoints:
-  - DM
-  - NB
-  - PS
+- DM
+- NB
+- PS
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # オプション思考（Option Thinking）
 

@@ -3,13 +3,13 @@ type: mental-model
 official_name: MECE
 en_name: Mutually Exclusive, Collectively Exhaustive
 abbreviation: MECE
-description: 統一文字列
+description: 抜け漏れなく、かつ重複しない形で物事を分解・整理するための基本的な思考モデル。複雑なテーマを構造化し、全体像を把握しやすくすることを目的とする。
 viewpoints:
-  - PS
-  - LT
+- PS
+- LT
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # MECE（Mutually Exclusive, Collectively Exhaustive）
 

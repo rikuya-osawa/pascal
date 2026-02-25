@@ -3,14 +3,14 @@ type: mental-model
 official_name: 限界思考
 en_name: Marginal Thinking
 abbreviation: Marginal
-description: 統一文字列
+description: 全体平均ではなく、「追加で1単位行うこと（限界）」によって得られる追加利益と追加コストを比較し、意思決定するための思考モデル。
 viewpoints:
-  - DM
-  - NB
-  - LIFE
+- DM
+- NB
+- LIFE
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # 限界思考（Marginal Thinking）
 
