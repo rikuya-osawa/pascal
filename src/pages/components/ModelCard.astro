@@ -1,11 +1,15 @@
 ---
 const { model } = Astro.props;
+if (!model) {
+  console.warn("ModelCard: model is undefined");
+  return null; // ビルド時にクラッシュしない
+}
 ---
 
 <div
   class="card model-item"
-  data-layer={model.data.layer}
-  data-views={model.data.viewpoints.join(',')}
+  data-layer={model?.data?.layer}
+  data-views={model?.data?.viewpoints.join(',')}
 >
   <a href={`/models/${model.slug.split('/').pop()}`} class="card-link">
     <h2 class="card-title">
@@ -19,7 +23,7 @@ const { model } = Astro.props;
     )}
 
     <div class="card-meta">
-      <span class="badge layer">{model.data.layer}</span>
+      <span class="badge layer">{model?.data?.layer}</span>
     </div>
   </a>
 </div>

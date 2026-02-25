@@ -31,11 +31,11 @@ const allModels = await getCollection("ja/models");
 
   <hr />
 
-  <div class="model-grid">
-    {allModels.map((model) => (
-      <ModelCard model={model} />
+    <div class="model-grid">
+    {allModels.filter(Boolean).map((model) => (
+        <ModelCard model={model} />
     ))}
-  </div>
+    </div>
 
   <script>
     const links = document.querySelectorAll('.filter-link');
