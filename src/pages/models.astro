@@ -64,7 +64,8 @@ const allModels = await getCollection("ja/models");
       // カードの表示・非表示切り替え
       items.forEach(item => {
         const itemLayer = item.getAttribute('data-layer');
-        const itemViews = item.getAttribute('data-views').split(',');
+        const itemViewsAttr = item.getAttribute('data-views');
+        const itemViews = itemViewsAttr ? itemViewsAttr.split(',') : [];
 
         const layerMatch = !activeLayer || itemLayer === activeLayer;
         const viewMatch = !activeView || itemViews.includes(activeView);
@@ -82,6 +83,8 @@ const allModels = await getCollection("ja/models");
         const type = link.getAttribute('data-type');
         const value = link.getAttribute('data-value');
         const url = new URL(window.location.href);
+
+        if (!type) return;
 
         if (value) {
           url.searchParams.set(type, value);
