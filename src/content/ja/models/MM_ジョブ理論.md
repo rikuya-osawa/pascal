@@ -3,7 +3,7 @@ type: mental-model
 official_name: ジョブ理論
 en_name: Jobs To Be Done
 abbreviation: JTBD
-観点:
+viewpoints:
   - PS
   - DM
   - LT

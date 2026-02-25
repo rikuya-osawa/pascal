@@ -3,7 +3,7 @@ type: mental-model
 official_name: Minimum Viable Product
 en_name: Minimum Viable Product
 abbreviation: MVP
-観点:
+viewpoints:
   - NB
   - PS
   - DM

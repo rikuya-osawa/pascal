@@ -3,7 +3,7 @@ type: mental-model
 official_name: 制約条件思考
 en_name: Constraint-based Thinking
 abbreviation: 制約思考
-観点:
+viewpoints:
   - PS
   - DM
 layer: CORE

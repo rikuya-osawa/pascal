@@ -3,7 +3,7 @@ type: mental-model
 official_name: フライホイール思考
 en_name: Flywheel Thinking
 abbreviation: フライホイール
-観点:
+viewpoints:
   - NB
   - LT
   - PS

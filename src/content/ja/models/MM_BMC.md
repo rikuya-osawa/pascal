@@ -3,7 +3,7 @@ type: mental-model
 official_name: ビジネスモデル・キャンバス
 en_name: Business Model Canvas
 abbreviation: BMC
-観点:
+viewpoints:
   - NB
   - PS
   - DM

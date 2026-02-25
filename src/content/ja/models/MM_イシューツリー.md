@@ -3,7 +3,7 @@ type: mental-model
 official_name: イシューツリー
 en_name: Issue Tree
 abbreviation: イシューツリー
-観点:
+viewpoints:
   - LT
   - PS
   - DM

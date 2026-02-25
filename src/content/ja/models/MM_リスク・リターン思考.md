@@ -3,7 +3,7 @@ type: mental-model
 official_name: リスク×リターン思考
 en_name: Risk-Return Trade-off
 abbreviation: R×R
-観点:
+viewpoints:
   - DM
   - NB
   - LIFE

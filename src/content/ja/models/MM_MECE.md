@@ -3,7 +3,7 @@ type: mental-model
 official_name: MECE
 en_name: Mutually Exclusive, Collectively Exhaustive
 abbreviation: MECE
-観点:
+viewpoints:
   - PS
   - LT
 layer: TOOL
@@ -25,7 +25,7 @@ tags:
 評価コメント:: 基本中の基本。思考の初動に非常に有効だが、形式にこだわりすぎると本質を外す点に注意。
 
 ## 最初の一問
-- 「このテーマは、どんな観点に分ければ全体が見えるだろうか？」
+- 「このテーマは、どんなviewpointsに分ければ全体が見えるだろうか？」
 ### 狙い
 - 発想ではなく整理モードに入る
 - 抜け・重なりに意識を向ける
@@ -36,7 +36,7 @@ tags:
 
 ## 使い方（ミニ手順）
 1. テーマ（問い）を1文で明確に書く  
-2. 観点を2〜4個に分けて並べる  
+2. viewpointsを2〜4個に分けて並べる  
 3. 抜け・重なり・意味の薄い分け方がないか確認する  
 
 ## アウトプット例（形だけ）

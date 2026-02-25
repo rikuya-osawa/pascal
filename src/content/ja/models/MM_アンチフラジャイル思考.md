@@ -3,7 +3,7 @@ type: mental-model
 official_name: アンチフラジャイル思考
 en_name: Antifragile Thinking
 abbreviation: アンチフラ
-観点:
+viewpoints:
   - LIFE
   - NB
   - DM

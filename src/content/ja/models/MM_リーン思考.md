@@ -3,7 +3,7 @@ type: mental-model
 official_name: リーン思考
 en_name: Lean Thinking
 abbreviation: Lean
-観点:
+viewpoints:
   - NB
   - PS
   - DM

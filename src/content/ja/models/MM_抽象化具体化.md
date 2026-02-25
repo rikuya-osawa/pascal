@@ -3,7 +3,7 @@ type: mental-model
 official_name: 抽象化・具体化
 en_name: Abstraction & Concretization
 abbreviation: 抽象⇄具体
-観点:
+viewpoints:
   - PS
   - DM
 layer: META

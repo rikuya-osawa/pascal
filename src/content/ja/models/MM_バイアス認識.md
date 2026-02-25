@@ -3,7 +3,7 @@ type: mental-model
 official_name: バイアス認識
 en_name: Cognitive Bias Awareness
 abbreviation: Bias Awareness
-観点:
+viewpoints:
   - DM
   - PS
   - LIFE

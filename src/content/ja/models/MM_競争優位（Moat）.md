@@ -3,7 +3,7 @@ type: mental-model
 official_name: 競争優位
 en_name: Economic Moat
 abbreviation: Moat
-観点:
+viewpoints:
   - NB
   - DM
   - LT

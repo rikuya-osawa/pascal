@@ -3,7 +3,7 @@ type: mental-model
 official_name: メタ認知
 en_name: Metacognition
 abbreviation: MetaCog
-観点:
+viewpoints:
   - DM
   - LIFE
   - PS

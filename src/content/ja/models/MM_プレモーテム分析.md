@@ -3,7 +3,7 @@ type: mental-model
 official_name: プレモーテム分析
 en_name: Premortem Analysis
 abbreviation: プレモーテム
-観点:
+viewpoints:
   - DM
   - PS
   - NB

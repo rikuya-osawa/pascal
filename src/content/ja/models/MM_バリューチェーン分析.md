@@ -3,7 +3,7 @@ type: mental-model
 official_name: バリューチェーン分析
 en_name: Value Chain Analysis
 abbreviation: VC
-観点:
+viewpoints:
   - NB
   - DM
   - PS

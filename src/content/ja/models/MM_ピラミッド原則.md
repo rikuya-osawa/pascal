@@ -3,7 +3,7 @@ type: mental-model
 official_name: ピラミッド原則
 en_name: Pyramid Principle
 abbreviation: ピラミッド原則
-観点:
+viewpoints:
   - LT
   - PS
   - DM

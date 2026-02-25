@@ -3,7 +3,7 @@ type: mental-model
 official_name: ベイズ思考
 en_name: Bayesian Thinking
 abbreviation: ベイズ思考
-観点:
+viewpoints:
   - LT
   - DM
 layer: CORE

@@ -3,7 +3,7 @@ type: mental-model
 official_name: ブラックスワン思考
 en_name: Black Swan Theory
 abbreviation: BlackSwan
-観点:
+viewpoints:
   - DM
   - NB
   - LIFE

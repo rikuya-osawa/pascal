@@ -3,7 +3,7 @@ type: mental-model
 official_name: 二次思考
 en_name: Second-order Thinking
 abbreviation: 二次思考
-観点:
+viewpoints:
   - LT
   - DM
 layer: CORE

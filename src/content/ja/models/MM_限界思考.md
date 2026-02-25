@@ -3,7 +3,7 @@ type: mental-model
 official_name: 限界思考
 en_name: Marginal Thinking
 abbreviation: Marginal
-観点:
+viewpoints:
   - DM
   - NB
   - LIFE

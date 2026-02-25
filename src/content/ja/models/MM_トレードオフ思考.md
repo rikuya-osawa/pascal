@@ -3,7 +3,7 @@ type: mental-model
 official_name: トレードオフ思考
 en_name: Trade-off Thinking
 abbreviation: トレードオフ
-観点:
+viewpoints:
   - DM
   - LIFE
 layer: CORE

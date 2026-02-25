@@ -3,7 +3,7 @@ type: mental-model
 official_name: 第一原理思考
 en_name: First Principles Thinking
 abbreviation: 第一原理
-観点:
+viewpoints:
   - PS
   - LT
 layer: META

@@ -3,7 +3,7 @@ type: mental-model
 official_name: レバレッジ思考
 en_name: Leverage Thinking
 abbreviation: レバレッジ
-観点:
+viewpoints:
   - PS
   - LT
 layer: CORE

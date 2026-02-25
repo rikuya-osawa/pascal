@@ -3,7 +3,7 @@ type: mental-model
 official_name: ファイブフォース分析
 en_name: Five Forces Analysis
 abbreviation: 5Forces
-観点:
+viewpoints:
   - NB
   - DM
   - LT

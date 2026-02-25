@@ -3,7 +3,7 @@ type: mental-model
 official_name: シナリオプランニング
 en_name: Scenario Planning
 abbreviation: シナリオP
-観点:
+viewpoints:
   - DM
   - NB
   - LT

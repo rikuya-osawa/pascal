@@ -3,7 +3,7 @@ type: mental-model
 official_name: 本質思考
 en_name: Essential Thinking
 abbreviation: 本質思考
-観点:
+viewpoints:
   - PS
   - DM
 layer: CORE
