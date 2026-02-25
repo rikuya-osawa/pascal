@@ -1,0 +1,25 @@
+---
+const { model } = Astro.props;
+---
+
+<div
+  class="card model-item"
+  data-layer={model.data.layer}
+  data-views={model.data.viewpoints.join(',')}
+>
+  <a href={`/models/${model.slug.split('/').pop()}`} class="card-link">
+    <h2 class="card-title">
+      {model.data.official_name}
+    </h2>
+
+    {model.data.description && (
+      <p class="card-description">
+        {model.data.description}
+      </p>
+    )}
+
+    <div class="card-meta">
+      <span class="badge layer">{model.data.layer}</span>
+    </div>
+  </a>
+</div>

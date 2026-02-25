@@ -1,0 +1,28 @@
+@import './variables.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Noto Sans JP", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.8;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+section {
+  margin: var(--space-lg) 0;
+}
