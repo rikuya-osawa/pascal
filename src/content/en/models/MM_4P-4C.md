@@ -3,6 +3,7 @@ type: mental-model
 official_name: 4P / 4C
 en_name: Marketing Mix / Customer Value Framework
 abbreviation: 4P-4C
+description: 統一文字
 viewpoints:
   - NB
   - DM
