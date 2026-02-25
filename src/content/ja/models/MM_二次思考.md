@@ -3,6 +3,7 @@ type: mental-model
 official_name: 二次思考
 en_name: Second-order Thinking
 abbreviation: 二次思考
+description: 統一文字列
 viewpoints:
   - LT
   - DM

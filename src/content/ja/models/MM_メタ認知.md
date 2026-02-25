@@ -3,6 +3,7 @@ type: mental-model
 official_name: メタ認知
 en_name: Metacognition
 abbreviation: MetaCog
+description: 統一文字列
 viewpoints:
   - DM
   - LIFE

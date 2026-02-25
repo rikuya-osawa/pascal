@@ -3,6 +3,7 @@ type: mental-model
 official_name: MECE
 en_name: Mutually Exclusive, Collectively Exhaustive
 abbreviation: MECE
+description: 統一文字列
 viewpoints:
   - PS
   - LT

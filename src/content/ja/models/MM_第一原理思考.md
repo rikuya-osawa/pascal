@@ -3,6 +3,7 @@ type: mental-model
 official_name: 第一原理思考
 en_name: First Principles Thinking
 abbreviation: 第一原理
+description: 統一文字列
 viewpoints:
   - PS
   - LT

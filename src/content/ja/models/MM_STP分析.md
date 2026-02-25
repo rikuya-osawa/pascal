@@ -3,6 +3,7 @@ type: mental-model
 official_name: STP分析
 en_name: Segmentation, Targeting, Positioning
 abbreviation: STP
+description: 統一文字列
 viewpoints:
   - NB
   - DM

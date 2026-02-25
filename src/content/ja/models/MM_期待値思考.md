@@ -3,6 +3,7 @@ type: mental-model
 official_name: 期待値思考
 en_name: Expected Value Thinking
 abbreviation: 期待値
+description: 統一文字列
 viewpoints:
   - LT
   - DM

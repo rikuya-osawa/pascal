@@ -3,6 +3,7 @@ type: mental-model
 official_name: パレートの法則
 en_name: Pareto Principle
 abbreviation: 80/20
+description: 統一文字列
 viewpoints:
   - PS
   - DM

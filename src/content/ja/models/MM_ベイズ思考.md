@@ -3,6 +3,7 @@ type: mental-model
 official_name: ベイズ思考
 en_name: Bayesian Thinking
 abbreviation: ベイズ思考
+description: 統一文字列
 viewpoints:
   - LT
   - DM

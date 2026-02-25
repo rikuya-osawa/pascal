@@ -3,6 +3,7 @@ type: mental-model
 official_name: 制約条件思考
 en_name: Constraint-based Thinking
 abbreviation: 制約思考
+description: 統一文字列
 viewpoints:
   - PS
   - DM

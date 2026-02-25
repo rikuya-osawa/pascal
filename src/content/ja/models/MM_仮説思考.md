@@ -3,6 +3,7 @@ type: mental-model
 official_name: 仮説思考
 en_name: Hypothesis Driven Thinking
 abbreviation: 仮説思考
+description: 統一文字列
 viewpoints:
   - PS
   - NB

@@ -3,6 +3,7 @@ type: mental-model
 official_name: Why-Why分析
 en_name: Five Whys Analysis
 abbreviation: Why-Why
+description: 統一文字列
 viewpoints:
   - PS
 layer: TOOL

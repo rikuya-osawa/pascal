@@ -3,6 +3,7 @@ type: mental-model
 official_name: 抽象化・具体化
 en_name: Abstraction & Concretization
 abbreviation: 抽象⇄具体
+description: 統一文字列
 viewpoints:
   - PS
   - DM

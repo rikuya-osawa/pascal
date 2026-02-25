@@ -3,6 +3,7 @@ type: mental-model
 official_name: 可逆・不可逆判断
 en_name: Reversible / Irreversible Decision
 abbreviation: 可逆不可逆
+description: 統一文字列
 viewpoints:
   - LT
   - DM

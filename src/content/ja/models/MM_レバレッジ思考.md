@@ -3,6 +3,7 @@ type: mental-model
 official_name: レバレッジ思考
 en_name: Leverage Thinking
 abbreviation: レバレッジ
+description: 統一文字列
 viewpoints:
   - PS
   - LT

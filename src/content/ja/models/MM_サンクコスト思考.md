@@ -3,6 +3,7 @@ type: mental-model
 official_name: サンクコスト思考
 en_name: Sunk Cost Fallacy
 abbreviation: サンクコスト
+description: 統一文字列
 viewpoints:
   - DM
   - LIFE

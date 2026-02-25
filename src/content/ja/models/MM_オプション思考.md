@@ -3,6 +3,7 @@ type: mental-model
 official_name: オプション思考
 en_name: Option Thinking
 abbreviation: オプション思考
+description: 統一文字列
 viewpoints:
   - DM
   - NB

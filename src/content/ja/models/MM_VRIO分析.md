@@ -3,6 +3,7 @@ type: mental-model
 official_name: VRIO分析
 en_name: VRIO Framework
 abbreviation: VRIO
+description: 統一文字列
 viewpoints:
   - NB
   - DM

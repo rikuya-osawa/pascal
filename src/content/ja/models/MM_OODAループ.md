@@ -3,6 +3,7 @@ type: mental-model
 official_name: OODAループ
 en_name: OODA Loop
 abbreviation: OODA
+description: 統一文字列
 viewpoints:
   - PS
   - DM

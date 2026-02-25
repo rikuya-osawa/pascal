@@ -3,6 +3,7 @@ type: mental-model
 official_name: システム思考
 en_name: Systems Thinking
 abbreviation: システム思考
+description: 統一文字列
 viewpoints:
   - LT
   - PS

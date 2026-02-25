@@ -3,6 +3,7 @@ type: mental-model
 official_name: 本質思考
 en_name: Essential Thinking
 abbreviation: 本質思考
+description: 統一文字列
 viewpoints:
   - PS
   - DM
