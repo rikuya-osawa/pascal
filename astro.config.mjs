@@ -10,9 +10,18 @@ export default defineConfig({
   integrations: [
     sitemap(),
     icon({
-      include: {
-        'simple-icons': ['github', 'x'],
-      },
+        include: {
+          'simple-icons': ['github', 'x'],
+          'lucide': [
+            'refresh-cw',
+            'trending-down',
+            'atom',
+            'shield-check',
+            'pie-chart',
+            'line-chart',
+            'brain'
+          ],
+        },
     }),
   ],
 });
