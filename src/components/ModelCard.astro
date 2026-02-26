@@ -1,20 +1,23 @@
 ---
 import { Icon } from 'astro-icon/components';
 import { MODEL_ICONS } from '../constants/model-icons';
-import { LAYERS, type Language } from '../constants/filters';
+import { LAYERS, getLabel, type Language } from '../constants/filters';
 
-const { model } = Astro.props;
+interface Props {
+  model: any;
+  lang: Language;
+}
+
+const { model, lang } = Astro.props;
 if (!model) {
   console.warn("ModelCard: model is undefined");
   return null;
 }
 
-const currentLang: Language = 'ja';
-
 const iconName = MODEL_ICONS[model.slug] || MODEL_ICONS["default"];
 
 const layerKey = model.data.layer as keyof typeof LAYERS;
-const layerLabel = LAYERS[layerKey] ? LAYERS[layerKey][currentLang] : model.data.layer;
+const layerLabel = LAYERS[layerKey] ? getLabel(LAYERS[layerKey], lang) : model.data.layer;
 ---
 
 <div

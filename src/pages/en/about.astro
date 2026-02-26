@@ -1,7 +1,7 @@
 ---
-import BaseLayout from "./layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-const modules = import.meta.glob('../content/ja/about/*.md', { eager: true });
+const modules = import.meta.glob('../../content/ja/about/*.md', { eager: true });
 const entries = Object.values(modules) as any[];
 const AboutComp = entries.length ? (entries[0] as any).default : null;
 ---

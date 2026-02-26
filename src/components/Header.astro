@@ -1,5 +1,18 @@
 ---
 import { Icon } from 'astro-icon/components';
+
+const pathname = Astro.url.pathname;
+const currentLang = pathname.startsWith('/ja/') ? 'ja' : 'en';
+
+const getAlternateUrl = (targetLang: 'ja' | 'en') => {
+  const pathWithoutLang = pathname.replace(/^\/(ja|en)\//, '/');
+  return targetLang === 'en' 
+    ? `/en${pathWithoutLang}` 
+    : `/ja${pathWithoutLang}`;
+};
+
+const targetLang = currentLang === 'ja' ? 'en' : 'ja';
+const targetUrl = getAlternateUrl(targetLang);
 ---
 
 <header class="site-header">
@@ -19,9 +32,19 @@ import { Icon } from 'astro-icon/components';
       </div>
     </form>
       <nav class="header-nav">
-        <a href="/models">Models</a>
-        <a href="/about">About</a>
+        <a href={`/${currentLang}/models`}>Models</a>
+        <a href={`/${currentLang}/about`}>About</a>
       </nav>
+      <span class="header-divider"></span>
+      <div class="language-switcher">
+        <a href={getAlternateUrl('ja')} class={currentLang === 'ja' ? 'active' : ''}>
+          JA
+        </a>
+        <span class="separator">/</span>
+        <a href={getAlternateUrl('en')} class={currentLang === 'en' ? 'active' : ''}>
+          EN
+        </a>
+      </div>
       <span class="header-divider"></span>
       <a class="social-link" href="https://github.com/rikuya-osawa/mental-model-atlas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <Icon name="simple-icons:github" size={20}/>
