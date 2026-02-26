@@ -100,35 +100,79 @@
 }
 
 /* ========== Filter UI ========== */
-.filter-group {
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
   margin-bottom: var(--space-md);
+  padding: var(--space-sm);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
 }
 
-.page-title {
-  margin-top: var(--space-lg);
-  font-size: 3rem;
-  font-weight: 800;
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.filter-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-left: 2px;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
 }
 
 .filter-link {
+  appearance: none;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius); /* 8px */
+  color: var(--color-text);
   cursor: pointer;
-  text-decoration: none;
-  color: var(--color-muted);
-  margin-right: 12px;
-  padding: 4px 12px;
-  border-radius: var(--radius);
-  transition: all var(--transition-base);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  text-transform: uppercase;
+  transition: var(--transition-smooth);
 }
 
 .filter-link:hover {
-  background: var(--color-surface-hover);
-  color: var(--color-text);
+  border-color: var(--color-muted);
+  background-color: var(--color-surface-hover);
 }
 
 .filter-link.active {
-  font-weight: 600;
-  background-color: var(--color-surface-hover);
-  color: var(--color-primary);
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border-color: var(--color-text);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.filter-link[data-value="META"].active {
+  background-color: var(--color-layer-meta);
+  border-color: var(--color-layer-meta);
+}
+
+.filter-link[data-value="CORE"].active {
+  background-color: var(--color-layer-core);
+  border-color: var(--color-layer-core);
+}
+
+.filter-link[data-value="TOOL"].active {
+  background-color: var(--color-layer-tool);
+  border-color: var(--color-layer-tool);
 }
 
 /* ========== Visibility Control ========== */
@@ -137,6 +181,13 @@
 }
 
 /* ========== Card UI ========== */
+
+.page-title {
+  margin-top: var(--space-lg);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
 .model-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 

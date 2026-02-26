@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/markdown.css";
+import { LAYERS, VIEWPOINTS, type Language } from "../../constants/filters";
 
 export async function getStaticPaths() {
   const allModels = await getCollection("ja/models");
@@ -58,21 +59,28 @@ const breadcrumbData = {
     },
   ],
 };
+
+const currentLang: Language = 'ja'; 
+
+const layerInfo = LAYERS[entry.data.layer as keyof typeof LAYERS];
 ---
 
 <BaseLayout>
-  <!-- structured data for search engines -->
-  <script slot="head" type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-  <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbData)} />
-
   <a href="/models">← 一覧に戻る</a>
   <article class="markdown-content">
     <h1>{entry.data.official_name}</h1>
+    
     <div class="meta">
-      <span class="badge">{entry.data.layer}</span>
-      {entry.data.viewpoints.map((v) => <span class="badge">{v}</span>)}
+      <span class={`badge badge--${entry.data.layer.toLowerCase()}`}>
+        {layerInfo[currentLang]}
+      </span>
+
+      {entry.data.viewpoints.map((v) => {
+        const viewInfo = VIEWPOINTS[v as keyof typeof VIEWPOINTS];
+        return <span class="badge">{viewInfo[currentLang]}</span>;
+      })}
     </div>
+
     <Content content={entry.body} />
   </article>
-  <a href="/models">← 一覧に戻る</a>
 </BaseLayout>

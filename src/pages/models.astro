@@ -2,32 +2,54 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "./layouts/BaseLayout.astro";
 import ModelCard from "../components/ModelCard.astro";
+import { LAYERS, VIEWPOINTS } from "../constants/filters";
+
+type Language = 'ja';
 
 const allModels = await getCollection("ja/models");
+const currentLang: Language = 'ja';
+
+// ループしやすいように配列化
+const layerList = Object.entries(LAYERS); // [ ['META', {ja:...}], ['CORE', {ja:...}] ]
+const viewList = Object.entries(VIEWPOINTS);
 ---
 
 <BaseLayout>
   <h1 class="page-title">Mental Model Atlas</h1>
 
-  <div class="filter-group">
-    <h3>Layer</h3>
-    <span class="filter-link" data-type="layer" data-value="">All</span>
-    <span class="filter-link" data-type="layer" data-value="META">META</span>
-    <span class="filter-link" data-type="layer" data-value="CORE">CORE</span>
-    <span class="filter-link" data-type="layer" data-value="TOOL">TOOL</span>
-  </div>
+  <div class="filter-container">
+    <div class="filter-group">
+      <span class="filter-label">LAYER</span>
+      <div class="filter-options">
+        <button class="filter-link" data-type="layer" data-value="">ALL</button>
+        {layerList.map(([id, labels]) => (
+          <button 
+            class="filter-link" 
+            data-type="layer" 
+            data-value={id}
+          >
+            {labels[currentLang]}
+          </button>
+        ))}
+      </div>
+    </div>
 
-  <div class="filter-group">
-    <h3>Viewpoints</h3>
-    <span class="filter-link" data-type="view" data-value="">All</span>
-    <span class="filter-link" data-type="view" data-value="NB">New Business</span>
-    <span class="filter-link" data-type="view" data-value="DM">Decision Making</span>
-    <span class="filter-link" data-type="view" data-value="PS">Problem Solving</span>
-    <span class="filter-link" data-type="view" data-value="LIFE">Life</span>
-    <span class="filter-link" data-type="view" data-value="LT">Logical Thinking</span>
+    <div class="filter-group">
+      <span class="filter-label">VIEWPOINTS</span>
+      <div class="filter-options">
+        <button class="filter-link" data-type="view" data-value="">ALL</button>
+        {viewList.map(([id, labels]) => (
+          <button 
+            class="filter-link" 
+            data-type="view" 
+            data-value={id}
+          >
+            {labels[currentLang]}
+          </button>
+        ))}
+      </div>
+    </div>
   </div>
-
-  <hr />
 
   <div class="model-grid">
     {allModels.filter(Boolean).map((model) => (
