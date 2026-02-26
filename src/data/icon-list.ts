@@ -8,6 +8,7 @@ export const LUCIDE_ICONS = [
     'shield-check',
     'pie-chart',
     'line-chart',
+    'search',
     // ビジネス・戦略
     'component',
     'layout-dashboard',

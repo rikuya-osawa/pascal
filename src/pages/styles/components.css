@@ -42,6 +42,41 @@
   gap: 16px;
 }
 
+.header-search-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 6px 12px;
+  background: var(--color-bg);
+  transition: border-color var(--transition-base);
+}
+
+.search-icon {
+  color: var(--color-muted);
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.header-search {
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  min-width: 140px;
+  padding: 0;
+  outline: none;
+}
+
+.header-search::placeholder {
+  color: var(--color-muted);
+}
+
+.header-search-wrapper:focus-within {
+  border-color: var(--color-primary);
+}
+
 .header-nav {
   display: flex;
   align-items: center;

@@ -3,9 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "./layouts/BaseLayout.astro";
 import ModelCard from "../components/ModelCard.astro";
 
-// 全データを取得（日本語）
 const allModels = await getCollection("ja/models");
-
 ---
 
 <BaseLayout>
@@ -31,29 +29,32 @@ const allModels = await getCollection("ja/models");
 
   <hr />
 
-    <div class="model-grid">
+  <div class="model-grid">
     {allModels.filter(Boolean).map((model) => (
         <ModelCard model={model} />
     ))}
-    </div>
+  </div>
+  <div id="search-fallback" class="hidden">
+    <p>一致するメンタルモデルが見つかりませんでした。</p>
+  </div>
 
-  <script>
+<script>
     const links = document.querySelectorAll('.filter-link');
     const items = document.querySelectorAll('.model-item');
 
-    function updateFilter() {
+    function updateAllFilters() {
       const url = new URL(window.location.href);
       const activeLayer = url.searchParams.get('layer');
       const activeView = url.searchParams.get('view');
+      const activeQuery = url.searchParams.get('q')?.toLowerCase() || "";
 
-      // リンクの見た目更新
+      // 1. リンク（ボタン）の見た目更新
       links.forEach(link => {
         const type = link.getAttribute('data-type');
         const value = link.getAttribute('data-value');
         if (!type) return;
 
         const currentParam = url.searchParams.get(type);
-
         if ((!currentParam && !value) || (currentParam === value)) {
           link.classList.add('active');
         } else {
@@ -61,30 +62,44 @@ const allModels = await getCollection("ja/models");
         }
       });
 
-      // カードの表示・非表示切り替え
+      // 2. カードの表示・非表示判定
       items.forEach(item => {
         const itemLayer = item.getAttribute('data-layer');
-        const itemViewsAttr = item.getAttribute('data-views');
-        const itemViews = itemViewsAttr ? itemViewsAttr.split(',') : [];
+        const itemViews = item.getAttribute('data-views')?.split(',') || [];
+        const itemTitle = item.querySelector('.card-title')?.textContent.toLowerCase() || "";
 
+        // 排他的ロジック：各パラメータが存在する場合のみチェック
         const layerMatch = !activeLayer || itemLayer === activeLayer;
         const viewMatch = !activeView || itemViews.includes(activeView);
+        const queryMatch = !activeQuery || itemTitle.includes(activeQuery);
 
-        if (layerMatch && viewMatch) {
+        if (layerMatch && viewMatch && queryMatch) {
           item.classList.remove('hidden');
         } else {
           item.classList.add('hidden');
         }
       });
+
+      // 3. フォールバックの制御
+      const fallback = document.getElementById('search-fallback');
+      if (fallback) {
+        const anyVisible = Array.from(items).some(item => !item.classList.contains('hidden'));
+        fallback.classList.toggle('hidden', anyVisible);
+      }
     }
 
+    (window as any).updateAllFilters = updateAllFilters;
+
     links.forEach(link => {
-      link.addEventListener('click', () => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
         const type = link.getAttribute('data-type');
         const value = link.getAttribute('data-value');
+        if (!type) return;
+
         const url = new URL(window.location.href);
 
-        if (!type) return;
+        url.searchParams.delete('q');
 
         if (value) {
           url.searchParams.set(type, value);
@@ -93,11 +108,18 @@ const allModels = await getCollection("ja/models");
         }
 
         window.history.pushState({}, '', url);
-        updateFilter();
+        updateAllFilters();
+
+        const searchInput = document.querySelector('.header-search') as HTMLInputElement;
+        if (searchInput) {
+          searchInput.value = '';
+          searchInput.placeholder = "Search models...";
+        }
       });
     });
 
-    window.addEventListener('popstate', updateFilter);
-    updateFilter();
+    window.addEventListener('popstate', updateAllFilters);
+    document.addEventListener('astro:page-load', updateAllFilters);
+    updateAllFilters();
   </script>
 </BaseLayout>

@@ -6,6 +6,18 @@ import { Icon } from 'astro-icon/components';
   <div class="site-header-inner">
     <a class="site-title" href="/">MENTAL MODEL ATLAS</a>
     <div class="header-right">
+    <form action="/models" method="get" class="header-search-form">
+      <div class="header-search-wrapper">
+        <Icon name="lucide:search" size={16} class="search-icon" />
+        <input 
+          type="text" 
+          name="q"
+          class="header-search" 
+          placeholder="Search models..." 
+          aria-label="Search mental models"
+        />
+      </div>
+    </form>
       <nav class="header-nav">
         <a href="/models">Models</a>
         <a href="/about">About</a>
@@ -19,41 +31,81 @@ import { Icon } from 'astro-icon/components';
 </header>
 
 <script type="module">
-(() => {
-  const header = document.querySelector('.site-header');
-  if (!header) return;
+  // --- スクロール動作 ---
+  (() => {
+    const header = document.querySelector('.site-header');
+    if (!header) return;
 
-  let lastY = window.scrollY;
-  let ticking = false;
-  const THRESHOLD = 50;
+    let lastY = window.scrollY;
+    let ticking = false;
+    const THRESHOLD = 50;
 
-  function onScroll() {
-    const y = window.scrollY;
-
-    if (y <= 0) {
-      header.classList.remove('site-header--hidden');
+    function onScroll() {
+      const y = window.scrollY;
+      if (y <= 0) {
+        header.classList.remove('site-header--hidden');
+        lastY = y;
+        return;
+      }
+      if (y > lastY && y > THRESHOLD) {
+        header.classList.add('site-header--hidden');
+      } else if (y < lastY) {
+        header.classList.remove('site-header--hidden');
+      }
       lastY = y;
-      return;
     }
 
-    if (y > lastY && y > THRESHOLD) {
-      header.classList.add('site-header--hidden');
-    } else if (y < lastY) {
-      header.classList.remove('site-header--hidden');
-    }
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          onScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  })();
 
-    lastY = y;
+  // --- 検索ロジック ---
+  function initSearch() {
+    const searchForm = document.querySelector('.header-search-form');
+    const searchInput = document.querySelector('.header-search');
+
+    if (!searchForm || !searchInput) return;
+
+  searchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const query = searchInput.value.trim();
+      
+      const url = new URL(window.location.origin + '/models');
+      if (query) {
+        url.searchParams.set('q', query);
+      }
+
+      if (window.location.pathname !== '/models') {
+        window.location.href = url.toString();
+      } else {
+        window.history.pushState({}, '', url);
+        
+        if (typeof window.updateAllFilters === 'function') {
+          window.updateAllFilters();
+        }
+        
+        searchInput.value = '';
+        searchInput.blur();
+      }
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    if (q && window.location.pathname === '/models') {
+      searchInput.value = q;
+      if (typeof window.updateAllFilters === 'function') {
+        window.updateAllFilters();
+      }
+    }
   }
 
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        onScroll();
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }, { passive: true });
-})();
+  initSearch();
+  document.addEventListener('astro:page-load', initSearch);
 </script>
-
