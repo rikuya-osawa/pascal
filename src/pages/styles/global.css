@@ -26,3 +26,22 @@ h1, h2, h3 {
 section {
   margin: var(--space-lg) 0;
 }
+
+/* ========== Brand Logo ========== */
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  transition: opacity var(--transition-base);
+}
+
+.social-link:hover {
+  opacity: 0.6;
+  color: var(--color-text);
+}
