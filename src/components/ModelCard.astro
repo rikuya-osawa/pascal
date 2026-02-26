@@ -1,15 +1,20 @@
 ---
 import { Icon } from 'astro-icon/components';
 import { MODEL_ICONS } from '../constants/model-icons';
+import { LAYERS, type Language } from '../constants/filters';
 
 const { model } = Astro.props;
 if (!model) {
   console.warn("ModelCard: model is undefined");
-  return null; // ビルド時にクラッシュしない
+  return null;
 }
 
+const currentLang: Language = 'ja';
+
 const iconName = MODEL_ICONS[model.slug] || MODEL_ICONS["default"];
-// debug: console.log(`ModelCard: slug=${model.slug}, iconName=${iconName}`);
+
+const layerKey = model.data.layer as keyof typeof LAYERS;
+const layerLabel = LAYERS[layerKey] ? LAYERS[layerKey][currentLang] : model.data.layer;
 ---
 
 <div
@@ -32,7 +37,9 @@ const iconName = MODEL_ICONS[model.slug] || MODEL_ICONS["default"];
     )}
 
     <div class="card-meta">
-      <span class="badge layer">{model?.data?.layer}</span>
+      <span class={`badge layer badge--${model.data.layer.toLowerCase()}`}>
+        {layerLabel}
+      </span>
     </div>
   </a>
 </div>
