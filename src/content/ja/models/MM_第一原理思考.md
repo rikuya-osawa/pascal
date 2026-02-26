@@ -3,12 +3,13 @@ type: mental-model
 official_name: 第一原理思考
 en_name: First Principles Thinking
 abbreviation: 第一原理
-観点:
-  - PS
-  - LT
+description: 常識や前提、慣習をいったん疑い、分解し、これ以上分解できない根本的な事実（第一原理）まで遡って再構築する思考モデル。
+viewpoints:
+- PS
+- LT
 layer: META
 tags:
-  - mental-model
+- mental-model
 ---
 # 第一原理思考（First Principles Thinking）
 
@@ -68,5 +69,4 @@ tags:
 - 補完：制約条件思考（現実との接続）、トレードオフ思考
 - 対立：前例主義、慣習依存思考
 
-## メモ・実践ログ
-- 
+

@@ -3,13 +3,14 @@ type: mental-model
 official_name: ファイブフォース分析
 en_name: Five Forces Analysis
 abbreviation: 5Forces
-観点:
-  - NB
-  - DM
-  - LT
+description: 業界の収益性を決定する5つの競争要因を分析し、構造的な競争圧力を可視化するフレームワーク。
+viewpoints:
+- NB
+- DM
+- LT
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # ファイブフォース分析（Five Forces Analysis）
 
@@ -72,5 +73,4 @@ tags:
 - 関連：システム思考
 - 対立：短期成長率重視思考
 
-## メモ・実践ログ
-- 
+

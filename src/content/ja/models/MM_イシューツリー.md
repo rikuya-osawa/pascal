@@ -3,13 +3,14 @@ type: mental-model
 official_name: イシューツリー
 en_name: Issue Tree
 abbreviation: イシューツリー
-観点:
-  - LT
-  - PS
-  - DM
+description: 解くべき問い（イシュー）を起点に、「答えを出すために必要な論点」をツリー状に分解し、思考や分析の全体設計を行うための思考モデル。
+viewpoints:
+- LT
+- PS
+- DM
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # イシューツリー（Issue Tree）
 
@@ -66,5 +67,4 @@ tags:
 - 補完：MECE（論点整理）、仮説思考（答えの仮置き）
 - 対立：場当たり的分析（思いつき順の調査）
 
-## メモ・実践ログ
-- 
+

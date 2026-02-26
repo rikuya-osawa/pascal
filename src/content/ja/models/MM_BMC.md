@@ -3,13 +3,14 @@ type: mental-model
 official_name: ビジネスモデル・キャンバス
 en_name: Business Model Canvas
 abbreviation: BMC
-観点:
-  - NB
-  - PS
-  - DM
+description: 事業の構造を「顧客・提供価値・収益構造・コスト構造・主要活動」など9要素で可視化し、ビジネス全体を俯瞰・設計・検証するためのフレームワーク。
+viewpoints:
+- NB
+- PS
+- DM
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # ビジネスモデル・キャンバス（Business Model Canvas）
 
@@ -75,7 +76,3 @@ tags:
 - 関連：JTBD、4P / 4C、バリューチェーン  
 - 補完：VRIO、Moat、フライホイール思考  
 - 対立：プロダクト偏重思考  
-
-## メモ・実践ログ
-
-- 

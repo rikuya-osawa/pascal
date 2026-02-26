@@ -3,12 +3,13 @@ type: mental-model
 official_name: 二次思考
 en_name: Second-order Thinking
 abbreviation: 二次思考
-観点:
-  - LT
-  - DM
+description: ある行動や判断の「直接的な結果（一次効果）」だけでなく、その先に連鎖して起こる影響（二次・三次効果）まで考慮して意思決定するための思考モデル。
+viewpoints:
+- LT
+- DM
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # 二次思考（Second-order Thinking）
 
@@ -62,5 +63,4 @@ tags:
 - 補完：期待値思考（長期評価）、トレードオフ思考（選択整理）
 - 対立：短期最適思考（目先の最適化）
 
-## メモ・実践ログ
-- 
+

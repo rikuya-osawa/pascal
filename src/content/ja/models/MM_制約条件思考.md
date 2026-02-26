@@ -3,12 +3,13 @@ type: mental-model
 official_name: 制約条件思考
 en_name: Constraint-based Thinking
 abbreviation: 制約思考
-観点:
-  - PS
-  - DM
+description: 「できない理由」として扱われがちな制約条件を前提として受け入れ、その中で最適な解や創造的な選択肢を見出すための思考モデル。
+viewpoints:
+- PS
+- DM
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # 制約条件思考（Constraint-based Thinking）
 
@@ -62,5 +63,4 @@ tags:
 - 補完：本質思考（重要軸の特定）、仮説思考（打ち手検討）
 - 対立：理想先行思考（前提を無視した発想）
 
-## メモ・実践ログ
-- 
+

@@ -3,12 +3,13 @@ type: mental-model
 official_name: ベイズ思考
 en_name: Bayesian Thinking
 abbreviation: ベイズ思考
-観点:
-  - LT
-  - DM
+description: 新しい情報が得られるたびに、これまでの前提（事前確率）を更新しながら、判断や信念を柔軟に修正していくための思考モデル。
+viewpoints:
+- LT
+- DM
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # ベイズ思考（Bayesian Thinking）
 
@@ -62,5 +63,4 @@ tags:
 - 補完：仮説思考（仮置き）、期待値思考（評価）
 - 対立：白黒思考（0か100かで判断する）
 
-## メモ・実践ログ
-- 
+

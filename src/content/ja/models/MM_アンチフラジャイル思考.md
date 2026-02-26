@@ -3,13 +3,14 @@ type: mental-model
 official_name: アンチフラジャイル思考
 en_name: Antifragile Thinking
 abbreviation: アンチフラ
-観点:
-  - LIFE
-  - NB
-  - DM
+description: 不確実性やストレス、ショックに対して「耐える」のではなく、「それによって強くなる」構造を設計する思考モデル。
+viewpoints:
+- LIFE
+- NB
+- DM
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # アンチフラジャイル思考（Antifragile Thinking）
 
@@ -65,5 +66,4 @@ tags:
 - 補完：リスク×リターン思考  
 - 対立：過度な安定志向  
 
-## メモ・実践ログ
-- 
+

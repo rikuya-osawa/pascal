@@ -3,12 +3,13 @@ type: mental-model
 official_name: システム思考
 en_name: Systems Thinking
 abbreviation: システム思考
-観点:
-  - LT
-  - PS
+description: 物事を「要素」ではなく「要素同士の関係性・相互作用・循環構造」として捉え、部分最適ではなく全体最適を目指すための思考モデル。
+viewpoints:
+- LT
+- PS
 layer: META
 tags:
-  - mental-model
+- mental-model
 ---
 # システム思考（Systems Thinking）
 
@@ -67,5 +68,4 @@ tags:
 - 補完：第一原理思考（分解）、制約条件思考（制限把握）
 - 対立：単線因果思考、犯人探し思考
 
-## メモ・実践ログ
-- 
+

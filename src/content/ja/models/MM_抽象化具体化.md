@@ -3,12 +3,13 @@ type: mental-model
 official_name: 抽象化・具体化
 en_name: Abstraction & Concretization
 abbreviation: 抽象⇄具体
-観点:
-  - PS
-  - DM
+description: 物事を「上のレイヤー（抽象）」と「下のレイヤー（具体）」に行き来しながら理解・説明・設計するための思考モデル。
+viewpoints:
+- PS
+- DM
 layer: META
 tags:
-  - mental-model
+- mental-model
 ---
 # 抽象化・具体化（Abstraction & Concretization）
 
@@ -66,5 +67,4 @@ tags:
 - 補完：第一原理思考（上に遡る）、JTBD（構造抽出）
 - 対立：表層思考、断片思考
 
-## メモ・実践ログ
-- 
+

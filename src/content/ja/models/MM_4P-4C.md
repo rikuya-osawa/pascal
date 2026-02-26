@@ -3,13 +3,14 @@ type: mental-model
 official_name: 4P / 4C
 en_name: Marketing Mix / Customer Value Framework
 abbreviation: 4P-4C
+description: 市場戦略を「提供側視点（4P）」と「顧客視点（4C）」から整理するマーケティング分析フレーム。
 viewpoints:
-  - NB
-  - DM
-  - PS
+- NB
+- DM
+- PS
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # 4P / 4C（Marketing Mix / Customer Value Framework）
 
@@ -75,5 +76,4 @@ tags:
 - 関連：リーン思考
 - 対立：内向き思考
 
-## メモ・実践ログ
-- 
+

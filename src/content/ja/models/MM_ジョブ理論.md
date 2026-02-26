@@ -3,15 +3,13 @@ type: mental-model
 official_name: ジョブ理論
 en_name: Jobs To Be Done
 abbreviation: JTBD
-観点:
-  - PS
-  - DM
-  - LT
-  - NB
-  - LIFE
+description: 顧客は「商品」を買っているのではなく、「達成したい進歩（ジョブ）」を雇っている、という視点で価値を捉える思考モデル。
+viewpoints:
+- DM
+- NB
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # ジョブ理論（Jobs To Be Done）
 
@@ -68,5 +66,4 @@ tags:
 - 補完：イシューツリー（構造化）、ベイズ思考（検証）
 - 対立：機能中心思考、スペック競争思考
 
-## メモ・実践ログ
-- 
+

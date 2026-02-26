@@ -1,0 +1,52 @@
+---
+---
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-title" href="/">MENTAL MODEL ATLAS</a>
+    <nav class="header-nav">
+      <a href="/models">Models</a>
+      <a href="/about">About</a>
+    </nav>
+  </div>
+</header>
+
+<script type="module">
+(() => {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  let lastY = window.scrollY;
+  let ticking = false;
+  const THRESHOLD = 50;
+
+  function onScroll() {
+    const y = window.scrollY;
+
+    if (y <= 0) {
+      header.classList.remove('site-header--hidden');
+      lastY = y;
+      return;
+    }
+
+    if (y > lastY && y > THRESHOLD) {
+      header.classList.add('site-header--hidden');
+    } else if (y < lastY) {
+      header.classList.remove('site-header--hidden');
+    }
+
+    lastY = y;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        onScroll();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+})();
+</script>
+

@@ -1,0 +1,103 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "./layouts/BaseLayout.astro";
+import ModelCard from "../components/ModelCard.astro";
+
+// 全データを取得（日本語）
+const allModels = await getCollection("ja/models");
+
+---
+
+<BaseLayout>
+  <h1 class="page-title">Mental Model Atlas</h1>
+
+  <div class="filter-group">
+    <h3>Layer</h3>
+    <span class="filter-link" data-type="layer" data-value="">All</span>
+    <span class="filter-link" data-type="layer" data-value="META">META</span>
+    <span class="filter-link" data-type="layer" data-value="CORE">CORE</span>
+    <span class="filter-link" data-type="layer" data-value="TOOL">TOOL</span>
+  </div>
+
+  <div class="filter-group">
+    <h3>Viewpoints</h3>
+    <span class="filter-link" data-type="view" data-value="">All</span>
+    <span class="filter-link" data-type="view" data-value="NB">New Business</span>
+    <span class="filter-link" data-type="view" data-value="DM">Decision Making</span>
+    <span class="filter-link" data-type="view" data-value="PS">Problem Solving</span>
+    <span class="filter-link" data-type="view" data-value="LIFE">Life</span>
+    <span class="filter-link" data-type="view" data-value="LT">Logical Thinking</span>
+  </div>
+
+  <hr />
+
+    <div class="model-grid">
+    {allModels.filter(Boolean).map((model) => (
+        <ModelCard model={model} />
+    ))}
+    </div>
+
+  <script>
+    const links = document.querySelectorAll('.filter-link');
+    const items = document.querySelectorAll('.model-item');
+
+    function updateFilter() {
+      const url = new URL(window.location.href);
+      const activeLayer = url.searchParams.get('layer');
+      const activeView = url.searchParams.get('view');
+
+      // リンクの見た目更新
+      links.forEach(link => {
+        const type = link.getAttribute('data-type');
+        const value = link.getAttribute('data-value');
+        if (!type) return;
+
+        const currentParam = url.searchParams.get(type);
+
+        if ((!currentParam && !value) || (currentParam === value)) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+
+      // カードの表示・非表示切り替え
+      items.forEach(item => {
+        const itemLayer = item.getAttribute('data-layer');
+        const itemViewsAttr = item.getAttribute('data-views');
+        const itemViews = itemViewsAttr ? itemViewsAttr.split(',') : [];
+
+        const layerMatch = !activeLayer || itemLayer === activeLayer;
+        const viewMatch = !activeView || itemViews.includes(activeView);
+
+        if (layerMatch && viewMatch) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        const type = link.getAttribute('data-type');
+        const value = link.getAttribute('data-value');
+        const url = new URL(window.location.href);
+
+        if (!type) return;
+
+        if (value) {
+          url.searchParams.set(type, value);
+        } else {
+          url.searchParams.delete(type);
+        }
+
+        window.history.pushState({}, '', url);
+        updateFilter();
+      });
+    });
+
+    window.addEventListener('popstate', updateFilter);
+    updateFilter();
+  </script>
+</BaseLayout>

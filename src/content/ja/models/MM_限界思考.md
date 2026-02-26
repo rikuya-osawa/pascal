@@ -3,13 +3,14 @@ type: mental-model
 official_name: 限界思考
 en_name: Marginal Thinking
 abbreviation: Marginal
-観点:
-  - DM
-  - NB
-  - LIFE
+description: 全体平均ではなく、「追加で1単位行うこと（限界）」によって得られる追加利益と追加コストを比較し、意思決定するための思考モデル。
+viewpoints:
+- DM
+- NB
+- LIFE
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # 限界思考（Marginal Thinking）
 
@@ -73,7 +74,3 @@ tags:
 - 関連：期待値思考、トレードオフ思考  
 - 補完：サンクコスト効果、リスク・リターン思考  
 - 対立：平均思考
-
-## メモ・実践ログ
-
--

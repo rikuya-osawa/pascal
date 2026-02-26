@@ -3,13 +3,14 @@ type: mental-model
 official_name: ブラックスワン思考
 en_name: Black Swan Theory
 abbreviation: BlackSwan
-観点:
-  - DM
-  - NB
-  - LIFE
+description: 発生確率は低いが、発生した場合に極めて大きな影響を持つ予測困難な事象（ブラックスワン）の存在を前提に、リスク管理や戦略を設計する思考モデル。
+viewpoints:
+- DM
+- NB
+- LIFE
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # ブラックスワン思考（Black Swan Theory）
 
@@ -70,7 +71,3 @@ tags:
 - 関連：期待値思考、リスク・リターン思考  
 - 補完：オプション思考、アンチフラジャイル思考  
 - 対立：平均回帰前提思考  
-
-## メモ・実践ログ
-
--

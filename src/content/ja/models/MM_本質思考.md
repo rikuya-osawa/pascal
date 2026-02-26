@@ -3,12 +3,13 @@ type: mental-model
 official_name: 本質思考
 en_name: Essential Thinking
 abbreviation: 本質思考
-観点:
-  - PS
-  - DM
+description: 表面的な事象や手段にとらわれず、「本当に解くべき問いは何か」「何が最も重要か」を見極めるための思考モデル。問題設定そのものの質を高めることを目的とする。
+viewpoints:
+- PS
+- DM
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # 本質思考（Essential Thinking）
 
@@ -62,5 +63,4 @@ tags:
 - 補完：MECE（整理）、仮説思考（検証）
 - 対立：対症療法（目の前の対応のみ）
 
-## メモ・実践ログ
-- 
+

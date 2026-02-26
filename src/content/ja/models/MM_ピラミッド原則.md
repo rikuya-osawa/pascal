@@ -3,13 +3,14 @@ type: mental-model
 official_name: ピラミッド原則
 en_name: Pyramid Principle
 abbreviation: ピラミッド原則
-観点:
-  - LT
-  - PS
-  - DM
+description: 伝えたい結論を最上位に置き、その根拠や理由をlayer構造（ピラミッド）で整理・表現することで、論理的で理解しやすいコミュニケーションを実現する思考モデル。
+viewpoints:
+- LT
+- PS
+- DM
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # ピラミッド原則（Pyramid Principle）
 
@@ -65,5 +66,4 @@ tags:
 - 補完：MECE（理由整理）、仮説思考（結論の仮置き）
 - 対立：時系列説明（結論が最後に来る説明）
 
-## メモ・実践ログ
-- 
+

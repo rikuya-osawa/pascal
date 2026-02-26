@@ -3,13 +3,14 @@ type: mental-model
 official_name: STP分析
 en_name: Segmentation, Targeting, Positioning
 abbreviation: STP
-観点:
-  - NB
-  - DM
-  - PS
+description: 市場を分解し、狙う顧客を定め、どのような立ち位置で価値を提供するかを設計する戦略フレーム。
+viewpoints:
+- NB
+- DM
+- PS
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # STP分析（Segmentation, Targeting, Positioning）
 
@@ -68,5 +69,4 @@ tags:
 - 関連：JTBD
 - 対立：全方位戦略
 
-## メモ・実践ログ
-- 
+

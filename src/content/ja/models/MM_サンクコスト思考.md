@@ -3,12 +3,13 @@ type: mental-model
 official_name: サンクコスト思考
 en_name: Sunk Cost Fallacy
 abbreviation: サンクコスト
-観点:
-  - DM
-  - LIFE
+description: すでに支払って回収できないコスト（時間・お金・労力・感情）に引きずられず、将来の意思決定を合理的に行うための思考モデル。
+viewpoints:
+- DM
+- LIFE
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # サンクコスト思考（Sunk Cost Fallacy）
 
@@ -62,5 +63,4 @@ tags:
 - 補完：期待値思考（将来価値評価）、トレードオフ思考（捨てる判断）
 - 対立：結果論（過去の投資で判断する）
 
-## メモ・実践ログ
-- 
+

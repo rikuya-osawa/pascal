@@ -3,13 +3,14 @@ type: mental-model
 official_name: バイアス認識
 en_name: Cognitive Bias Awareness
 abbreviation: Bias Awareness
-観点:
-  - DM
-  - PS
-  - LIFE
+description: 人間の思考が無意識の偏り（バイアス）に影響されることを前提に、自分の判断を疑い、歪みを補正するためのメタ思考モデル。
+viewpoints:
+- DM
+- PS
+- LIFE
 layer: META
 tags:
-  - mental-model
+- mental-model
 ---
 # バイアス認識（Cognitive Bias Awareness）
 
@@ -67,5 +68,4 @@ tags:
 - 関連：二次思考、サンクコスト思考
 - 対立：直感絶対視
 
-## メモ・実践ログ
-- 
+

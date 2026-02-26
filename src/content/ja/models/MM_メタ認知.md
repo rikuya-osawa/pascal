@@ -3,13 +3,14 @@ type: mental-model
 official_name: メタ認知
 en_name: Metacognition
 abbreviation: MetaCog
-観点:
-  - DM
-  - LIFE
-  - PS
+description: 自分の思考・感情・判断プロセスを一段上から観察し、コントロールする能力。思考のOSを監視するメタレイヤー。
+viewpoints:
+- DM
+- LIFE
+- PS
 layer: META
 tags:
-  - mental-model
+- mental-model
 ---
 # メタ認知（Metacognition）
 
@@ -68,5 +69,4 @@ tags:
 - 補完：二次思考、ベイズ思考
 - 対立：衝動的判断
 
-## メモ・実践ログ
-- 
+

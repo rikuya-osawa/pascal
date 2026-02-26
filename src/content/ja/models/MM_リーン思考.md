@@ -3,13 +3,14 @@ type: mental-model
 official_name: リーン思考
 en_name: Lean Thinking
 abbreviation: Lean
-観点:
-  - NB
-  - PS
-  - DM
+description: 無駄を排除し、仮説→実験→学習のループを高速化することで価値創造の効率を最大化する思想。
+viewpoints:
+- NB
+- PS
+- DM
 layer: CORE
 tags:
-  - mental-model
+- mental-model
 ---
 # リーン思考（Lean Thinking）
 
@@ -68,5 +69,4 @@ tags:
 - 関連：パレートの法則（集中）
 - 対立：完璧主義・長期計画至上主義
 
-## メモ・実践ログ
-- 
+

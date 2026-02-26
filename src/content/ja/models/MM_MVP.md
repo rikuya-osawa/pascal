@@ -3,13 +3,14 @@ type: mental-model
 official_name: Minimum Viable Product
 en_name: Minimum Viable Product
 abbreviation: MVP
-観点:
-  - NB
-  - PS
-  - DM
+description: 仮説検証のために、最小限の機能で価値をテストするプロダクト設計思想。完成度より学習速度を優先するモデル。
+viewpoints:
+- NB
+- PS
+- DM
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # Minimum Viable Product（MVP）
 
@@ -67,5 +68,4 @@ tags:
 - 関連：パレートの法則（最小集中）
 - 対立：完璧主義思考
 
-## メモ・実践ログ
-- 
+

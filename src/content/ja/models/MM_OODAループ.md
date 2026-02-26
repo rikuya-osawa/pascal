@@ -3,12 +3,13 @@ type: mental-model
 official_name: OODAループ
 en_name: OODA Loop
 abbreviation: OODA
-観点:
-  - PS
-  - DM
+description: 状況を観察し（Observe）、意味づけし（Orient）、意思決定し（Decide）、行動する（Act）という循環を高速で回し続けることで、不確実な環境下で優位性を築くための思考モデル。
+viewpoints:
+- PS
+- DM
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # OODAループ（OODA Loop）
 
@@ -68,5 +69,4 @@ tags:
 - 補完：可逆・不可逆判断（小さく試す）、期待値思考
 - 対立：完璧主義、分析麻痺
 
-## メモ・実践ログ
-- 
+

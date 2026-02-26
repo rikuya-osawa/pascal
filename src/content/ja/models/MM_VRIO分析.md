@@ -3,13 +3,14 @@ type: mental-model
 official_name: VRIO分析
 en_name: VRIO Framework
 abbreviation: VRIO
-観点:
-  - NB
-  - DM
-  - PS
+description: 組織や事業の資源が競争優位を生むかどうかを、Value・Rarity・Imitability・Organizationの4視点で評価するフレームワーク。
+viewpoints:
+- NB
+- DM
+- PS
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # VRIO分析（VRIO Framework）
 
@@ -65,5 +66,4 @@ tags:
 - 補完：フライホイール思考  
 - 対立：思い込み型強み論  
 
-## メモ・実践ログ
-- 
+

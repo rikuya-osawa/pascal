@@ -3,13 +3,14 @@ type: mental-model
 official_name: シナリオプランニング
 en_name: Scenario Planning
 abbreviation: シナリオP
-観点:
-  - DM
-  - NB
-  - LT
+description: 将来の不確実性を前提に、複数の合理的未来シナリオを描き、それぞれに適応する戦略・判断基準を準備するための思考モデル。
+viewpoints:
+- DM
+- NB
+- LT
 layer: TOOL
 tags:
-  - mental-model
+- mental-model
 ---
 # シナリオプランニング（Scenario Planning）
 
@@ -65,5 +66,4 @@ tags:
 - 補完：期待値思考  
 - 対立：単一予測思考
 
-## メモ・実践ログ
-- 
+
