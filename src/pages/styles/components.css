@@ -157,6 +157,14 @@
   align-items: flex-start;
 }
 
+.footer-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
 .footer-nav {
   display: flex;
   gap: var(--space-md);
@@ -170,6 +178,36 @@
 
 .footer-nav a:hover {
   color: var(--color-text);
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.social-link {
+  color: var(--color-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.social-link:hover {
+  color: var(--color-text);
+}
+
+/* Icon rendering defaults for astro-icon / simple-icons */
+[data-icon] {
+  color: currentColor;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .footer-copyright {
