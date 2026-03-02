@@ -56,7 +56,7 @@ const targetUrl = getAlternateUrl(targetLang);
   </div>
 </header>
 
-<script type="module">
+<script type="module" define:vars={{ currentLang }}>
   // --- スクロール動作 ---
   (() => {
     const header = document.querySelector('.site-header');
