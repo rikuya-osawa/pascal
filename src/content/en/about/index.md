@@ -1,35 +1,37 @@
-# Mental Model Atlas について
+# About Mental Model Atlas
 
-**Mental Model Atlas** は、日本語圏における「思考の地図」を構築するオープンなプロジェクトです。
+**Mental Model Atlas** is an open project dedicated to constructing a "Map of Thought" within the Japanese-speaking sphere.
 
-複雑な現代社会において、より良い意思決定を行い、本質的な問題解決を行うための「知的OS」を提供することを目指しています。
+In our complex modern society, we aim to provide an "Intellectual OS" to facilitate better decision-making and essential problem-solving.
 
-## プロジェクトの目的
-単なる情報の集積ではなく、以下の3つを軸とした「思考の道具箱」を構築します。
-1.  **体系化**: 散在する知見を統一フォーマットで整理
-2.  **構造化**: 抽象度や思考タイプによる関係性の明示
-3.  **実践化**: 状況に応じたモデルの組み合わせ（レシピ）の提示
+## Project Objectives
 
+Rather than a mere accumulation of information, we are building a "Thinking Toolbox" centered on the following three pillars:
 
-## 📊 評価スコア（1–5）の定義
-当サイトでは、各メンタルモデルを4つの観点から独自にスコアリングしています。これは、あなたが「今どの思考ツールを手に取るべきか」を判断するためのガイド（等高線）です。
+1. **Systematization**: Organizing scattered insights into a unified format.
+2. **Structuring**: Clarifying relationships based on abstraction levels and thinking types.
+3. **Practicality**: Presenting "Recipes"—combinations of models suited to specific situations.
 
-| 項目 | 説明 | 1 (Min) | 5 (Max) |
-| :--- | :--- | :--- | :--- |
-| **応用度** | 汎用性の高さ | 特定分野に限定 | 領域を問わず万能 |
-| **即効性** | 習得後の効果速度 | 長期的な修練が必要 | 知った瞬間から使える |
-| **理解難易度** | 概念の複雑さ | 直感的にわかる | 高度な抽象思考を要する |
-| **誤用リスク** | 解釈ミスの危険性 | 害が少ない | 逆効果・思考停止の恐れ |
+## 📊 Definition of Evaluation Scores (1–5)
 
-> **Note**: スコアはあくまで編集部の主観による「暫定値」です。使用者のコンテキストによって変化するため、一つの目安として活用してください。
+On this site, each mental model is uniquely scored across four dimensions. This serves as a guide (contour line) to help you determine "which thinking tool to pick up right now."
 
+| Item | Description | 1 (Min) | 5 (Max) |
+| --- | --- | --- | --- |
+| **Versatility** | Degree of general applicability | Limited to specific fields | Universal across all domains |
+| **Immediacy** | Speed of effect after learning | Requires long-term practice | Usable the moment you learn it |
+| **Difficulty** | Complexity of the concept | Intuitively understood | Requires high-level abstraction |
+| **Misuse Risk** | Danger of misinterpretation | Low potential for harm | Risk of backfiring or mental bias |
 
-## 🗺 ロードマップ
-* **Phase 1（現在）**: 厳選された 50 モデルの公開と構造化
-* **Phase 2**: 掲載モデルの拡充（100〜200）と「思考タイプ」別の分類強化
-* **Phase 3**: 複数のモデルを組み合わせた「思考のレシピ」とグラフ可視化の導入
+> **Note**: These scores are "provisional values" based on the editorial team's subjective assessment. Since they vary depending on the user's context, please use them as a general reference.
 
+## 🗺 Roadmap
+
+* **Phase 1 (Current)**: Publication and structuring of 50 selected models.
+* **Phase 2**: Expansion of featured models (100–200) and strengthening classification by "Thinking Type."
+* **Phase 3**: Introduction of "Thinking Recipes" (combining multiple models) and graph visualization.
 
 ## ✉️ Contact / Feedback
-この「地図」は未完成です。誤用リスクの指摘や、新しいモデルの提案など、フィードバックをお待ちしております。
+
+This "Map" is a work in progress. We welcome your feedback, including pointers on misuse risks or proposals for new models.
 [GitHub](https://github.com/rikuya-osawa/mental-model-atlas)
