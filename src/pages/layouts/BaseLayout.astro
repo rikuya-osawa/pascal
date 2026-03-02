@@ -3,6 +3,7 @@ import "../styles/global.css";
 import "../styles/components.css";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
+import { SITE_NAME, DEFAULT_DESCRIPTION } from "../../constants/site-config";
 
 interface Props {
   title?: string;
@@ -11,9 +12,9 @@ interface Props {
 }
 
 const { title, description, lang } = Astro.props as Props;
-const siteName = "Mental Model Atlas";
+const siteName = SITE_NAME;
 const fullTitle = title ? `${title} | ${siteName}` : siteName;
-const defaultDesc = "日本語圏最大のメンタルモデル辞書。意思決定を支える「思考の地図」を提供します。";
+const defaultDesc = DEFAULT_DESCRIPTION;
 
 const pathname = Astro.url.pathname;
 const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
