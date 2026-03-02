@@ -25,7 +25,7 @@ const layerLabel = LAYERS[layerKey] ? getLabel(LAYERS[layerKey], lang) : model.d
   data-layer={model?.data?.layer}
   data-views={model?.data?.viewpoints.join(',')}
 >
-  <a href={`/models/${model.slug.split('/').pop()}`} class="card-link">
+  <a href={`/${lang}/models/${model.slug.split('/').pop()}`} class="card-link">
     <div class="card-header card-header-vertical">
       <Icon name={iconName} class="card-icon" />
       <h2 class="card-title">

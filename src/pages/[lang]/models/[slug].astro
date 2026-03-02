@@ -1,20 +1,37 @@
 ---
 import { getCollection } from "astro:content";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import "../styles/markdown.css";
-import { LAYERS, VIEWPOINTS, type Language } from "../../constants/filters";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import "../../styles/markdown.css";
+import { LAYERS, VIEWPOINTS, type Language } from "../../../constants/filters";
 
 export async function getStaticPaths() {
-  const allModels = await getCollection("ja/models");
+  const jaEntries = await getCollection("ja/models");
+  const enEntries = await getCollection("en/models");
 
-  return allModels.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }));
+  return [
+    ...jaEntries.map((entry) => ({
+      params: {
+        lang: "ja",
+        slug: entry.slug.split("/").pop(),
+      },
+      props: { entry, lang: "ja" as const },
+    })),
+    ...enEntries.map((entry) => ({
+      params: {
+        lang: "en",
+        slug: entry.slug.split("/").pop(),
+      },
+      props: { entry, lang: "en" as const },
+    })),
+  ];
 }
 
-// 2. getStaticPaths から渡された props を受け取る
-const { entry } = Astro.props;
+const { entry, lang } = Astro.props;
+const currentLang = lang as Language;
+const text = currentLang === "ja"
+  ? { home: "ホーム", models: "モデル一覧", back: "← 一覧に戻る" }
+  : { home: "Home", models: "Models", back: "← Back to models" };
+
 const { Content } = await entry.render();
 
 // Schema.org 用データを組み立てる
@@ -42,14 +59,14 @@ const breadcrumbData = {
     {
       "@type": "ListItem",
       position: 1,
-      name: "ホーム",
+      name: text.home,
       item: site + "/",
     },
     {
       "@type": "ListItem",
       position: 2,
-      name: "モデル一覧",
-      item: site + "/models",
+      name: text.models,
+      item: site + `/${currentLang}/models`,
     },
     {
       "@type": "ListItem",
@@ -60,13 +77,12 @@ const breadcrumbData = {
   ],
 };
 
-const currentLang: Language = 'ja'; 
-
 const layerInfo = LAYERS[entry.data.layer as keyof typeof LAYERS];
 ---
 
-<BaseLayout>
-  <a href="/models">← 一覧に戻る</a>
+<BaseLayout lang={currentLang}>
+  <a href={`/${currentLang}/models`}>{text.back}</a>
+  
   <article class="markdown-content">
     <h1>{entry.data.official_name}</h1>
     

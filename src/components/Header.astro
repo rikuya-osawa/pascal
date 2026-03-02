@@ -2,13 +2,16 @@
 import { Icon } from 'astro-icon/components';
 
 const pathname = Astro.url.pathname;
-const currentLang = pathname.startsWith('/ja/') ? 'ja' : 'en';
+interface Props {
+  lang?: 'ja' | 'en';
+}
+
+const { lang } = Astro.props as Props;
+const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
 
 const getAlternateUrl = (targetLang: 'ja' | 'en') => {
-  const pathWithoutLang = pathname.replace(/^\/(ja|en)\//, '/');
-  return targetLang === 'en' 
-    ? `/en${pathWithoutLang}` 
-    : `/ja${pathWithoutLang}`;
+  const pathWithoutLang = pathname.replace(/^\/(ja|en)(?=\/|$)/, '') || '/';
+  return `/${targetLang}${pathWithoutLang}`;
 };
 
 const targetLang = currentLang === 'ja' ? 'en' : 'ja';
@@ -19,7 +22,7 @@ const targetUrl = getAlternateUrl(targetLang);
   <div class="site-header-inner">
     <a class="site-title" href="/">MENTAL MODEL ATLAS</a>
     <div class="header-right">
-    <form action="/models" method="get" class="header-search-form">
+    <form action={`/${currentLang}/models`} method="get" class="header-search-form">
       <div class="header-search-wrapper">
         <Icon name="lucide:search" size={16} class="search-icon" />
         <input 
@@ -100,12 +103,12 @@ const targetUrl = getAlternateUrl(targetLang);
       e.preventDefault();
       const query = searchInput.value.trim();
       
-      const url = new URL(window.location.origin + '/models');
+      const url = new URL(window.location.origin + `/${currentLang}/models`);
       if (query) {
         url.searchParams.set('q', query);
       }
 
-      if (window.location.pathname !== '/models') {
+      if (window.location.pathname !== `/${currentLang}/models`) {
         window.location.href = url.toString();
       } else {
         window.history.pushState({}, '', url);
@@ -121,7 +124,7 @@ const targetUrl = getAlternateUrl(targetLang);
 
     const params = new URLSearchParams(window.location.search);
     const q = params.get('q');
-    if (q && window.location.pathname === '/models') {
+    if (q && window.location.pathname === `/${currentLang}/models`) {
       searchInput.value = q;
       if (typeof window.updateAllFilters === 'function') {
         window.updateAllFilters();
