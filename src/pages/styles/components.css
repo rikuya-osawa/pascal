@@ -269,6 +269,19 @@
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 0.5rem;
+  transition: color var(--transition-base);
+}
+
+.card[data-layer="META"]:hover .card-title {
+  color: var(--color-layer-meta);
+}
+
+.card[data-layer="CORE"]:hover .card-title {
+  color: var(--color-layer-core);
+}
+
+.card[data-layer="TOOL"]:hover .card-title {
+  color: var(--color-layer-tool);
 }
 
 .card-description {
