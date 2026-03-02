@@ -1,12 +1,26 @@
 ---
 import { Icon } from 'astro-icon/components';
+
+const pathname = Astro.url.pathname;
+interface Props {
+  lang?: 'ja' | 'en';
+}
+
+const { lang } = Astro.props as Props;
+const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
+
+const getAlternateUrl = (targetLang: 'ja' | 'en') => {
+  const pathWithoutLang = pathname.replace(/^\/(ja|en)(?=\/|$)/, '') || '/';
+  return `/${targetLang}${pathWithoutLang}`;
+};
+
 ---
 
 <header class="site-header">
   <div class="site-header-inner">
-    <a class="site-title" href="/">MENTAL MODEL ATLAS</a>
+    <a class="site-title" href={`/${currentLang}/models`}>MENTAL MODEL ATLAS</a>
     <div class="header-right">
-    <form action="/models" method="get" class="header-search-form">
+    <form action={`/${currentLang}/models`} method="get" class="header-search-form">
       <div class="header-search-wrapper">
         <Icon name="lucide:search" size={16} class="search-icon" />
         <input 
@@ -19,9 +33,19 @@ import { Icon } from 'astro-icon/components';
       </div>
     </form>
       <nav class="header-nav">
-        <a href="/models">Models</a>
-        <a href="/about">About</a>
+        <a href={`/${currentLang}/models`}>Models</a>
+        <a href={`/${currentLang}/about`}>About</a>
       </nav>
+      <span class="header-divider"></span>
+      <div class="language-switcher">
+        <a href={getAlternateUrl('ja')} class={currentLang === 'ja' ? 'active' : ''}>
+          JA
+        </a>
+        <span class="separator">/</span>
+        <a href={getAlternateUrl('en')} class={currentLang === 'en' ? 'active' : ''}>
+          EN
+        </a>
+      </div>
       <span class="header-divider"></span>
       <a class="social-link" href="https://github.com/rikuya-osawa/mental-model-atlas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <Icon name="simple-icons:github" size={20}/>
@@ -30,7 +54,7 @@ import { Icon } from 'astro-icon/components';
   </div>
 </header>
 
-<script type="module">
+<script type="module" define:vars={{ currentLang }}>
   // --- スクロール動作 ---
   (() => {
     const header = document.querySelector('.site-header');
@@ -70,19 +94,20 @@ import { Icon } from 'astro-icon/components';
   function initSearch() {
     const searchForm = document.querySelector('.header-search-form');
     const searchInput = document.querySelector('.header-search');
+    const searchIcon = document.querySelector('.search-icon');
 
     if (!searchForm || !searchInput) return;
 
-  searchForm.addEventListener('submit', (e) => {
+    searchForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const query = searchInput.value.trim();
       
-      const url = new URL(window.location.origin + '/models');
+      const url = new URL(window.location.origin + `/${currentLang}/models`);
       if (query) {
         url.searchParams.set('q', query);
       }
 
-      if (window.location.pathname !== '/models') {
+      if (window.location.pathname !== `/${currentLang}/models`) {
         window.location.href = url.toString();
       } else {
         window.history.pushState({}, '', url);
@@ -96,9 +121,17 @@ import { Icon } from 'astro-icon/components';
       }
     });
 
+    // 検索アイコンクリック時にフォーム送信
+    if (searchIcon) {
+      searchIcon.addEventListener('click', (e) => {
+        e.preventDefault();
+        searchForm.requestSubmit();
+      });
+    }
+
     const params = new URLSearchParams(window.location.search);
     const q = params.get('q');
-    if (q && window.location.pathname === '/models') {
+    if (q && window.location.pathname === `/${currentLang}/models`) {
       searchInput.value = q;
       if (typeof window.updateAllFilters === 'function') {
         window.updateAllFilters();

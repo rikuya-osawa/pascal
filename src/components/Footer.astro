@@ -1,5 +1,13 @@
 ---
 import { Icon } from 'astro-icon/components';
+
+const pathname = Astro.url.pathname;
+interface Props {
+  lang?: 'ja' | 'en';
+}
+
+const { lang } = Astro.props as Props;
+const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
 ---
 
 
@@ -7,9 +15,9 @@ import { Icon } from 'astro-icon/components';
   <div class="site-footer-inner">
     <div class="footer-top">
       <nav class="footer-nav">
-        <a href="/">Top</a>
-        <a href="/models">Models</a>
-        <a href="/about">About</a>
+        <a href={`/`}>Top</a>
+        <a href={`/${currentLang}/models`}>Models</a>
+        <a href={`/${currentLang}/about`}>About</a>
       </nav>
 
       <div class="social-links">

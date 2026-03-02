@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const modules = import.meta.glob('../../content/en/about/*.md', { eager: true });
+const entries = Object.values(modules) as any[];
+const AboutComp = entries.length ? (entries[0] as any).default : null;
+---
+
+<BaseLayout>
+	<h1 class="page-title">About</h1>
+	<section class="about-content">
+		{AboutComp ? <AboutComp /> : <p>About content not found.</p>}
+	</section>
+</BaseLayout>

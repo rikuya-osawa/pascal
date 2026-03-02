@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import icon from 'astro-icon';
 
-import { SIMPLE_ICONS, LUCIDE_ICONS } from './src/data/icon-list';
+import { SIMPLE_ICONS, LUCIDE_ICONS } from './src/constants/icon-list';
 
 export default defineConfig({
   site: 'https://mental-model-atlas.pages.dev',

@@ -1,0 +1,102 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import "../../styles/markdown.css";
+import { LAYERS, VIEWPOINTS, type Language } from "../../../constants/filters";
+
+export async function getStaticPaths() {
+  const jaEntries = await getCollection("ja/models");
+  const enEntries = await getCollection("en/models");
+
+  return [
+    ...jaEntries.map((entry) => ({
+      params: {
+        lang: "ja",
+        slug: entry.slug.split("/").pop(),
+      },
+      props: { entry, lang: "ja" as const },
+    })),
+    ...enEntries.map((entry) => ({
+      params: {
+        lang: "en",
+        slug: entry.slug.split("/").pop(),
+      },
+      props: { entry, lang: "en" as const },
+    })),
+  ];
+}
+
+const { entry, lang } = Astro.props;
+const currentLang = lang as Language;
+const text = currentLang === "ja"
+  ? { home: "ホーム", models: "モデル一覧", back: "← 一覧に戻る" }
+  : { home: "Home", models: "Models", back: "← Back to models" };
+
+const { Content } = await entry.render();
+
+// Schema.org 用データを組み立てる
+const site = Astro.site || 'https://mental-model-atlas.pages.dev';
+// Astro.url はページの絶対パス部分のみなので、base を付与
+const pageUrl = new URL(Astro.url, site).toString();
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  headline: entry.data.official_name,
+  description: entry.data.description,
+  image: ["https://mental-model-atlas.pages.dev/default-og.png"],
+  datePublished: "2026-02-25T00:00:00+09:00",
+  dateModified: new Date().toISOString(),
+  author: {
+    "@type": "Organization",
+    name: "Mental Model Atlas",
+  },
+};
+
+const breadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: text.home,
+      item: site + "/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: text.models,
+      item: site + `/${currentLang}/models`,
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: entry.data.official_name,
+      item: pageUrl,
+    },
+  ],
+};
+
+const layerInfo = LAYERS[entry.data.layer as keyof typeof LAYERS];
+---
+
+<BaseLayout lang={currentLang}>
+  <a href={`/${currentLang}/models`}>{text.back}</a>
+  
+  <article class="markdown-content">
+    <h1>{entry.data.official_name}</h1>
+    
+    <div class="meta">
+      <span class={`badge badge--${entry.data.layer.toLowerCase()}`}>
+        {layerInfo[currentLang]}
+      </span>
+
+      {entry.data.viewpoints.map((v) => {
+        const viewInfo = VIEWPOINTS[v as keyof typeof VIEWPOINTS];
+        return <span class="badge">{viewInfo[currentLang]}</span>;
+      })}
+    </div>
+
+    <Content content={entry.body} />
+  </article>
+</BaseLayout>
