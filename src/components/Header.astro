@@ -14,8 +14,6 @@ const getAlternateUrl = (targetLang: 'ja' | 'en') => {
   return `/${targetLang}${pathWithoutLang}`;
 };
 
-const targetLang = currentLang === 'ja' ? 'en' : 'ja';
-const targetUrl = getAlternateUrl(targetLang);
 ---
 
 <header class="site-header">
