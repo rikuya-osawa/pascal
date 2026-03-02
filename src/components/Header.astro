@@ -94,10 +94,11 @@ const getAlternateUrl = (targetLang: 'ja' | 'en') => {
   function initSearch() {
     const searchForm = document.querySelector('.header-search-form');
     const searchInput = document.querySelector('.header-search');
+    const searchIcon = document.querySelector('.search-icon');
 
     if (!searchForm || !searchInput) return;
 
-  searchForm.addEventListener('submit', (e) => {
+    searchForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const query = searchInput.value.trim();
       
@@ -119,6 +120,14 @@ const getAlternateUrl = (targetLang: 'ja' | 'en') => {
         searchInput.blur();
       }
     });
+
+    // 検索アイコンクリック時にフォーム送信
+    if (searchIcon) {
+      searchIcon.addEventListener('click', (e) => {
+        e.preventDefault();
+        searchForm.requestSubmit();
+      });
+    }
 
     const params = new URLSearchParams(window.location.search);
     const q = params.get('q');

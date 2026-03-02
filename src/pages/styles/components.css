@@ -57,6 +57,13 @@
   color: var(--color-muted);
   margin-right: 8px;
   flex-shrink: 0;
+  cursor: pointer;
+  transition: color var(--transition-base), transform var(--transition-base);
+}
+
+.search-icon:hover {
+  color: var(--color-primary);
+  transform: scale(1.15);
 }
 
 .header-search {
@@ -97,6 +104,35 @@
   width: 1px;
   height: 20px;
   background: var(--color-border);
+}
+
+/* ========== Language Switcher ========== */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.language-switcher a {
+  text-decoration: none;
+  color: var(--color-muted);
+  transition: color var(--transition-base);
+  cursor: pointer;
+}
+
+.language-switcher a:hover {
+  color: var(--color-primary);
+}
+
+.language-switcher a.active {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.language-switcher .separator {
+  color: var(--color-border);
 }
 
 /* ========== Filter UI ========== */
@@ -308,33 +344,4 @@
   font-size: 0.9rem;
   color: var(--color-muted);
   text-align: center;
-}
-
-/* ========== Language Switcher ========== */
-.language-switcher {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-
-.language-switcher a {
-  text-decoration: none;
-  color: var(--color-muted);
-  transition: color var(--transition-base);
-  cursor: pointer;
-}
-
-.language-switcher a:hover {
-  color: var(--color-primary);
-}
-
-.language-switcher a.active {
-  color: var(--color-text);
-  font-weight: 700;
-}
-
-.language-switcher .separator {
-  color: var(--color-border);
 }
