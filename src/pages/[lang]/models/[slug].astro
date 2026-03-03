@@ -3,34 +3,55 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import "../../styles/markdown.css";
 import { LAYERS, VIEWPOINTS, type Language } from "../../../constants/filters";
+import { getAlternateSlug } from "../../../constants/slugMapping";
 
 export async function getStaticPaths() {
   const jaEntries = await getCollection("ja/models");
   const enEntries = await getCollection("en/models");
 
   return [
-    ...jaEntries.map((entry) => ({
-      params: {
-        lang: "ja",
-        slug: entry.slug.split("/").pop(),
-      },
-      props: { entry, lang: "ja" as const },
-    })),
-    ...enEntries.map((entry) => ({
-      params: {
-        lang: "en",
-        slug: entry.slug.split("/").pop(),
-      },
-      props: { entry, lang: "en" as const },
-    })),
+    ...jaEntries.map((entry) => {
+      const slug = entry.slug.split("/").pop()?.toLowerCase() || "";
+      const alternateSlug = getAlternateSlug("ja", slug);
+      return {
+        params: {
+          lang: "ja",
+          slug: slug,
+        },
+        props: { 
+          entry, 
+          lang: "ja" as const,
+          alternateSlug: alternateSlug,
+        },
+      };
+    }),
+    ...enEntries.map((entry) => {
+      const slug = entry.slug.split("/").pop()?.toLowerCase() || "";
+      const alternateSlug = getAlternateSlug("en", slug);
+      return {
+        params: {
+          lang: "en",
+          slug: slug,
+        },
+        props: { 
+          entry, 
+          lang: "en" as const,
+          alternateSlug: alternateSlug,
+        },
+      };
+    }),
   ];
 }
 
-const { entry, lang } = Astro.props;
+const { entry, lang, alternateSlug } = Astro.props;
 const currentLang = lang as Language;
 const text = currentLang === "ja"
   ? { home: "ホーム", models: "モデル一覧", back: "← 一覧に戻る" }
   : { home: "Home", models: "Models", back: "← Back to models" };
+
+// 言語切り替え用の代替URLを計算
+const alternateLang = currentLang === "ja" ? "en" : "ja";
+const alternateUrl = `/${alternateLang}/models/${alternateSlug}`;
 
 const { Content } = await entry.render();
 
@@ -80,7 +101,7 @@ const breadcrumbData = {
 const layerInfo = LAYERS[entry.data.layer as keyof typeof LAYERS];
 ---
 
-<BaseLayout lang={currentLang}>
+<BaseLayout lang={currentLang} alternateUrl={alternateUrl}>
   <a href={`/${currentLang}/models`}>{text.back}</a>
   
   <article class="markdown-content">

@@ -4,12 +4,25 @@ import { Icon } from 'astro-icon/components';
 const pathname = Astro.url.pathname;
 interface Props {
   lang?: 'ja' | 'en';
+  alternateUrl?: string; // 言語切り替え用の代替URL（モデルページなど）
 }
 
-const { lang } = Astro.props as Props;
+const { lang, alternateUrl } = Astro.props as Props;
 const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
 
+// 他言語のURLを取得する関数
 const getAlternateUrl = (targetLang: 'ja' | 'en') => {
+  // alternateUrlが提供されている場合、それは常に「現在と逆の言語」のURL
+  if (alternateUrl) {
+    const alternateLang = currentLang === 'ja' ? 'en' : 'ja';
+    // リクエストされた言語が代替言語の場合、alternateUrlを返す
+    if (targetLang === alternateLang) {
+      return alternateUrl;
+    }
+    // リクエストされた言語が現在の言語の場合、現在のパスを返す
+    return pathname;
+  }
+  // デフォルトの動作：単純にパスの言語部分を置き換え
   const pathWithoutLang = pathname.replace(/^\/(ja|en)(?=\/|$)/, '') || '/';
   return `/${targetLang}${pathWithoutLang}`;
 };
