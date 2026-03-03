@@ -1,17 +1,15 @@
 @import './variables.css';
 
-/* 本文全体のラップ */
 .markdown-content {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--space-lg) var(--space-sm);
-  line-height: 1.7;       /* 読みやすい行間 */
+  line-height: 1.7;
   font-size: 1rem;
   color: var(--color-text);
   background-color: var(--color-bg);
 }
 
-/* 見出しデザイン */
 .markdown-content h1,
 .markdown-content h2 {
   font-weight: 600;
@@ -21,25 +19,22 @@
 
 .markdown-content h3,
 .markdown-content h4 {
-  text-align: left;       /* サブ見出しは左寄せ */
+  text-align: left;
   font-weight: 500;
   margin: var(--space-md) 0 var(--space-sm) 0;
   color: var(--color-muted);
 }
 
-/* 段落 */
 .markdown-content p {
   margin-bottom: var(--space-md);
 }
 
-/* リスト */
 .markdown-content ul,
 .markdown-content ol {
   padding-left: var(--space-md);
   margin-bottom: var(--space-md);
 }
 
-/* 強調テキスト */
 .markdown-content em {
   font-style: italic;
   color: var(--color-muted);
@@ -50,13 +45,11 @@
   color: var(--color-text);
 }
 
-/* リンク */
 .markdown-content a {
   color: var(--color-accent);
   text-decoration: underline;
 }
 
-/* コードブロック */
 .markdown-content pre {
   background: var(--color-border);
   padding: var(--space-md);
@@ -66,7 +59,6 @@
   font-size: 0.95rem;
 }
 
-/* インラインコード */
 .markdown-content code {
   background: var(--color-border);
   padding: 0.2rem 0.4rem;
@@ -75,7 +67,6 @@
   font-size: 0.95rem;
 }
 
-/* 引用ブロック */
 .markdown-content blockquote {
   border-left: 4px solid var(--color-border);
   padding-left: var(--space-sm);
@@ -84,7 +75,6 @@
   margin: var(--space-md) 0;
 }
 
-/* バッジやメタ情報 */
 .markdown-content .badge {
   display: inline-block;
   background: var(--color-border);
@@ -97,14 +87,12 @@
   margin-bottom: 0.5rem;
 }
 
-/* 水平線 */
 .markdown-content hr {
   border: none;
   border-top: 1px solid var(--color-border);
   margin: var(--space-lg) 0;
 }
 
-/* 画像 */
 .markdown-content img {
   display: block;
   max-width: 100%;

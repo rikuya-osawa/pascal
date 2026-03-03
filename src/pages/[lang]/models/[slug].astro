@@ -105,8 +105,7 @@ const layerInfo = LAYERS[entry.data.layer as keyof typeof LAYERS];
   <a href={`/${currentLang}/models`}>{text.back}</a>
   
   <article class="markdown-content">
-    <h1>{entry.data.official_name}</h1>
-    
+   
     <div class="meta">
       <span class={`badge badge--${entry.data.layer.toLowerCase()}`}>
         {layerInfo[currentLang]}
