@@ -9,6 +9,8 @@ export const LUCIDE_ICONS = [
     'pie-chart',
     'line-chart',
     'search',
+    'sun',
+    'moon',
     // ビジネス・戦略
     'component',
     'layout-dashboard',

@@ -2,7 +2,6 @@
 export const MODEL_ICONS: Record<string, string> = {
   // --- ビジネス・フレームワーク系 ---
   "4p-4c": "lucide:component",           // 要素の組み合わせ
-  "mm_4p-4c": "lucide:component",
   "bmc": "lucide:layout-dashboard",     // ビジネスモデルのキャンバス
   "stp分析": "lucide:users-2",           // セグメンテーション・ターゲット
   "vrio分析": "lucide:gem",              // 価値のある希少な資源
@@ -55,3 +54,9 @@ export const MODEL_ICONS: Record<string, string> = {
   // デフォルト用
   "default": "lucide:brain"
 };
+
+export const UI_ICONS = {
+  search: 'lucide:search',
+  themeLight: 'lucide:sun',
+  themeDark: 'lucide:moon'
+} as const;

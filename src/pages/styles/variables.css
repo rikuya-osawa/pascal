@@ -3,6 +3,7 @@
   --color-text: #111111;
   --color-muted: #666666;
   --color-border: #eaeaea;
+  --color-accent: var(--color-primary);
   
   /* メインアクセント：信頼感のあるブルー */
   --color-primary: #2563eb;
@@ -31,4 +32,22 @@
   /* アニメーションの統一 */
   --transition-base: 0.2s ease;
   --transition-smooth: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root[data-theme='dark'] {
+  --color-bg: #0f1115;
+  --color-text: #f3f4f6;
+  --color-muted: #9ca3af;
+  --color-border: #2a2f3a;
+
+  --color-primary: #60a5fa;
+  --color-primary-light: #1d4f91;
+  --color-accent: var(--color-primary);
+
+  --color-surface: #161b22;
+  --color-surface-hover: #1f2630;
+
+  --color-layer-meta: #f59e0b;
+  --color-layer-core: #10b981;
+  --color-layer-tool: #fb7185;
 }
