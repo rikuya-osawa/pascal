@@ -9,9 +9,10 @@ interface Props {
   title?: string;
   description?: string;
   lang?: 'ja' | 'en';
+  alternateUrl?: string; // 言語切り替え用の代替URL
 }
 
-const { title, description, lang } = Astro.props as Props;
+const { title, description, lang, alternateUrl } = Astro.props as Props;
 const siteName = SITE_NAME;
 const fullTitle = title ? `${title} | ${siteName}` : siteName;
 const defaultDesc = DEFAULT_DESCRIPTION;
@@ -25,6 +26,14 @@ const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
     <meta charset="UTF-8" />
     <title>{fullTitle}</title>
     <meta name="description" content={description || defaultDesc} />
+    <script is:inline>
+      (() => {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+        document.documentElement.dataset.theme = initialTheme;
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="canonical" href={Astro.url} />
@@ -37,7 +46,7 @@ const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
     <slot name="head" />
   </head>
   <body>
-    <Header lang={currentLang} />
+    <Header lang={currentLang} alternateUrl={alternateUrl} />
     <div class="container">
       <slot />
     </div>

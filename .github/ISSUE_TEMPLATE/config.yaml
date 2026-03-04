@@ -1,0 +1,15 @@
+# Issueテンプレートの選択画面をカスタマイズする設定
+blank_issues_enabled: false # 自由形式のIssue作成を無効化（テンプレート使用を促す）
+
+contact_links:
+  - name: "💡 モデル追加の相談・ディスカッション"
+    url: https://github.com/rikuya.osawa/mental-model-atlas/discussions
+    about: "特定のモデルを掲載すべきか、どのLayerに属するかなどの議論はこちらで行いましょう。"
+
+  - name: "📖 執筆ガイドライン（README）"
+    url: https://github.com/rikuya.osawa/mental-model-atlas/blob/main/CONTRIBUTING.md
+    about: "コントリビューションの前に、当プロジェクトの品質基準とMarkdownの書き方を確認してください。"
+
+  - name: "🛠️ 技術的な問い合わせ"
+    url: https://github.com/rikuya.osawa/mental-model-atlas/issues/new?template=bug_report.md
+    about: "サイトの表示崩れや、実装に関する技術的なバグ報告はこちらから。"

@@ -1,18 +1,31 @@
 ---
 import { Icon } from 'astro-icon/components';
+import { UI_ICONS } from '../constants/model-icons';
+import { getMessages } from "../constants/messages";
 
 const pathname = Astro.url.pathname;
 interface Props {
   lang?: 'ja' | 'en';
+  alternateUrl?: string;
 }
 
-const { lang } = Astro.props as Props;
+const { lang, alternateUrl } = Astro.props as Props;
 const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
 
 const getAlternateUrl = (targetLang: 'ja' | 'en') => {
+  if (alternateUrl) {
+    const alternateLang = currentLang === 'ja' ? 'en' : 'ja';
+    if (targetLang === alternateLang) {
+      return alternateUrl;
+    }
+    return pathname;
+  }
+  // デフォルトの動作：単純にパスの言語部分を置き換え
   const pathWithoutLang = pathname.replace(/^\/(ja|en)(?=\/|$)/, '') || '/';
   return `/${targetLang}${pathWithoutLang}`;
 };
+
+const msg = getMessages(currentLang);
 
 ---
 
@@ -22,12 +35,12 @@ const getAlternateUrl = (targetLang: 'ja' | 'en') => {
     <div class="header-right">
     <form action={`/${currentLang}/models`} method="get" class="header-search-form">
       <div class="header-search-wrapper">
-        <Icon name="lucide:search" size={16} class="search-icon" />
+        <Icon name={UI_ICONS.search} size={16} class="search-icon" />
         <input 
           type="text" 
           name="q"
           class="header-search" 
-          placeholder="Search models..." 
+          placeholder={msg.searchPlaceholder}
           aria-label="Search mental models"
         />
       </div>
@@ -46,6 +59,15 @@ const getAlternateUrl = (targetLang: 'ja' | 'en') => {
           EN
         </a>
       </div>
+      <span class="header-divider"></span>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <span class="theme-icon theme-icon-light" aria-hidden="true">
+          <Icon name={UI_ICONS.themeLight} size={18} />
+        </span>
+        <span class="theme-icon theme-icon-dark" aria-hidden="true">
+          <Icon name={UI_ICONS.themeDark} size={18} />
+        </span>
+      </button>
       <span class="header-divider"></span>
       <a class="social-link" href="https://github.com/rikuya-osawa/mental-model-atlas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <Icon name="simple-icons:github" size={20}/>
@@ -139,6 +161,36 @@ const getAlternateUrl = (targetLang: 'ja' | 'en') => {
     }
   }
 
+  // --- テーマ切り替え ---
+  function initThemeToggle() {
+    const themeToggle = document.querySelector('.theme-toggle');
+    if (!themeToggle) return;
+
+    const setToggleLabel = () => {
+      const isDark = document.documentElement.dataset.theme === 'dark';
+      const label = isDark
+        ? (currentLang === 'ja' ? 'ライトモードに切り替え' : 'Switch to light mode')
+        : (currentLang === 'ja' ? 'ダークモードに切り替え' : 'Switch to dark mode');
+      themeToggle.setAttribute('aria-label', label);
+      themeToggle.setAttribute('title', label);
+    };
+
+    setToggleLabel();
+
+    if (themeToggle.dataset.bound === 'true') return;
+    themeToggle.dataset.bound = 'true';
+
+    themeToggle.addEventListener('click', () => {
+      const root = document.documentElement;
+      const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = nextTheme;
+      localStorage.setItem('theme', nextTheme);
+      setToggleLabel();
+    });
+  }
+
   initSearch();
+  initThemeToggle();
   document.addEventListener('astro:page-load', initSearch);
+  document.addEventListener('astro:page-load', initThemeToggle);
 </script>
