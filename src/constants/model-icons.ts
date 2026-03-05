@@ -1,55 +1,54 @@
-// src/data/model-icons.ts
 export const MODEL_ICONS: Record<string, string> = {
   // --- ビジネス・フレームワーク系 ---
-  "4p-4c": "lucide:component",           // 要素の組み合わせ
-  "bmc": "lucide:layout-dashboard",     // ビジネスモデルのキャンバス
-  "stp分析": "lucide:users-2",           // セグメンテーション・ターゲット
-  "vrio分析": "lucide:gem",              // 価値のある希少な資源
-  "ファイブフォース分析": "lucide:swords",      // 業界内の競争・勢力
-  "バリューチェーン分析": "lucide:link",        // 価値の連鎖
-  "競争優位moat": "lucide:castle",       // 経済的な「堀」
-  "ジョブ理論": "lucide:briefcase", // 顧客が解決したい「ジョブ」を雇うイメージ
+  "4p-4c": "lucide:component",
+  "bmc": "lucide:layout-dashboard",
+  "stp-analysis": "lucide:users-2", // stp分析
+  "vrio-analysis": "lucide:gem", // vrio分析
+  "five-forces-analysis": "lucide:swords", // ファイブフォース分析
+  "value-chain-analysis": "lucide:link", // バリューチェーン分析
+  "economic-moat": "lucide:castle", // 競争優位moat
+  "jobs-to-be-done": "lucide:briefcase", // ジョブ理論
 
   // --- 思考法・プロセス系 ---
-  "mece": "lucide:columns-4",           // 重なりなく、漏れなく
-  "mvp": "lucide:rocket",               // 最小限の製品・打ち上げ
-  "oodaループ": "lucide:rotate-cw",      // 循環する意思決定
-  "why-why分析": "lucide:help-circle",   // 問いの繰り返し
-  "イシューツリー": "lucide:git-pull-request", // 分岐する問題
-  "ピラミッド原則": "lucide:triangle",    // 構造的な主張
-  "プレモーテム分析": "lucide:skull",       // 事前の死後分析（失敗予測）
-  "仮説思考": "lucide:test-tube-2",      // 実験と検証
-  "本質思考": "lucide:target",           // 核心を射抜く
+  "mece": "lucide:columns-4",
+  "mvp": "lucide:rocket",
+  "ooda-loop": "lucide:rotate-cw", // oodaループ
+  "five-whys-analysis": "lucide:help-circle", // why-why分析
+  "issue-tree": "lucide:git-pull-request", // イシューツリー
+  "pyramid-principle": "lucide:triangle", // ピラミッド原則
+  "premortem-analysis": "lucide:skull", // プレモーテム分析
+  "hypothesis-thinking": "lucide:test-tube-2", // 仮説思考
+  "essential-thinking": "lucide:target", // 本質思考
 
   // --- 戦略・システム系 ---
-  "システム思考": "lucide:network",       // 要素間のつながり
-  "アンチフラジャイル思考": "lucide:dumbbell", // 負荷で強くなる
-  "シナリオプランニング": "lucide:map",      // 複数の未来予想図
-  "フライホイール思考": "lucide:disc-3",     // 回転し続ける弾み車
-  "レバレッジ思考": "lucide:wrench",       // 小さな力で大きな効果
-  "リーン思考": "lucide:recycle",         // 無駄を削ぎ落とす
-  "制約条件思考": "lucide:hourglass",     // ボトルネック（砂時計のくびれ）
+  "systems-thinking": "lucide:network", // システム思考
+  "antifragile-thinking": "lucide:dumbbell", // アンチフラジャイル思考
+  "senario-planning": "lucide:map", // シナリオプランニング
+  "flywheel-thinking": "lucide:disc-3", // フライホイール思考
+  "leverage-thinking": "lucide:wrench", // レバレッジ思考
+  "lean-thinking": "lucide:recycle", // リーン思考
+  "theory-of-constraints": "lucide:hourglass", // 制約条件思考
 
   // --- 確率・統計・判断系 ---
-  "ベイズ思考": "lucide:scale",           // 情報による確率の更新
-  "期待値思考": "lucide:calculator",      // 数値的な判断
-  "リスクリターン思考": "lucide:trending-up-down", // リスクと利益の天秤
-  "ブラックスワン思考": "lucide:bird",          // 予測不能な稀な事象
-  "可逆不可逆判断": "lucide:door-open",      // 後戻りできるか（ドア）
-  "限界思考": "lucide:arrow-right-to-line", // 最後の1単位の損得
+  "bayesian-thinking": "lucide:scale", // ベイズ思考
+  "expected-value-thinking": "lucide:calculator", // 期待値思考
+  "risk-return-thinking": "lucide:trending-up-down", // リスクリターン思考
+  "black-swan-thinking": "lucide:bird", // ブラックスワン思考
+  "reversible-irreversible-decisions": "lucide:door-open", // 可逆不可逆判断
+  "marginal-thinking": "lucide:arrow-right-to-line", // 限界思考
 
   // --- 認知バイアス・メタ思考系 ---
-  "バイアス認識": "lucide:eye-off",       // 見えない偏り
-  "メタ認知": "lucide:microscope",       // 自分を客観的に観察する
-  "抽象化具体化": "lucide:layers",        // 思考のレイヤー移動
-  "第一原理思考": "lucide:atom",          // 物事の最小単位から考える
-  "二次思考": "lucide:layers-3",         // その先の帰結を考える
-  "オプション思考": "lucide:split",        // 選択肢を保持する
+  "bias-awareness": "lucide:eye-off", // バイアス認識
+  "metacognition": "lucide:microscope", // メタ認知
+  "abstraction-and-concretization": "lucide:layers", // 抽象化具体化
+  "first-principles-thinking": "lucide:atom", // 第一原理思考
+  "second-order-thinking": "lucide:layers-3", // 二次思考
+  "optionality-thinking": "lucide:split", // オプション思考
 
   // --- 数学・法則・その他 ---
-  "サンクコスト思考": "lucide:trending-down", // 回収不能な損失
-  "パレートの法則": "lucide:pie-chart",    // 80:20 の割合
-  "トレードオフ思考": "lucide:arrow-left-right", // 両立不能な選択
+  "sunk-cost-thinking": "lucide:trending-down", // サンクコスト思考
+  "pareto-principle": "lucide:pie-chart", // パレートの法則
+  "trade-off-thinking": "lucide:arrow-left-right", // トレードオフ思考
   
   // デフォルト用
   "default": "lucide:brain"
