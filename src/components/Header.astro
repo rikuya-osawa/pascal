@@ -6,21 +6,12 @@ import { getMessages } from "../constants/messages";
 const pathname = Astro.url.pathname;
 interface Props {
   lang?: 'ja' | 'en';
-  alternateUrl?: string;
 }
 
-const { lang, alternateUrl } = Astro.props as Props;
+const { lang } = Astro.props as Props;
 const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
 
 const getAlternateUrl = (targetLang: 'ja' | 'en') => {
-  if (alternateUrl) {
-    const alternateLang = currentLang === 'ja' ? 'en' : 'ja';
-    if (targetLang === alternateLang) {
-      return alternateUrl;
-    }
-    return pathname;
-  }
-  // デフォルトの動作：単純にパスの言語部分を置き換え
   const pathWithoutLang = pathname.replace(/^\/(ja|en)(?=\/|$)/, '') || '/';
   return `/${targetLang}${pathWithoutLang}`;
 };

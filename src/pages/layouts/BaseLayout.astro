@@ -9,10 +9,9 @@ interface Props {
   title?: string;
   description?: string;
   lang?: 'ja' | 'en';
-  alternateUrl?: string; // 言語切り替え用の代替URL
 }
 
-const { title, description, lang, alternateUrl } = Astro.props as Props;
+const { title, description, lang } = Astro.props as Props;
 const siteName = SITE_NAME;
 const fullTitle = title ? `${title} | ${siteName}` : siteName;
 const defaultDesc = DEFAULT_DESCRIPTION;
@@ -46,7 +45,7 @@ const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
     <slot name="head" />
   </head>
   <body>
-    <Header lang={currentLang} alternateUrl={alternateUrl} />
+    <Header lang={currentLang} />
     <div class="container">
       <slot />
     </div>
