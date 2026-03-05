@@ -2,6 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import { UI_ICONS } from '../constants/model-icons';
 import { getMessages } from "../constants/messages";
+import { GITHUB_URL } from '../constants/site-config';
 
 const pathname = Astro.url.pathname;
 interface Props {
@@ -60,7 +61,7 @@ const msg = getMessages(currentLang);
         </span>
       </button>
       <span class="header-divider"></span>
-      <a class="social-link" href="https://github.com/rikuya-osawa/mental-model-atlas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <a class="social-link" href={GITHUB_URL} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <Icon name="simple-icons:github" size={20}/>
       </a>
     </div>
