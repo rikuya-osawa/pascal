@@ -2,25 +2,17 @@
 import { Icon } from 'astro-icon/components';
 import { UI_ICONS } from '../constants/model-icons';
 import { getMessages } from "../constants/messages";
+import { GITHUB_URL } from '../constants/site-config';
 
 const pathname = Astro.url.pathname;
 interface Props {
   lang?: 'ja' | 'en';
-  alternateUrl?: string;
 }
 
-const { lang, alternateUrl } = Astro.props as Props;
+const { lang } = Astro.props as Props;
 const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
 
 const getAlternateUrl = (targetLang: 'ja' | 'en') => {
-  if (alternateUrl) {
-    const alternateLang = currentLang === 'ja' ? 'en' : 'ja';
-    if (targetLang === alternateLang) {
-      return alternateUrl;
-    }
-    return pathname;
-  }
-  // デフォルトの動作：単純にパスの言語部分を置き換え
   const pathWithoutLang = pathname.replace(/^\/(ja|en)(?=\/|$)/, '') || '/';
   return `/${targetLang}${pathWithoutLang}`;
 };
@@ -69,7 +61,7 @@ const msg = getMessages(currentLang);
         </span>
       </button>
       <span class="header-divider"></span>
-      <a class="social-link" href="https://github.com/rikuya-osawa/mental-model-atlas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <a class="social-link" href={GITHUB_URL} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <Icon name="simple-icons:github" size={20}/>
       </a>
     </div>
