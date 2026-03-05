@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../pages/layouts/BaseLayout.astro";
+import { MESSAGES } from "../constants/messages";
+import { GITHUB_URL } from "../constants/site-config";
+import "./styles/pages/404.css";
+
+const pathname = Astro.url.pathname;
+interface Props {
+  lang?: 'ja' | 'en';
+}
+
+const { lang } = Astro.props as Props;
+const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
+
+const messages = MESSAGES[currentLang];
+---
+
+<BaseLayout lang={currentLang}>
+  <div class="not-found-container">
+    <div class="language-section">
+      <h1 class="not-found-title">{messages.notFoundTitle}</h1>
+      <p class="not-found-subtitle">{messages.notFoundDescription}</p>
+      <p class="not-found-message">
+        {messages.notFoundFeature}
+      </p>
+      <p class="not-found-message">{messages.notFoundLinks}</p>
+      <div class="links-grid">
+        <a href="/ja/models" class="link-button">
+          {currentLang === 'ja' ? '📚 日本語モデル一覧' : '📚 Japanese Models'}
+        </a>
+        <a href="/en/models" class="link-button">
+          {currentLang === 'ja' ? '📘 English Models' : '📘 English Models'}
+        </a>
+      </div>
+    </div>
+
+    <div class="issue-section">
+      <h3>🐛 {messages.notFoundIssue}</h3>
+      <p>{messages.notFoundIssueDesc}</p>
+      <a href={`${GITHUB_URL}/issues/new?title=Broken%20Link&body=URL:%20${Astro.url}`} class="issue-button" target="_blank" rel="noopener noreferrer">
+        {currentLang === 'ja' ? 'GitHub Issues へ' : 'Report on GitHub Issues'}
+      </a>
+    </div>
+
+    <div class="home-link">
+      <a href="/">← {currentLang === 'ja' ? 'Mental Model Atlas へ戻る' : 'Back to Mental Model Atlas'}</a>
+    </div>
+  </div>
+</BaseLayout>
