@@ -3,27 +3,13 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import "../../styles/markdown.css";
 import { LAYERS, VIEWPOINTS, type Language } from "../../../constants/filters";
+import { validateModelSync } from "../../../utils/validator";
 
 export async function getStaticPaths() {
   const jaEntries = await getCollection("ja/models");
   const enEntries = await getCollection("en/models");
 
-  // Validate language pairs
-  const jaSlugs = new Set(jaEntries.map((e) => e.slug.split("/").pop()));
-  const enSlugs = new Set(enEntries.map((e) => e.slug.split("/").pop()));
-
-  // Check for missing translations
-  jaSlugs.forEach((slug) => {
-    if (!enSlugs.has(slug)) {
-      console.warn(`[Warning] Missing English version for: ${slug}`);
-    }
-  });
-
-  enSlugs.forEach((slug) => {
-    if (!jaSlugs.has(slug)) {
-      console.warn(`[Warning] Missing Japanese version for: ${slug}`);
-    }
-  });
+  validateModelSync(jaEntries, enEntries);
 
   return [
     ...jaEntries.map((entry) => ({
