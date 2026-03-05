@@ -29,7 +29,7 @@ const layerLabel = LAYERS[layerKey] ? getLabel(LAYERS[layerKey], lang) : model.d
     <div class="card-header card-header-vertical">
       <Icon name={iconName} class="card-icon" />
       <h2 class="card-title">
-        {model.data.official_name}
+        {lang === 'ja' ? model.data.ja_name : model.data.en_name}
       </h2>
     </div>
 
