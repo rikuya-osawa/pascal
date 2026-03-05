@@ -1,6 +1,6 @@
 ---
 type: mental-model
-official_name: Minimum Viable Product
+ja_name: Minimum Viable Product
 en_name: Minimum Viable Product
 abbreviation: MVP
 description: 仮説検証のために、最小限の機能で価値をテストするプロダクト設計思想。完成度より学習速度を優先するモデル。
