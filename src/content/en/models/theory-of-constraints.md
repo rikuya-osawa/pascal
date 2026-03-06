@@ -4,7 +4,7 @@ ja_name: 制約条件思考
 en_name: Constraint-based Thinking
 abbreviation: 制約思考
 description: 「できない理由」として扱われがちな制約条件を前提として受け入れ、その中で最適な解や創造的な選択肢を見出すための思考モデル。
-viewpoints:
+application:
 - PS
 - DM
 layer: CORE

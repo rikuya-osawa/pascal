@@ -4,7 +4,7 @@ ja_name: Antifragile Thinking
 en_name: Antifragile Thinking
 abbreviation: Antifragile
 description: A thinking model focused on designing structures that do not just "endure" uncertainty, stress, or shock, but actually "gain strength from them."
-viewpoints:
+application:
   - LIFE
   - NB
   - DM

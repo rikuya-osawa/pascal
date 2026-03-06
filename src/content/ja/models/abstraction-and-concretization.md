@@ -4,7 +4,7 @@ ja_name: 抽象化・具体化
 en_name: Abstraction & Concretization
 abbreviation: 抽象⇄具体
 description: 物事を「上のレイヤー（抽象）」と「下のレイヤー（具体）」に行き来しながら理解・説明・設計するための思考モデル。
-viewpoints:
+application:
 - PS
 - DM
 layer: META

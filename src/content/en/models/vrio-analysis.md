@@ -4,7 +4,7 @@ ja_name: VRIO Analysis
 en_name: VRIO Analysis
 abbreviation: VRIO
 description: A framework for evaluating whether an organization's resources or capabilities can provide a sustained competitive advantage based on four criteria - value, rarity, imitability, organization.
-viewpoints:
+application:
 - NB
 - DM
 - PS

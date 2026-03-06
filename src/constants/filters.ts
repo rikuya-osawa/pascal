@@ -6,7 +6,7 @@ export const LAYERS = {
   TOOL: { ja: "ツール", en: "TOOL" },
 } as const;
 
-export const VIEWPOINTS = {
+export const APPLICATION = {
   NB: { ja: "新規事業", en: "NEW BUSINESS" },
   DM: { ja: "意思決定", en: "DECISION MAKING" },
   PS: { ja: "問題解決", en: "PROBLEM SOLVING" },

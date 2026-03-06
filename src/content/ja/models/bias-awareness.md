@@ -4,7 +4,7 @@ ja_name: バイアス認識
 en_name: Cognitive Bias Awareness
 abbreviation: Bias Awareness
 description: 人間の思考が無意識の偏り（バイアス）に影響されることを前提に、自分の判断を疑い、歪みを補正するためのメタ思考モデル。
-viewpoints:
+application:
 - DM
 - PS
 - LIFE

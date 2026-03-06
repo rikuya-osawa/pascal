@@ -4,7 +4,7 @@ ja_name: Systems Thinking
 en_name: Systems Thinking
 abbreviation: Systems Thinking
 description: A thinking model that perceives things not as isolated "elements," but as "relationships, interactions, and circular structures" between them, aiming for holistic optimization rather than local optimization.
-viewpoints:
+application:
 - LT
 - PS
 layer: META

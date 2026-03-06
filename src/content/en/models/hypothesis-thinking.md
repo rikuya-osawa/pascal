@@ -4,7 +4,7 @@ ja_name: 仮説思考
 en_name: Hypothesis Driven Thinking
 abbreviation: 仮説思考
 description: 限られた時間と情報の中で、まず「答えの仮置き」を立て、検証を通じて思考と行動を高速に前進させるための思考モデル。
-viewpoints:
+application:
 - PS
 - NB
 layer: CORE
@@ -56,7 +56,7 @@ tags:
 
 ## 他モデルとの関係
 - 関連：イシュー思考、仮説検証
-- 補完：MECE（検証viewpoints整理）、Why-Why分析（原因仮説）
+- 補完：MECE（検証観点整理）、Why-Why分析（原因仮説）
 - 対立：網羅主義（最初からすべて調べる）
 
 

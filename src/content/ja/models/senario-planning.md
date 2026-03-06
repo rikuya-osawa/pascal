@@ -4,7 +4,7 @@ ja_name: シナリオプランニング
 en_name: Scenario Planning
 abbreviation: シナリオP
 description: 将来の不確実性を前提に、複数の合理的未来シナリオを描き、それぞれに適応する戦略・判断基準を準備するための思考モデル。
-viewpoints:
+application:
 - DM
 - NB
 - LT

@@ -23,7 +23,7 @@ const layerLabel = LAYERS[layerKey] ? getLabel(LAYERS[layerKey], lang) : model.d
 <div
   class="card model-item"
   data-layer={model?.data?.layer}
-  data-views={model?.data?.viewpoints.join(',')}
+  data-views={model?.data?.application.join(',')}
 >
   <a href={`/${lang}/models/${model.slug.split('/').pop()}`} class="card-link">
     <div class="card-header card-header-vertical">

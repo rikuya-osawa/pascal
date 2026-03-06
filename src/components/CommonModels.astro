@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import ModelCard from "./ModelCard.astro";
-import { LAYERS, VIEWPOINTS, getLabel, type Language } from "../constants/filters";
+import { LAYERS, APPLICATION, getLabel, type Language } from "../constants/filters";
 import { getMessages } from "../constants/messages";
 
 interface Props {
@@ -14,7 +14,7 @@ const collectionName = `${lang}/models` as const;
 const allModels = await getCollection(collectionName);
 
 const layerList = Object.entries(LAYERS);
-const viewList = Object.entries(VIEWPOINTS);
+const viewList = Object.entries(APPLICATION);
 
 const msg = getMessages(lang);
 ---
@@ -39,7 +39,7 @@ const msg = getMessages(lang);
   </div>
 
   <div class="filter-group">
-    <span class="filter-label">{msg.viewpointLabel}</span>
+    <span class="filter-label">{msg.applicationLabel}</span>
     <div class="filter-options">
       <button class="filter-link" data-type="view" data-value="">{msg.allLabel}</button>
       {viewList.map(([id, labels]) => (

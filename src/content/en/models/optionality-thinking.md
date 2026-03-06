@@ -4,7 +4,7 @@ ja_name: Optionality Thinking
 en_name: Optionality Thinking
 abbreviation: Optionality
 description: A thinking model for maximizing opportunities while limiting risks in highly uncertain situations by treating choices as "exercisable options (rights)."
-viewpoints:
+application:
 - DM
 - NB
 - PS

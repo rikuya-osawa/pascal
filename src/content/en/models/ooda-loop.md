@@ -4,7 +4,7 @@ ja_name: OODA Loop
 en_name: OODA Loop
 abbreviation: OODA
 description: A decision-making framework for gaining an advantage in uncertain environments by rapidly cycling through observing, orienting, deciding, and acting.
-viewpoints:
+application:
 - PS
 - DM
 layer: TOOL

@@ -4,7 +4,7 @@ ja_name: STP分析
 en_name: Segmentation, Targeting, Positioning
 abbreviation: STP
 description: 市場を分解し、狙う顧客を定め、どのような立ち位置で価値を提供するかを設計する戦略フレーム。
-viewpoints:
+application:
 - NB
 - DM
 - PS

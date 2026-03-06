@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import "../../styles/markdown.css";
-import { LAYERS, VIEWPOINTS, type Language } from "../../../constants/filters";
+import { LAYERS, APPLICATION, type Language } from "../../../constants/filters";
 import { validateModelSync } from "../../../utils/validator";
 
 export async function getStaticPaths() {
@@ -93,8 +93,8 @@ const layerInfo = LAYERS[entry.data.layer as keyof typeof LAYERS];
         {layerInfo[currentLang]}
       </span>
 
-      {entry.data.viewpoints.map((v) => {
-        const viewInfo = VIEWPOINTS[v as keyof typeof VIEWPOINTS];
+      {entry.data.application.map((v) => {
+        const viewInfo = APPLICATION[v as keyof typeof APPLICATION];
         return <span class="badge">{viewInfo[currentLang]}</span>;
       })}
     </div>

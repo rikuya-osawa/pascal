@@ -4,7 +4,7 @@ ja_name: 期待値思考
 en_name: Expected Value Thinking
 abbreviation: EV Thinking
 description: A thinking model for making long-term rational decisions by considering "possible outcomes × their probability × magnitude of impact" for uncertain options, rather than focusing on short-term gains or losses.
-viewpoints:
+application:
   - LT
   - DM
 layer: CORE

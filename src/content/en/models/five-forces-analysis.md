@@ -4,7 +4,7 @@ ja_name: ファイブフォース分析
 en_name: Five Forces Analysis
 abbreviation: 5Forces
 description: A framework for analyzing the five competitive forces that determine industry profitability and visualizing structural competitive pressure.
-viewpoints:
+application:
   - NB
   - DM
   - LT

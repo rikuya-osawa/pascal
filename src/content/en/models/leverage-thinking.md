@@ -4,7 +4,7 @@ ja_name: レバレッジ思考
 en_name: Leverage Thinking
 abbreviation: レバレッジ
 description: 小さな投入（時間・資源・行動）で最大の効果を生むポイント（レバレッジポイント）を見極め、そこに集中するための思考モデル。
-viewpoints:
+application:
 - PS
 - LT
 layer: CORE

@@ -4,7 +4,7 @@ ja_name: リーン思考
 en_name: Lean Thinking
 abbreviation: Lean
 description: 無駄を排除し、仮説→実験→学習のループを高速化することで価値創造の効率を最大化する思想。
-viewpoints:
+application:
 - NB
 - PS
 - DM
