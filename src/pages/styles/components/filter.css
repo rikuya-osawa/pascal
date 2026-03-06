@@ -94,3 +94,8 @@
   border-color: var(--color-layer-tool);
   color: var(--color-bg);
 }
+
+/* ========== Visibility Control ========== */
+.hidden {
+  display: none !important;
+}
