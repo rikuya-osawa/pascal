@@ -11,11 +11,7 @@ interface Props {
   lang?: 'ja' | 'en';
 }
 
-const { title, description, lang } = Astro.props as Props;
-const siteName = SITE_NAME;
-const fullTitle = title ? `${title} | ${siteName}` : siteName;
-const defaultDesc = DEFAULT_DESCRIPTION;
-
+const { description, lang } = Astro.props as Props;
 const pathname = Astro.url.pathname;
 const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
 ---
@@ -23,8 +19,8 @@ const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
 <html lang={currentLang}>
   <head>
     <meta charset="UTF-8" />
-    <title>{fullTitle}</title>
-    <meta name="description" content={description || defaultDesc} />
+    <title>{SITE_NAME}</title>
+    <meta name="description" content={description || DEFAULT_DESCRIPTION} />
     <script is:inline>
       (() => {
         const savedTheme = localStorage.getItem('theme');
