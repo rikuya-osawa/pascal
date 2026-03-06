@@ -307,8 +307,16 @@
   flex-direction: column;
   width: 100%;
   padding: 2rem 1.5rem; 
+  padding-right: 6rem;
+  position: relative;
   text-decoration: none;
   color: inherit;
+}
+
+.card-layer-top {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 .card-icon {
@@ -348,6 +356,7 @@
   display: flex;
   gap: 8px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .badge {
@@ -361,18 +370,21 @@
   transition: background-color var(--transition-smooth), color var(--transition-smooth), border-color var(--transition-smooth);
 }
 
-.card[data-layer="META"]:hover .badge {
+.card[data-layer="META"]:hover .badge.layer {
   background-color: var(--color-layer-meta);
+  border-color: var(--color-layer-meta);
   color: var(--color-bg);
 }
 
-.card[data-layer="CORE"]:hover .badge {
+.card[data-layer="CORE"]:hover .badge.layer {
   background-color: var(--color-layer-core);
+  border-color: var(--color-layer-core);
   color: var(--color-bg);
 }
 
-.card[data-layer="TOOL"]:hover .badge {
+.card[data-layer="TOOL"]:hover .badge.layer {
   background-color: var(--color-layer-tool);
+  border-color: var(--color-layer-tool);
   color: var(--color-bg);
 }
 
