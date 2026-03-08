@@ -1,11 +1,4 @@
 /* ========== Card UI ========== */
-
-.page-title {
-  margin-top: var(--space-lg);
-  font-size: 3rem;
-  font-weight: 800;
-}
-
 .model-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 

@@ -1,0 +1,137 @@
+/* ========== Models Hero Section ========== */
+.models-hero {
+  padding: var(--space-lg) 0 var(--space-md);
+  text-align: center;
+}
+
+.models-hero-content {
+  max-width: var(--max-width-text);
+  margin: 0 auto;
+}
+
+.models-hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-text);
+  margin: 0 0 var(--space-sm) 0;
+}
+
+.models-hero-desc {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin: 0 0 var(--space-md) 0;
+}
+
+.models-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-total {
+  padding: 0 var(--space-sm);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.stat-total .stat-number {
+  font-size: 3rem;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background-color: var(--color-border);
+}
+
+.stat-layer[data-layer="META"] .stat-number {
+  color: var(--color-layer-meta);
+}
+
+.stat-layer[data-layer="CORE"] .stat-number {
+  color: var(--color-layer-core);
+}
+
+.stat-layer[data-layer="TOOL"] .stat-number {
+  color: var(--color-layer-tool);
+}
+
+/* ========== Filter Section ========== */
+.filter-section {
+  margin: var(--space-lg) 0 var(--space-md) 0;
+}
+
+.filter-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 var(--space-sm) 0;
+}
+
+.filter-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .models-hero-title {
+    font-size: 2rem;
+  }
+
+  .models-hero-desc {
+    font-size: 1rem;
+  }
+
+  .models-stats {
+    gap: var(--space-sm);
+    padding: var(--space-sm);
+  }
+
+  .stat-total .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+}

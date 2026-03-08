@@ -36,6 +36,13 @@ export const MESSAGES = {
     homeGithubTitle: "未完成を公開し、共創する",
     homeGithubDesc: "Mental Model Atlas は完成度よりも、継続的な改善を大切にしています。あなたの気づきやアイデアが、すべてのユーザーのためになります。",
     homeGithubCtaText: "GitHub で貢献する",
+    // Models page
+    modelsPageTitle: "すべてのメンタルモデル",
+    modelsPageDesc: "思考の地図を探索し、あなたの課題に最適なフレームワークを見つけましょう。",
+    modelsTotalCount: "件のメンタルモデル",
+    modelsFilterTitle: "フィルターで絞り込む",
+    modelsActiveFilters: "アクティブフィルター",
+    modelsClearFilters: "すべてクリア",
   },
   en: {
     title: "Mental Model Atlas",
@@ -72,6 +79,13 @@ export const MESSAGES = {
     homeGithubTitle: "Embrace the Unfinished, Create Together",
     homeGithubDesc: "Mental Model Atlas values continuous improvement over perfection. Your insights and ideas make a difference for everyone.",
     homeGithubCtaText: "Contribute on GitHub",
+    // Models page
+    modelsPageTitle: "All Mental Models",
+    modelsPageDesc: "Explore the map of thinking and find the perfect framework for your challenge.",
+    modelsTotalCount: "mental models",
+    modelsFilterTitle: "Filter by",
+    modelsActiveFilters: "Active Filters",
+    modelsClearFilters: "Clear All",
   },
 } as const;
 
