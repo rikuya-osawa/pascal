@@ -162,6 +162,18 @@ const layerCounts = {
       const anyVisible = Array.from(items).some(item => !item.classList.contains('hidden'));
       fallback.classList.toggle('hidden', anyVisible);
     }
+
+    // 検索クエリがあり、結果が1件のみなら詳細ページへ遷移
+    if (activeQuery) {
+      const visibleItems = Array.from(items).filter(item => !item.classList.contains('hidden'));
+      if (visibleItems.length === 1) {
+        const onlyLink = visibleItems[0].querySelector('.card-link');
+        if (onlyLink instanceof HTMLAnchorElement) {
+          window.location.href = onlyLink.href;
+          return;
+        }
+      }
+    }
   }
 
   // グローバルに公開（Header から呼び出す）
@@ -189,7 +201,6 @@ const layerCounts = {
 
       const searchInput = document.querySelector('.header-search');
       if (searchInput) {
-        searchInput.value = '';
         searchInput.placeholder = searchPlaceholder;
       }
     });
