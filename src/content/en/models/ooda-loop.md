@@ -1,71 +1,100 @@
 ---
 type: mental-model
-ja_name: OODA Loop
+ja_name: ウーダループ
 en_name: OODA Loop
 abbreviation: OODA
 description: A decision-making framework for gaining an advantage in uncertain environments by rapidly cycling through observing, orienting, deciding, and acting.
 application:
-- PS
-- DM
+  - PS
+  - DM
 layer: TOOL
 tags:
-- mental-model
+  - mental-model
 ---
 
 # OODA Loop
 
 ## Overview
-A continuous cycle of **Observe**, **Orient**, **Decide**, and **Act**. By rotating this loop at high speed, this thinking model aims to build superiority and adapt quickly within volatile or uncertain environments.
 
-## Evaluation (1–5)
-**Versatility**:: 5  
-**Immediacy**:: 4  
-**Difficulty**:: 3  
-**Misuse Risk**:: 3  
+A continuous cycle of **Observe**, **Orient**, **Decide**, and **Act**. Developed originally for military dogfighting, this model is now a staple in business and high-stakes decision-making. By rotating this loop faster than an opponent or a changing market, you maintain a mindset of **"Continuous Adaptation"** in volatile environments.
 
-### Editorial Comments
-**Comment**:: Particularly effective in rapidly changing environments. However, if only the **「Act」** phase accelerates while deep thinking is neglected, it can become counterproductive.
+
+
+## Rating (1–5)
+
+* **Versatility:** 5
+* **Immediacy:** 4
+* **Difficulty:** 3
+* **Misuse Risk:** 3
+
+### Evaluation Comment
+
+Particularly effective in rapidly changing environments where the "correct" answer shifts constantly. However, if only the **"Act"** phase accelerates while the **"Orient"** phase (deep interpretation) is neglected, it can lead to "busy-ness" without progress.
+
+---
 
 ## The First Question
-- "What is happening right now, and how am I interpreting it?"
+
+> **"What is happening right now, how am I interpreting it, and does my mental model match reality?"**
 
 ### Objectives
-- Prevent purely reflexive actions.
-- Bring awareness to the **「Orient」** (interpretation) phase.
-- Maintain a mindset of continuous looping.
 
-### Pitfall Questions
-- "Let's just do something for now."
-- "Let's wait until we know the 'correct' answer before moving."
+* To prevent purely reflexive, unthinking actions.
+* To bring awareness to the **"Orient"** phase—where biases and old mental models often distort reality.
+* To maintain a high-tempo feedback loop that outpaces the environment.
 
-## How to Use (Mini-Steps)
-1. **Observe**: Note the facts (data and current situation).  
-2. **Orient**: Explicitly state your hypotheses and interpretations.  
-3. **Decide**: Make a provisional decision.  
-4. **Act**: Take small-scale action and return to **「Observe」**.  
+### Poor Questions
+
+* **"What is the perfect plan?"** (Plans are static; OODA is dynamic)
+* **"Let's just do something for now."** (Action without orientation is just noise)
+* **"Should we wait until we have 100% of the data?"** (In an OODA environment, waiting for certainty equals death)
+
+---
+
+## How to Use (Step-by-Step)
+
+1.  **Observe (Data Collection)**
+    * Note the raw facts and sensory data. What is actually happening? Avoid filtering information to fit what you want to see.
+
+2.  **Orient (Contextualization)**
+    * This is the most important step. Cross-reference the observation with your experience, culture, and genetic heritage. Ask: **"What does this mean in our specific context?"**
+
+3.  **Decide (Hypothesis Generation)**
+    * Formulate a provisional decision or a "Best Guess" based on your orientation.
+
+4.  **Act (Testing)**
+    * Execute the decision. The goal of the action is often to generate new information to feed back into the next **"Observe"** phase.
+
+---
 
 ## Output Examples
-- **Bullet Points:**
-  - Observation:
-  - Orientation:
-  - Decision:
-  - Action:
-- **Visuals:**
-  - Circular flow diagram
-  - Spiral loop model
+
+### 1. The Decision Log
+* **Observation:** Website traffic dropped 20% after the update.
+* **Orientation:** Our current mental model suggests "Users hate the new UI," but the data shows mobile-only drops. New orientation: "It's a technical bug on mobile."
+* **Decision:** Revert the mobile CSS changes immediately.
+* **Action:** Deploy hotfix and return to **"Observe"**.
+
+### 2. Visualization
+* **The Spiral Loop:** A diagram showing the OODA loop moving forward through time, gaining more clarity with each rotation.
+
+
+---
 
 ## Use Cases
-- **Business**: New business development, sales activities, and startup environments.  
-- **Daily Life**: Learning, habit improvement, and navigating interpersonal relationships.  
-- **Decision Making**: Situations where the "right answer" is unclear and changes are rapid.  
 
-## Common Misuses
-- Shallow **「Observe」** (insufficient data).
-- Skipping the **「Orient」** phase (judging based on cognitive bias).
-- Rushing the **「Act」** phase too much.
-- Treating it as a one-off action rather than a continuous loop.
+* **Business:** New product development, high-frequency sales, and startup growth hacking.
+* **Daily Life:** Rapid skill acquisition (learning from mistakes), navigating interpersonal conflicts, and habit adjustment.
+* **Decision Making:** Situations where the environment is **"Unpredictable"** and "Analysis Paralysis" is a terminal risk.
+
+## Typical Misuses
+
+* **The Orientation Blind Spot:** Skipping the interpretation phase and jumping straight from seeing a problem to acting on it based on **"Cognitive Bias"**.
+* **One-Shot Thinking:** Treating OODA as a linear process that ends after the "Act" phase, rather than a continuous loop.
+* **Low-Fidelity Observation:** Making high-stakes decisions based on fragmented or unverified data.
 
 ## Relationship with Other Models
-- **Related**: Hypothesis Thinking, Bayesian Thinking.  
-- **Complementary**: Reversible vs. Irreversible Decisions (testing small), Expected Value Thinking.  
-- **Contrast**: Perfectionism, Analysis Paralysis.
+
+* **Related:** Hypothesis-based Thinking, Bayesian Thinking (updating the 'Orient' phase).
+* **Complementary:** **"MVP"** (the action is the experiment), Reversible vs. Irreversible Decisions.
+* **Opposing:** Waterfall Planning, Perfectionism, Rigid Standard Operating Procedures (SOPs).

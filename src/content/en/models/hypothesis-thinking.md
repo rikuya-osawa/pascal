@@ -1,62 +1,97 @@
 ---
 type: mental-model
 ja_name: 仮説思考
-en_name: Hypothesis Driven Thinking
-abbreviation: 仮説思考
-description: 限られた時間と情報の中で、まず「答えの仮置き」を立て、検証を通じて思考と行動を高速に前進させるための思考モデル。
+en_name: Hypothesis-Driven Thinking
+abbreviation: Hypothesis Thinking
+description: A thinking model for rapidly advancing thought and action by establishing a "tentative answer" first, then refining it through verification within limited time and information.
 application:
-- PS
-- NB
+  - PS
+  - NB
 layer: CORE
 tags:
-- mental-model
+  - mental-model
 ---
-# 仮説思考（Hypothesis Driven Thinking）
 
-## 概要
-限られた時間と情報の中で、まず「答えの仮置き」を立て、検証を通じて思考と行動を高速に前進させるための思考モデル。
+# Hypothesis-Driven Thinking
 
-## 評価（1–5）
-応用度:: 5  
-即効性:: 4  
-理解難易度:: 4  
-誤用リスク:: 3  
+## Overview
 
-### 評価コメント
-評価コメント:: 思考と行動を加速させる強力な武器だが、仮説を事実と混同すると判断を誤る。
+A thinking model for rapidly advancing thought and action by establishing a **"tentative answer"** first, rather than waiting for complete information. It prioritizes speed and agility by moving from "tentative hypothesis" to "verification," allowing for faster iterations and more focused problem-solving.
 
-## 最初の一問
-- 「もし今すぐ答えを出すとしたら、何が一番ありそうだろうか？」
-### 狙い
-- 網羅調査を止める
-- 仮置き → 検証に進む
-### 悪い問い
-- 「正解は何か？」
-	- 完璧主義を誘発
-	- 動けなくなる
-	
-## 使い方（ミニ手順）
-1. 問いに対する仮の答えを1文で置く  
-2. 仮説が正しければ起きる事象を書き出す  
-3. 最小コストで検証できる方法を選ぶ  
+## Rating (1–5)
 
-## アウトプット例（形だけ）
-- 仮説 → 根拠 → 検証方法 の箇条書き
-- シンプルな検証マトリクス（仮説 × 事実）
+* **Applicability:** 5
+* **Immediacy:** 4
+* **Difficulty to Understand:** 4
+* **Misuse Risk:** 3
 
-## 使いどころ（活用例）
-- ビジネス：戦略立案、課題解決、顧客理解、施策検討
-- 日常：意思決定、学習の進め方、時間配分の見直し
-- 判断・思考：調べ始める前、考えが止まったとき
+### Evaluation Comment
 
-## 典型的な誤用
-- 仮説に都合の良い情報だけを集める
-- 仮説を立てずに調査を始める
-- 仮説を変えないことに固執する
+A powerful weapon for accelerating both thinking and execution. However, the greatest danger lies in confusing a **"hypothesis"** with **"fact,"** which can lead to biased decision-making if not properly verified.
 
-## 他モデルとの関係
-- 関連：イシュー思考、仮説検証
-- 補完：MECE（検証観点整理）、Why-Why分析（原因仮説）
-- 対立：網羅主義（最初からすべて調べる）
+---
 
+## The First Question
 
+> **"If I had to provide an answer right now, what would be the most likely conclusion?"**
+
+### Objectives
+
+* To stop "exhaustive research" (boiling the ocean).
+* To move quickly from a tentative stance to the verification phase.
+* To provide direction to an otherwise aimless investigation.
+
+### Poor Questions
+
+* **"What is the single correct answer?"**
+    * Triggers perfectionism.
+    * Leads to "analysis paralysis" where action stops.
+
+---
+
+## How to Use (Step-by-Step)
+
+1.  **Establish a Tentative Answer**
+    * State your current best guess as a single, clear sentence.
+
+2.  **Define Verification Criteria**
+    * Write down specific events or data points that *must* be true if your hypothesis is correct.
+
+3.  **Execute Minimum-Cost Verification**
+    * Choose the fastest and cheapest method to test the validity of the hypothesis.
+
+4.  **Refine or Pivot**
+    * Based on the results, either strengthen the hypothesis, modify it, or discard it for a new one.
+
+---
+
+## Output Examples
+
+### 1. Verification Log
+* **Hypothesis:** "Sales are declining because the checkout process is too complex."
+* **Supporting Logic:** Mobile users drop off significantly at the payment screen.
+* **Verification Method:** Run a 1-week A/B test with a simplified checkout button.
+
+### 2. Visualization
+* **Hypothesis vs. Fact Matrix:** A simple table comparing tentative assumptions against gathered evidence.
+* **Issue Tree:** A branching diagram showing the primary hypothesis broken down into sub-hypotheses.
+
+---
+
+## Use Cases
+
+* **Business:** Strategy formulation, problem-solving, customer insight discovery, and initiative planning.
+* **Daily Life:** Rapid decision-making, planning an efficient learning path, or re-evaluating time allocation.
+* **Judgment / Thinking:** Before starting any research or when your thoughts feel stuck.
+
+## Typical Misuses
+
+* **Confirmation Bias:** Collecting only the information that supports your hypothesis while ignoring contradictory evidence.
+* **Research Without Hypothesis:** Starting an investigation or data collection without a clear tentative goal.
+* **Stubbornness:** Refusing to change or discard a hypothesis even when the facts prove it wrong.
+
+## Relationship with Other Models
+
+* **Related:** Issue-driven Thinking, Hypothesis Testing.
+* **Complementary:** MECE (to organize verification perspectives), 5 Whys (to generate causal hypotheses).
+* **Opposing:** Exhaustive Thinking (trying to investigate everything from the start).

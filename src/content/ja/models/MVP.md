@@ -12,7 +12,7 @@ layer: TOOL
 tags:
 - mental-model
 ---
-# Minimum Viable Product（MVP）
+# Minimum Viable Product（MVP: 実用最小限の製品）
 
 ## 概要
 仮説検証のために、最小限の機能で価値をテストするプロダクト設計思想。完成度より学習速度を優先するモデル。

@@ -1,66 +1,102 @@
 ---
 type: mental-model
 ja_name: 二次思考
-en_name: Second-order Thinking
-abbreviation: 二次思考
-description: ある行動や判断の「直接的な結果（一次効果）」だけでなく、その先に連鎖して起こる影響（二次・三次効果）まで考慮して意思決定するための思考モデル。
+en_name: Second-Order Thinking
+abbreviation: 2nd-Order
+description: A model for considering not only the immediate effects of a decision but also the subsequent ripple effects and long-term consequences.
 application:
-- LT
-- DM
+  - LT
+  - DM
 layer: CORE
 tags:
-- mental-model
+  - mental-model
 ---
-# 二次思考（Second-order Thinking）
 
-## 概要
-ある行動や判断の「直接的な結果（一次効果）」だけでなく、その先に連鎖して起こる影響（二次・三次効果）まで考慮して意思決定するための思考モデル。
+# Second-Order Thinking
 
-## 評価（1–5）
-応用度:: 5  
-即効性:: 2  
-理解難易度:: 4  
-誤用リスク:: 4  
+## Overview
 
-### 評価コメント
-評価コメント:: 長期的に大きな差を生む思考だが、考えすぎると行動が遅れる点に注意が必要。
-
-## 最初の一問
-- 「この判断の“次に起こること”は何だろうか？」
-
-### 狙い
-- 目先のメリット・デメリットだけで判断するのを防ぐ  
-- 長期視点・構造的視点を強制的に導入する  
-
-### 悪い問い
-- 「とりあえず今うまくいくか？」
-- 「短期的に得か損か？」
-
-## 使い方（ミニ手順）
-1. 判断や施策による一次効果を書き出す  
-2. 一次効果の結果として起こる二次効果を考える  
-3. 二次効果が長期的に望ましいかを確認する  
-
-## アウトプット例
-- 箇条書き：
-  - 行動 → 一次効果 → 二次効果
-- 図の形：
-  - 因果チェーン
-  - フロー図
-
-## 使いどころ（活用例）
-- ビジネス：制度設計、インセンティブ設計、組織変更
-- 日常：習慣づくり、時間の使い方、子育て・教育
-- 判断・思考：短期的に魅力的な選択に迷ったとき
-
-## 典型的な誤用
-- 二次効果を想像だけで断定してしまう
-- 悪い二次効果だけを過大評価する
-- 二次効果を恐れて何も決められなくなる
-
-## 他モデルとの関係
-- 関連：システム思考、因果ループ
-- 補完：期待値思考（長期評価）、トレードオフ思考（選択整理）
-- 対立：短期最適思考（目先の最適化）
+Second-Order Thinking is the process of considering the intended and unintended consequences of a decision beyond the immediate results. While "First-Order Thinking" is simplistic and focuses on solving an immediate problem, Second-Order Thinking asks **"And then what?"** to uncover the complex chain of events that a single action can trigger.
 
 
+
+## Rating (1–5)
+
+* **Applicability:** 5
+* **Immediacy:** 2
+* **Difficulty to Understand:** 4
+* **Misuse Risk:** 4
+
+### Evaluation Comment
+
+This is a high-leverage skill that creates a massive competitive advantage over time. However, it requires significant mental effort, and over-analyzing every possibility can lead to delayed action.
+
+---
+
+## The First Question
+
+> **"And then what? What are the likely consequences of the consequences?"**
+
+### Objectives
+
+* To prevent making decisions based solely on immediate benefits or drawbacks.
+* To force the introduction of long-term and structural perspectives.
+* To identify "hidden costs" or "delayed rewards" that others might miss.
+
+### Poor Questions
+
+* **"Will this work right now?"** (Focuses only on the immediate fix)
+* **"Is this profitable in the short term?"** (Ignores potential long-term damage or brand erosion)
+
+---
+
+## How to Use (Step-by-Step)
+
+1.  **Define the First-Order Effect**
+    * Identify the immediate result of your decision or action (e.g., "Giving a discount increases sales today").
+
+2.  **Ask "And then what?"**
+    * Imagine the reaction to that first effect. What happens next? (e.g., "Customers wait for the next discount instead of buying at full price").
+
+3.  **Trace the Chain**
+    * Follow the logic to the third or fourth level if possible. Evaluate if the ultimate destination is desirable.
+
+4.  **Evaluate the Net Impact**
+    * Decide if the short-term gain is worth the long-term cost, or if a short-term pain is worth a long-term gain.
+
+---
+
+## Output Examples
+
+### 1. Causal Chain Log
+* **Action:** Implementing an aggressive sales quota.
+* **1st-Order Effect:** Increased revenue this quarter.
+* **2nd-Order Effect:** Sales team burns out; customer relationships are strained due to high pressure.
+* **3rd-Order Effect:** High turnover of top talent; long-term brand reputation declines.
+* **Conclusion:** The immediate revenue gain is not worth the structural loss.
+
+### 2. Visualization
+* **Influence Map:** A diagram showing an action in the center with concentric circles for 1st, 2nd, and 3rd-order effects.
+* **Decision Tree:** A branching flow showing the different paths a decision might take over time.
+
+
+
+---
+
+## Use Cases
+
+* **Business:** Incentive design, organizational changes, pricing strategies, and policy implementation.
+* **Daily Life:** Habit formation (e.g., "If I sleep late now, how will I feel tomorrow afternoon?"), time management, and parenting/education.
+* **Judgment / Thinking:** When faced with a choice that looks "too good to be true" in the short term.
+
+## Typical Misuses
+
+* **Pure Speculation:** Asserting 2nd-order effects based on imagination without considering actual systemic constraints.
+* **Negative Bias:** Over-weighting potential bad consequences to the point of becoming paralyzed and unable to decide.
+* **Analysis Paralysis:** Spending so much time tracing "what if" scenarios that the window of opportunity closes.
+
+## Relationship with Other Models
+
+* **Related:** Systems Thinking (understanding feedback loops), Causal Loops.
+* **Complementary:** Expected Value Thinking (evaluating long-term value), Trade-off Thinking (organizing choices).
+* **Opposing:** Short-term Optimization (focusing only on immediate results), Surface-Level Thinking.
