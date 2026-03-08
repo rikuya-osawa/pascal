@@ -16,7 +16,7 @@ const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
   <div class="site-footer-inner">
     <div class="footer-top">
       <nav class="footer-nav">
-        <a href={`/`}>Top</a>
+        <a href={`/${currentLang}/`}>Top</a>
         <a href={`/${currentLang}/models`}>Models</a>
         <a href={`/${currentLang}/about`}>About</a>
       </nav>
