@@ -153,6 +153,39 @@ const msg = getMessages(currentLang);
     }
   }
 
+  // --- 検索ショートカット (/) ---
+  function initSearchShortcut() {
+    const root = document.documentElement;
+    if (root.dataset.searchShortcutBound === 'true') return;
+    root.dataset.searchShortcutBound = 'true';
+
+    document.addEventListener('keydown', (e) => {
+      if (e.defaultPrevented) return;
+      if (e.key !== '/' && e.key !== 'Escape') return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+
+      const active = document.activeElement;
+      if (
+        active instanceof HTMLInputElement ||
+        active instanceof HTMLTextAreaElement ||
+        active instanceof HTMLSelectElement ||
+        active?.hasAttribute('contenteditable')
+      ) {
+        return;
+      }
+
+      const searchInput = document.querySelector('.header-search');
+      if (!(searchInput instanceof HTMLInputElement)) return;
+
+      e.preventDefault();
+      if (e.key === '/') {
+        searchInput.focus();
+      } else if (e.key === 'Escape') {
+        searchInput.blur();
+      }
+    });
+  }
+
   // --- テーマ切り替え ---
   function initThemeToggle() {
     const themeToggle = document.querySelector('.theme-toggle');
@@ -182,7 +215,9 @@ const msg = getMessages(currentLang);
   }
 
   initSearch();
+  initSearchShortcut();
   initThemeToggle();
   document.addEventListener('astro:page-load', initSearch);
+  document.addEventListener('astro:page-load', initSearchShortcut);
   document.addEventListener('astro:page-load', initThemeToggle);
 </script>
