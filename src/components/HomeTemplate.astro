@@ -1,0 +1,96 @@
+---
+import "../pages/styles/index.css";
+import { getMessages } from '../constants/messages.ts';
+import { GITHUB_URL } from "../constants/site-config";
+
+interface Props {
+  lang: 'ja' | 'en';
+}
+
+const { lang } = Astro.props;
+const messages = getMessages(lang);
+
+const heroLink = lang === 'ja' ? '/ja/models' : '/en/models';
+
+// ベネフィット項目
+const benefits = [
+  {
+    id: 'faster-decisions',
+    key: 'homeBenefitFasterDecisions',
+    descKey: 'homeBenefitFasterDecisionsDesc',
+    icon: '⚡'
+  },
+  {
+    id: 'avoid-bias',
+    key: 'homeBenefitAvoidBias',
+    descKey: 'homeBenefitAvoidBiasDesc',
+    icon: '🎯'
+  },
+  {
+    id: 'perspectives',
+    key: 'homeBenefitMultiplePerspectives',
+    descKey: 'homeBenefitMultiplePerspectivesDesc',
+    icon: '🔄'
+  }
+];
+---
+
+<main class="home-container">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-main">{messages.homeHeroMainLine1}<br>{messages.homeHeroMainLine2}</h1>
+      <p class="hero-sub">{messages.homeHeroSub}</p>
+      <a href={heroLink} class="btn btn-primary">
+        {messages.homeHeroCtaText}
+      </a>
+    </div>
+  </section>
+
+  <!-- Concept Section -->
+  <section class="concept">
+    <h2>{messages.homeConceptTitle}</h2>
+    <div class="benefits-grid">
+      {benefits.map(benefit => (
+        <div class="benefit-card">
+          <div class="benefit-icon">{benefit.icon}</div>
+          <h3>{messages[benefit.key as keyof typeof messages]}</h3>
+          <p>{messages[benefit.descKey as keyof typeof messages]}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Layer Guide Section -->
+  <section class="layer-guide">
+    <div class="layer-guide-header">
+      <h2>{messages.homeLayerGuideTitle}</h2>
+      <p>{messages.homeLayerGuideDesc}</p>
+    </div>
+    <div class="layers-grid">
+      <div class="layer-card layer-meta">
+        <h3>{messages.homeLayerMeta}</h3>
+        <p>{messages.homeLayerMetaDesc}</p>
+      </div>
+      <div class="layer-card layer-core">
+        <h3>{messages.homeLayerCore}</h3>
+        <p>{messages.homeLayerCoreDesc}</p>
+      </div>
+      <div class="layer-card layer-tool">
+        <h3>{messages.homeLayerTool}</h3>
+        <p>{messages.homeLayerToolDesc}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Section -->
+  <section class="github-section">
+    <div class="github-content">
+      <h2>{messages.homeGithubTitle}</h2>
+      <p>{messages.homeGithubDesc}</p>
+      <a href={GITHUB_URL} class="btn btn-secondary">
+        {messages.homeGithubCtaText}
+      </a>
+    </div>
+  </section>
+</main>

@@ -4,7 +4,7 @@ ja_name: ブラックスワン思考
 en_name: Black Swan Theory
 abbreviation: BlackSwan
 description: A thinking model for designing risk management and strategies based on the premise of "Black Swans"—unpredictable events that have a low probability of occurring but carry an extremely high impact if they do.
-viewpoints:
+application:
   - DM
   - NB
   - LIFE

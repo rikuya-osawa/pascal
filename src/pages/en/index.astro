@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../pages/layouts/BaseLayout.astro';
+import HomeTemplate from '../../components/HomeTemplate.astro';
+import { getMessages } from '../../constants/messages.ts';
+
+const lang = 'en';
+const messages = getMessages(lang);
+---
+
+<BaseLayout lang={lang} title={messages.title} description={messages.homeHeroSub}>
+  <HomeTemplate lang={lang} />
+</BaseLayout>

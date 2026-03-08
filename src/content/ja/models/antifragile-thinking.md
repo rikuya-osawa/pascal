@@ -4,7 +4,7 @@ ja_name: アンチフラジャイル思考
 en_name: Antifragile Thinking
 abbreviation: アンチフラ
 description: 不確実性やストレス、ショックに対して「耐える」のではなく、「それによって強くなる」構造を設計する思考モデル。
-viewpoints:
+application:
 - LIFE
 - NB
 - DM

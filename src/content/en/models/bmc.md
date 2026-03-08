@@ -4,7 +4,7 @@ ja_name: ビジネスモデルキャンバス
 en_name: Business Model Canvas
 abbreviation: BMC
 description: A framework for visualizing, designing, and validating an entire business by mapping nine key elements, including customers, value propositions, revenue streams, and cost structures.
-viewpoints:
+application:
   - NB
   - PS
   - DM

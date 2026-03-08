@@ -6,7 +6,7 @@ const mentalModelSchema = z.object({
   en_name: z.string().optional(),
   abbreviation: z.string().optional(),
   description: z.string(),
-  viewpoints: z.array(
+  application: z.array(
     z.enum(["LIFE", "LT", "DM", "NB", "PS"])
   ).default([]),
   layer: z.enum(["META", "CORE", "TOOL"]),

@@ -4,7 +4,7 @@ ja_name: Senario Planning
 en_name: Scenario Planning
 abbreviation: Scenario Planning
 description: A model for preparing strategies by mapping multiple plausible future scenarios.
-viewpoints:
+application:
 - DM
 - NB
 - LT

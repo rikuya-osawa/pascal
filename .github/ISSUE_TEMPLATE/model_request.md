@@ -12,9 +12,9 @@ labels: content, enhancement
 ### なぜこのモデルが必要か？ / Why this model?
 (例: 意思決定における〇〇のバイアスを防ぐために不可欠なため)
 
-### 想定される Layer / Viewpoint
+### 想定される Layer / Application
 - Layer: [META / CORE / TOOL]
-- Viewpoints: [DM / PS / NB / LT / LIFE]
+- Application: [DM / PS / NB / LT / LIFE]
 
 ### 執筆の担当
 - [ ] 自分でドラフトを執筆できる（PRを作成予定）

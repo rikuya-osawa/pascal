@@ -4,7 +4,7 @@ ja_name: 第一原理思考
 en_name: First Principles Thinking
 abbreviation: First Principles
 description: A thinking model for questioning common sense, assumptions, and conventions by breaking them down into fundamental truths (First Principles) that cannot be deduced any further, then rebuilding from the ground up.
-viewpoints:
+application:
   - PS
   - LT
 layer: META

@@ -4,7 +4,7 @@ ja_name: 抽象化・具体化
 en_name: Abstraction & Concretization
 abbreviation: Abstraction ⇄ Concretization
 description: A thinking model for understanding, explaining, and designing by navigating between the "upper layer (abstract)" and the "lower layer (concrete)."
-viewpoints:
+application:
   - PS
   - DM
 layer: META

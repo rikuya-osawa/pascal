@@ -5,7 +5,7 @@ ja_name: MECE
 en_name: Mutually Exclusive, Collectively Exhaustive
 abbreviation: MECE
 description: A fundamental thinking model for breaking down and organizing information in a way that is exhaustive and non-overlapping.
-viewpoints:
+application:
 
 - PS
 - LT

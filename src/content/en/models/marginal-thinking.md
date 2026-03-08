@@ -4,7 +4,7 @@ ja_name: 限界思考
 en_name: Marginal Thinking
 abbreviation: Marginal
 description: 全体平均ではなく、「追加で1単位行うこと（限界）」によって得られる追加利益と追加コストを比較し、意思決定するための思考モデル。
-viewpoints:
+application:
 - DM
 - NB
 - LIFE

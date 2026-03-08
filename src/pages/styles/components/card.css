@@ -1,0 +1,108 @@
+/* ========== Card UI ========== */
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 24px;
+  margin-top: var(--space-lg);
+}
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 24px -5px rgba(0, 0, 0, 0.15);
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 1.5rem; 
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-layer-top {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.card-icon {
+  color: var(--color-primary);
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+  transition: transform var(--transition-smooth);
+}
+
+.card:hover .card-icon {
+  transform: scale(1.15);
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+  transition: color var(--transition-smooth);
+}
+
+.card:hover .card-description {
+  color: var(--color-text);
+}
+
+.card-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  background: var(--color-surface);
+  color: var(--color-muted);
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  transition: background-color var(--transition-smooth), color var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.card[data-layer="META"]:hover .badge.layer {
+  background-color: var(--color-layer-meta);
+  border-color: var(--color-layer-meta);
+  color: var(--color-bg);
+}
+
+.card[data-layer="CORE"]:hover .badge.layer {
+  background-color: var(--color-layer-core);
+  border-color: var(--color-layer-core);
+  color: var(--color-bg);
+}
+
+.card[data-layer="TOOL"]:hover .badge.layer {
+  background-color: var(--color-layer-tool);
+  border-color: var(--color-layer-tool);
+  color: var(--color-bg);
+}

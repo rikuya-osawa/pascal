@@ -4,7 +4,7 @@ ja_name: Sunk Cost Thinking
 en_name: Sunk Cost Fallacy
 abbreviation: Sunk Cost
 description: A thinking model for making rational future decisions by ignoring costs (time, money, effort, or emotion) that have already been incurred and cannot be recovered.
-viewpoints:
+application:
 - DM
 - LIFE
 layer: CORE

@@ -4,7 +4,7 @@ ja_name: フライホイール思考
 en_name: Flywheel Thinking
 abbreviation: フライホイール
 description: 要素同士が相互に強化し合い、回り始めると加速度的に成長する「自己強化構造」を設計・発見するための思考モデル。
-viewpoints:
+application:
 - NB
 - LT
 - PS

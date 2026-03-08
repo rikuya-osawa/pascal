@@ -4,7 +4,7 @@ ja_name: ブラックスワン思考
 en_name: Black Swan Thinking
 abbreviation: BlackSwan
 description: 発生確率は低いが、発生した場合に極めて大きな影響を持つ予測困難な事象（ブラックスワン）の存在を前提に、リスク管理や戦略を設計する思考モデル。
-viewpoints:
+application:
 - DM
 - NB
 - LIFE

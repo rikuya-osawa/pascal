@@ -4,7 +4,7 @@ ja_name: ベイズ思考
 en_name: Bayesian Thinking
 abbreviation: Bayesian Thinking
 description: A thinking model for flexibly revising judgments and beliefs by updating previous assumptions (prior probability) whenever new information is obtained.
-viewpoints:
+application:
   - LT
   - DM
 layer: CORE

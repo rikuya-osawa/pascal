@@ -4,7 +4,7 @@ ja_name: 競争優位
 en_name: Economic Moat
 abbreviation: Moat
 description: 競争環境において、長期的に利益を守り続けるための構造的な優位性を構築・維持するという戦略思想。
-viewpoints:
+application:
 - NB
 - DM
 - LT

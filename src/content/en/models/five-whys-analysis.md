@@ -4,7 +4,7 @@ ja_name: なぜなぜ分析（5つのなぜ）
 en_name: Five Whys Analysis
 abbreviation: 5 Whys
 description: A root-cause analysis model that repeatedly asks "Why?" to move past surface-level symptoms and reach the underlying structural cause of a problem.
-viewpoints:
+application:
   - PS
 layer: TOOL
 tags:

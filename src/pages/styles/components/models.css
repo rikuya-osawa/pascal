@@ -1,0 +1,148 @@
+/* ========== Models Hero Section ========== */
+.models-hero {
+  padding: var(--space-sm) 0 var(--space-md);
+  text-align: center;
+}
+
+.models-hero-content {
+  max-width: var(--max-width-text);
+  margin: 0 auto;
+}
+
+.models-hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-text);
+  margin: 0 0 var(--space-sm) 0;
+}
+
+.models-hero-desc {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin: 0 0 var(--space-md) 0;
+}
+
+.models-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-top: var(--space-sm);
+  padding: 8px 12px;
+  background-color: transparent;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  opacity: 0.82;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stat-total {
+  padding: 0 4px;
+}
+
+.stat-number {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.stat-total .stat-number {
+  font-size: 1.2rem;
+}
+
+.stat-label {
+  font-size: 0.62rem;
+  font-weight: 500;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 18px;
+  background-color: var(--color-border);
+}
+
+.stat-layer[data-layer="META"] .stat-number {
+  color: var(--color-layer-meta);
+}
+
+.stat-layer[data-layer="CORE"] .stat-number {
+  color: var(--color-layer-core);
+}
+
+.stat-layer[data-layer="TOOL"] .stat-number {
+  color: var(--color-layer-tool);
+}
+
+/* ========== Filter Section ========== */
+.filter-section {
+  margin: var(--space-md) 0 var(--space-sm) 0;
+}
+
+.filter-section-title {
+  font-size: 1rem;
+  font-weight: 650;
+  color: var(--color-text);
+  margin: 0 0 10px 0;
+}
+
+.filter-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .models-hero-title {
+    font-size: 2rem;
+  }
+
+  .models-hero-desc {
+    font-size: 1rem;
+  }
+
+  .models-stats {
+    gap: 8px;
+    padding: 6px 10px;
+    opacity: 0.75;
+  }
+
+  .stat-total .stat-number {
+    font-size: 1rem;
+  }
+
+  .stat-number {
+    font-size: 0.95rem;
+  }
+
+  .stat-label {
+    font-size: 0.58rem;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .filter-section {
+    margin: var(--space-sm) 0 10px 0;
+  }
+
+  .filter-section-title {
+    font-size: 0.92rem;
+    margin-bottom: 8px;
+  }
+}

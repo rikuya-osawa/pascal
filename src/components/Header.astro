@@ -23,7 +23,7 @@ const msg = getMessages(currentLang);
 
 <header class="site-header">
   <div class="site-header-inner">
-    <a class="site-title" href={`/${currentLang}/models`}>MENTAL MODEL ATLAS</a>
+    <a class="site-title" href={`/${currentLang}`}>MENTAL MODEL ATLAS</a>
     <div class="header-right">
     <form action={`/${currentLang}/models`} method="get" class="header-search-form">
       <div class="header-search-wrapper">
@@ -130,7 +130,6 @@ const msg = getMessages(currentLang);
           window.updateAllFilters();
         }
         
-        searchInput.value = '';
         searchInput.blur();
       }
     });
@@ -151,6 +150,44 @@ const msg = getMessages(currentLang);
         window.updateAllFilters();
       }
     }
+  }
+
+  // --- 検索ショートカット (/) ---
+  function initSearchShortcut() {
+    const root = document.documentElement;
+    if (root.dataset.searchShortcutBound === 'true') return;
+    root.dataset.searchShortcutBound = 'true';
+
+    document.addEventListener('keydown', (e) => {
+      if (e.defaultPrevented) return;
+      if (e.key !== '/' && e.key !== 'Escape') return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+
+      const header = document.querySelector('.site-header');
+      const searchInput = document.querySelector('.header-search');
+      if (!(searchInput instanceof HTMLInputElement)) return;
+
+      const active = document.activeElement;
+      const isEditingElement =
+        active instanceof HTMLInputElement ||
+        active instanceof HTMLTextAreaElement ||
+        active instanceof HTMLSelectElement ||
+        active?.hasAttribute('contenteditable');
+
+      if (e.key === 'Escape') {
+        if (active === searchInput) {
+          e.preventDefault();
+          searchInput.blur();
+        }
+        return;
+      }
+
+      if (isEditingElement) return;
+
+      e.preventDefault();
+      header?.classList.remove('site-header--hidden');
+      searchInput.focus();
+    });
   }
 
   // --- テーマ切り替え ---
@@ -182,7 +219,9 @@ const msg = getMessages(currentLang);
   }
 
   initSearch();
+  initSearchShortcut();
   initThemeToggle();
   document.addEventListener('astro:page-load', initSearch);
+  document.addEventListener('astro:page-load', initSearchShortcut);
   document.addEventListener('astro:page-load', initThemeToggle);
 </script>

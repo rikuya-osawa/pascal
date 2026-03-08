@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import ModelCard from "./ModelCard.astro";
-import { LAYERS, VIEWPOINTS, getLabel, type Language } from "../constants/filters";
+import { LAYERS, APPLICATION, getLabel, type Language } from "../constants/filters";
 import { getMessages } from "../constants/messages";
 
 interface Props {
@@ -14,47 +14,97 @@ const collectionName = `${lang}/models` as const;
 const allModels = await getCollection(collectionName);
 
 const layerList = Object.entries(LAYERS);
-const viewList = Object.entries(VIEWPOINTS);
+const viewList = Object.entries(APPLICATION);
 
 const msg = getMessages(lang);
+
+// モデルの統計情報
+const totalCount = allModels.length;
+const layerCounts = {
+  META: allModels.filter(m => m.data.layer === 'META').length,
+  CORE: allModels.filter(m => m.data.layer === 'CORE').length,
+  TOOL: allModels.filter(m => m.data.layer === 'TOOL').length,
+};
 ---
 
-<h1 class="page-title">{msg.title}</h1>
-
-<div class="filter-container">
-  <div class="filter-group">
-    <span class="filter-label">{msg.layerLabel}</span>
-    <div class="filter-options">
-      <button class="filter-link" data-type="layer" data-value="">{msg.allLabel}</button>
-      {layerList.map(([id, labels]) => (
-        <button 
-          class="filter-link" 
-          data-type="layer" 
-          data-value={id}
-        >
-          {getLabel(labels, lang)}
-        </button>
-      ))}
+<!-- Page Hero Section -->
+<section class="models-hero">
+  <div class="models-hero-content">
+    <h1 class="models-hero-title">{msg.modelsPageTitle}</h1>
+    <p class="models-hero-desc">{msg.modelsPageDesc}</p>
+    
+    <div class="models-stats">
+      <div class="stat-item stat-total">
+        <span class="stat-number">{totalCount}</span>
+        <span class="stat-label">{msg.modelsTotalCount}</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item stat-layer" data-layer="META">
+        <span class="stat-number">{layerCounts.META}</span>
+        <span class="stat-label">{getLabel(LAYERS.META, lang)}</span>
+      </div>
+      <div class="stat-item stat-layer" data-layer="CORE">
+        <span class="stat-number">{layerCounts.CORE}</span>
+        <span class="stat-label">{getLabel(LAYERS.CORE, lang)}</span>
+      </div>
+      <div class="stat-item stat-layer" data-layer="TOOL">
+        <span class="stat-number">{layerCounts.TOOL}</span>
+        <span class="stat-label">{getLabel(LAYERS.TOOL, lang)}</span>
+      </div>
     </div>
   </div>
+</section>
 
-  <div class="filter-group">
-    <span class="filter-label">{msg.viewpointLabel}</span>
-    <div class="filter-options">
-      <button class="filter-link" data-type="view" data-value="">{msg.allLabel}</button>
-      {viewList.map(([id, labels]) => (
-        <button 
-          class="filter-link" 
-          data-type="view" 
-          data-value={id}
-        >
-          {getLabel(labels, lang)}
-        </button>
-      ))}
+<!-- Filter Section -->
+<section class="filter-section">
+  <h2 class="filter-section-title">{msg.modelsFilterTitle}</h2>
+  
+  <div class="filter-container">
+    <div class="filter-group">
+      <span class="filter-label">
+        <svg class="filter-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="3 3 21 3 21 9 12 18 3 9 3 3"></polygon>
+        </svg>
+        {msg.layerLabel}
+      </span>
+      <div class="filter-options">
+        <button class="filter-link" data-type="layer" data-value="">{msg.allLabel}</button>
+        {layerList.map(([id, labels]) => (
+          <button 
+            class="filter-link" 
+            data-type="layer" 
+            data-value={id}
+          >
+            {getLabel(labels, lang)}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <span class="filter-label">
+        <svg class="filter-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+        </svg>
+        {msg.applicationLabel}
+      </span>
+      <div class="filter-options">
+        <button class="filter-link" data-type="view" data-value="">{msg.allLabel}</button>
+        {viewList.map(([id, labels]) => (
+          <button 
+            class="filter-link" 
+            data-type="view" 
+            data-value={id}
+          >
+            {getLabel(labels, lang)}
+          </button>
+        ))}
+      </div>
     </div>
   </div>
-</div>
+</section>
 
+<!-- Models Grid -->
 <div class="model-grid">
   {allModels.filter(Boolean).map((model) => (
       <ModelCard model={model} lang={lang} />
@@ -112,6 +162,18 @@ const msg = getMessages(lang);
       const anyVisible = Array.from(items).some(item => !item.classList.contains('hidden'));
       fallback.classList.toggle('hidden', anyVisible);
     }
+
+    // 検索クエリがあり、結果が1件のみなら詳細ページへ遷移
+    if (activeQuery) {
+      const visibleItems = Array.from(items).filter(item => !item.classList.contains('hidden'));
+      if (visibleItems.length === 1) {
+        const onlyLink = visibleItems[0].querySelector('.card-link');
+        if (onlyLink instanceof HTMLAnchorElement) {
+          window.location.href = onlyLink.href;
+          return;
+        }
+      }
+    }
   }
 
   // グローバルに公開（Header から呼び出す）
@@ -139,7 +201,6 @@ const msg = getMessages(lang);
 
       const searchInput = document.querySelector('.header-search');
       if (searchInput) {
-        searchInput.value = '';
         searchInput.placeholder = searchPlaceholder;
       }
     });

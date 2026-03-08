@@ -4,7 +4,7 @@ ja_name: VRIO分析
 en_name: VRIO Framework
 abbreviation: VRIO
 description: 組織や事業の資源が競争優位を生むかどうかを、Value・Rarity・Imitability・Organizationの4視点で評価するフレームワーク。
-viewpoints:
+application:
 - NB
 - DM
 - PS
