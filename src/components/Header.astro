@@ -164,25 +164,30 @@ const msg = getMessages(currentLang);
       if (e.key !== '/' && e.key !== 'Escape') return;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
 
-      const active = document.activeElement;
-      if (
-        active instanceof HTMLInputElement ||
-        active instanceof HTMLTextAreaElement ||
-        active instanceof HTMLSelectElement ||
-        active?.hasAttribute('contenteditable')
-      ) {
-        return;
-      }
-
+      const header = document.querySelector('.site-header');
       const searchInput = document.querySelector('.header-search');
       if (!(searchInput instanceof HTMLInputElement)) return;
 
-      e.preventDefault();
-      if (e.key === '/') {
-        searchInput.focus();
-      } else if (e.key === 'Escape') {
-        searchInput.blur();
+      const active = document.activeElement;
+      const isEditingElement =
+        active instanceof HTMLInputElement ||
+        active instanceof HTMLTextAreaElement ||
+        active instanceof HTMLSelectElement ||
+        active?.hasAttribute('contenteditable');
+
+      if (e.key === 'Escape') {
+        if (active === searchInput) {
+          e.preventDefault();
+          searchInput.blur();
+        }
+        return;
       }
+
+      if (isEditingElement) return;
+
+      e.preventDefault();
+      header?.classList.remove('site-header--hidden');
+      searchInput.focus();
     });
   }
 
