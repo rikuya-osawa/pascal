@@ -69,6 +69,28 @@ const msg = getMessages(currentLang);
 </header>
 
 <script type="module" define:vars={{ currentLang }}>
+  function selectIfHasValue(searchInput) {
+    if (searchInput.value.length > 0) {
+      searchInput.select();
+    }
+  }
+
+  function focusSearchInputWithSelection(searchInput) {
+    searchInput.focus();
+    selectIfHasValue(searchInput);
+  }
+
+  function getSearchElements() {
+    const searchForm = document.querySelector('.header-search-form');
+    const searchInput = document.querySelector('.header-search');
+    const searchIcon = document.querySelector('.search-icon');
+
+    if (!(searchForm instanceof HTMLFormElement)) return null;
+    if (!(searchInput instanceof HTMLInputElement)) return null;
+
+    return { searchForm, searchInput, searchIcon };
+  }
+
   // --- スクロール動作 ---
   (() => {
     const header = document.querySelector('.site-header');
@@ -106,36 +128,49 @@ const msg = getMessages(currentLang);
 
   // --- 検索ロジック ---
   function initSearch() {
-    const searchForm = document.querySelector('.header-search-form');
-    const searchInput = document.querySelector('.header-search');
-    const searchIcon = document.querySelector('.search-icon');
+    const searchElements = getSearchElements();
+    if (!searchElements) return;
 
-    if (!searchForm || !searchInput) return;
+    const { searchForm, searchInput, searchIcon } = searchElements;
 
-    searchForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const query = searchInput.value.trim();
-      
-      const url = new URL(window.location.origin + `/${currentLang}/models`);
-      if (query) {
-        url.searchParams.set('q', query);
-      }
+    if (searchForm.dataset.bound !== 'true') {
+      searchForm.dataset.bound = 'true';
+      searchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const query = searchInput.value.trim();
 
-      if (window.location.pathname !== `/${currentLang}/models`) {
-        window.location.href = url.toString();
-      } else {
-        window.history.pushState({}, '', url);
-        
-        if (typeof window.updateAllFilters === 'function') {
-          window.updateAllFilters();
+        const url = new URL(window.location.origin + `/${currentLang}/models`);
+        if (query) {
+          url.searchParams.set('q', query);
         }
-        
-        searchInput.blur();
-      }
-    });
+
+        if (window.location.pathname !== `/${currentLang}/models`) {
+          window.location.href = url.toString();
+        } else {
+          window.history.pushState({}, '', url);
+
+          if (typeof window.updateAllFilters === 'function') {
+            window.updateAllFilters();
+          }
+
+          searchInput.blur();
+        }
+      });
+    }
+
+    if (searchInput.dataset.selectOnFocusBound !== 'true') {
+      searchInput.dataset.selectOnFocusBound = 'true';
+      searchInput.addEventListener('focus', () => {
+        selectIfHasValue(searchInput);
+      });
+      searchInput.addEventListener('click', () => {
+        selectIfHasValue(searchInput);
+      });
+    }
 
     // 検索アイコンクリック時にフォーム送信
-    if (searchIcon) {
+    if (searchIcon instanceof HTMLElement && searchIcon.dataset.bound !== 'true') {
+      searchIcon.dataset.bound = 'true';
       searchIcon.addEventListener('click', (e) => {
         e.preventDefault();
         searchForm.requestSubmit();
@@ -164,8 +199,10 @@ const msg = getMessages(currentLang);
       if (e.metaKey || e.ctrlKey || e.altKey) return;
 
       const header = document.querySelector('.site-header');
-      const searchInput = document.querySelector('.header-search');
-      if (!(searchInput instanceof HTMLInputElement)) return;
+      const searchElements = getSearchElements();
+      if (!searchElements) return;
+
+      const { searchInput } = searchElements;
 
       const active = document.activeElement;
       const isEditingElement =
@@ -186,7 +223,7 @@ const msg = getMessages(currentLang);
 
       e.preventDefault();
       header?.classList.remove('site-header--hidden');
-      searchInput.focus();
+      focusSearchInputWithSelection(searchInput);
     });
   }
 
