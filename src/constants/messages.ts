@@ -15,7 +15,8 @@ export const MESSAGES = {
     notFoundIssue: "問題を報告する",
     notFoundIssueDesc: "バグや問題が見つかった場合は、GitHub Issues にお知らせください。",
     // Home page
-    homeHeroMain: "より良い意思決定を、本質的な問題解決を",
+    homeHeroMainLine1: "より良い意思決定を、", // 全文: "より良い意思決定を、<br>本質的な問題解決を"
+    homeHeroMainLine2: "より本質的な問題解決を",
     homeHeroSub: "複雑な世界をシンプルに捉えるための思考の地図（Mental Model Atlas）",
     homeHeroCtaText: "アトラスを探索する",
     homeConceptTitle: "なぜメンタルモデルが必要なのか？",
@@ -58,7 +59,8 @@ export const MESSAGES = {
     notFoundIssue: "Report an Issue",
     notFoundIssueDesc: "If you found a bug or issue, please let us know on GitHub Issues.",
     // Home page
-    homeHeroMain: "Better Decision-Making, Lasting Problem-Solving",
+    homeHeroMainLine1: "Better Decision-Making,", // 全文: "Better Decision-Making,<br>Lasting Problem-Solving"
+    homeHeroMainLine2: "Lasting Problem-Solving",
     homeHeroSub: "A map of thinking to understand complex world simply - Mental Model Atlas",
     homeHeroCtaText: "Explore the Atlas",
     homeConceptTitle: "Why Mental Models Matter",
