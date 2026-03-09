@@ -1,65 +1,99 @@
 ---
 type: mental-model
-ja_name: Sunk Cost Thinking
-en_name: Sunk Cost Fallacy
+ja_name: サンクコスト思考
+en_name: Sunk Cost Thinking
 abbreviation: Sunk Cost
-description: A thinking model for making rational future decisions by ignoring costs (time, money, effort, or emotion) that have already been incurred and cannot be recovered.
+description: A model for making rational decisions by ignoring irrecoverable past costs.
 application:
-- DM
-- LIFE
+  - DM
+  - LIFE
 layer: CORE
 tags:
-- mental-model
+  - mental-model
 ---
 
-# Sunk Cost Fallacy (Sunk Cost Thinking)
+# Sunk Cost Thinking (Sunk Cost Fallacy)
 
 ## Overview
-A cognitive bias where we follow through on an endeavor if we have already invested resources in it, even if the current costs outweigh the future benefits. This model helps to decouple past investments from future rational decision-making.
 
-## Evaluation (1–5)
-**Versatility**:: 5  
-**Immediacy**:: 4  
-**Difficulty**:: 2  
-**Misuse Risk**:: 4  
+Sunk Cost Fallacy is a cognitive bias where we continue an endeavor solely because we have already invested resources (time, money, or effort) in it, even when the current costs outweigh the future benefits. This model helps to decouple past investments from future rational decision-making by focusing only on **"Incremental Costs"** and **"Future Benefits"**.
 
-### Editorial Comments
-**Comment**:: While the concept is easy to understand, it is notoriously difficult to practice when **「emotions」** are involved. Without a conscious **「questioning process」**, one easily falls back into this fallacy.
+## Rating (1–5)
+
+* **Versatility:** 5
+* **Immediacy:** 4
+* **Difficulty:** 2
+* **Misuse Risk:** 4
+
+### Evaluation Comment
+
+While the concept is easy to understand intellectually, it is notoriously difficult to practice when **"Emotions"** or **"Social Reputation"** are involved. Without a conscious **"Resetting Process"**, the human brain naturally seeks to "justify" past waste by creating more of it.
+
+---
 
 ## The First Question
-- "If I encountered this exact situation for the first time today, would I still make the same decision?"
+
+> **"If I were walking into this exact situation for the first time today, with no prior history or investment, would I still choose to start this path?"**
 
 ### Objectives
-- Separate past investments from future judgments.
-- Reset **「emotional attachment」** to the current path.
 
-### Pitfall Questions
-- "Since I've come this far, shouldn't I keep going?"
-- "If I quit now, won't everything I've done so far be a waste?"
+* To separate past investments from future utility.
+* To reset **"Emotional Attachment"** to a failing course of action.
+* To stop "throwing good money after bad."
 
-## How to Use (Mini-Steps)
-1. **List** all costs that are already irrecoverable (time, money, emotion).  
-2. **Exclusion**: Deliberately remove those costs from your decision-making framework.  
-3. **Comparison**: Evaluate future options based solely on their **「future value」** and potential.
+### Poor Questions
+
+* **"Since I've come this far, shouldn't I just finish it?"** (Past distance is irrelevant to future value)
+* **"If I quit now, won't all my previous work be a waste?"** (The work is already a waste; quitting prevents *further* waste)
+* **"What will people think if I give up now?"** (Prioritizes social signaling over rational outcome)
+
+---
+
+## How to Use (Step-by-Step)
+
+1.  **Audit Irrecoverable Costs**
+    * List everything you have already spent that you cannot get back: time, money, reputation, or emotional energy. Label these as **"Sunk"**.
+
+2.  **The "Clean Slate" Test**
+    * Imagine you are a new manager or a third party stepping in today. Look only at the **"Future Costs"** required to finish and the **"Future Value"** of the result.
+
+3.  **Opportunity Cost Comparison**
+    * Ask: "If I take the resources I am about to spend on this project and put them elsewhere, would the return be higher?"
+
+4.  **Make the Cut**
+    * If the future value does not justify the future cost, abandon the project regardless of how much was spent in the past.
+
+---
 
 ## Output Examples
-- **Bullet Points:**
-  - Sunk Costs (Past): Time, expenses, emotional energy.
-  - Future Decision Factors: Expected value, risks, constraints.
-- **Visuals:**
-  - Dichotomy chart: Past (Disconnected) / Future (Judgment).
+
+### 1. Decision Matrix
+* **Past Investment:** $1M spent over 2 years.
+* **Current Status:** Project is 50% done, but the market has shifted.
+* **Future Cost to Finish:** $1M.
+* **Expected Future Value:** $800k.
+* **Decision:** **"Abandon"** (The $1M spent is gone; spending another $1M to get $800k is a logical loss).
+
+### 2. Visualization
+* **Dichotomy Chart:** A vertical line separating the "Past" (Sunk/Irrelevant) from the "Future" (Decision/Relevant).
+
+
+---
 
 ## Use Cases
-- **Business**: Deciding whether to continue a deficit-running project or withdraw from a venture.  
-- **Daily Life**: Quitting hobbies, habits, or relationships that no longer serve you.  
-- **Decision Making**: When the only reason for continuing is "because of the effort already spent."
 
-## Common Misuses
-- Mistaking the act of ignoring sunk costs for **「denying past efforts」**.
-- Increasing long-term losses in an attempt to avoid short-term pain.
-- Preserving emotional attachments under the guise of an objective decision.
+* **Business:** Deciding whether to kill a deficit-running product line, software project, or an underperforming marketing campaign.
+* **Daily Life:** Walking out of a bad movie, quitting a book you aren't enjoying, or leaving a career path that no longer aligns with your goals.
+* **Decision Making:** High-stakes situations where "admitting a mistake" is the only way to save remaining resources.
+
+## Typical Misuses
+
+* **The "Experience" Trap:** Mistaking the act of ignoring sunk costs for **"Denying the Value of Experience"**. (You keep the lessons, but you drop the project).
+* **Double-Down Strategy:** Increasing long-term losses in a desperate attempt to avoid the short-term psychological pain of "losing."
+* **Hidden Sunk Costs:** Ignoring the **"Emotional Sunk Cost"** (e.g., "I've been in this relationship for 10 years"), which is often harder to ignore than financial ones.
 
 ## Relationship with Other Models
-- **Related**: Cognitive Bias, Behavioral Economics.  
-- **Complementary**: Expected Value Thinking (evaluating future value), Trade-off Thinking (the decision to let go).  
-- **Contrast**: Result-oriented bias (judging based on past investment).
+
+* **Related:** Cognitive Bias, Loss Aversion (the root cause of sunk cost thinking).
+* **Complementary:** **"Expected Value Thinking"** (calculating future gains), **"Opportunity Cost"** (what else could you do with those resources?).
+* **Opposing:** Commitment Bias, "Stay the Course" mentality (when used without evidence).

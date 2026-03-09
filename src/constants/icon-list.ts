@@ -21,6 +21,7 @@ export const LUCIDE_ICONS = [
     'castle',
     'target',
     'briefcase',
+    'list',
     // 思考・分析
     'columns-4',
     'rocket',

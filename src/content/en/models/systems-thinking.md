@@ -1,6 +1,6 @@
 ---
 type: mental-model
-ja_name: Systems Thinking
+ja_name: システム思考
 en_name: Systems Thinking
 abbreviation: Systems Thinking
 description: A thinking model that perceives things not as isolated "elements," but as "relationships, interactions, and circular structures" between them, aiming for holistic optimization rather than local optimization.
@@ -34,7 +34,7 @@ A framework for seeing interrelationships rather than things, and for seeing pat
 - Maintain awareness of the cycle between cause and effect.
 - Prevent local optimization (improving one part at the expense of the whole).
 
-### Pitfall Questions
+### Poor Questions
 - "Who is to blame?"
 - "Which single part should we fix to solve this?"
 

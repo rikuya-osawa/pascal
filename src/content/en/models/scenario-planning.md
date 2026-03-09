@@ -1,6 +1,6 @@
 ---
 type: mental-model
-ja_name: シナリオプランニング
+ja_name: シナリオ・プランニング
 en_name: Scenario Planning
 abbreviation: Scenario Planning
 description: A model for preparing strategies by mapping multiple plausible future scenarios based on critical uncertainties.

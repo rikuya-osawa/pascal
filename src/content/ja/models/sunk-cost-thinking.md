@@ -1,7 +1,7 @@
 ---
 type: mental-model
 ja_name: サンクコスト思考
-en_name: Sunk Cost Fallacy
+en_name: Sunk Cost Thinking
 abbreviation: サンクコスト
 description: すでに支払って回収できないコスト（時間・お金・労力・感情）に引きずられず、将来の意思決定を合理的に行うための思考モデル。
 application:
@@ -11,7 +11,7 @@ layer: CORE
 tags:
 - mental-model
 ---
-# サンクコスト思考（Sunk Cost Fallacy）
+# サンクコスト思考
 
 ## 概要
 すでに支払って回収できないコスト（時間・お金・労力・感情）に引きずられず、将来の意思決定を合理的に行うための思考モデル。

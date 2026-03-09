@@ -1,17 +1,18 @@
 export const MODEL_ICONS: Record<string, string> = {
   // --- ビジネス・フレームワーク系 ---
   "4p-4c": "lucide:component",
-  "bmc": "lucide:layout-dashboard",
+  "business-model-canvas": "lucide:layout-dashboard",
   "stp-analysis": "lucide:users-2", // stp分析
   "vrio-analysis": "lucide:gem", // vrio分析
   "five-forces-analysis": "lucide:swords", // ファイブフォース分析
   "value-chain-analysis": "lucide:link", // バリューチェーン分析
   "economic-moat": "lucide:castle", // 競争優位moat
   "jobs-to-be-done": "lucide:briefcase", // ジョブ理論
+  "work-planning-strategy": "lucide:list", // 仕事計画戦略
 
   // --- 思考法・プロセス系 ---
   "mece": "lucide:columns-4",
-  "mvp": "lucide:rocket",
+  "minimum-viable-product": "lucide:rocket",
   "ooda-loop": "lucide:rotate-cw", // oodaループ
   "five-whys-analysis": "lucide:help-circle", // why-why分析
   "issue-tree": "lucide:git-pull-request", // イシューツリー
@@ -23,7 +24,7 @@ export const MODEL_ICONS: Record<string, string> = {
   // --- 戦略・システム系 ---
   "systems-thinking": "lucide:network", // システム思考
   "antifragile-thinking": "lucide:dumbbell", // アンチフラジャイル思考
-  "senario-planning": "lucide:map", // シナリオプランニング
+  "scenario-planning": "lucide:map", // シナリオプランニング
   "flywheel-thinking": "lucide:disc-3", // フライホイール思考
   "leverage-thinking": "lucide:wrench", // レバレッジ思考
   "lean-thinking": "lucide:recycle", // リーン思考
