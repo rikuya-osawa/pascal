@@ -9,6 +9,11 @@ export const MODEL_ICONS: Record<string, string> = {
   "economic-moat": "lucide:castle", // 競争優位moat
   "jobs-to-be-done": "lucide:briefcase", // ジョブ理論
   "work-planning-strategy": "lucide:list", // 仕事計画戦略
+  "swot-analysis": "lucide:grid-2x2", // SWOT分析
+  "pestel-analysis": "lucide:telescope", // PEST分析
+  "mandala-chart": "lucide:grid-3x3", // マンダラチャート
+  "smart-goals": "lucide:calendar-check", // SMARTゴール
+  "5w1h": "lucide:list-check", // 5W1H
 
   // --- 思考法・プロセス系 ---
   "mece": "lucide:columns-4",
@@ -28,7 +33,7 @@ export const MODEL_ICONS: Record<string, string> = {
   "flywheel-thinking": "lucide:disc-3", // フライホイール思考
   "leverage-thinking": "lucide:wrench", // レバレッジ思考
   "lean-thinking": "lucide:recycle", // リーン思考
-  "theory-of-constraints": "lucide:hourglass", // 制約条件思考
+  "constraint-based-thinking": "lucide:hourglass", // 制約条件思考
 
   // --- 確率・統計・判断系 ---
   "bayesian-thinking": "lucide:scale", // ベイズ思考

@@ -7,7 +7,7 @@ description: A thinking model focused on identifying and concentrating on the "v
 application:
   - PS
   - DM
-  - LT
+  - NB
 layer: TOOL
 tags:
   - mental-model

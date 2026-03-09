@@ -11,6 +11,7 @@ export const LUCIDE_ICONS = [
     'search',
     'sun',
     'moon',
+    'telescope',
     // ビジネス・戦略
     'component',
     'layout-dashboard',
@@ -22,6 +23,8 @@ export const LUCIDE_ICONS = [
     'target',
     'briefcase',
     'list',
+    'list-check',
+    'calendar-check',
     // 思考・分析
     'columns-4',
     'rocket',
@@ -31,6 +34,8 @@ export const LUCIDE_ICONS = [
     'triangle',
     'skull',
     'test-tube-2',
+    'grid-2x2',
+    'grid-3x3',
     // システム・効率
     'network',
     'dumbbell',

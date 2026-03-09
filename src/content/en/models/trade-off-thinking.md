@@ -2,65 +2,99 @@
 type: mental-model
 ja_name: トレードオフ思考
 en_name: Trade-off Thinking
-abbreviation: トレードオフ
-description: すべてを同時に満たそうとせず、「何を得て、何を捨てるのか」を明確にすることで、現実的で納得感のある意思決定を行うための思考モデル。
+abbreviation: Trade-off
+description: A thinking model for making realistic decisions by explicitly defining what to gain and what to sacrifice, rather than attempting to satisfy everything at once.
 application:
-- DM
-- LIFE
+  - DM
+  - LIFE
 layer: CORE
 tags:
-- mental-model
+  - mental-model
 ---
-# トレードオフ思考（Trade-off Thinking）
 
-## 概要
-すべてを同時に満たそうとせず、「何を得て、何を捨てるのか」を明確にすることで、現実的で納得感のある意思決定を行うための思考モデル。
+# Trade-off Thinking
 
-## 評価（1–5）
-応用度:: 5  
-即効性:: 4  
-理解難易度:: 3  
-誤用リスク:: 3  
+## Overview
 
-### 評価コメント
-評価コメント:: 意思決定の質を高める基本モデル。捨てることを明示しないと、実質的に何も決めていない状態に陥りやすい。
+Trade-off Thinking is the recognition that every choice involves a compromise. Since resources like time, money, and energy are finite, choosing one path inherently means not choosing another. This model moves decision-making from a search for a **"perfect solution"** to a conscious selection of the **"most acceptable sacrifice"** to achieve a specific priority.
 
-## 最初の一問
-- 「この選択で、私は何を優先し、何をあきらめるのだろうか？」
+## Rating (1–5)
 
-### 狙い
-- すべてを取ろうとする思考を止める  
-- 意思決定を言語化し、後悔や迷いを減らす  
+* **Applicability:** 5
+* **Immediacy:** 4
+* **Difficulty to Understand:** 3
+* **Misuse Risk:** 3
 
-### 悪い問い
-- 「どっちも取る方法はないか？」
-- 「完璧な選択は何か？」
+### Evaluation Comment
 
-## 使い方（ミニ手順）
-1. 両立しにくい選択肢や価値を並べる  
-2. 自分（または組織）の優先基準を明確にする  
-3. 捨てるものを言葉で宣言する  
+A foundational model for high-quality decision-making. Without explicitly stating what you are **"giving up,"** you risk falling into a state of "pseudo-deciding" where nothing is actually prioritized and resources are spread too thin.
 
-## アウトプット例
-- 箇条書き：
-  - 選択肢A：得るもの / 捨てるもの  
-  - 選択肢B：得るもの / 捨てるもの  
-- 図の形：
-  - 2軸マトリクス  
+---
 
-## 使いどころ（活用例）
-- ビジネス：戦略選択、リソース配分、プロダクト方針決定
-- 日常：進路選択、時間配分、働き方の決定
-- 判断・思考：決めきれずに迷っているとき
+## The First Question
 
-## 典型的な誤用
-- トレードオフの存在自体を認めない
-- 捨てたものを後から蒸し返す
-- 優先基準が曖昧なまま比較する
+> **"In this choice, what am I prioritizing, and what am I intentionally giving up?"**
 
-## 他モデルとの関係
-- 関連：意思決定理論、コストベネフィット分析
-- 補完：本質思考（優先軸設定）、期待値思考（判断基準）
-- 対立：全方位最適思考（すべてを最大化しようとする）
+### Objectives
+
+* To stop the instinctive desire to "have it all," which leads to indecision.
+* To verbalize the decision process, thereby reducing future regret and hesitation.
+* To clarify the strategy by defining what you *won't* do.
+
+### Poor Questions
+
+* **"Isn't there a way to get both?"** (Often leads to a mediocre "compromise" that fails both goals)
+* **"What is the perfect choice?"** (Ignores the reality of finite resources)
+
+---
+
+## How to Use (Step-by-Step)
+
+1.  **List Conflicting Values**
+    * Identify the options or values that are difficult to satisfy simultaneously (e.g., Speed vs. Quality, Work vs. Family).
+
+2.  **Define Priority Criteria**
+    * Clarify your own (or the organization's) current standard for success. What matters most *right now*?
+
+3.  **Declare the Sacrifice**
+    * Explicitly state: "By choosing A, I am intentionally choosing not to achieve B at this time."
+
+4.  **Accept the Consequence**
+    * Acknowledge the downsides of the sacrifice to prevent second-guessing later.
+
+---
+
+## Output Examples
+
+### 1. Gain/Loss Log
+* **Option A (Speed Priority):**
+    * **Gain:** Market lead, fast feedback.
+    * **Loss:** High bug risk, temporary lack of scalability.
+* **Option B (Quality Priority):**
+    * **Gain:** High trust, long-term stability.
+    * **Loss:** Delayed launch, potential loss of market timing.
+
+### 2. Visualization
+* **The 2-Axis Matrix:** Visualizing where a choice sits between two competing values.
+* **The Scale Diagram:** A visual representation of weighing one value against another.
 
 
+
+---
+
+## Use Cases
+
+* **Business:** Strategic selection, resource allocation, and product roadmap decisions.
+* **Daily Life:** Career paths, time allocation (e.g., study vs. rest), and major purchases.
+* **Judgment / Thinking:** When you feel stuck or paralyzed because every option seems to have a drawback.
+
+## Typical Misuses
+
+* **Denying the Trade-off:** Pretending a decision has no downside, leading to shock when the sacrifice eventually manifests.
+* **Revisiting the Sacrifice:** Constantly complaining about what was given up instead of focusing on the gain.
+* **Vague Criteria:** Trying to compare options without a clear "ruler" or standard for what is important.
+
+## Relationship with Other Models
+
+* **Related:** Decision Theory, Cost-Benefit Analysis, Opportunity Cost.
+* **Complementary:** Essential Thinking (setting priority axes), Expected Value Thinking (as a decision standard).

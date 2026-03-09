@@ -7,7 +7,6 @@ description: 業界の収益性を決定する5つの競争要因を分析し、
 application:
 - NB
 - DM
-- LT
 layer: TOOL
 tags:
 - mental-model
