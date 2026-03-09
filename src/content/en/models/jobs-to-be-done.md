@@ -3,67 +3,94 @@ type: mental-model
 ja_name: ジョブ理論
 en_name: Jobs To Be Done
 abbreviation: JTBD
-description: 顧客は「商品」を買っているのではなく、「達成したい進歩（ジョブ）」を雇っている、という視点で価値を捉える思考モデル。
+description: A thinking model that views value through the lens that customers don't just buy "products"; they "hire" them to achieve a specific "progress" (a Job).
 application:
-- DM
-- NB
+  - DM
+  - NB
 layer: TOOL
 tags:
-- mental-model
+  - mental-model
 ---
-# ジョブ理論（Jobs To Be Done）
 
-## 概要
-顧客は「商品」を買っているのではなく、「達成したい進歩（ジョブ）」を雇っている、という視点で価値を捉える思考モデル。
+# Jobs To Be Done (JTBD)
 
-## 評価（1–5）
-応用度:: 5  
-即効性:: 3  
-理解難易度:: 4  
-誤用リスク:: 4  
+## Overview
 
-### 評価コメント
-評価コメント:: 顧客理解を一段深くできる強力な視点だが、「ニーズ」と混同すると表面的な分析に終わる。
+A thinking model based on the principle that customers don't simply purchase products; they "hire" them to perform a specific **"Job"** to achieve progress in a given circumstance. By focusing on the "progress" a person is trying to make rather than their demographic attributes, you can uncover the true drivers of consumer behavior.
 
-## 最初の一問
-- 「この人は、本当は何を前に進めたくて“これ”を使っているのだろうか？」
+## Rating (1–5)
 
-### 狙い
-- 機能や属性ではなく“進歩”に注目する  
-- 表面的なニーズから構造的欲求へ掘り下げる  
+* **Applicability:** 5
+* **Immediacy:** 3
+* **Difficulty to Understand:** 4
+* **Misuse Risk:** 4
 
-### 悪い問い
-- 「この商品のターゲットは誰か？」
-- 「どんな機能を求めているか？」
+### Evaluation Comment
 
-## 使い方（ミニ手順）
-1. 利用シーンを具体的に描写する（状況）  
-2. その人が達成したい“進歩”を言語化する  
-3. 代替手段（競合）を広く洗い出す  
+A powerful perspective that deepens customer understanding. However, if confused with mere **"needs"** or "wants," the analysis often ends up being superficial and fails to uncover structural desires.
 
-## アウトプット例
-- 箇条書き：
-  - 状況：
-  - 障害：
-  - 望む進歩：
-- 図の形：
-  - 状況 → ジョブ → 代替手段
-  - 機能 vs 進歩の対比表
+---
 
-## 使いどころ（活用例）
-- ビジネス：新規事業設計、プロダクト改善、マーケティング
-- 日常：自分がなぜその選択をしているのかを理解する
-- 判断・思考：顧客視点が曖昧なとき
+## The First Question
 
-## 典型的な誤用
-- ジョブを「ニーズ」と同義に扱う
-- 属性セグメントで止まる
-- 機能改善に話が戻る
-- 進歩ではなく“問題”だけを見る
+> **"What specific 'progress' is this person trying to achieve that causes them to 'hire' this solution?"**
 
-## 他モデルとの関係
-- 関連：顧客中心思考、仮説思考
-- 補完：イシューツリー（構造化）、ベイズ思考（検証）
-- 対立：機能中心思考、スペック競争思考
+### Objectives
 
+* To focus on **"Progress"** rather than just features or user attributes.
+* To dig beneath surface-level needs into structural desires.
+* To identify non-obvious competitors that solve the same Job.
 
+### Poor Questions
+
+* **"Who is the target audience for this product?"** (Focuses on demographics rather than circumstances)
+* **"What features are they looking for?"** (Focuses on the solution rather than the Job)
+
+---
+
+## How to Use (Step-by-Step)
+
+1.  **Describe the Circumstance**
+    * Vividly map out the specific situation or context in which the person is struggling.
+
+2.  **Verbalize the "Progress"**
+    * Define the "Job" in terms of the desired progress. What does "winning" or "moving forward" look like for them?
+
+3.  **Identify Alternatives Broadly**
+    * List all potential solutions (competitors) the user might hire to do that Job—even those in entirely different product categories.
+
+4.  **Analyze the Forces of Progress**
+    * Identify the **"Pushes"** (struggles with current solutions) and **"Pulls"** (attraction to the new solution).
+
+---
+
+## Output Examples
+
+### 1. Job Statement Log
+* **Situation:** When I am commuting a long distance and feel bored/hungry.
+* **Struggle:** I need something to consume that isn't messy and lasts a long time.
+* **The Job:** Hire a "Milkshake" to make the commute more interesting and keep me full until lunch.
+
+### 2. Visualization
+* **Circumstance → Job → Alternative Matrix:** Comparing different solutions for the same Job.
+* **Feature vs. Progress Contrast Table:** Highlighting the difference between what a product *is* and what it *enables*.
+
+---
+
+## Use Cases
+
+* **Business:** New business design, product improvement, and strategic marketing.
+* **Daily Life:** Understanding the underlying reasons for your own choices and consumption habits.
+* **Judgment / Thinking:** When customer perspective feels vague or trapped in internal logic.
+
+## Typical Misuses
+
+* **Treating "Jobs" as "Needs":** Using the term but only describing basic functional requirements.
+* **Stopping at Demographic Segments:** Thinking that "males aged 20-30" is the reason for the purchase.
+* **Reverting to Feature Improvement:** Focusing on making the tool better without checking if it's still the right tool for the Job.
+
+## Relationship with Other Models
+
+* **Related:** Customer-Centric Thinking, Hypothesis-Driven Thinking.
+* **Complementary:** Issue Tree (for structuring), Bayesian Thinking (for verifying Job hypotheses).
+* **Opposing:** Feature-Centric Thinking, Spec-Based Competition.

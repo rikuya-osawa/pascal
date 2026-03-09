@@ -3,74 +3,99 @@ type: mental-model
 ja_name: 限界思考
 en_name: Marginal Thinking
 abbreviation: Marginal
-description: 全体平均ではなく、「追加で1単位行うこと（限界）」によって得られる追加利益と追加コストを比較し、意思決定するための思考モデル。
+description: A thinking model for decision-making by comparing the additional benefit and additional cost gained from performing "one more unit" (the margin), rather than looking at overall averages.
 application:
-- DM
-- NB
-- LIFE
+  - DM
+  - NB
+  - LIFE
 layer: CORE
 tags:
-- mental-model
+  - mental-model
 ---
-# 限界思考（Marginal Thinking）
 
-## 概要
-全体平均ではなく、「追加で1単位行うこと（限界）」によって得られる追加利益と追加コストを比較し、意思決定するための思考モデル。
+# Marginal Thinking
 
-## 評価（1–5）
-応用度:: 5  
-即効性:: 4  
-理解難易度:: 3  
-誤用リスク:: 4  
+## Overview
 
-### 評価コメント
-評価コメント:: 投資・価格・時間配分などほぼすべての意思決定で使える極めて強力なモデル。ただし平均値で判断する癖が強いと誤判断しやすい。
+A thinking model focused on evaluating the benefits and costs of incremental changes. Instead of looking at total or average values, Marginal Thinking asks whether the **"next unit"** (of time, money, or effort) provides more value than it costs. This allows for precise optimization of resources and identifying the exact point where further effort ceases to be productive.
 
-## 最初の一問
-- 「もう1単位追加したとき、本当に得か？」
+## Rating (1–5)
 
-### 狙い
-- 平均ではなく追加判断で考える
-- 過剰投資・過剰努力を防ぐ
+* **Applicability:** 5
+* **Immediacy:** 4
+* **Difficulty to Understand:** 3
+* **Misuse Risk:** 4
 
-### 悪い問い
-- 「平均的に得か？」
-- 「ここまでやったから続けるべきか？」
+### Evaluation Comment
 
-## 使い方（ミニ手順）
+An extremely powerful model applicable to almost all decisions involving investment, pricing, and time allocation. However, because humans are naturally inclined to judge based on **"averages,"** it requires conscious effort to avoid misjudgment.
 
-1. 追加で行う単位（時間・金額・機能など）を定義する  
-2. 追加コストを見積もる  
-3. 追加リターンを見積もる  
-4. 追加リターン > 追加コストなら実行  
+---
+
+## The First Question
+
+> **"If I add one more unit of this, will the additional gain outweigh the additional cost?"**
+
+### Objectives
+
+* To base decisions on incremental impact rather than historical averages.
+* To prevent over-investment and "over-effort" beyond the point of diminishing returns.
+* To identify the optimal stopping point for any activity.
+
+### Poor Questions
+
+* **"Is this profitable on average?"** (Ignores that the next unit might be a loss)
+* **"Should I keep going since I’ve already come this far?"** (Falls into the Sunk Cost trap)
+
+---
+
+## How to Use (Step-by-Step)
+
+1.  **Define the Marginal Unit**
+    * Identify the specific unit you are considering adding (e.g., one more hour of work, $100 more in ads, one more product feature).
+
+2.  **Estimate Marginal Cost**
+    * Calculate the cost required to produce or perform that specific next unit.
+
+3.  **Estimate Marginal Benefit**
+    * Determine the additional return or utility gained specifically from that next unit.
+
+4.  **Compare and Decide**
+    * If **Marginal Benefit > Marginal Cost**, proceed.
+    * If **Marginal Benefit < Marginal Cost**, stop or reduce.
+
+---
+
+## Output Examples
+
+### 1. Marginal Assessment Log
+* **Action:** Increasing ad spend by $1,000.
+* **Marginal Return:** +$1,500 in sales.
+* **Marginal Profit:** +$500 → **Decision: Proceed.**
+* *Note: Even if total ROI is high, if the next $1,000 only returns $800, you should stop.*
+
+### 2. Visualization
+* **Marginal Cost Curve:** A chart showing how cost changes per unit.
+* **Optimal Point Graph:** Visualizing the intersection where Marginal Benefit equals Marginal Cost (the point of maximum efficiency).
 
 
-## アウトプット例
 
-- 箇条書き：
-  - 追加広告費：+10万円
-  - 追加売上：+15万円
-  - 限界利益：+5万円 → 実行
-- 図の形：
-  - 限界コスト曲線
-  - 限界利益 vs 限界コストグラフ
-  - 交点（最適点）
+---
 
+## Use Cases
 
-## 使いどころ（活用例）
+* **Business:** Decisions on additional investment, dynamic pricing, and feature prioritization.
+* **Daily Life:** Deciding whether to work overtime, study for one more hour, or order an extra side dish.
+* **Judgment / Thinking:** Determining when to stop a project or when to double down on a growing opportunity.
 
-- ビジネス：追加投資判断、価格設定、機能追加判断  
-- 日常：残業するか、もう1時間勉強するか  
-- 判断・思考：やめ時・続け時の判断  
+## Typical Misuses
 
-## 典型的な誤用
+* **Judging by Averages:** Assuming that because the first 10 units were profitable, the 11th will be too.
+* **Underestimating Marginal Cost:** Failing to account for the rising "hidden costs" (like fatigue or complexity) of adding more units.
+* **Emotional Continuation:** Allowing emotions or past investments (**"Sunk Costs"**) to drive the decision to continue.
 
-- 平均値で判断する  
-- 限界コストを過小評価する  
-- 感情で継続する（サンクコスト）
+## Relationship with Other Models
 
-## 他モデルとの関係
-
-- 関連：期待値思考、トレードオフ思考  
-- 補完：サンクコスト効果、リスク・リターン思考  
-- 対立：平均思考
+* **Related:** Expected Value Thinking, Trade-off Thinking.
+* **Complementary:** Sunk Cost Fallacy (ignoring the past), Diminishing Returns, Risk-Reward Thinking.
+* **Opposing:** Average Thinking, Total-Sum Thinking.

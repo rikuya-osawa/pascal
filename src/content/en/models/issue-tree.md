@@ -1,68 +1,99 @@
 ---
 type: mental-model
-ja_name: Issue Tree
+ja_name: イシューツリー
 en_name: Issue Tree
 abbreviation: Issue Tree
 description: A thinking model for designing the overall framework of thought or analysis by breaking down a central "issue" into a tree-like structure of necessary sub-questions.
 application:
-- LT
-- PS
-- DM
+  - LT
+  - PS
+  - DM
 layer: TOOL
 tags:
-- mental-model
+  - mental-model
 ---
 
 # Issue Tree
 
 ## Overview
-A strategic framework that starts with a central problem to be solved (the **「Issue」**) and decomposes it into sub-issues and points of argument in a tree-like hierarchy. It serves as a blueprint for identifying exactly what needs to be answered to reach a conclusion.
 
-## Evaluation (1–5)
-**Versatility**:: 5  
-**Immediacy**:: 3  
-**Difficulty**:: 4  
-**Misuse Risk**:: 4  
+A strategic framework that starts with a central problem to be solved (the **"Issue"**) and decomposes it into sub-issues and points of argument in a tree-like hierarchy. It serves as a **"Blueprint"** for identifying exactly what needs to be answered to reach a logical conclusion, ensuring that no effort is wasted on irrelevant data.
 
-### Editorial Comments
-**Comment**:: An incredibly powerful **「blueprint」** for problem-solving. However, if the initial **「Issue setting」** is weak, the entire analysis risks becoming a wasted effort.
+
+
+## Rating (1–5)
+
+* **Versatility:** 5
+* **Immediacy:** 3
+* **Difficulty:** 4
+* **Misuse Risk:** 4
+
+### Evaluation Comment
+
+An incredibly powerful tool for problem-solving. It acts as the **"Skeleton"** of a logical argument. However, if the initial **"Issue Setting"** is weak or off-target, the entire analysis risks becoming a massive waste of resources.
+
+---
 
 ## The First Question
-- "To answer this main question, what exactly do we need to know or prove?"
+
+> **"To answer this main question definitively, what specific sub-questions must be answered first?"**
 
 ### Objectives
-- Establish the overall structure of thought before jumping into analysis or investigation.
-- Distinguish between **「analysis that must be done」** and **「analysis that should be ignored」**.
 
-### Pitfall Questions
-- "What should we start researching?"
-- "Let's just gather some data for now."
+* To establish the overall structure of thought before jumping into data collection or analysis.
+* To distinguish between **"Analysis that must be done"** and **"Analysis that should be ignored"**.
 
-## How to Use (Mini-Steps)
-1. **Define** the core issue to be solved clearly in a single sentence.
-2. **Identify** the major sub-questions (arguments) required to answer that issue.
-3. **Verify** that each sub-question is MECE and directly leads to a conclusion.
+### Poor Questions
+
+* **"What should we start researching?"** (Research without a question is just noise)
+* **"Let's just gather all the data for now."** (Leads to "boiling the ocean" without insights)
+
+---
+
+## How to Use (Step-by-Step)
+
+1.  **Define the Core Issue**
+    * State the main problem in a single, actionable question. Use the **"Issue-Driven"** approach to ensure it is worth solving.
+
+2.  **Decompose into Sub-Issues**
+    * Break the main issue into 2–4 major arguments. Ask: "What are the components of this problem?"
+
+3.  **Ensure MECE Alignment**
+    * Verify that your sub-issues are **"Mutually Exclusive and Collectively Exhaustive"**. There should be no overlaps and no gaps in your logic.
+
+4.  **Drill Down to Actionable Hypotheses**
+    * Continue the tree until each leaf (the smallest branch) can be answered with a simple "Yes" or "No" through specific data analysis.
+
+---
 
 ## Output Examples
-- **Bullet Points:**
-  - Main Issue
-    - Argument A
-    - Argument B
-    - Argument C
-- **Visuals:**
-  - Tree structure diagram
+
+### 1. Hierarchical Argument
+* **Main Issue:** Should we enter the European market?
+    * **Argument A:** Is the market size and growth potential attractive?
+    * **Argument B:** Can we establish a sustainable **"Economic Moat"** against local rivals?
+    * **Argument C:** Can we achieve profitability within 3 years?
+
+### 2. Visualization
+* **Tree Structure:** A horizontal or vertical diagram where the trunk is the main issue and the branches represent the logical breakdown.
+
+
+---
 
 ## Use Cases
-- **Business**: Problem-solving projects, strategic considerations, and designing research plans.
-- **Daily Life**: Complex decision-making with numerous options.
-- **Decision Making**: When you are unsure where to begin thinking.
 
-## Common Misuses
-- Starting the tree while the core **「Issue」** remains ambiguous.
-- Allowing the decomposition to turn into a mere **「to-do list」** of tasks.
-- Extending branches that do not directly contribute to the final answer.
+* **Business:** Designing research plans, structuring consulting projects, and breaking down revenue targets.
+* **Daily Life:** Navigating complex decisions with multiple variables, like choosing a graduate program or moving to a new city.
+* **Decision Making:** Whenever you feel overwhelmed by a problem and don't know **"Where to begin thinking"**.
+
+## Typical Misuses
+
+* **Vague Issue Setting:** Starting the tree while the core **"Issue"** remains ambiguous or too broad.
+* **The "To-Do List" Trap:** Allowing the tree to become a list of tasks (e.g., "Call client") rather than a list of logical arguments (e.g., "Does the client value speed over cost?").
+* **Branch Bloat:** Extending branches that do not directly contribute to the final decision.
 
 ## Relationship with Other Models
-- **Related**: Issue-Driven Thinking, Logic Tree.
-- **Complementary**: MECE (for organizing arguments), Hypothesis Thinking (setting provisional answers).
-- **Contrast**: Ad-hoc Analysis (researching in the order of what comes to mind).
+
+* **Related:** Issue-Driven Thinking, Logic Tree, Pyramid Principle.
+* **Complementary:** **"MECE"** (the foundational rule for the branches), **"Hypothesis Thinking"** (setting provisional answers for each branch).
+* **Opposing:** Ad-hoc Analysis (investigating things in the order they come to mind).

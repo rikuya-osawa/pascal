@@ -1,67 +1,99 @@
 ---
 type: mental-model
 ja_name: 可逆・不可逆判断
-en_name: Reversible / Irreversible Decision
-abbreviation: 可逆不可逆
-description: 意思決定を「やり直しがきく可逆的な判断」と「元に戻せない不可逆的な判断」に分けて捉え、判断のスピード・慎重さ・検討深度を適切に変えるための思考モデル。
+en_name: Reversible / Irreversible Decisions
+abbreviation: Reversibility
+description: A thinking model for categorizing decisions into "reversible" (can be undone) and "irreversible" (cannot be undone) to appropriately adjust speed, caution, and depth of deliberation.
 application:
-- LT
-- DM
-- LIFE
+  - LT
+  - DM
+  - LIFE
 layer: CORE
 tags:
-- mental-model
+  - mental-model
 ---
-# 可逆・不可逆判断（Reversible / Irreversible Decision）
 
-## 概要
-意思決定を「やり直しがきく可逆的な判断」と「元に戻せない不可逆的な判断」に分けて捉え、判断のスピード・慎重さ・検討深度を適切に変えるための思考モデル。
+# Reversible / Irreversible Decisions
 
-## 評価（1–5）
-応用度:: 5  
-即効性:: 4  
-理解難易度:: 3  
-誤用リスク:: 3  
+## Overview
 
-### 評価コメント
-評価コメント:: 判断の質とスピードのバランスを取るのに非常に有効。不可逆判断を過剰に恐れると意思決定が停滞する点に注意。
+Also known as **"Type 1 and Type 2 Decisions,"** this model distinguishes between choices that are permanent and those that can be changed or undone. By recognizing the degree of reversibility, a decision-maker can apply high-velocity action to low-stakes choices while reserving deep, slow deliberation for high-stakes, "one-way door" decisions.
 
-## 最初の一問
-- 「この判断は、後からやり直せるだろうか？」
+## Rating (1–5)
 
-### 狙い
-- すべての判断を重く扱ってしまう癖を防ぐ  
-- 判断に応じて検討レベルを切り替える  
+* **Applicability:** 5
+* **Immediacy:** 4
+* **Difficulty to Understand:** 3
+* **Misuse Risk:** 3
 
-### 悪い問い
-- 「失敗したらどうしよう？」
-- 「完璧に決めるには何が必要か？」
+### Evaluation Comment
 
-## 使い方（ミニ手順）
-1. 判断対象を「可逆」か「不可逆」かに分類する  
-2. 可逆なら素早く試し、不可逆なら慎重に考える  
-3. 不可逆判断は分割・延期・可逆化できないか検討する  
+Highly effective for balancing decision quality and speed. However, one must be careful not to let an excessive fear of **"irreversible decisions"** lead to organizational stagnation or "analysis paralysis."
 
-## アウトプット例
-- 箇条書き：
-  - 可逆判断：後から変更・撤回できるもの
-  - 不可逆判断：元に戻せない選択
-- 図の形：
-  - 可逆／不可逆 × 影響度の2軸マトリクス
+---
 
-## 使いどころ（活用例）
-- ビジネス：採用判断、組織変更、プロダクト方針
-- 日常：キャリア選択、大きな買い物、人生の決断
-- 判断・思考：決断が重く感じて前に進めないとき
+## The First Question
 
-## 典型的な誤用
-- すべてを不可逆判断として扱う
-- 可逆判断まで慎重に検討しすぎる
-- 本当は不可逆なのに可逆だと思い込む
+> **"If this decision turns out to be wrong, can it be undone or changed later?"**
 
-## 他モデルとの関係
-- 関連：意思決定理論、リスクマネジメント
-- 補完：制約条件思考（前提整理）、期待値思考（判断基準）
-- 対立：完璧主義（常に最適解を求める）
+### Objectives
+
+* To prevent treating every minor decision with the same weight as a major one.
+* To switch the level of deliberation based on the cost of reversal.
+* To increase overall decision velocity in uncertain environments.
+
+### Poor Questions
+
+* **"What if I fail?"** (Focuses on the outcome rather than the nature of the choice)
+* **"What do we need to make this decision perfectly?"** (Leads to over-researching reversible choices)
+
+---
+
+## How to Use (Step-by-Step)
+
+1.  **Categorize the Decision**
+    * **Type 1 (Irreversible):** A "one-way door." Hard to undo, expensive to fail (e.g., launching a new brand name, a major merger).
+    * **Type 2 (Reversible):** A "two-way door." Can be undone or changed relatively easily (e.g., a pricing test, a small feature update).
+
+2.  **Match Speed to Type**
+    * For **Type 2**, decide quickly with about 70% of the information.
+    * For **Type 1**, slow down, gather more data, and seek diverse perspectives.
+
+3.  **Attempt "Reversibilization"**
+    * Can you break a Type 1 decision into smaller, Type 2 experiments? (e.g., test a new market with a small pop-up before building a permanent store).
+
+---
+
+## Output Examples
+
+### 1. Decision Categorization Log
+* **Type 1 Decision:** Hiring a C-level executive.
+    * **Approach:** Extensive background checks, multiple panel interviews, cultural fit assessment.
+* **Type 2 Decision:** Changing the color of the "Buy Now" button.
+    * **Approach:** A/B test for three days and implement based on data.
+
+### 2. Visualization
+* **The 2x2 Matrix:** Plotting decisions based on "Impact" (Vertical) and "Reversibility" (Horizontal).
+* **Door Metaphor:** A diagram showing "One-way doors" vs. "Two-way doors."
 
 
+
+---
+
+## Use Cases
+
+* **Business:** Recruitment, organizational changes, product roadmaps, and budget allocation.
+* **Daily Life:** Career moves, major purchases, and lifestyle changes.
+* **Judgment / Thinking:** When you feel paralyzed by a decision and need to determine if your caution is justified.
+
+## Typical Misuses
+
+* **The All-Irreversible Trap:** Treating every decision as a "one-way door," leading to slow movement and missed opportunities.
+* **Over-deliberating the Reversible:** Spending weeks on a choice that could be changed in five minutes.
+* **Misidentifying the Irreversible:** Assuming a decision is reversible when it actually carries a high "reputation cost" or "sunk cost" that makes it permanent.
+
+## Relationship with Other Models
+
+* **Related:** Decision Theory, Risk Management.
+* **Complementary:** Constraint Thinking (clarifying premises), Expected Value Thinking (evaluating the cost of failure).
+* **Opposing:** Perfectionism (seeking the "perfect" answer regardless of the nature of the choice).

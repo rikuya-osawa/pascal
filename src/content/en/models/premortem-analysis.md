@@ -2,68 +2,99 @@
 type: mental-model
 ja_name: プレモーテム分析
 en_name: Premortem Analysis
-abbreviation: プレモーテム
-description: 事前に「失敗した未来」を仮定し、なぜ失敗に至ったかを逆算的に洗い出すことで、潜在的リスクや盲点を明らかにするための思考モデル。
+abbreviation: Premortem
+description: A thinking model for identifying potential risks and blind spots by imagining a "future failure" in advance and working backward to determine why it happened.
 application:
-- DM
-- PS
-- NB
+  - DM
+  - PS
+  - NB
 layer: TOOL
 tags:
-- mental-model
+  - mental-model
 ---
-# プレモーテム分析（Premortem Analysis）
 
-## 概要
-事前に「失敗した未来」を仮定し、なぜ失敗に至ったかを逆算的に洗い出すことで、潜在的リスクや盲点を明らかにするための思考モデル。
+# Premortem Analysis
 
-## 評価（1–5）
-応用度:: 5  
-即効性:: 4  
-理解難易度:: 3  
-誤用リスク:: 2  
+## Overview
 
-### 評価コメント
-評価コメント:: プロジェクト・計画のリスクを見える化しやすいが、悲観シナリオだけを重視すると、行動が萎縮する可能性がある。
-
-## 最初の一問
-- 「この計画が失敗したとしたら、何が原因だろうか？」
-
-### 狙い
-- 潜在的リスクを明確化  
-- 楽観バイアスを崩す
-
-### 悪い問い
-- 「とりあえず成功前提で考える」  
-- 「失敗したくないからリスクを言わない」
-
-## 使い方（ミニ手順）
-1. 計画・仮説を明確にする  
-2. “失敗した未来”を仮定する  
-3. 失敗理由を複数書き出す  
-4. それぞれの理由に対策を考える
-
-## アウトプット例
-- 箇条書き：
-  - 失敗シナリオA → 対策  
-  - 失敗シナリオB → 対策
-- 図の形：
-  - フローチャート
-  - リスクツリー
-
-## 使いどころ（活用例）
-- ビジネス：プロジェクト導入前のリスク検討  
-- 日常：大きな決断前のリスク探索  
-- 判断・思考：確信過多のとき
-
-## 典型的な誤用
-- 悲観シナリオだけを見て立ち止まる  
-- リスクすべてが現実になると思う  
-- 対策を考えずに書き出すだけ
-
-## 他モデルとの関係
-- 関連：二次思考、ベイズ思考  
-- 補完：リスク×リターン思考  
-- 対立：楽観主義思考
+Unlike a "postmortem," which analyzes why a project failed after the fact, a **"Premortem"** is a proactive strategy conducted at the start of a project. By imagining that the project has already failed and then working backward to determine the causes, this model allows teams to bypass optimism bias and identify hidden risks before they materialize.
 
 
+
+## Rating (1–5)
+
+* **Applicability:** 5
+* **Immediacy:** 4
+* **Difficulty to Understand:** 3
+* **Misuse Risk:** 2
+
+### Evaluation Comment
+
+Extremely effective for making project risks visible and actionable. However, if the team over-indexes on pessimistic scenarios without developing countermeasures, it can lead to "analysis paralysis" or a loss of momentum.
+
+---
+
+## The First Question
+
+> **"Imagine we are one year into the future and this project has been a complete disaster. What went wrong?"**
+
+### Objectives
+
+* To surface latent risks that are often suppressed during the "honeymoon phase" of a project.
+* To dismantle **"Optimism Bias"** and groupthink.
+* To foster a culture where voicing concerns is seen as a contribution to success.
+
+### Poor Questions
+
+* **"Let's just assume everything goes according to plan for now."** (Ignores the reality of uncertainty)
+* **"What are some things that might go wrong?"** (Too weak; does not trigger the same creative "hindsight" as assuming failure has already occurred)
+
+---
+
+## How to Use (Step-by-Step)
+
+1.  **Define the Plan**
+    * Briefly review the current plan or hypothesis.
+
+2.  **Imagine the Failure**
+    * State clearly: "The project has failed spectacularly." Create a mental space where the disaster is a certainty.
+
+3.  **Generate Reasons for Failure**
+    * Have participants brainstorm and list every possible reason why the project failed. Be specific (e.g., "The competitor launched a similar feature two months earlier").
+
+4.  **Develop Countermeasures**
+    * Review the list of reasons and design specific actions to prevent these scenarios or mitigate their impact.
+
+---
+
+## Output Examples
+
+### 1. Risk-Mitigation Log
+* **Imagined Failure A:** The user interface was too confusing for our core demographic.
+    * **Countermeasure:** Schedule usability testing sessions every two weeks during the development phase.
+* **Imagined Failure B:** Key team members left the project mid-way.
+    * **Countermeasure:** Cross-train team members and improve documentation to reduce dependency on individuals.
+
+### 2. Visualization
+* **Risk Tree:** A branching diagram showing the primary failure at the top and various contributing causes branching out below.
+* **Pre-emptive Action Map:** A table mapping "Potential Failure Points" to "Current Defensive Measures."
+
+---
+
+## Use Cases
+
+* **Business:** Before launching a major project, entering a new market, or implementing a significant organizational change.
+* **Daily Life:** Before making life-altering decisions (e.g., moving to a new city, starting a business).
+* **Judgment / Thinking:** When you feel a dangerous level of "overconfidence" in a plan.
+
+## Typical Misuses
+
+* **Pure Pessimism:** Listing risks but failing to create actionable countermeasures, leading to fear instead of preparation.
+* **Treating Risks as Facts:** Assuming every imagined risk is a certainty, which can lead to unnecessary over-engineering.
+* **Surface-level Brainstorming:** Only listing obvious risks rather than digging for the "uncomfortable" structural blind spots.
+
+## Relationship with Other Models
+
+* **Related:** Second-Order Thinking, Bayesian Thinking (updating based on new scenarios).
+* **Complementary:** Risk-Reward Thinking, Cognitive Bias Awareness (counteracting optimism bias).
+* **Opposing:** Pure Optimism, Uncritical Compliance.

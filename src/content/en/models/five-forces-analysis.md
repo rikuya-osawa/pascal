@@ -7,7 +7,6 @@ description: A framework for analyzing the five competitive forces that determin
 application:
   - NB
   - DM
-  - LT
 layer: TOOL
 tags:
   - mental-model

@@ -3,70 +3,98 @@ type: mental-model
 ja_name: メタ認知
 en_name: Metacognition
 abbreviation: MetaCog
-description: 自分の思考・感情・判断プロセスを一段上から観察し、コントロールする能力。思考のOSを監視するメタレイヤー。
+description: The ability to observe and control one's own thoughts, emotions, and decision-making processes from a higher perspective; the monitoring layer for your "Thinking OS."
 application:
-- DM
-- LIFE
-- PS
+  - DM
+  - LIFE
+  - PS
 layer: META
 tags:
-- mental-model
+  - mental-model
 ---
-# メタ認知（Metacognition）
 
-## 概要
-自分の思考・感情・判断プロセスを一段上から観察し、コントロールする能力。思考のOSを監視するメタレイヤー。
+# Metacognition
 
-## 評価（1–5）
-応用度:: 5  
-即効性:: 2  
-理解難易度:: 4  
-誤用リスク:: 2  
+## Overview
 
-### 評価コメント
-評価コメント:: 習得に時間はかかるが、長期的な判断精度と感情安定性を劇的に向上させる。
+Metacognition is often defined as **"thinking about thinking."** It is the ability to step back and observe your own mental processes—thoughts, emotions, and biases—from a higher perspective. By acting as a monitor for your "Thinking OS," it allows you to evaluate not just *what* you are thinking, but *how* and *why* you are arriving at certain conclusions.
 
-## 最初の一問
-- 「いま、自分はどんな状態で考えているか？」
+## Rating (1–5)
 
-### 狙い
-- 思考と自分を分離する
-- 感情・焦り・確信の強さを客観視する
+* **Applicability:** 5
+* **Immediacy:** 2
+* **Difficulty to Understand:** 4
+* **Misuse Risk:** 2
 
-### 悪い問い
-- 「自分の考え＝自分そのものだ」
-- 「正しいか間違いかだけで判断する」
-- 「感情は無視すべきだ」
+### Evaluation Comment
 
-## 使い方（ミニ手順）
-1. 今の判断を書き出す  
-2. そのときの感情・前提・確信度を言語化する  
-3. 思考プロセス自体を評価する  
-4. 必要なら再考する  
+Mastering this skill takes time and consistent practice, but it leads to a dramatic improvement in long-term decision-making accuracy and emotional stability. It acts as a primary defense against cognitive errors.
 
-## アウトプット例
-- 箇条書き：
-  - 現在の判断：
-  - 感情状態：
-  - 前提：
-  - 修正後の判断：
-- 図の形：
-  - 思考 → 観察者 → 修正
+---
 
-## 使いどころ（活用例）
-- ビジネス：重大判断前、対立時、焦りがあるとき
-- 日常：怒り・不安・自己否定が強いとき
-- 判断・思考：確信が強すぎるとき
+## The First Question
 
-## 典型的な誤用
-- 過度に内省して行動が止まる
-- 自己批判に使う
-- 完璧主義に陥る
+> **"Right now, in what state of mind am I processing this information?"**
 
-## 他モデルとの関係
-- 上位：思考OSの監視レイヤー
-- 包含：バイアス認識
-- 補完：二次思考、ベイズ思考
-- 対立：衝動的判断
+### Objectives
 
+* To separate the **"Self"** from the **"Thought."**
+* To objectively observe emotions, impatience, or the intensity of one's certainty.
+* To create a mental "buffer" before acting on impulse.
 
+### Poor Questions
+
+* **"My thoughts are exactly who I am."** (Fails to differentiate between the observer and the observed)
+* **"Is this strictly right or wrong?"** (Focuses on the output rather than the process)
+* **"I should just ignore my emotions."** (Fails to recognize emotions as data points in the thinking process)
+
+---
+
+## How to Use (Step-by-Step)
+
+1.  **Externalize Your Judgment**
+    * Write down your current decision or opinion to make it visible.
+
+2.  **Verbalize the Context**
+    * Label your current emotional state, underlying assumptions, and level of certainty (e.g., "I feel rushed and I am assuming X is true").
+
+3.  **Evaluate the Process**
+    * Analyze the thinking process itself. Is it biased? Is it based on fragments of info? Is the logic sound?
+
+4.  **Recalibrate**
+    * Based on your meta-observation, adjust your thinking or decision as necessary.
+
+---
+
+## Output Examples
+
+### 1. Metacognitive Log
+* **Current Judgment:** "We must cancel the project immediately."
+* **Emotional State:** Frustration due to recent setbacks.
+* **Assumption:** One failure means the entire strategy is flawed.
+* **Recalibrated Judgment:** "Let's review the data first to see if the failure is a systemic error or a one-time outlier."
+
+### 2. Visualization
+* **The Observer Map:** A diagram showing a loop: Thought → Observer → Feedback → Adjusted Thought.
+* **Confidence vs. Competence Grid:** Using metacognition to plot where you actually stand versus where you *feel* you stand.
+
+---
+
+## Use Cases
+
+* **Business:** Before making major decisions, during conflicts, or when feeling intense pressure or haste.
+* **Daily Life:** When experiencing strong anger, anxiety, or self-doubt.
+* **Judgment / Thinking:** Whenever you feel an overwhelming sense of "absolute certainty."
+
+## Typical Misuses
+
+* **Analysis Paralysis:** Over-reflecting to the point where you become unable to take any action.
+* **Weaponized Self-Criticism:** Using metacognition as a tool for self-judgment or "beating yourself up" rather than objective observation.
+* **Perfectionism:** Trying to monitor every single micro-thought perfectly, leading to mental exhaustion.
+
+## Relationship with Other Models
+
+* **Higher Concept:** The monitoring layer of the Mental Model OS.
+* **Inclusion:** Cognitive Bias Awareness (identifying specific errors).
+* **Complementary:** Second-Order Thinking (considering consequences), Bayesian Thinking (updating based on self-observation).
+* **Opposing:** Impulsive Judgment, Surface-Level Thinking.
