@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: Minimum Viable Product
-en_name: Minimum Viable Product
+name: Minimum Viable Product
 abbreviation: MVP
 description: A product development philosophy that tests value with minimum features for hypothesis testing.
 application:

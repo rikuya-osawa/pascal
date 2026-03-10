@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: フライホイール思考
-en_name: Flywheel Thinking
+name: Flywheel Thinking
 abbreviation: Flywheel
 description: A thinking model for designing or discovering "self-reinforcing structures" where elements strengthen each other, creating accelerated growth once the momentum builds.
 application:

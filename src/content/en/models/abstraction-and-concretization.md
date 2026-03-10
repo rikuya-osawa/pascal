@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: 抽象化・具体化
-en_name: Abstraction & Concretization
+name: Abstraction & Concretization
 abbreviation: Abstraction-Concretization
 description: A thinking model for moving between the "higher layer" (abstract) and "lower layer" (concrete) to understand, explain, and design complex systems.
 application:

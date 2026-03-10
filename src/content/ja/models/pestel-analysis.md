@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: PESTEL分析
-en_name: PESTEL Analysis
+name: PESTEL分析
 abbreviation: PESTEL
 description: PEST分析に「環境」と「法的」の視点を加え、現代の複雑な市場環境をより網羅的に分析するためのフレームワーク。
 application:

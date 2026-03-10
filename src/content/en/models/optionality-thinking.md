@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: オプショナリティ思考
-en_name: Optionality Thinking
+name: Optionality Thinking
 abbreviation: Optionality
 description: A thinking model for maximizing opportunities while limiting risks in highly uncertain situations by treating choices as "exercisable options (rights)."
 application:

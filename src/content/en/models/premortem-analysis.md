@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: プレモーテム分析
-en_name: Premortem Analysis
+name: Premortem Analysis
 abbreviation: Premortem
 description: A thinking model for identifying potential risks and blind spots by imagining a "future failure" in advance and working backward to determine why it happened.
 application:

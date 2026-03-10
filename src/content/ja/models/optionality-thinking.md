@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: オプション思考
-en_name: Option Thinking
+name: オプション思考
 abbreviation: オプション思考
 description: 不確実性が高い状況において、選択肢を「行使可能なオプション（権利）」として捉え、リスクを限定しつつ機会を最大化するための思考モデル。
 application:

@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: 二次思考
-en_name: Second-order Thinking
+name: 二次思考
 abbreviation: 二次思考
 description: ある行動や判断の「直接的な結果（一次効果）」だけでなく、その先に連鎖して起こる影響（二次・三次効果）まで考慮して意思決定するための思考モデル。
 application:

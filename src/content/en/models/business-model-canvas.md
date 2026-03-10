@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: ビジネスモデルキャンバス
-en_name: Business Model Canvas
+name: Business Model Canvas
 abbreviation: BMC
 description: A framework for visualizing, designing, and validating an entire business by mapping nine key elements, including customers, value propositions, revenue streams, and cost structures.
 application:
@@ -101,4 +100,3 @@ A gold standard for organizing a business landscape. Its greatest strength is sh
 
 * **Related:** Value Chain Analysis, 4P / 4C, Lean Canvas (a variation for startups).
 * **Complementary:** **"Value Proposition Canvas"** (zooming into the customer/product fit), VRIO Analysis, Flywheel Effect.
-* **Opposing:** Product-centric thinking (focusing only on "what we build" without "how we sell").

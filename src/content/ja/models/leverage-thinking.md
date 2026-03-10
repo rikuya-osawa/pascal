@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: レバレッジ思考
-en_name: Leverage Thinking
+name: レバレッジ思考
 abbreviation: レバレッジ
 description: 小さな投入（時間・資源・行動）で最大の効果を生むポイント（レバレッジポイント）を見極め、そこに集中するための思考モデル。
 application:

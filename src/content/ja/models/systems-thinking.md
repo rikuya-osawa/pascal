@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: システム思考
-en_name: Systems Thinking
+name: システム思考
 abbreviation: システム思考
 description: 物事を「要素」ではなく「要素同士の関係性・相互作用・循環構造」として捉え、部分最適ではなく全体最適を目指すための思考モデル。
 application:

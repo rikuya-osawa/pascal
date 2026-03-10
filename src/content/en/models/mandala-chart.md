@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: マンダラチャート
-en_name: Mandala Chart
+name: Mandala Chart
 abbreviation: MDC
 description: A 9x9 matrix framework that deconstructs a core objective into 8 foundational elements and 64 specific actions for comprehensive planning.
 application:

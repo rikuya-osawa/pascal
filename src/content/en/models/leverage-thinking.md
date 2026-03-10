@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: レバレッジ思考
-en_name: Leverage Thinking
+name: Leverage Thinking
 abbreviation: Leverage
 description: A thinking model for identifying the specific points (leverage points) where a small input of time, resources, or action produces the maximum output or impact.
 application:

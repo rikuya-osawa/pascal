@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: 仮説思考
-en_name: Hypothesis-Driven Thinking
+name: Hypothesis-Driven Thinking
 abbreviation: Hypothesis Thinking
 description: A thinking model for rapidly advancing thought and action by establishing a "tentative answer" first, then refining it through verification within limited time and information.
 application:

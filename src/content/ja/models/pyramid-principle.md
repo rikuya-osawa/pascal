@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: ピラミッド原則
-en_name: Pyramid Principle
+name: ピラミッド原則
 abbreviation: ピラミッド原則
 description: 伝えたい結論を最上位に置き、その根拠や理由をlayer構造（ピラミッド）で整理・表現することで、論理的で理解しやすいコミュニケーションを実現する思考モデル。
 application:

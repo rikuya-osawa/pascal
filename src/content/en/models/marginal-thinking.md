@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: 限界思考
-en_name: Marginal Thinking
+name: Marginal Thinking
 abbreviation: Marginal
 description: A thinking model for decision-making by comparing the additional benefit and additional cost gained from performing "one more unit" (the margin), rather than looking at overall averages.
 application:

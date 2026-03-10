@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: プレモーテム分析
-en_name: Premortem Analysis
+name: プレモーテム分析
 abbreviation: プレモーテム
 description: 事前に「失敗した未来」を仮定し、なぜ失敗に至ったかを逆算的に洗い出すことで、潜在的リスクや盲点を明らかにするための思考モデル。
 application:

@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: 可逆・不可逆判断
-en_name: Reversible / Irreversible Decision
+name: 可逆・不可逆判断
 abbreviation: 可逆不可逆
 description: 意思決定を「やり直しがきく可逆的な判断」と「元に戻せない不可逆的な判断」に分けて捉え、判断のスピード・慎重さ・検討深度を適切に変えるための思考モデル。
 application:

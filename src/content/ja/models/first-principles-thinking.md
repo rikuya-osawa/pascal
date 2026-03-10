@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: 第一原理思考
-en_name: First Principles Thinking
+name: 第一原理思考
 abbreviation: 第一原理
 description: 常識や前提、慣習をいったん疑い、分解し、これ以上分解できない根本的な事実（第一原理）まで遡って再構築する思考モデル。
 application:

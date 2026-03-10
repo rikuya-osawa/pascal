@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: マンダラチャート
-en_name: Mandala Chart
+name: マンダラチャート
 abbreviation: MDC
 description: 3x3のマトリクスを連結させ、中心に据えた「主要な目標」を8つの要素と64の具体的アクションに分解する思考フレームワーク。
 application:

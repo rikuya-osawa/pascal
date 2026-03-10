@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: メタ認知
-en_name: Metacognition
+name: Metacognition
 abbreviation: MetaCog
 description: The ability to observe and control one's own thoughts, emotions, and decision-making processes from a higher perspective; the monitoring layer for your "Thinking OS."
 application:

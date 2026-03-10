@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: STP分析
-en_name: Segmentation, Targeting, Positioning
+name: Segmentation, Targeting, Positioning
 abbreviation: STP
 description: A strategic framework for dividing the market, selecting a target audience, and designing a unique value proposition for a specific position.
 application:

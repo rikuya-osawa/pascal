@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: バイアス認識
-en_name: Cognitive Bias Awareness
+name: Cognitive Bias Awareness
 abbreviation: Bias Awareness
 description: A meta-thinking model for questioning one's own judgment and correcting distortions, based on the premise that human thought is influenced by unconscious biases.
 application:

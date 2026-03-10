@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: 本質思考
-en_name: Essential Thinking
+name: 本質思考
 abbreviation: 本質思考
 description: 表面的な事象や手段にとらわれず、「本当に解くべき問いは何か」「何が最も重要か」を見極めるための思考モデル。問題設定そのものの質を高めることを目的とする。
 application:

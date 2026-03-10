@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: SWOT分析
-en_name: SWOT Analysis
+name: SWOT Analysis
 abbreviation: SWOT
 description: A strategic diagnostic tool for organizing internal factors (Strengths/Weaknesses) and external factors (Opportunities/Threats) to inform decision-making.
 application:

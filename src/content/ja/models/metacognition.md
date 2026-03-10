@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: メタ認知
-en_name: Metacognition
+name: メタ認知
 abbreviation: MetaCog
 description: 自分の思考・感情・判断プロセスを一段上から観察し、コントロールする能力。思考のOSを監視するメタレイヤー。
 application:

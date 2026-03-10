@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: ワーク・プランニング
-en_name: Work Planning Strategy
+name: ワークプランニング
 abbreviation: WPS
 description: 業務の目的を再定義し、ゴールから逆算したマイルストーンとタスクを可視化することで、実行精度を高める計画策定フレームワーク。
 application:

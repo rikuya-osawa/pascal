@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: ウーダループ
-en_name: OODA Loop
+name: OODA Loop
 abbreviation: OODA
 description: A decision-making framework for gaining an advantage in uncertain environments by rapidly cycling through observing, orienting, deciding, and acting.
 application:

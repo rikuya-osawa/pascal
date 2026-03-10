@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: パレートの法則
-en_name: Pareto Principle
+name: パレートの法則
 abbreviation: 80/20
 description: 成果や結果の大部分は、全体の一部（約20%）の要因から生まれるという経験則に基づき、重要な少数に集中するための思考モデル。
 application:

@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: 競争優位
-en_name: Economic Moat
+name: Economic Moat
 abbreviation: Moat
 description: A strategic concept of building and maintaining structural advantages to protect long-term profitability within a competitive environment.
 application:

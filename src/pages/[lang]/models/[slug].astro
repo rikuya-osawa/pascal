@@ -44,7 +44,7 @@ const pageUrl = new URL(Astro.url, site).toString();
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  headline: entry.data.ja_name,
+  headline: entry.data.name,
   description: entry.data.description,
   image: ["https://mental-model-atlas.pages.dev/default-og.png"],
   datePublished: "2026-02-25T00:00:00+09:00",
@@ -74,7 +74,7 @@ const breadcrumbData = {
     {
       "@type": "ListItem",
       position: 3,
-      name: entry.data.ja_name,
+      name: entry.data.name,
       item: pageUrl,
     },
   ],

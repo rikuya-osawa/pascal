@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: STP分析
-en_name: Segmentation, Targeting, Positioning
+name: STP分析
 abbreviation: STP
 description: 市場を分解し、狙う顧客を定め、どのような立ち位置で価値を提供するかを設計する戦略フレーム。
 application:

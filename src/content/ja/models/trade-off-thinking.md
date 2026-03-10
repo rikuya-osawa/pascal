@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: トレードオフ思考
-en_name: Trade-off Thinking
+name: トレードオフ思考
 abbreviation: トレードオフ
 description: すべてを同時に満たそうとせず、「何を得て、何を捨てるのか」を明確にすることで、現実的で納得感のある意思決定を行うための思考モデル。
 application:

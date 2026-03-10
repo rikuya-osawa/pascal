@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: イシューツリー
-en_name: Issue Tree
+name: イシューツリー
 abbreviation: イシューツリー
 description: 解くべき問い（イシュー）を起点に、「答えを出すために必要な論点」をツリー状に分解し、思考や分析の全体設計を行うための思考モデル。
 application:

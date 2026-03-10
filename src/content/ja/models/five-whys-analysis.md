@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: Why-Why分析
-en_name: Five Whys Analysis
+name: Why-Why分析
 abbreviation: Why-Why
 description: 起きている問題に対して「なぜ？」を繰り返し問い、表面的な事象ではなく根本原因にたどり着くための原因深掘りの思考モデル。
 application:

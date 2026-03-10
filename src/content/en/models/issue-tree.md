@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: イシューツリー
-en_name: Issue Tree
+name: Issue Tree
 abbreviation: Issue Tree
 description: A thinking model for designing the overall framework of thought or analysis by breaking down a central "issue" into a tree-like structure of necessary sub-questions.
 application:

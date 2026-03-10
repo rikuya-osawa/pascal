@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: リーン思考
-en_name: Lean Thinking
+name: Lean Thinking
 abbreviation: Lean
 description: A philosophy for maximizing the efficiency of value creation by eliminating waste and accelerating the "Hypothesis → Experiment → Learn" loop.
 application:

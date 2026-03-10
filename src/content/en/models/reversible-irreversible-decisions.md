@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: 可逆・不可逆判断
-en_name: Reversible / Irreversible Decisions
+name: Reversible / Irreversible Decisions
 abbreviation: Reversibility
 description: A thinking model for categorizing decisions into "reversible" (can be undone) and "irreversible" (cannot be undone) to appropriately adjust speed, caution, and depth of deliberation.
 application:

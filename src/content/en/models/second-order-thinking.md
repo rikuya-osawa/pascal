@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: 二次思考
-en_name: Second-Order Thinking
+name: Second-Order Thinking
 abbreviation: 2nd-Order
 description: A model for considering not only the immediate effects of a decision but also the subsequent ripple effects and long-term consequences.
 application:
