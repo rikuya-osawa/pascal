@@ -1,8 +1,8 @@
 ---
 import { getCollection } from "astro:content";
-import ModelCard from "./ModelCard.astro";
-import { LAYERS, APPLICATION, getLabel, type Language } from "../constants/filters";
-import { getMessages } from "../constants/messages";
+import ModelCard from "../model-card.astro";
+import { LAYERS, APPLICATION, getLabel, type Language } from "../../constants/filters";
+import { getMessages } from "../../constants/messages";
 
 interface Props {
   lang: Language;
