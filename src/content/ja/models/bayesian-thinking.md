@@ -1,7 +1,7 @@
 ---
 type: mental-model
 name: ベイズ思考
-abbreviation: Bayesian Thinking
+abbreviation: ベイズ思考
 description: 新しい情報を得るたびに、事前の想定（事前確率）を更新することで、判断や信念を柔軟に修正するための思考モデル。
 application:
   - LT

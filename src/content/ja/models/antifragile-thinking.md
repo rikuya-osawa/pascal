@@ -1,7 +1,7 @@
 ---
 type: mental-model
 name: アンチフラジャイル思考
-abbreviation: Antifragile
+abbreviation: アンチフラジャイル思考
 description: 不確実性、ストレス、または衝撃にただ「耐える」だけでなく、実際に「それらから強さを得る」ような構造を設計することに焦点を当てた思考モデル。
 application:
   - LIFE

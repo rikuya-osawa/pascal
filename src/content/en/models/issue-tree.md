@@ -95,4 +95,3 @@ An incredibly powerful tool for problem-solving. It acts as the **"Skeleton"** o
 
 * **Related:** Issue-Driven Thinking, Logic Tree, Pyramid Principle.
 * **Complementary:** **"MECE"** (the foundational rule for the branches), **"Hypothesis Thinking"** (setting provisional answers for each branch).
-* **Opposing:** Ad-hoc Analysis (investigating things in the order they come to mind).

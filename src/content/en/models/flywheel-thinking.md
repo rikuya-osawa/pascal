@@ -89,6 +89,5 @@ A powerful model for long-term structural design rather than short-term tactics.
 
 ## Relationship with Other Models
 
-* **Related:** Systems Thinking, Leverage Thinking, Compound Interest.
-* **Complementary:** Economic Moat (Moats are often the result of flywheels), Network Effects.
-* **Opposing:** Short-term Optimization Thinking, Linear Growth Thinking.
+* **Related:** Systems Thinking, Leverage Thinking
+* **Complementary:** Economic Moat (Moats are often the result of flywheels)

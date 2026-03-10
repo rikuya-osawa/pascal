@@ -1,11 +1,12 @@
 ---
 type: mental-model
 name: First Principles Thinking
-abbreviation: First Principles
+abbreviation: First Principles Thinking
 description: A thinking model for questioning common sense, assumptions, and conventions by breaking them down into fundamental truths (First Principles) that cannot be deduced any further, then rebuilding from the ground up.
 application:
   - PS
   - LT
+  - DM
 layer: META
 tags:
   - mental-model

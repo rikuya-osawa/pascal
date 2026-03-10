@@ -56,7 +56,6 @@ Highly effective for decision-making under uncertainty. However, if probabilitie
 
 3.  **Calculate the "Long-term Average"**
     * Multiply the probability by the impact for each outcome and sum them up to find the **"Expected Value (EV)."**
-    * $$EV = (P_{success} \times I_{success}) + (P_{failure} \times I_{failure})$$
 
 4.  **Select the Rational Path**
     * Choose the option with the highest EV, even if it feels "riskier" in the short term.

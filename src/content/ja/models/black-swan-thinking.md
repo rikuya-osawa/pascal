@@ -1,7 +1,7 @@
 ---
 type: mental-model
 name: ブラックスワン思考
-abbreviation: BlackSwan
+abbreviation: ブラックスワン思考
 description: 発生確率が低く予測不可能だが、発生した場合には極めて大きな影響をもたらす事象である「ブラックスワン」を前提として、リスク管理や戦略を設計するための思考モデル。
 application:
   - DM

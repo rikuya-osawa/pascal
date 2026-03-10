@@ -1,6 +1,6 @@
 ---
 type: mental-model
-name: バリューチェーン分析
+name: バリュー・チェーン分析
 abbreviation: VCA
 description: 企業活動を価値創造プロセスごとに分解し、どこで競争優位が生まれているかを特定する分析フレーム。
 application:
@@ -11,7 +11,7 @@ layer: TOOL
 tags:
 - mental-model
 ---
-# バリューチェーン分析（Value Chain Analysis）
+# バリュー・チェーン分析（Value Chain Analysis）
 
 ## 概要
 企業活動を価値創造プロセスごとに分解し、どこで競争優位が生まれているかを特定する分析フレーム。

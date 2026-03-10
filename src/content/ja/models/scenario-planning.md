@@ -1,7 +1,7 @@
 ---
 type: mental-model
-name: シナリオプランニング
-abbreviation: シナリオP
+name: シナリオ・プランニング
+abbreviation: シナリオ・プランニング
 description: 将来の不確実性を前提に、複数の合理的未来シナリオを描き、それぞれに適応する戦略・判断基準を準備するための思考モデル。
 application:
 - DM
@@ -11,7 +11,7 @@ layer: TOOL
 tags:
 - mental-model
 ---
-# シナリオプランニング（Scenario Planning）
+# シナリオ・プランニング
 
 ## 概要
 将来の不確実性を前提に、複数の合理的未来シナリオを描き、それぞれに適応する戦略・判断基準を準備するための思考モデル。
