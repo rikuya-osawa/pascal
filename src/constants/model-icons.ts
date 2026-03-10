@@ -14,6 +14,7 @@ export const MODEL_ICONS: Record<string, string> = {
   "mandala-chart": "lucide:grid-3x3", // マンダラチャート
   "smart-goals": "lucide:calendar-check", // SMARTゴール
   "5w1h": "lucide:list-check", // 5W1H
+  "3c-analysis": "lucide:triangle", // 3C分析
 
   // --- 思考法・プロセス系 ---
   "mece": "lucide:columns-4",
