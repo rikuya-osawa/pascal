@@ -10,6 +10,8 @@ application: # 最大３つまで
   - PS
   - LIFE
 layer: TOOL
+related_models: # モデルのファイル名（[slug]）と一致させること
+  - 
 tags:
   - mental-model
 ---
