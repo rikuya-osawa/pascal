@@ -49,6 +49,8 @@ export const MESSAGES = {
     modelDetailHome: "ホーム",
     modelDetailModels: "モデル一覧",
     modelDetailRelatedTitle: "関連するモデル",
+    modelDetailRelatedShowMore: "もっと見る（+{count}）",
+    modelDetailRelatedShowLess: "閉じる",
   },
   en: {
     title: "Mental Model Atlas",
@@ -98,6 +100,8 @@ export const MESSAGES = {
     modelDetailHome: "Home",
     modelDetailModels: "Models",
     modelDetailRelatedTitle: "Related Models",
+    modelDetailRelatedShowMore: "Show more (+{count})",
+    modelDetailRelatedShowLess: "Show less",
   },
 } as const;
 

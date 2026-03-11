@@ -43,6 +43,11 @@ const currentSlug = entry.slug.split("/").pop();
 const relatedModels = (entry.data.related_models || [])
   .map((slug) => modelBySlug.get(slug))
   .filter((model): model is NonNullable<typeof model> => Boolean(model && model.slug.split("/").pop() !== currentSlug));
+const INITIAL_RELATED_COUNT = 3;
+const visibleRelatedModels = relatedModels.slice(0, INITIAL_RELATED_COUNT);
+const hiddenRelatedModels = relatedModels.slice(INITIAL_RELATED_COUNT);
+const hiddenRelatedCount = hiddenRelatedModels.length;
+const relatedShowMoreText = msg.modelDetailRelatedShowMore.replace("{count}", String(hiddenRelatedCount));
 
 const { Content } = await entry.render();
 
@@ -115,10 +120,63 @@ const layerInfo = LAYERS[entry.data.layer as keyof typeof LAYERS];
     <section class="related-models-section" aria-labelledby="related-models-title">
       <h2 id="related-models-title" class="related-models-title">{msg.modelDetailRelatedTitle}</h2>
       <div class="model-grid related-models-grid">
-        {relatedModels.map((relatedModel) => (
+        {visibleRelatedModels.map((relatedModel) => (
           <ModelCard model={relatedModel} lang={currentLang} />
         ))}
+
+        {hiddenRelatedModels.map((relatedModel) => (
+          <div class="related-model-hidden is-related-hidden" data-related-hidden>
+            <ModelCard model={relatedModel} lang={currentLang} />
+          </div>
+        ))}
       </div>
+
+      {hiddenRelatedCount > 0 && (
+        <div class="related-models-toggle-wrap">
+          <button
+            type="button"
+            class="related-models-toggle"
+            data-show-more={relatedShowMoreText}
+            data-show-less={msg.modelDetailRelatedShowLess}
+            aria-expanded="false"
+          >
+            {relatedShowMoreText}
+          </button>
+        </div>
+      )}
     </section>
   )}
+
+  <script type="module">
+    function initRelatedModelsToggle() {
+      const sections = document.querySelectorAll('.related-models-section');
+      if (!sections.length) return;
+
+      sections.forEach((section) => {
+        const toggle = section.querySelector('.related-models-toggle');
+        if (!(toggle instanceof HTMLButtonElement)) return;
+        if (toggle.dataset.bound === 'true') return;
+        toggle.dataset.bound = 'true';
+
+        const hiddenItems = section.querySelectorAll('[data-related-hidden]');
+        let expanded = false;
+
+        toggle.addEventListener('click', () => {
+          expanded = !expanded;
+
+          hiddenItems.forEach((item) => {
+            item.classList.toggle('is-related-hidden', !expanded);
+          });
+
+          toggle.textContent = expanded
+            ? (toggle.dataset.showLess || '')
+            : (toggle.dataset.showMore || '');
+          toggle.setAttribute('aria-expanded', String(expanded));
+        });
+      });
+    }
+
+    initRelatedModelsToggle();
+    document.addEventListener('astro:page-load', initRelatedModelsToggle);
+  </script>
 </BaseLayout>
