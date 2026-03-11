@@ -2,7 +2,10 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/base-layout.astro";
 import "../../styles/markdown.css";
+import "../../styles/components/model-detail.css";
 import { LAYERS, APPLICATION, type Language } from "../../../constants/filters";
+import { getMessages } from "../../../constants/messages";
+import ModelCard from "../../../components/model-card.astro";
 import { validateModelSync } from "../../../utils/validator";
 
 export async function getStaticPaths() {
@@ -31,9 +34,15 @@ export async function getStaticPaths() {
 
 const { entry, lang } = Astro.props;
 const currentLang = lang as Language;
-const text = currentLang === "ja"
-  ? { home: "ホーム", models: "モデル一覧", back: "← 一覧に戻る" }
-  : { home: "Home", models: "Models", back: "← Back to models" };
+const msg = getMessages(currentLang);
+
+const collectionName = `${currentLang}/models` as const;
+const allModels = await getCollection(collectionName);
+const modelBySlug = new Map(allModels.map((model) => [model.slug.split("/").pop(), model]));
+const currentSlug = entry.slug.split("/").pop();
+const relatedModels = (entry.data.related_models || [])
+  .map((slug) => modelBySlug.get(slug))
+  .filter((model): model is NonNullable<typeof model> => Boolean(model && model.slug.split("/").pop() !== currentSlug));
 
 const { Content } = await entry.render();
 
@@ -62,13 +71,13 @@ const breadcrumbData = {
     {
       "@type": "ListItem",
       position: 1,
-      name: text.home,
+      name: msg.modelDetailHome,
       item: site + "/",
     },
     {
       "@type": "ListItem",
       position: 2,
-      name: text.models,
+      name: msg.modelDetailModels,
       item: site + `/${currentLang}/models`,
     },
     {
@@ -84,7 +93,7 @@ const layerInfo = LAYERS[entry.data.layer as keyof typeof LAYERS];
 ---
 
 <BaseLayout lang={currentLang}>
-  <a href={`/${currentLang}/models`}>{text.back}</a>
+  <a href={`/${currentLang}/models`}>{msg.goBackText}</a>
   
   <article class="markdown-content">
    
@@ -101,4 +110,15 @@ const layerInfo = LAYERS[entry.data.layer as keyof typeof LAYERS];
 
     <Content content={entry.body} />
   </article>
+
+  {relatedModels.length > 0 && (
+    <section class="related-models-section" aria-labelledby="related-models-title">
+      <h2 id="related-models-title" class="related-models-title">{msg.modelDetailRelatedTitle}</h2>
+      <div class="model-grid related-models-grid">
+        {relatedModels.map((relatedModel) => (
+          <ModelCard model={relatedModel} lang={currentLang} />
+        ))}
+      </div>
+    </section>
+  )}
 </BaseLayout>
