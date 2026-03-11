@@ -69,6 +69,19 @@ const msg = getMessages(currentLang);
 </header>
 
 <script type="module" define:vars={{ currentLang }}>
+  
+  function sanitizeInput(input) {
+    if (typeof input !== 'string') return '';
+    const map = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#039;'
+    };
+    return input.replace(/[&<>"']/g, char => map[char]);
+  }
+
   // --- スクロール動作 ---
   (() => {
     const header = document.querySelector('.site-header');
@@ -145,7 +158,8 @@ const msg = getMessages(currentLang);
     const params = new URLSearchParams(window.location.search);
     const q = params.get('q');
     if (q && window.location.pathname === `/${currentLang}/models`) {
-      searchInput.value = q;
+      // クエリパラメータをサニタイズして設定
+      searchInput.value = sanitizeInput(q);
       if (typeof window.updateAllFilters === 'function') {
         window.updateAllFilters();
       }
