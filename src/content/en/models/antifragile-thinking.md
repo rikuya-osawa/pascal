@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: Antifragile Thinking
-en_name: Antifragile Thinking
+name: Antifragile Thinking
 abbreviation: Antifragile
 description: A thinking model focused on designing structures that do not just "endure" uncertainty, stress, or shock, but actually "gain strength from them."
 application:
@@ -9,6 +8,10 @@ application:
   - NB
   - DM
 layer: CORE
+related_models:
+  - optionality-thinking
+  - black-swan-thinking
+  - risk-return-thinking
 tags:
   - mental-model
 ---
@@ -90,6 +93,5 @@ Extremely powerful for long-term strategy and life planning. However, a misunder
 
 ## Relationship with Other Models
 
-* **Related:** Optionality Thinking, Black Swan Theory, Lindy Effect.
-* **Complementary:** Risk-Reward Thinking, Barbell Strategy.
-* **Opposing:** Excessive Stability-Oriented Thinking, Optimization (which often removes the "slack" needed for antifragility).
+* **Related:** Optionality Thinking, Black Swan Thinking
+* **Complementary:** Risk-Reward Thinking.

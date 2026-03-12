@@ -1,18 +1,21 @@
 ---
 type: mental-model
-ja_name: 限界思考
-en_name: Marginal Thinking
-abbreviation: Marginal
+name: 限界的思考
+abbreviation: 限界的思考
 description: 全体平均ではなく、「追加で1単位行うこと（限界）」によって得られる追加利益と追加コストを比較し、意思決定するための思考モデル。
 application:
 - DM
 - NB
 - LIFE
 layer: CORE
+related_models:
+  - expected-value-thinking
+  - trade-off-thinking
+  - sunk-cost-thinking
 tags:
 - mental-model
 ---
-# 限界思考（Marginal Thinking）
+# 限界的思考
 
 ## 概要
 全体平均ではなく、「追加で1単位行うこと（限界）」によって得られる追加利益と追加コストを比較し、意思決定するための思考モデル。
@@ -72,5 +75,4 @@ tags:
 ## 他モデルとの関係
 
 - 関連：期待値思考、トレードオフ思考  
-- 補完：サンクコスト効果、リスク・リターン思考  
-- 対立：平均思考
+- 補完：サンクコスト思考

@@ -1,13 +1,17 @@
 ---
 type: mental-model
-ja_name: ベイズ思考
-en_name: Bayesian Thinking
+name: Bayesian Thinking
 abbreviation: Bayesian Thinking
 description: A thinking model for flexibly revising judgments and beliefs by updating previous assumptions (prior probability) whenever new information is obtained.
 application:
   - LT
   - DM
 layer: CORE
+related_models:
+  - bias-awareness
+  - statistical-thinking
+  - hypothesis-thinking
+  - expected-value-thinking
 tags:
   - mental-model
 ---
@@ -27,7 +31,7 @@ A thinking model for flexibly revising judgments and beliefs by updating previou
 
 ### Evaluation Comment
 
-Extremely powerful under uncertainty. While the mathematical foundation `($$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$)` is rigorous, the true value of this model lies in the mindset of "incremental revision." Avoid getting bogged down in complex formulas; focus on the direction and weight of the update.
+Extremely powerful under uncertainty. While the mathematical foundation is rigorous, the true value of this model lies in the mindset of "incremental revision." Avoid getting bogged down in complex formulas; focus on the direction and weight of the update.
 
 ---
 
@@ -87,6 +91,6 @@ Extremely powerful under uncertainty. While the mathematical foundation `($$P(A|
 
 ## Relationship with Other Models
 
-* **Related:** Probability Theory, Statistical Thinking.
-* **Complementary:** Hypothesis-based Thinking (setting the prior), Expected Value Thinking (acting on the posterior).
+* **Related:** Statistical Thinking.
+* **Complementary:** Hypothesis-driven Thinking (setting the prior), Expected Value Thinking (acting on the posterior).
 * **Opposing:** Black-and-White Thinking (viewing the world in 0 or 100).

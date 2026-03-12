@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: リスク×リターン思考
-en_name: Risk-Return Trade-off
+name: Risk-Return Trade-off
 abbreviation: R×R
 description: A thinking model for evaluating options based on two axes- "how much return can be expected" and "how much risk must be taken," to determine if the potential reward justifies the risk.
 application:

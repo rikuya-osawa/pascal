@@ -1,13 +1,14 @@
 ---
 type: mental-model
-ja_name: 仮説思考
-en_name: Hypothesis-Driven Thinking
+name: Hypothesis-Driven Thinking
 abbreviation: Hypothesis Thinking
 description: A thinking model for rapidly advancing thought and action by establishing a "tentative answer" first, then refining it through verification within limited time and information.
 application:
   - PS
   - NB
 layer: CORE
+related_models:
+  - issue-driven-thinking
 tags:
   - mental-model
 ---
@@ -92,6 +93,5 @@ A powerful weapon for accelerating both thinking and execution. However, the gre
 
 ## Relationship with Other Models
 
-* **Related:** Issue-driven Thinking, Hypothesis Testing.
+* **Related:** Issue-driven Thinking
 * **Complementary:** MECE (to organize verification perspectives), 5 Whys (to generate causal hypotheses).
-* **Opposing:** Exhaustive Thinking (trying to investigate everything from the start).

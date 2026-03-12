@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: SWOT分析
-en_name: SWOT Analysis
+name: SWOT分析
 abbreviation: SWOT
 description: 内部環境（強み・弱み）と外部環境（機会・脅威）を組み合わせ、戦略的な意思決定や現状把握を行うためのフレームワーク。
 application:

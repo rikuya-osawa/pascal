@@ -1,13 +1,16 @@
 ---
 type: mental-model
-ja_name: なぜなぜ分析（5つのなぜ）
-en_name: Five Whys Analysis
+name: Five Whys Analysis
 abbreviation: 5 Whys
 description: A root-cause analysis model that repeatedly asks "Why?" to move past surface-level symptoms and reach the underlying structural cause of a problem.
 application:
   - PS
   - LT
 layer: TOOL
+related_models:
+  - root-cause-analysis
+  - fishbone-diagram
+  - first-principles-thinking
 tags:
   - mental-model
 ---
@@ -98,4 +101,3 @@ While extremely simple and highly effective, the quality of the analysis depends
 
 * **Related:** Root Cause Analysis (RCA), First Principles Thinking (deconstructing to facts).
 * **Complementary:** Fishbone Diagram, Essential Thinking (identifying the right problem).
-* **Opposing:** Symptomatic Treatment, Firefighting (fixing only what is visible).

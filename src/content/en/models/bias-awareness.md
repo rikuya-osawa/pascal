@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: バイアス認識
-en_name: Cognitive Bias Awareness
+name: Cognitive Bias Awareness
 abbreviation: Bias Awareness
 description: A meta-thinking model for questioning one's own judgment and correcting distortions, based on the premise that human thought is influenced by unconscious biases.
 application:
@@ -9,6 +8,9 @@ application:
   - PS
   - LIFE
 layer: META
+related_models:
+  - bayesian-thinking
+  - ladder-of-inference
 tags:
   - mental-model
 ---
@@ -95,7 +97,5 @@ Significantly improves thinking accuracy and emotional regulation. However, prac
 
 ## Relationship with Other Models
 
-* **Higher Concept:** META Layer (Thinking about thinking).
 * **Complementary:** Bayesian Thinking (using new evidence to update priors).
-* **Related:** Second-Order Thinking, Ladder of Inference, Systems Thinking.
-* **Opposing:** Introspective Illusion (the belief that we have direct access to our own mental processes).
+* **Related:** Ladder of Inference.

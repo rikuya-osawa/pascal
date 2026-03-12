@@ -6,6 +6,7 @@ export const MESSAGES = {
     layerLabel: "レイヤー",
     applicationLabel: "活用場面",
     allLabel: "全て",
+    goBackText: "← モデル一覧に戻る",
     searchFallback: "一致するメンタルモデルが見つかりませんでした。",
     searchPlaceholder: "「/」を入力して検索...",
     notFoundTitle: "ページが見つかりません",
@@ -44,12 +45,19 @@ export const MESSAGES = {
     modelsFilterTitle: "フィルターで絞り込む",
     modelsActiveFilters: "アクティブフィルター",
     modelsClearFilters: "すべてクリア",
+    // Model detail page
+    modelDetailHome: "ホーム",
+    modelDetailModels: "モデル一覧",
+    modelDetailRelatedTitle: "関連するモデル",
+    modelDetailRelatedShowMore: "もっと見る（+{count}）",
+    modelDetailRelatedShowLess: "閉じる",
   },
   en: {
     title: "Mental Model Atlas",
     layerLabel: "LAYER",
     applicationLabel: "APPLICATION",
     allLabel: "ALL",
+    goBackText: "← Back to Models",
     searchFallback: "No mental models found matching your criteria.",
     searchPlaceholder: "Type / to search models...",
     notFoundTitle: "Page Not Found",
@@ -88,6 +96,12 @@ export const MESSAGES = {
     modelsFilterTitle: "Filter by",
     modelsActiveFilters: "Active Filters",
     modelsClearFilters: "Clear All",
+    // Model detail page
+    modelDetailHome: "Home",
+    modelDetailModels: "Models",
+    modelDetailRelatedTitle: "Related Models",
+    modelDetailRelatedShowMore: "Show more (+{count})",
+    modelDetailRelatedShowLess: "Show less",
   },
 } as const;
 

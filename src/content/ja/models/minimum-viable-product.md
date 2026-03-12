@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: Minimum Viable Product
-en_name: Minimum Viable Product
+name: ミニマム・バイアブル・プロダクト（MVP）
 abbreviation: MVP
 description: 仮説検証のために、最小限の機能で価値をテストするプロダクト設計思想。完成度より学習速度を優先するモデル。
 application:
@@ -9,6 +8,9 @@ application:
 - PS
 - DM
 layer: TOOL
+related_models:
+  - hypothesis-thinking
+  - ooda-loop
 tags:
 - mental-model
 ---
@@ -65,7 +67,6 @@ tags:
 ## 他モデルとの関係
 - 上位概念：仮説思考（CORE）
 - 補完：OODAループ
-- 関連：パレートの法則（最小集中）
-- 対立：完璧主義思考
+
 
 

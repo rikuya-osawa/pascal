@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: ワーク・プランニング
-en_name: Work Planning Strategy
+name: Work Planning Strategy
 abbreviation: WPS
 description: A framework for improving execution accuracy by redefining objectives and visualizing milestones and tasks through backward induction from the goal.
 application:

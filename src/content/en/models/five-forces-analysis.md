@@ -1,13 +1,17 @@
 ---
 type: mental-model
-ja_name: ファイブフォース分析
-en_name: Five Forces Analysis
+name: Five Forces Analysis
 abbreviation: 5Forces
 description: A framework for analyzing the five competitive forces that determine industry profitability and visualizing structural competitive pressure.
 application:
   - NB
   - DM
 layer: TOOL
+related_models:
+  - economic-moat
+  - 4p-4c
+  - pestel-analysis
+  - systems-thinking
 tags:
   - mental-model
 ---
@@ -96,6 +100,5 @@ Extremely powerful for understanding industry structures. However, it often fail
 ## Relationship with Other Models
 
 * **Parent Concept:** Economic Moat (Competitive Advantage).
-* **Complementary:** 4Ps / 4Cs (Marketing mix), PEST Analysis.
+* **Complementary:** 4P / 4C, PEST Analysis.
 * **Related:** Systems Thinking (understanding feedback loops in competition).
-* **Opposing:** Short-term Growth Prioritization.

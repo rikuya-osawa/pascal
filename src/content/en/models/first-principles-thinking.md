@@ -1,13 +1,15 @@
 ---
 type: mental-model
-ja_name: 第一原理思考
-en_name: First Principles Thinking
-abbreviation: First Principles
+name: First Principles Thinking
+abbreviation: First Principles Thinking
 description: A thinking model for questioning common sense, assumptions, and conventions by breaking them down into fundamental truths (First Principles) that cannot be deduced any further, then rebuilding from the ground up.
 application:
   - PS
   - LT
+  - DM
 layer: META
+related_models:
+  - abstraction-and-concretization
 tags:
   - mental-model
 ---
@@ -91,6 +93,5 @@ Highly effective for generating breakthroughs and radical innovation. However, i
 
 ## Relationship with Other Models
 
-* **Related:** Essential Thinking, 5 Whys, Abstraction & Concretization.
+* **Related:** Abstraction & Concretization.
 * **Complementary:** Constraint Thinking (connecting back to reality), Trade-off Thinking.
-* **Opposing:** Reasoning by Analogy (copying others), Conventional Thinking, Precedent-based Thinking.

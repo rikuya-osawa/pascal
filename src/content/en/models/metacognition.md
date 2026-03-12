@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: メタ認知
-en_name: Metacognition
+name: Metacognition
 abbreviation: MetaCog
 description: The ability to observe and control one's own thoughts, emotions, and decision-making processes from a higher perspective; the monitoring layer for your "Thinking OS."
 application:
@@ -9,6 +8,9 @@ application:
   - LIFE
   - PS
 layer: META
+related_models:
+  - bias-awareness
+  - bayesian thinking
 tags:
   - mental-model
 ---
@@ -94,7 +96,5 @@ Mastering this skill takes time and consistent practice, but it leads to a drama
 
 ## Relationship with Other Models
 
-* **Higher Concept:** The monitoring layer of the Mental Model OS.
 * **Inclusion:** Cognitive Bias Awareness (identifying specific errors).
 * **Complementary:** Second-Order Thinking (considering consequences), Bayesian Thinking (updating based on self-observation).
-* **Opposing:** Impulsive Judgment, Surface-Level Thinking.

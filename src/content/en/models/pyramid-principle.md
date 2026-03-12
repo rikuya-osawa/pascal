@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: ピラミッド原則
-en_name: Pyramid Principle
+name: Pyramid Principle
 abbreviation: Pyramid Principle
 description: A thinking model for organizing and expressing communication by placing the conclusion at the top and supporting it with a layered structure of logic and evidence.
 application:

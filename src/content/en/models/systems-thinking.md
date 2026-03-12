@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: システム思考
-en_name: Systems Thinking
+name: Systems Thinking
 abbreviation: Systems Thinking
 description: A model that views problems as interconnected relationships and circular structures rather than isolated events.
 application:

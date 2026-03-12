@@ -1,13 +1,14 @@
 ---
 type: mental-model
-ja_name: ジョブ理論
-en_name: Jobs To Be Done
+name: Jobs To Be Done
 abbreviation: JTBD
 description: A thinking model that views value through the lens that customers don't just buy "products"; they "hire" them to achieve a specific "progress" (a Job).
 application:
   - DM
   - NB
 layer: TOOL
+related_models:
+  - hypothesis-thinking
 tags:
   - mental-model
 ---
@@ -93,4 +94,3 @@ A powerful perspective that deepens customer understanding. However, if confused
 
 * **Related:** Customer-Centric Thinking, Hypothesis-Driven Thinking.
 * **Complementary:** Issue Tree (for structuring), Bayesian Thinking (for verifying Job hypotheses).
-* **Opposing:** Feature-Centric Thinking, Spec-Based Competition.

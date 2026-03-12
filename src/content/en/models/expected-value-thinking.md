@@ -1,13 +1,15 @@
 ---
 type: mental-model
-ja_name: 期待値思考
-en_name: Expected Value Thinking
+name: Expected Value Thinking
 abbreviation: EV Thinking
 description: A thinking model for making long-term rational decisions by considering "possible outcomes × their probability × magnitude of impact" for uncertain options, rather than focusing on short-term gains or losses.
 application:
   - LT
   - DM
 layer: CORE
+related_models:
+  - decision-theory
+  - bayesian-thinking
 tags:
   - mental-model
 ---
@@ -57,7 +59,6 @@ Highly effective for decision-making under uncertainty. However, if probabilitie
 
 3.  **Calculate the "Long-term Average"**
     * Multiply the probability by the impact for each outcome and sum them up to find the **"Expected Value (EV)."**
-    * $$EV = (P_{success} \times I_{success}) + (P_{failure} \times I_{failure})$$
 
 4.  **Select the Rational Path**
     * Choose the option with the highest EV, even if it feels "riskier" in the short term.
@@ -91,6 +92,5 @@ Highly effective for decision-making under uncertainty. However, if probabilitie
 
 ## Relationship with Other Models
 
-* **Related:** Decision Theory, Risk Management, Bayesian Thinking.
+* **Related:** Decision Theory, Bayesian Thinking.
 * **Complementary:** Trade-off Thinking (identifying what to sacrifice), Constraint Thinking (clarifying premises).
-* **Opposing:** Resultsholism (judging a decision solely by its outcome), Black-and-White Thinking.

@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: PESTEL分析
-en_name: PESTEL Analysis
+name: PESTEL Analysis
 abbreviation: PESTEL
 description: An expanded macro-environment framework that adds "Environmental" and "Legal" perspectives to PEST analysis for a more comprehensive market assessment.
 application:

@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: オプション思考
-en_name: Option Thinking
+name: オプション思考
 abbreviation: オプション思考
 description: 不確実性が高い状況において、選択肢を「行使可能なオプション（権利）」として捉え、リスクを限定しつつ機会を最大化するための思考モデル。
 application:
@@ -9,10 +8,13 @@ application:
 - NB
 - PS
 layer: CORE
+related_models:
+  - antifragile-thinking
+  - black-swan-thinking
 tags:
 - mental-model
 ---
-# オプション思考（Option Thinking）
+# オプション思考
 
 ## 概要
 不確実性が高い状況において、選択肢を「行使可能なオプション（権利）」として捉え、リスクを限定しつつ機会を最大化するための思考モデル。
@@ -65,6 +67,5 @@ tags:
 ## 他モデルとの関係
 - 関連：期待値思考、リスク×リターン思考  
 - 補完：可逆・不可逆判断（試す判断）  
-- 対立：短期最適思考
 
 

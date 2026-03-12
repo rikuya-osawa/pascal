@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: 競争優位
-en_name: Economic Moat
+name: Economic Moat
 abbreviation: Moat
 description: A strategic concept of building and maintaining structural advantages to protect long-term profitability within a competitive environment.
 application:
@@ -9,6 +8,11 @@ application:
   - DM
   - LT
 layer: CORE
+related_models:
+  - vrio-analysis
+  - five-forces-analysis
+  - flywheel-thinking
+  - leverage-thinking
 tags:
   - mental-model
 ---
@@ -96,7 +100,5 @@ The core concept of long-term strategy. The most common error is confusing **"Di
 
 ## Relationship with Other Models
 
-* **Higher Concept:** Competitive Strategy.
-* **Complementary:** VRIO Framework (Valuable, Rare, Inimitable, Organized), Flywheel Effect.
-* **Related:** Porter’s Five Forces, First-mover Advantage.
-* **Opposing:** Commodity Thinking (competing on price alone).
+* **Complementary:** VRIO Analysis (Valuable, Rare, Inimitable, Organized), Flywheel Effect.
+* **Related:** Five Forces Analysis, First-mover Advantage.

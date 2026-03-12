@@ -1,13 +1,16 @@
 ---
 type: mental-model
-ja_name: 本質思考
-en_name: Essential Thinking
+name: Essential Thinking
 abbreviation: Essential Thinking
 description: A thinking model for identifying "what is the real question to solve" and "what is most important," without getting caught up in superficial events or means. It aims to improve the quality of problem-setting itself.
 application:
   - PS
   - DM
 layer: CORE
+related_models:
+  - issue-driven-thinking
+  - five-whys-analysis
+  - first-principles-thinking
 tags:
   - mental-model
 ---
@@ -90,5 +93,3 @@ Significantly raises the quality of thought by preventing wasted effort on the w
 ## Relationship with Other Models
 
 * **Related:** Issue-driven Thinking, 5 Whys, First Principles Thinking.
-* **Complementary:** MECE (for structural organization), Hypothesis-based Thinking (to test the identified essence).
-* **Opposing:** Symptomatic Treatment (only responding to what is visible), Firefighting.

@@ -2,14 +2,14 @@ import { defineCollection, z } from "astro:content";
 
 const mentalModelSchema = z.object({
   type: z.literal("mental-model"),
-  ja_name: z.string(),
-  en_name: z.string().optional(),
+  name: z.string(),
   abbreviation: z.string().optional(),
   description: z.string(),
   application: z.array(
     z.enum(["LIFE", "LT", "DM", "NB", "PS"])
   ).default([]),
   layer: z.enum(["META", "CORE", "TOOL"]),
+  related_models: z.array(z.string()).default([]),
   tags: z.array(z.string()).default([]),
 });
 

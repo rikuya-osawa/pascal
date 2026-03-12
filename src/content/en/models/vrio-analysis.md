@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: VRIO分析
-en_name: VRIO Analysis
+name: VRIO Analysis
 abbreviation: VRIO
 description: A framework for evaluating if an organization's resources provide a sustained competitive advantage.
 application:

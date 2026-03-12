@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: バリューチェーン分析
-en_name: Value Chain Analysis
+name: Value Chain Analysis
 abbreviation: VCA
 description: A framework for breaking down company activities into value-creating processes to identify exactly where competitive advantages are generated.
 application:

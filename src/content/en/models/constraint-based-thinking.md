@@ -1,18 +1,21 @@
 ---
 type: mental-model
-ja_name: 制約条件思考
-en_name: Constraint-Based Thinking
-abbreviation: Constraints
+name: Constraint-based Thinking
+abbreviation: Constraints-based Thinking
 description: A model for identifying fixed boundaries and using them as a foundation to discover optimal solutions and creative alternatives rather than seeing them as excuses.
 application:
   - PS
   - DM
 layer: CORE
+related_models:
+  - theory-of-constraints
+  - trade-off-thinking
+  - essential-thinking
 tags:
   - mental-model
 ---
 
-# Constraint-Based Thinking
+# Constraint-based Thinking
 
 ## Overview
 

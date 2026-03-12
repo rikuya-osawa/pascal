@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: トレードオフ思考
-en_name: Trade-off Thinking
+name: Trade-off Thinking
 abbreviation: Trade-off
 description: A thinking model for making realistic decisions by explicitly defining what to gain and what to sacrifice, rather than attempting to satisfy everything at once.
 application:

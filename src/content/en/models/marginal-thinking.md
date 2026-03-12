@@ -1,14 +1,17 @@
 ---
 type: mental-model
-ja_name: 限界思考
-en_name: Marginal Thinking
-abbreviation: Marginal
+name: Marginal Thinking
+abbreviation: Marginal Thinking
 description: A thinking model for decision-making by comparing the additional benefit and additional cost gained from performing "one more unit" (the margin), rather than looking at overall averages.
 application:
   - DM
   - NB
   - LIFE
 layer: CORE
+related_models:
+  - expected-value-thinking
+  - trade-off-thinking
+  - sunk-cost-thinking
 tags:
   - mental-model
 ---
@@ -97,5 +100,4 @@ An extremely powerful model applicable to almost all decisions involving investm
 ## Relationship with Other Models
 
 * **Related:** Expected Value Thinking, Trade-off Thinking.
-* **Complementary:** Sunk Cost Fallacy (ignoring the past), Diminishing Returns, Risk-Reward Thinking.
-* **Opposing:** Average Thinking, Total-Sum Thinking.
+* **Complementary:** Sunk Cost Thinking (ignoring the past).

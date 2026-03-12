@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: オプショナリティ思考
-en_name: Optionality Thinking
+name: Optionality Thinking
 abbreviation: Optionality
 description: A thinking model for maximizing opportunities while limiting risks in highly uncertain situations by treating choices as "exercisable options (rights)."
 application:
@@ -9,6 +8,9 @@ application:
   - NB
   - PS
 layer: CORE
+related_models:
+  - antifragile-thinking
+  - black-swan-thinking
 tags:
   - mental-model
 ---
@@ -95,6 +97,5 @@ Extremely powerful for investment decisions and strategic career planning under 
 
 ## Relationship with Other Models
 
-* **Related:** Antifragile Thinking (Optionality is the engine of antifragility), Black Swan Theory.
+* **Related:** Antifragile Thinking (Optionality is the engine of antifragility)
 * **Complementary:** **"Reversible vs. Irreversible Decisions"** (reversible decisions are naturally options), **"MVP"** (the MVP is the premium paid to see the upside).
-* **Opposing:** Short-term Optimization (which removes "Slack" and therefore kills optionality).

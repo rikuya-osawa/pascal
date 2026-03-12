@@ -1,7 +1,6 @@
 ---
 type: mental-model
-ja_name: サンクコスト思考
-en_name: Sunk Cost Thinking
+name: Sunk Cost Thinking
 abbreviation: Sunk Cost
 description: A model for making rational decisions by ignoring irrecoverable past costs.
 application:

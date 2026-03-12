@@ -1,14 +1,16 @@
 ---
 type: mental-model
-ja_name: メタ認知
-en_name: Metacognition
-abbreviation: MetaCog
+name: メタ認知
+abbreviation: メタ認知
 description: 自分の思考・感情・判断プロセスを一段上から観察し、コントロールする能力。思考のOSを監視するメタレイヤー。
 application:
 - DM
 - LIFE
 - PS
 layer: META
+related_models:
+  - bias-awareness
+  - bayesian thinking
 tags:
 - mental-model
 ---
@@ -64,9 +66,8 @@ tags:
 - 完璧主義に陥る
 
 ## 他モデルとの関係
-- 上位：思考OSの監視レイヤー
+
 - 包含：バイアス認識
 - 補完：二次思考、ベイズ思考
-- 対立：衝動的判断
 
 

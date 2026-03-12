@@ -1,13 +1,16 @@
 ---
 type: mental-model
-ja_name: レバレッジ思考
-en_name: Leverage Thinking
+name: Leverage Thinking
 abbreviation: Leverage
 description: A thinking model for identifying the specific points (leverage points) where a small input of time, resources, or action produces the maximum output or impact.
 application:
   - PS
   - LT
 layer: CORE
+related_models:
+  - systems-thinking
+  - pareto-principle
+  - theory-of-constraints
 tags:
   - mental-model
 ---
@@ -92,5 +95,4 @@ A powerful perspective for accelerating results and scaling impact. However, if 
 ## Relationship with Other Models
 
 * **Related:** Systems Thinking, Pareto Principle (80/20 Rule).
-* **Complementary:** Theory of Constraints (identifying the bottleneck), Risk-Reward Thinking.
-* **Opposing:** Equal Distribution Thinking, Brute Force Thinking (reliance on input volume).
+* **Complementary:** Theory of Constraints (identifying the bottleneck).

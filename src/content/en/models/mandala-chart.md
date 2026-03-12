@@ -1,13 +1,16 @@
 ---
 type: mental-model
-ja_name: マンダラチャート
-en_name: Mandala Chart
+name: Mandala Chart
 abbreviation: MDC
 description: A 9x9 matrix framework that deconstructs a core objective into 8 foundational elements and 64 specific actions for comprehensive planning.
 application:
   - LIFE
   - PS
 layer: TOOL
+related_models:
+  - smart-goals
+  - 5w1h
+  - mind-map
 tags:
   - mental-model
 ---
@@ -90,5 +93,5 @@ This model dramatically improves execution by turning vague desires into concret
 
 ## Relationship with Other Models
 
-* **Complementary:** SMART Criteria (for concretizing actions).
+* **Complementary:** SMART Goals (for concretizing actions).
 * **Related:** 5W1H, Mind Mapping (for radial expansion).
