@@ -7,6 +7,10 @@ application:
   - PS
   - LT
 layer: TOOL
+related_models:
+  - root-cause-analysis
+  - fishbone-diagram
+  - first-principles-thinking
 tags:
   - mental-model
 ---
@@ -97,4 +101,3 @@ While extremely simple and highly effective, the quality of the analysis depends
 
 * **Related:** Root Cause Analysis (RCA), First Principles Thinking (deconstructing to facts).
 * **Complementary:** Fishbone Diagram, Essential Thinking (identifying the right problem).
-* **Opposing:** Symptomatic Treatment, Firefighting (fixing only what is visible).

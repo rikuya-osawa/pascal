@@ -7,11 +7,14 @@ application:
   - PS
   - DM
 layer: META
+related_models:
+  - pyramid-principle
+  - first-principles-thinking
 tags:
   - mental-model
 ---
 
-# 抽象化・具体化 (Abstraction & Concretization)
+# 抽象化・具体化
 
 ## 概要
 

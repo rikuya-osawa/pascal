@@ -7,6 +7,10 @@ application:
   - PS
   - DM
 layer: CORE
+related_models:
+  - issue-driven-thinking
+  - five-whys-analysis
+  - first-principles-thinking
 tags:
   - mental-model
 ---
@@ -88,5 +92,3 @@ tags:
 ## 他のモデルとの関係
 
 * **関連:** イシュードリブン思考、なぜなぜ分析（5 Whys）、第一原理思考
-* **補完的:** MECE（構造的整理のため）、仮説思考（特定された本質を検証するため）
-* **対立:** 対症療法（目に見えるものにだけ反応すること）、火消し（場当たり的な対応）

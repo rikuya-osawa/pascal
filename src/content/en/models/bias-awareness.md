@@ -8,6 +8,9 @@ application:
   - PS
   - LIFE
 layer: META
+related_models:
+  - bayesian-thinking
+  - ladder-of-inference
 tags:
   - mental-model
 ---
@@ -94,7 +97,5 @@ Significantly improves thinking accuracy and emotional regulation. However, prac
 
 ## Relationship with Other Models
 
-* **Higher Concept:** META Layer (Thinking about thinking).
 * **Complementary:** Bayesian Thinking (using new evidence to update priors).
-* **Related:** Second-Order Thinking, Ladder of Inference, Systems Thinking.
-* **Opposing:** Introspective Illusion (the belief that we have direct access to our own mental processes).
+* **Related:** Ladder of Inference.

@@ -1,18 +1,21 @@
 ---
 type: mental-model
-name: Black Swan Theory
-abbreviation: BlackSwan
+name: Black Swan Thinking
+abbreviation: Black Swan Thinking
 description: A thinking model for designing risk management and strategies based on the premise of "Black Swans"—unpredictable events that have a low probability of occurring but carry an extremely high impact if they do.
 application:
   - DM
   - NB
   - LIFE
 layer: CORE
+related_models:
+  - antifragile-thinking
+  - barbell-strategy
 tags:
   - mental-model
 ---
 
-# Black Swan Theory
+# Black Swan Thinking
 
 ## Overview
 
@@ -91,4 +94,3 @@ Critically important for long-term survival in business and life. The core chall
 
 * **Related:** Antifragile Thinking (thriving on the swan).
 * **Complementary:** Barbell Strategy (protecting the downside while chasing the swan).
-* **Opposing:** Gaussian (Normal) Distribution Thinking.

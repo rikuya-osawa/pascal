@@ -7,6 +7,10 @@ application:
   - PS
   - LT
 layer: CORE
+related_models:
+  - systems-thinking
+  - pareto-principle
+  - theory-of-constraints
 tags:
   - mental-model
 ---
@@ -91,5 +95,4 @@ A powerful perspective for accelerating results and scaling impact. However, if 
 ## Relationship with Other Models
 
 * **Related:** Systems Thinking, Pareto Principle (80/20 Rule).
-* **Complementary:** Theory of Constraints (identifying the bottleneck), Risk-Reward Thinking.
-* **Opposing:** Equal Distribution Thinking, Brute Force Thinking (reliance on input volume).
+* **Complementary:** Theory of Constraints (identifying the bottleneck).

@@ -7,11 +7,16 @@ application:
   - NB
   - DM
 layer: TOOL
+related_models:
+  - economic-moat
+  - 4p-4c
+  - pestel-analysis
+  - systems-thinking
 tags:
   - mental-model
 ---
 
-# ファイブフォース分析 (Five Forces Analysis)
+# ファイブフォース分析
 
 ## 概要
 

@@ -8,6 +8,12 @@ application:
   - PS
   - DM
 layer: CORE
+related_models:
+  - minimum-viable-product
+  - kanban
+  - hypothesis-thinking
+  - ooda-loop
+  - pareto-principle
 tags:
   - mental-model
 ---
@@ -96,4 +102,3 @@ Significantly increases the speed of learning and adaptation. However, if it is 
 * **Subordinate:** MVP (Minimum Viable Product), Kanban.
 * **Complementary:** Hypothesis-Driven Thinking, OODA Loop (Observe-Orient-Decide-Act).
 * **Related:** Pareto Principle (focusing on the 20% of effort that yields 80% of value).
-* **Opposing:** Perfectionism, Rigid Long-term Planning, "Waterfall" Methodology.

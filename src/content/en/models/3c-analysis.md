@@ -7,6 +7,11 @@ application:
   - NB
   - DM
 layer: TOOL
+related_models:
+  - stp-analysis
+  - swot-analysis
+  - pestel-analysis
+  - 4p-4c
 tags:
   - mental-model
 ---
@@ -91,6 +96,6 @@ While extremely simple, it is optimal for grasping the big picture of a strategy
 
 ## Relationship with Other Models
 
-* **Complementary:** SWOT Analysis (mapping 3C results into S/W/O/T), PESTEL Analysis (analyzing the macro-environment surrounding the 3Cs).
+* **Complementary:** SWOT Analysis (mapping 3C results into S/W/O/T), PESTEL Analysis (analyzing the macro-environment surrounding the 3Cs), 4P / 4C.
 * **Related:** Value Proposition, STP Analysis (Segmentation, Targeting, Positioning).
 * **Opposing:** Product-Out Approach (developing products while ignoring customer needs or competitor trends).

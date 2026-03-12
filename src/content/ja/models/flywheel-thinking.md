@@ -8,11 +8,15 @@ application:
   - LT
   - PS
 layer: CORE
+related_models:
+  - systems-thinking
+  - economic-moat
+  - leverage-thinking
 tags:
   - mental-model
 ---
 
-# フライホイール思考 (Flywheel Thinking)
+# フライホイール思考
 
 ## 概要
 

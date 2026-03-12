@@ -7,6 +7,9 @@ application:
   - PS
   - LT
 layer: TOOL
+related_models:
+  - issue-tree
+  - pyramid-principle
 tags:
   - mental-model
 ---
@@ -95,5 +98,3 @@ This is the most fundamental of basics—the "grammar" of logical thought. While
 ## Relationship with Other Models
 
 * **Related:** Issue Tree, Logic Tree, Pyramid Principle.
-* **Complementary:** **"Hypothesis Thinking"** (placing a 'best guess' in each MECE bucket), **"5 Whys"** (using MECE to ensure all causal paths are explored).
-* **Opposing:** Intuitive Thinking (intentionally avoiding structure to allow for creative leaps).

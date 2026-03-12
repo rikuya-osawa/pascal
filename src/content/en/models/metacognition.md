@@ -8,6 +8,9 @@ application:
   - LIFE
   - PS
 layer: META
+related_models:
+  - bias-awareness
+  - bayesian thinking
 tags:
   - mental-model
 ---
@@ -93,7 +96,5 @@ Mastering this skill takes time and consistent practice, but it leads to a drama
 
 ## Relationship with Other Models
 
-* **Higher Concept:** The monitoring layer of the Mental Model OS.
 * **Inclusion:** Cognitive Bias Awareness (identifying specific errors).
 * **Complementary:** Second-Order Thinking (considering consequences), Bayesian Thinking (updating based on self-observation).
-* **Opposing:** Impulsive Judgment, Surface-Level Thinking.

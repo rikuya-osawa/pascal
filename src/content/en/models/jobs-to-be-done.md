@@ -7,6 +7,8 @@ application:
   - DM
   - NB
 layer: TOOL
+related_models:
+  - hypothesis-thinking
 tags:
   - mental-model
 ---
@@ -92,4 +94,3 @@ A powerful perspective that deepens customer understanding. However, if confused
 
 * **Related:** Customer-Centric Thinking, Hypothesis-Driven Thinking.
 * **Complementary:** Issue Tree (for structuring), Bayesian Thinking (for verifying Job hypotheses).
-* **Opposing:** Feature-Centric Thinking, Spec-Based Competition.

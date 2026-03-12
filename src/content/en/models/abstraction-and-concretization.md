@@ -7,6 +7,9 @@ application:
   - PS
   - DM
 layer: META
+related_models:
+  - pyramid-principle
+  - first-principles-thinking
 tags:
   - mental-model
 ---

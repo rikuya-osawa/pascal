@@ -7,11 +7,14 @@ application:
   - LT
   - DM
 layer: CORE
+related_models:
+  - decision-theory
+  - bayesian-thinking
 tags:
   - mental-model
 ---
 
-# 期待値思考 (Expected Value Thinking)
+# 期待値思考
 
 ## 概要
 
@@ -91,4 +94,3 @@ tags:
 
 * **関連:** 意思決定理論、リスク管理、ベイズ思考
 * **補完的:** トレードオフ思考（何を犠牲にするかを特定する）、制約条件思考（前提を明確にする）
-* **対立:** 結果論（結果のみで意思決定を判断すること）、白黒思考

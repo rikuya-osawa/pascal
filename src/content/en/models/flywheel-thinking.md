@@ -8,6 +8,10 @@ application:
   - LT
   - PS
 layer: CORE
+related_models:
+  - systems-thinking
+  - economic-moat
+  - leverage-thinking
 tags:
   - mental-model
 ---

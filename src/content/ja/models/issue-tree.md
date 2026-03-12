@@ -8,11 +8,14 @@ application:
   - PS
   - DM
 layer: TOOL
+related_models:
+  - pyramid-principle
+  - mece
 tags:
   - mental-model
 ---
 
-# イシューツリー (Issue Tree)
+# イシューツリー
 
 ## 概要
 
@@ -91,4 +94,4 @@ tags:
 ## 他のモデルとの関係
 
 * **関連:** イシュードリブン思考、ロジックツリー、ピラミッド原則
-* **補完的:** **「MECE」** （枝のための基本的なルール）、 **「仮説思考」** （各枝に暫定的な答えを設定する）
+* **補完的:** **「MECE」** （枝のための基本的なルール）

@@ -7,6 +7,8 @@ application:
   - PS
   - NB
 layer: CORE
+related_models:
+  - issue-driven-thinking
 tags:
   - mental-model
 ---
@@ -93,4 +95,3 @@ A powerful weapon for accelerating both thinking and execution. However, the gre
 
 * **Related:** Issue-driven Thinking
 * **Complementary:** MECE (to organize verification perspectives), 5 Whys (to generate causal hypotheses).
-* **Opposing:** Exhaustive Thinking (trying to investigate everything from the start).

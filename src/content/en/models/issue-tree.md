@@ -8,6 +8,9 @@ application:
   - PS
   - DM
 layer: TOOL
+related_models:
+  - pyramid-principle
+  - mece
 tags:
   - mental-model
 ---
@@ -94,4 +97,4 @@ An incredibly powerful tool for problem-solving. It acts as the **"Skeleton"** o
 ## Relationship with Other Models
 
 * **Related:** Issue-Driven Thinking, Logic Tree, Pyramid Principle.
-* **Complementary:** **"MECE"** (the foundational rule for the branches), **"Hypothesis Thinking"** (setting provisional answers for each branch).
+* **Complementary:** **"MECE"** (the foundational rule for the branches)

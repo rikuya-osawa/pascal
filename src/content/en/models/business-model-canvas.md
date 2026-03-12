@@ -8,6 +8,13 @@ application:
   - PS
   - DM
 layer: TOOL
+related_models:
+  - value-chain-analysis
+  - 4p-4c
+  - lean-canvas
+  - value-proposition-canvas
+  - vrio-analysis
+  - flywheel-thinking
 tags:
   - mental-model
 ---
@@ -99,4 +106,4 @@ A gold standard for organizing a business landscape. Its greatest strength is sh
 ## Relationship with Other Models
 
 * **Related:** Value Chain Analysis, 4P / 4C, Lean Canvas (a variation for startups).
-* **Complementary:** **"Value Proposition Canvas"** (zooming into the customer/product fit), VRIO Analysis, Flywheel Effect.
+* **Complementary:** **"Value Proposition Canvas"** (zooming into the customer/product fit), VRIO Analysis, Flywheel Thinking.

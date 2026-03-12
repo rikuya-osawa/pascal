@@ -8,11 +8,14 @@ application:
   - PS
   - LIFE
 layer: META
+related_models:
+  - bayesian-thinking
+  - ladder-of-inference
 tags:
   - mental-model
 ---
 
-# バイアス認識 (Cognitive Bias Awareness)
+# バイアス認識
 
 ## 概要
 
@@ -95,4 +98,4 @@ tags:
 ## 他のモデルとの関係
 
 * **補完的:** ベイズ思考（新しい証拠を使用して事前確率を更新する）。
-* **関連:** 二次思考、推論の梯子、システム思考。
+* **関連:** 推論の梯子。

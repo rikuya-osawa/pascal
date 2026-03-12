@@ -8,9 +8,15 @@ application:
 - DM
 - LT
 layer: CORE
+related_models:
+  - vrio-analysis
+  - five-forces-analysis
+  - flywheel-thinking
+  - leverage-thinking
 tags:
 - mental-model
 ---
+
 # MOAT（競争優位）
 
 ## 概要
@@ -66,7 +72,6 @@ tags:
 ## 他モデルとの関係
 - 補完：システム思考（構造理解）
 - 関連：レバレッジ思考
-- 下位：4P / 5Forces（TOOL）
-- 対立：短期最適思考
+- 下位：4P / ファイブ・フォース分析
 
 

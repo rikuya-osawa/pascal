@@ -7,6 +7,9 @@ application:
   - LT
   - DM
 layer: CORE
+related_models:
+  - decision-theory
+  - bayesian-thinking
 tags:
   - mental-model
 ---
@@ -89,6 +92,5 @@ Highly effective for decision-making under uncertainty. However, if probabilitie
 
 ## Relationship with Other Models
 
-* **Related:** Decision Theory, Risk Management, Bayesian Thinking.
+* **Related:** Decision Theory, Bayesian Thinking.
 * **Complementary:** Trade-off Thinking (identifying what to sacrifice), Constraint Thinking (clarifying premises).
-* **Opposing:** Resultsholism (judging a decision solely by its outcome), Black-and-White Thinking.

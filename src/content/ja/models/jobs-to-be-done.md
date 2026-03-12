@@ -7,11 +7,13 @@ application:
   - DM
   - NB
 layer: TOOL
+related_models:
+  - hypothesis-thinking
 tags:
   - mental-model
 ---
 
-# ジョブ理論 (Jobs To Be Done: JTBD)
+# ジョブ理論
 
 ## 概要
 

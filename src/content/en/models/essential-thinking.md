@@ -7,6 +7,10 @@ application:
   - PS
   - DM
 layer: CORE
+related_models:
+  - issue-driven-thinking
+  - five-whys-analysis
+  - first-principles-thinking
 tags:
   - mental-model
 ---
@@ -89,5 +93,3 @@ Significantly raises the quality of thought by preventing wasted effort on the w
 ## Relationship with Other Models
 
 * **Related:** Issue-driven Thinking, 5 Whys, First Principles Thinking.
-* **Complementary:** MECE (for structural organization), Hypothesis-based Thinking (to test the identified essence).
-* **Opposing:** Symptomatic Treatment (only responding to what is visible), Firefighting.

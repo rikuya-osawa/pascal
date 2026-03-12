@@ -7,6 +7,11 @@ application:
   - LT
   - DM
 layer: CORE
+related_models:
+  - bias-awareness
+  - statistical-thinking
+  - hypothesis-thinking
+  - expected-value-thinking
 tags:
   - mental-model
 ---
@@ -85,6 +90,6 @@ tags:
 
 ## 他のモデルとの関係
 
-* **関連:** 確率論、統計的思考
+* **関連:** 統計的思考
 * **補完的:** 仮説思考（事前確率の設定）、期待値思考（事後確率に基づく行動）
 * **対立:** 白黒思考（世界を0か100かで見る思考）

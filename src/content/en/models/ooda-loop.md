@@ -96,4 +96,3 @@ Particularly effective in rapidly changing environments where the "correct" answ
 
 * **Related:** Hypothesis-based Thinking, Bayesian Thinking (updating the 'Orient' phase).
 * **Complementary:** **"MVP"** (the action is the experiment), Reversible vs. Irreversible Decisions.
-* **Opposing:** Waterfall Planning, Perfectionism, Rigid Standard Operating Procedures (SOPs).

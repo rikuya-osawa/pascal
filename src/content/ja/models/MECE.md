@@ -2,11 +2,14 @@
 type: mental-model
 name: MECE
 abbreviation: MECE
-description: 抜け漏れなく、かつ重複しない形で物事を分解・整理するための基本的な思考モデル。複雑なテーマを構造化し、全体像を把握しやすくすることを目的とする。
+description: 抜け漏れなく、かつ重複しない形で物事を分解・整理するための基本的な思考モデル。
 application:
 - PS
 - LT
 layer: TOOL
+related_models:
+  - issue-tree
+  - pyramid-principle
 tags:
 - mental-model
 ---
@@ -55,7 +58,3 @@ tags:
 
 ## 他モデルとの関係
 - 関連：Issue Tree、ロジックツリー
-- 補完：仮説思考（各要素に仮説を置く）、Why-Why分析（原因深掘り）
-- 対立：直感思考（初動であえて構造化しない場合）
-
-

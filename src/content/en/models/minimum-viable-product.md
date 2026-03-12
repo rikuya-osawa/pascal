@@ -8,6 +8,9 @@ application:
   - PS
   - DM
 layer: TOOL
+related_models:
+  - hypothesis-thinking
+  - ooda-loop
 tags:
   - mental-model
 ---
@@ -94,5 +97,4 @@ An extremely powerful tool for reducing waste. However, it is frequently misunde
 
 * **Higher-level Concept:** Hypothesis-based Thinking.
 * **Complementary:** OODA Loop (Observe-Orient-Decide-Act), Agile Methodology.
-* **Related:** Pareto Principle (80/20 rule—focusing on the 20% of features that provide 80% of value).
-* **Opposing:** Waterfall Development, Perfectionist Thinking.
+

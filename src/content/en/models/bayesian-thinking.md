@@ -7,6 +7,11 @@ application:
   - LT
   - DM
 layer: CORE
+related_models:
+  - bias-awareness
+  - statistical-thinking
+  - hypothesis-thinking
+  - expected-value-thinking
 tags:
   - mental-model
 ---
@@ -86,6 +91,6 @@ Extremely powerful under uncertainty. While the mathematical foundation is rigor
 
 ## Relationship with Other Models
 
-* **Related:** Probability Theory, Statistical Thinking.
-* **Complementary:** Hypothesis-based Thinking (setting the prior), Expected Value Thinking (acting on the posterior).
+* **Related:** Statistical Thinking.
+* **Complementary:** Hypothesis-driven Thinking (setting the prior), Expected Value Thinking (acting on the posterior).
 * **Opposing:** Black-and-White Thinking (viewing the world in 0 or 100).

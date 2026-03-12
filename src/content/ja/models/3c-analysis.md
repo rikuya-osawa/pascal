@@ -7,6 +7,11 @@ application:
   - NB
   - DM
 layer: TOOL
+related_models:
+  - stp-analysis
+  - swot-analysis
+  - pestel-analysis
+  - 4p-4c
 tags:
   - mental-model
 ---

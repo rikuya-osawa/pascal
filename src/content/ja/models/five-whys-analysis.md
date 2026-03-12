@@ -7,6 +7,10 @@ application:
   - PS
   - LT
 layer: TOOL
+related_models:
+  - root-cause-analysis
+  - fishbone-diagram
+  - first-principles-thinking
 tags:
   - mental-model
 ---

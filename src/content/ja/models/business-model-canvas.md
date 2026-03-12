@@ -1,6 +1,6 @@
 ---
 type: mental-model
-name: ビジネスモデルキャンバス
+name: ビジネスモデル・キャンバス
 abbreviation: BMC
 description: 顧客、価値提案、収益源、コスト構造など9つの重要な要素をマッピングすることで、ビジネス全体を視覚化、設計、および検証するためのフレームワーク。
 application:
@@ -8,11 +8,18 @@ application:
   - PS
   - DM
 layer: TOOL
+related_models:
+  - value-chain-analysis
+  - 4p-4c
+  - lean-canvas
+  - value-proposition-canvas
+  - vrio-analysis
+  - flywheel-thinking
 tags:
   - mental-model
 ---
 
-# ビジネスモデルキャンバス
+# ビジネスモデル・キャンバス
 
 ## 概要
 

@@ -8,6 +8,9 @@ application:
   - NB
   - LIFE
 layer: CORE
+related_models:
+  - antifragile-thinking
+  - barbell-strategy
 tags:
   - mental-model
 ---
@@ -90,4 +93,3 @@ tags:
 
 * **関連:** アンチフラジャイル思考（ブラックスワンを利用して繁栄する）
 * **補完的:** バーベル戦略（ブラックスワンを追いかけつつ、ダウンサイドを保護する）
-* **対立:** ガウス（正規）分布思考

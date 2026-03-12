@@ -7,11 +7,13 @@ application:
   - PS
   - NB
 layer: CORE
+related_models:
+  - issue-driven-thinking
 tags:
   - mental-model
 ---
 
-# 仮説思考 (Hypothesis-Driven Thinking)
+# 仮説思考
 
 ## 概要
 
@@ -94,4 +96,3 @@ tags:
 
 * **関連:** イシュードリブン思考
 * **補完的:** MECE（検証の視点を整理するため）、なぜなぜ分析（原因の仮説を立てるため）
-* **対立:** 網羅的思考（最初からすべてを調査しようとする思考）

@@ -7,6 +7,10 @@ application:
   - PS
   - DM
 layer: CORE
+related_models:
+  - theory-of-constraints
+  - trade-off-thinking
+  - essential-thinking
 tags:
   - mental-model
 ---

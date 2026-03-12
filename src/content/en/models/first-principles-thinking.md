@@ -8,6 +8,8 @@ application:
   - LT
   - DM
 layer: META
+related_models:
+  - abstraction-and-concretization
 tags:
   - mental-model
 ---
@@ -91,6 +93,5 @@ Highly effective for generating breakthroughs and radical innovation. However, i
 
 ## Relationship with Other Models
 
-* **Related:** Essential Thinking, 5 Whys, Abstraction & Concretization.
+* **Related:** Abstraction & Concretization.
 * **Complementary:** Constraint Thinking (connecting back to reality), Trade-off Thinking.
-* **Opposing:** Reasoning by Analogy (copying others), Conventional Thinking, Precedent-based Thinking.

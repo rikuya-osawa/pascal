@@ -8,6 +8,8 @@ application:
   - LT
   - DM
 layer: META
+related_models:
+  - abstraction-and-concretization
 tags:
   - mental-model
 ---
@@ -91,6 +93,5 @@ tags:
 
 ## 他のモデルとの関係
 
-* **関連:** 本質思考、なぜなぜ分析（5 Whys）、抽象化・具体化
+* **関連:** 抽象化・具体化
 * **補完的:** 制約条件思考（現実への接続）、トレードオフ思考
-* **対立:** 類推による推論（他者の模倣）、従来型の思考、前例踏襲思考
