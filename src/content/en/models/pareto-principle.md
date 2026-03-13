@@ -8,6 +8,10 @@ application:
   - DM
   - NB
 layer: TOOL
+related_models:
+  - leverage-thinking
+  - systems-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---
@@ -98,5 +102,3 @@ Highly intuitive and easy to apply immediately. However, there is a risk of assu
 
 * **Higher Concept:** Leverage Thinking (CORE).
 * **Complementary:** Systems Thinking (understanding the structure), Theory of Constraints (bottleneck identification).
-* **Related:** Diminishing Returns, Power Law.
-* **Opposing:** Equal Distribution Thinking, "Fairness" Bias in Resource Allocation.

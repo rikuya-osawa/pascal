@@ -12,6 +12,7 @@ related_models:
   - pareto-analysis
   - bias-awareness
   - expected-value-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

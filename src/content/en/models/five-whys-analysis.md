@@ -11,6 +11,7 @@ related_models:
   - root-cause-analysis
   - fishbone-diagram
   - first-principles-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

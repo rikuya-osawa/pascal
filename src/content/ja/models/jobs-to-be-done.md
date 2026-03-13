@@ -9,6 +9,7 @@ application:
 layer: TOOL
 related_models:
   - hypothesis-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

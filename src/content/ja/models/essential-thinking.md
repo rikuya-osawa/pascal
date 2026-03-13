@@ -11,6 +11,7 @@ related_models:
   - issue-driven-thinking
   - five-whys-analysis
   - first-principles-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

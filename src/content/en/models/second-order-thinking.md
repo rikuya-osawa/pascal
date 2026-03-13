@@ -7,6 +7,7 @@ application:
   - LT
   - DM
 layer: CORE
+format_version: 0.3
 tags:
   - mental-model
 ---

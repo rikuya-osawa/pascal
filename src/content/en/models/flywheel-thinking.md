@@ -12,6 +12,7 @@ related_models:
   - systems-thinking
   - economic-moat
   - leverage-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

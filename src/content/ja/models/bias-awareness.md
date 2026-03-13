@@ -11,6 +11,7 @@ layer: META
 related_models:
   - bayesian-thinking
   - ladder-of-inference
+format_version: 0.3
 tags:
   - mental-model
 ---

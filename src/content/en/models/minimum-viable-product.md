@@ -11,6 +11,7 @@ layer: TOOL
 related_models:
   - hypothesis-thinking
   - ooda-loop
+format_version: 0.3
 tags:
   - mental-model
 ---

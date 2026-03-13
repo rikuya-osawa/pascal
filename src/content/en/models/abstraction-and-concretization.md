@@ -10,6 +10,7 @@ layer: META
 related_models:
   - pyramid-principle
   - first-principles-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

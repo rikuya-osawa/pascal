@@ -8,6 +8,7 @@ application:
   - NB
   - LIFE
 layer: CORE
+format_version: 0.3
 tags:
   - mental-model
 ---

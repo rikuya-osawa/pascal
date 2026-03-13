@@ -12,6 +12,7 @@ related_models:
   - swot-analysis
   - pestel-analysis
   - 4p-4c
+format_version: 0.3
 tags:
   - mental-model
 ---

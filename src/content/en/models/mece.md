@@ -10,6 +10,7 @@ layer: TOOL
 related_models:
   - issue-tree
   - pyramid-principle
+format_version: 0.3
 tags:
   - mental-model
 ---

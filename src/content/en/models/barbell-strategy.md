@@ -12,6 +12,7 @@ related_models:
   - antifragile-thinking
   - black-swan-thinking
   - risk-return-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

@@ -6,6 +6,7 @@ description: A framework for improving execution accuracy by redefining objectiv
 application:
   - PS
 layer: TOOL
+format_version: 0.3
 tags:
   - mental-model
 ---

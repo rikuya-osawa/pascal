@@ -7,6 +7,12 @@ application:
   - PS
   - DM
 layer: TOOL
+related_models:
+  - hypothesis-thinking
+  - bayesian-thinking
+  - minimum-viable-product
+  - reversible-irreversible-decisions
+format_version: 0.3
 tags:
   - mental-model
 ---

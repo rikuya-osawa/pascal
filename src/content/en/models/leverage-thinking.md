@@ -11,6 +11,7 @@ related_models:
   - systems-thinking
   - pareto-principle
   - theory-of-constraints
+format_version: 0.3
 tags:
   - mental-model
 ---

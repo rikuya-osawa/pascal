@@ -12,6 +12,7 @@ related_models:
   - 4p-4c
   - pestel-analysis
   - systems-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

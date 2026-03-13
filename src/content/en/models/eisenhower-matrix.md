@@ -12,6 +12,7 @@ related_models:
   - pareto-principle
   - smart-goals
   - work-planning-strategy
+format_version: 0.3
 tags:
   - mental-model
 ---

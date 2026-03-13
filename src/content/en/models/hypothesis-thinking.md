@@ -9,6 +9,7 @@ application:
 layer: CORE
 related_models:
   - issue-driven-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

@@ -8,6 +8,7 @@ application:
   - DM
   - LIFE
 layer: CORE
+format_version: 0.3
 tags:
   - mental-model
 ---

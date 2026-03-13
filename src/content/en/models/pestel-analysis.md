@@ -7,6 +7,11 @@ application:
   - NB
   - DM
 layer: TOOL
+related_models:
+  - scenario-planning
+  - 3c-analysis
+  - swot-analysis
+format_version: 0.3
 tags:
   - mental-model
 ---
@@ -97,6 +102,5 @@ More comprehensive than PEST, it aligns perfectly with modern business requireme
 
 ## Relationship with Other Models
 
-* **Higher Concepts:** Scenario Planning, Risk Management.
-* **Complementary:** 3C Analysis, SWOT Analysis, Materiality Assessment.
-* **Related:** ESG Investment Standards.
+* **Higher Concepts:** Scenario Planning
+* **Complementary:** 3C Analysis, SWOT Analysis

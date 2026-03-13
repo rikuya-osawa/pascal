@@ -10,6 +10,7 @@ layer: CORE
 related_models:
   - decision-theory
   - bayesian-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

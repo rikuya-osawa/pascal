@@ -11,6 +11,7 @@ layer: META
 related_models:
   - bias-awareness
   - bayesian thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

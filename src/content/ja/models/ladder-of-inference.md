@@ -12,6 +12,7 @@ related_models:
   - bias-awareness
   - systems-thinking
   - double-loop-learning
+format_version: 0.3
 tags:
   - mental-model
 ---

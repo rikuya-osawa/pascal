@@ -11,6 +11,7 @@ layer: TOOL
 related_models:
   - pyramid-principle
   - mece
+format_version: 0.3
 tags:
   - mental-model
 ---

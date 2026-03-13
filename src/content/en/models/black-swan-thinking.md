@@ -11,6 +11,7 @@ layer: CORE
 related_models:
   - antifragile-thinking
   - barbell-strategy
+format_version: 0.3
 tags:
   - mental-model
 ---
