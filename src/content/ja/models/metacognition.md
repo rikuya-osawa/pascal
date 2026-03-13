@@ -10,7 +10,7 @@ application:
 layer: META
 related_models:
   - bias-awareness
-  - bayesian thinking
+  - bayesian-thinking
 tags:
 - mental-model
 ---
