@@ -2,16 +2,20 @@
 type: mental-model
 name: Marginal Thinking
 abbreviation: Marginal Thinking
-description: A thinking model for decision-making by comparing the additional benefit and additional cost gained from performing "one more unit" (the margin), rather than looking at overall averages.
+description: >-
+  A thinking model for decision-making by comparing the additional benefit and
+  additional cost gained from performing "one more unit" (the margin), rather
+  than looking at overall averages.
 application:
   - DM
   - NB
   - LIFE
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - expected-value-thinking
   - trade-off-thinking
   - sunk-cost-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

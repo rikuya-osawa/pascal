@@ -2,12 +2,18 @@
 type: mental-model
 name: Pareto Principle
 abbreviation: 80/20 Rule
-description: A thinking model focused on identifying and concentrating on the "vital few"—the roughly 20% of causes that produce 80% of the results or effects.
+description: >-
+  A thinking model focused on identifying and concentrating on the "vital
+  few"—the roughly 20% of causes that produce 80% of the results or effects.
 application:
   - PS
   - DM
   - NB
-layer: TOOL
+nature: PRINCIPLE
+related_models:
+  - leverage-thinking
+  - systems-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---
@@ -98,5 +104,3 @@ Highly intuitive and easy to apply immediately. However, there is a risk of assu
 
 * **Higher Concept:** Leverage Thinking (CORE).
 * **Complementary:** Systems Thinking (understanding the structure), Theory of Constraints (bottleneck identification).
-* **Related:** Diminishing Returns, Power Law.
-* **Opposing:** Equal Distribution Thinking, "Fairness" Bias in Resource Allocation.

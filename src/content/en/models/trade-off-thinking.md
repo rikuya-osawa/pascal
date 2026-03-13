@@ -2,11 +2,19 @@
 type: mental-model
 name: Trade-off Thinking
 abbreviation: Trade-off
-description: A thinking model for making realistic decisions by explicitly defining what to gain and what to sacrifice, rather than attempting to satisfy everything at once.
+description: >-
+  A thinking model for making realistic decisions by explicitly defining what to
+  gain and what to sacrifice, rather than attempting to satisfy everything at
+  once.
 application:
   - DM
   - LIFE
-layer: CORE
+nature: COGNITION
+related_models:
+  - essential-thinking
+  - expected-value-thinking
+  - risk-return-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---
@@ -95,5 +103,4 @@ A foundational model for high-quality decision-making. Without explicitly statin
 
 ## Relationship with Other Models
 
-* **Related:** Decision Theory, Cost-Benefit Analysis, Opportunity Cost.
 * **Complementary:** Essential Thinking (setting priority axes), Expected Value Thinking (as a decision standard).

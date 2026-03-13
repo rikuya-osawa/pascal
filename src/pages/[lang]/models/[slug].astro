@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/base-layout.astro";
 import "../../styles/markdown.css";
 import "../../styles/components/model-detail.css";
-import { LAYERS, APPLICATION, type Language } from "../../../constants/filters";
+import { NATURES, APPLICATION, type Language } from "../../../constants/filters";
 import { getMessages } from "../../../constants/messages";
 import ModelCard from "../../../components/model-card.astro";
 import { validateModelSync } from "../../../utils/validator";
@@ -94,7 +94,7 @@ const breadcrumbData = {
   ],
 };
 
-const layerInfo = LAYERS[entry.data.layer as keyof typeof LAYERS];
+const natureInfo = NATURES[entry.data.nature as keyof typeof NATURES];
 ---
 
 <BaseLayout lang={currentLang}>
@@ -103,8 +103,8 @@ const layerInfo = LAYERS[entry.data.layer as keyof typeof LAYERS];
   <article class="markdown-content">
    
     <div class="meta">
-      <span class={`badge badge--${entry.data.layer.toLowerCase()}`}>
-        {layerInfo[currentLang]}
+      <span class={`badge badge--${entry.data.nature.toLowerCase()}`}>
+        {natureInfo[currentLang]}
       </span>
 
       {entry.data.application.map((v) => {

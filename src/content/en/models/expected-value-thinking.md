@@ -2,14 +2,18 @@
 type: mental-model
 name: Expected Value Thinking
 abbreviation: EV Thinking
-description: A thinking model for making long-term rational decisions by considering "possible outcomes × their probability × magnitude of impact" for uncertain options, rather than focusing on short-term gains or losses.
+description: >-
+  A thinking model for making long-term rational decisions by considering
+  "possible outcomes × their probability × magnitude of impact" for uncertain
+  options, rather than focusing on short-term gains or losses.
 application:
   - LT
   - DM
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - decision-theory
   - bayesian-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

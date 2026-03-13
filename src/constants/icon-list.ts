@@ -36,6 +36,7 @@ export const LUCIDE_ICONS = [
     'test-tube-2',
     'grid-2x2',
     'grid-3x3',
+    'columns-4',
     // システム・効率
     'network',
     'dumbbell',
@@ -57,5 +58,6 @@ export const LUCIDE_ICONS = [
     'layers',
     'layers-3',
     'split',
-    'arrow-left-right'
+    'arrow-left-right',
+    'chart-scatter',
 ];

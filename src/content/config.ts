@@ -8,7 +8,7 @@ const mentalModelSchema = z.object({
   application: z.array(
     z.enum(["LIFE", "LT", "DM", "NB", "PS"])
   ).default([]),
-  layer: z.enum(["META", "CORE", "TOOL"]),
+  nature: z.enum(["FRAMEWORK", "COGNITION", "PRINCIPLE"]),
   related_models: z.array(z.string()).default([]),
   tags: z.array(z.string()).default([]),
 });

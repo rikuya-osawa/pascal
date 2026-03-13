@@ -2,12 +2,15 @@
 type: mental-model
 name: Value Chain Analysis
 abbreviation: VCA
-description: A framework for breaking down company activities into value-creating processes to identify exactly where competitive advantages are generated.
+description: >-
+  A framework for breaking down company activities into value-creating processes
+  to identify exactly where competitive advantages are generated.
 application:
   - NB
   - DM
   - PS
-layer: TOOL
+nature: FRAMEWORK
+format_version: 0.3
 tags:
   - mental-model
 ---
@@ -96,4 +99,3 @@ Extremely effective for visualizing the sources of competitive advantage from wi
 * **Higher Concept:** Economic Moat (competitive advantage).
 * **Complementary:** Five Forces Analysis (external structure), SWOT Analysis.
 * **Related:** Leverage Thinking (focusing on the high-impact link).
-* **Opposing:** Functional Silo Optimization (optimizing one department without looking at the whole chain).

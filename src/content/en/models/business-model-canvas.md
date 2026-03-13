@@ -2,12 +2,15 @@
 type: mental-model
 name: Business Model Canvas
 abbreviation: BMC
-description: A framework for visualizing, designing, and validating an entire business by mapping nine key elements, including customers, value propositions, revenue streams, and cost structures.
+description: >-
+  A framework for visualizing, designing, and validating an entire business by
+  mapping nine key elements, including customers, value propositions, revenue
+  streams, and cost structures.
 application:
   - NB
   - PS
   - DM
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - value-chain-analysis
   - 4p-4c
@@ -15,6 +18,7 @@ related_models:
   - value-proposition-canvas
   - vrio-analysis
   - flywheel-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

@@ -2,14 +2,17 @@
 type: mental-model
 name: MECE
 abbreviation: MECE
-description: A fundamental thinking model for breaking down and organizing information in a way that is exhaustive and non-overlapping.
+description: >-
+  A fundamental thinking model for breaking down and organizing information in a
+  way that is exhaustive and non-overlapping.
 application:
   - PS
   - LT
-layer: TOOL
+nature: COGNITION
 related_models:
   - issue-tree
   - pyramid-principle
+format_version: 0.3
 tags:
   - mental-model
 ---

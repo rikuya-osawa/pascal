@@ -2,15 +2,19 @@
 type: mental-model
 name: Constraint-based Thinking
 abbreviation: Constraints-based Thinking
-description: A model for identifying fixed boundaries and using them as a foundation to discover optimal solutions and creative alternatives rather than seeing them as excuses.
+description: >-
+  A model for identifying fixed boundaries and using them as a foundation to
+  discover optimal solutions and creative alternatives rather than seeing them
+  as excuses.
 application:
   - PS
   - DM
-layer: CORE
+nature: COGNITION
 related_models:
   - theory-of-constraints
   - trade-off-thinking
   - essential-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

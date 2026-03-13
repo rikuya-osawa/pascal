@@ -2,11 +2,18 @@
 type: mental-model
 name: Systems Thinking
 abbreviation: Systems Thinking
-description: A model that views problems as interconnected relationships and circular structures rather than isolated events.
+description: >-
+  A model that views problems as interconnected relationships and circular
+  structures rather than isolated events.
 application:
   - LT
   - PS
-layer: META
+nature: COGNITION
+related_models:
+  - second-order-thinking
+  - first-principles-thinking
+  - theory-of-constraints
+format_version: 0.3
 tags:
   - mental-model
 ---
@@ -96,6 +103,5 @@ Extremely effective for tackling "wicked problems" where simple fixes have faile
 
 ## Relationship with Other Models
 
-* **Related:** Second-Order Thinking (predicting the ripples), Causal Thinking.
+* **Related:** Second-Order Thinking (predicting the ripples).
 * **Complementary:** **"First Principles Thinking"** (decomposing to the core), **"Theory of Constraints"** (identifying the system's bottleneck).
-* **Opposing:** Linear Thinking (A always leads to B).

@@ -2,12 +2,15 @@
 type: mental-model
 name: VRIO Analysis
 abbreviation: VRIO
-description: A framework for evaluating if an organization's resources provide a sustained competitive advantage.
+description: >-
+  A framework for evaluating if an organization's resources provide a sustained
+  competitive advantage.
 application:
   - NB
   - DM
   - PS
-layer: TOOL
+nature: FRAMEWORK
+format_version: 0.3
 tags:
   - mental-model
 ---
@@ -85,6 +88,6 @@ Highly effective for identifying the true sources of an **"Economic Moat"**. How
 
 ## Relationship with Other Models
 
-* **Related:** Economic Moat (VRIO defines the moat's depth), Porter's Five Forces (External vs. Internal view).
+* **Related:** Economic Moat (VRIO defines the moat's depth), Five Forces Analysis (External vs. Internal view).
 * **Complementary:** **"Flywheel Effect"** (how VRIO resources reinforce each other), SWOT Analysis (VRIO is the 'S' and 'W' on steroids).
 * **Contrast:** Blue Ocean Strategy (creating new markets rather than analyzing resources in existing ones).

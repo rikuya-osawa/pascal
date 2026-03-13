@@ -2,16 +2,19 @@
 type: mental-model
 name: Five Forces Analysis
 abbreviation: 5Forces
-description: A framework for analyzing the five competitive forces that determine industry profitability and visualizing structural competitive pressure.
+description: >-
+  A framework for analyzing the five competitive forces that determine industry
+  profitability and visualizing structural competitive pressure.
 application:
   - NB
   - DM
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - economic-moat
   - 4p-4c
   - pestel-analysis
   - systems-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

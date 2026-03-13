@@ -2,16 +2,19 @@
 type: mental-model
 name: Antifragile Thinking
 abbreviation: Antifragile
-description: A thinking model focused on designing structures that do not just "endure" uncertainty, stress, or shock, but actually "gain strength from them."
+description: >-
+  A thinking model focused on designing structures that do not just "endure"
+  uncertainty, stress, or shock, but actually "gain strength from them."
 application:
   - LIFE
   - NB
   - DM
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - optionality-thinking
   - black-swan-thinking
   - risk-return-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

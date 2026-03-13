@@ -2,12 +2,16 @@
 type: mental-model
 name: SMART Goals
 abbreviation: SMART
-description: A framework for refining goals based on five criteria—Specific, Measurable, Achievable, Relevant, and Time-bound—to increase execution precision and motivation.
+description: >-
+  A framework for refining goals based on five criteria—Specific, Measurable,
+  Achievable, Relevant, and Time-bound—to increase execution precision and
+  motivation.
 application:
   - NB
   - DM
   - LIFE
-layer: TOOL
+nature: FRAMEWORK
+format_version: 0.3
 tags:
   - mental-model
 ---

@@ -2,16 +2,20 @@
 type: mental-model
 name: 3C Analysis
 abbreviation: 3C
-description: A strategic framework for identifying Key Success Factors (KSF) by analyzing the market environment through three perspectives- Customer, Competitor, and Company.
+description: >-
+  A strategic framework for identifying Key Success Factors (KSF) by analyzing
+  the market environment through three perspectives- Customer, Competitor, and
+  Company.
 application:
   - NB
   - DM
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - stp-analysis
   - swot-analysis
   - pestel-analysis
   - 4p-4c
+format_version: 0.3
 tags:
   - mental-model
 ---

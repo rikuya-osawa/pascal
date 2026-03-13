@@ -2,15 +2,19 @@
 type: mental-model
 name: Issue Tree
 abbreviation: Issue Tree
-description: A thinking model for designing the overall framework of thought or analysis by breaking down a central "issue" into a tree-like structure of necessary sub-questions.
+description: >-
+  A thinking model for designing the overall framework of thought or analysis by
+  breaking down a central "issue" into a tree-like structure of necessary
+  sub-questions.
 application:
   - LT
   - PS
   - DM
-layer: TOOL
+nature: COGNITION
 related_models:
   - pyramid-principle
   - mece
+format_version: 0.3
 tags:
   - mental-model
 ---

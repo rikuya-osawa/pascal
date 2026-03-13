@@ -6,7 +6,11 @@ description: A model for making rational decisions by ignoring irrecoverable pas
 application:
   - DM
   - LIFE
-layer: CORE
+nature: PRINCIPLE
+related_models:
+  - cognitive-bias
+  - expected-value-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---
@@ -93,6 +97,5 @@ While the concept is easy to understand intellectually, it is notoriously diffic
 
 ## Relationship with Other Models
 
-* **Related:** Cognitive Bias, Loss Aversion (the root cause of sunk cost thinking).
-* **Complementary:** **"Expected Value Thinking"** (calculating future gains), **"Opportunity Cost"** (what else could you do with those resources?).
-* **Opposing:** Commitment Bias, "Stay the Course" mentality (when used without evidence).
+* **Related:** Cognitive Bias.
+* **Complementary:** **"Expected Value Thinking"** (calculating future gains).

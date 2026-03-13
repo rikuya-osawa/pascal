@@ -2,14 +2,17 @@
 type: mental-model
 name: Abstraction & Concretization
 abbreviation: Abstraction-Concretization
-description: A thinking model for moving between the "higher layer" (abstract) and "lower layer" (concrete) to understand, explain, and design complex systems.
+description: >-
+  A thinking model for moving between the "higher layer" (abstract) and "lower
+  layer" (concrete) to understand, explain, and design complex systems.
 application:
   - PS
   - DM
-layer: META
+nature: COGNITION
 related_models:
   - pyramid-principle
   - first-principles-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

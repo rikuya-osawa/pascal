@@ -2,15 +2,19 @@
 type: mental-model
 name: Essential Thinking
 abbreviation: Essential Thinking
-description: A thinking model for identifying "what is the real question to solve" and "what is most important," without getting caught up in superficial events or means. It aims to improve the quality of problem-setting itself.
+description: >-
+  A thinking model for identifying "what is the real question to solve" and
+  "what is most important," without getting caught up in superficial events or
+  means. It aims to improve the quality of problem-setting itself.
 application:
   - PS
   - DM
-layer: CORE
+nature: COGNITION
 related_models:
   - issue-driven-thinking
   - five-whys-analysis
   - first-principles-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

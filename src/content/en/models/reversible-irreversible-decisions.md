@@ -1,13 +1,20 @@
 ---
 type: mental-model
-name: Reversible / Irreversible Decisions
+name: Reversible / Irreversible Decisions Thinking
 abbreviation: Reversibility
-description: A thinking model for categorizing decisions into "reversible" (can be undone) and "irreversible" (cannot be undone) to appropriately adjust speed, caution, and depth of deliberation.
+description: >-
+  A thinking model for categorizing decisions into "reversible" (can be undone)
+  and "irreversible" (cannot be undone) to appropriately adjust speed, caution,
+  and depth of deliberation.
 application:
   - LT
   - DM
   - LIFE
-layer: CORE
+nature: PRINCIPLE
+related_models:
+  - constraint-based-thinking
+  - expected-value-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---
@@ -93,6 +100,4 @@ Highly effective for balancing decision quality and speed. However, one must be 
 
 ## Relationship with Other Models
 
-* **Related:** Decision Theory, Risk Management.
 * **Complementary:** Constraint Thinking (clarifying premises), Expected Value Thinking (evaluating the cost of failure).
-* **Opposing:** Perfectionism (seeking the "perfect" answer regardless of the nature of the choice).

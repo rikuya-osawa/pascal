@@ -7,7 +7,7 @@ application:
   - NB
   - PS
   - DM
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - value-chain-analysis
   - 4p-4c
@@ -15,6 +15,7 @@ related_models:
   - value-proposition-canvas
   - vrio-analysis
   - flywheel-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

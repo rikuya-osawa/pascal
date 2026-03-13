@@ -7,13 +7,14 @@ application:
   - NB
   - PS
   - DM
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - minimum-viable-product
   - kanban
   - hypothesis-thinking
   - ooda-loop
   - pareto-principle
+format_version: 0.3
 tags:
   - mental-model
 ---

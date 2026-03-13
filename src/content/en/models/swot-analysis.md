@@ -2,12 +2,16 @@
 type: mental-model
 name: SWOT Analysis
 abbreviation: SWOT
-description: A strategic diagnostic tool for organizing internal factors (Strengths/Weaknesses) and external factors (Opportunities/Threats) to inform decision-making.
+description: >-
+  A strategic diagnostic tool for organizing internal factors
+  (Strengths/Weaknesses) and external factors (Opportunities/Threats) to inform
+  decision-making.
 application:
   - NB
   - DM
   - PS
-layer: TOOL
+nature: FRAMEWORK
+format_version: 0.3
 tags:
   - mental-model
 ---

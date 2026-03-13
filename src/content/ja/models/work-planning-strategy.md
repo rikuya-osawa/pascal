@@ -5,7 +5,8 @@ abbreviation: WPS
 description: 業務の目的を再定義し、ゴールから逆算したマイルストーンとタスクを可視化することで、実行精度を高める計画策定フレームワーク。
 application:
   - PS
-layer: TOOL
+nature: FRAMEWORK
+format_version: 0.3
 tags:
   - mental-model
 ---

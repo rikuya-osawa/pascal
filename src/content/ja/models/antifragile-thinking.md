@@ -7,11 +7,12 @@ application:
   - LIFE
   - NB
   - DM
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - optionality-thinking
   - black-swan-thinking
   - risk-return-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

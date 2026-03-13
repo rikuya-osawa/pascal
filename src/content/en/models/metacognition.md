@@ -2,15 +2,19 @@
 type: mental-model
 name: Metacognition
 abbreviation: MetaCog
-description: The ability to observe and control one's own thoughts, emotions, and decision-making processes from a higher perspective; the monitoring layer for your "Thinking OS."
+description: >-
+  The ability to observe and control one's own thoughts, emotions, and
+  decision-making processes from a higher perspective; the monitoring layer for
+  your "Thinking OS."
 application:
   - DM
   - LIFE
   - PS
-layer: META
+nature: COGNITION
 related_models:
   - bias-awareness
   - bayesian thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

@@ -15,6 +15,7 @@ export const MODEL_ICONS: Record<string, string> = {
   "smart-goals": "lucide:calendar-check", // SMARTゴール
   "5w1h": "lucide:list-check", // 5W1H
   "3c-analysis": "lucide:triangle", // 3C分析
+  "eisenhower-matrix": "lucide:grid-2x2", // アイゼンハワーマトリクス
 
   // --- 思考法・プロセス系 ---
   "mece": "lucide:columns-4",
@@ -26,6 +27,7 @@ export const MODEL_ICONS: Record<string, string> = {
   "premortem-analysis": "lucide:skull", // プレモーテム分析
   "hypothesis-thinking": "lucide:test-tube-2", // 仮説思考
   "essential-thinking": "lucide:target", // 本質思考
+  "kanban": "lucide:columns-4", // カンバン
 
   // --- 戦略・システム系 ---
   "systems-thinking": "lucide:network", // システム思考
@@ -43,6 +45,8 @@ export const MODEL_ICONS: Record<string, string> = {
   "black-swan-thinking": "lucide:bird", // ブラックスワン思考
   "reversible-irreversible-decisions": "lucide:door-open", // 可逆不可逆判断
   "marginal-thinking": "lucide:arrow-right-to-line", // 限界思考
+  "statistical-thinking": "lucide:chart-scatter", // 統計的思考
+  "barbell-strategy": "lucide:dumbbell", // バーベル戦略
 
   // --- 認知バイアス・メタ思考系 ---
   "bias-awareness": "lucide:eye-off", // バイアス認識
@@ -51,6 +55,7 @@ export const MODEL_ICONS: Record<string, string> = {
   "first-principles-thinking": "lucide:atom", // 第一原理思考
   "second-order-thinking": "lucide:layers-3", // 二次思考
   "optionality-thinking": "lucide:split", // オプション思考
+  "ladder-of-inference": "lucide:arrow-left-right", // 推論のはしご
 
   // --- 数学・法則・その他 ---
   "sunk-cost-thinking": "lucide:trending-down", // サンクコスト思考

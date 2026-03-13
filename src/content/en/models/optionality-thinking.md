@@ -2,15 +2,18 @@
 type: mental-model
 name: Optionality Thinking
 abbreviation: Optionality
-description: A thinking model for maximizing opportunities while limiting risks in highly uncertain situations by treating choices as "exercisable options (rights)."
+description: >-
+  A thinking model for maximizing opportunities while limiting risks in highly
+  uncertain situations by treating choices as "exercisable options (rights)."
 application:
   - DM
   - NB
   - PS
-layer: CORE
+nature: COGNITION
 related_models:
   - antifragile-thinking
   - black-swan-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

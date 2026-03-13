@@ -2,15 +2,19 @@
 type: mental-model
 name: Leverage Thinking
 abbreviation: Leverage
-description: A thinking model for identifying the specific points (leverage points) where a small input of time, resources, or action produces the maximum output or impact.
+description: >-
+  A thinking model for identifying the specific points (leverage points) where a
+  small input of time, resources, or action produces the maximum output or
+  impact.
 application:
   - PS
   - LT
-layer: CORE
+nature: COGNITION
 related_models:
   - systems-thinking
   - pareto-principle
   - theory-of-constraints
+format_version: 0.3
 tags:
   - mental-model
 ---

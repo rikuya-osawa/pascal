@@ -2,15 +2,19 @@
 type: mental-model
 name: Black Swan Thinking
 abbreviation: Black Swan Thinking
-description: A thinking model for designing risk management and strategies based on the premise of "Black Swans"—unpredictable events that have a low probability of occurring but carry an extremely high impact if they do.
+description: >-
+  A thinking model for designing risk management and strategies based on the
+  premise of "Black Swans"—unpredictable events that have a low probability of
+  occurring but carry an extremely high impact if they do.
 application:
   - DM
   - NB
   - LIFE
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - antifragile-thinking
   - barbell-strategy
+format_version: 0.3
 tags:
   - mental-model
 ---

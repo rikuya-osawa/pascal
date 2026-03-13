@@ -2,11 +2,19 @@
 type: mental-model
 name: OODA Loop
 abbreviation: OODA
-description: A decision-making framework for gaining an advantage in uncertain environments by rapidly cycling through observing, orienting, deciding, and acting.
+description: >-
+  A decision-making framework for gaining an advantage in uncertain environments
+  by rapidly cycling through observing, orienting, deciding, and acting.
 application:
   - PS
   - DM
-layer: TOOL
+nature: COGNITION
+related_models:
+  - hypothesis-thinking
+  - bayesian-thinking
+  - minimum-viable-product
+  - reversible-irreversible-decisions
+format_version: 0.3
 tags:
   - mental-model
 ---

@@ -6,12 +6,13 @@ description: 業界の収益性を決定する5つの競争要因を分析し、
 application:
   - NB
   - DM
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - economic-moat
   - 4p-4c
   - pestel-analysis
   - systems-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

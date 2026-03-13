@@ -74,16 +74,16 @@
   background-color: var(--color-border);
 }
 
-.stat-layer[data-layer="META"] .stat-number {
-  color: var(--color-layer-meta);
+.stat-nature[data-nature="FRAMEWORK"] .stat-number {
+  color: var(--color-nature-framework);
 }
 
-.stat-layer[data-layer="CORE"] .stat-number {
-  color: var(--color-layer-core);
+.stat-nature[data-nature="COGNITION"] .stat-number {
+  color: var(--color-nature-cognition);
 }
 
-.stat-layer[data-layer="TOOL"] .stat-number {
-  color: var(--color-layer-tool);
+.stat-nature[data-nature="PRINCIPLE"] .stat-number {
+  color: var(--color-nature-principle);
 }
 
 /* ========== Filter Section ========== */

@@ -2,17 +2,20 @@
 type: mental-model
 name: Economic Moat
 abbreviation: Moat
-description: A strategic concept of building and maintaining structural advantages to protect long-term profitability within a competitive environment.
+description: >-
+  A strategic concept of building and maintaining structural advantages to
+  protect long-term profitability within a competitive environment.
 application:
   - NB
   - DM
   - LT
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - vrio-analysis
   - five-forces-analysis
   - flywheel-thinking
   - leverage-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---

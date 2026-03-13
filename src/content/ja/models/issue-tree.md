@@ -7,10 +7,11 @@ application:
   - LT
   - PS
   - DM
-layer: TOOL
+nature: COGNITION
 related_models:
   - pyramid-principle
   - mece
+format_version: 0.3
 tags:
   - mental-model
 ---

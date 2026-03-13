@@ -2,11 +2,18 @@
 type: mental-model
 name: Second-Order Thinking
 abbreviation: 2nd-Order
-description: A model for considering not only the immediate effects of a decision but also the subsequent ripple effects and long-term consequences.
+description: >-
+  A model for considering not only the immediate effects of a decision but also
+  the subsequent ripple effects and long-term consequences.
 application:
   - LT
   - DM
-layer: CORE
+nature: COGNITION
+related_models:
+  - systems-thinking
+  - expected-value-thinking
+  - trade-off-thinking
+format_version: 0.3
 tags:
   - mental-model
 ---
@@ -96,6 +103,5 @@ This is a high-leverage skill that creates a massive competitive advantage over 
 
 ## Relationship with Other Models
 
-* **Related:** Systems Thinking (understanding feedback loops), Causal Loops.
+* **Related:** Systems Thinking (understanding feedback loops).
 * **Complementary:** Expected Value Thinking (evaluating long-term value), Trade-off Thinking (organizing choices).
-* **Opposing:** Short-term Optimization (focusing only on immediate results), Surface-Level Thinking.

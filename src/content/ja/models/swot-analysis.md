@@ -7,7 +7,8 @@ application:
   - NB
   - DM
   - PS
-layer: TOOL
+nature: FRAMEWORK
+format_version: 0.3
 tags:
   - mental-model
 ---
