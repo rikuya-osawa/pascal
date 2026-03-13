@@ -2,21 +2,21 @@
 type: mental-model
 name: 
 abbreviation: 
-description: 
+description: # 簡潔に
 application: # 最大３つまで 
-  - NB
-  - DM
-  - LT
-  - PS
-  - LIFE
-layer: TOOL
+  - NB # New Business
+  - DM # Decision Making
+  - LT # Logical Thinking
+  - PS # Problem Solving
+  - LIFE # Life & Career
+layer: TOOL # １つ（META (思考の土台), CORE (思考法等実務の中核), TOOL (実践的なメソッド・ツール))
 related_models: # モデルのファイル名（[slug]）と一致させること
   - 
 tags:
   - mental-model
 ---
 
-# xxx <!-- モデル名 --->
+# xxx <!-- モデル名 (英語名は含めない）--->
 
 ## 概要
 
@@ -52,7 +52,7 @@ xxx
 
 ---
 
-## 使い方 (3つの視点)
+## 使い方
 
 1. xxx
 2. xxx
@@ -67,12 +67,11 @@ xxx
 
 ---
 
-## ユースケース
+## ユースケース <!-- 以下は例 --->
 
 * **ビジネス:** xxx
 * **日常生活:** xxx
 * **意思決定 / 思考:** xxx
-* **etc:** xxx
 
 
 ## 典型的な誤用
@@ -81,8 +80,8 @@ xxx
 * xxx
 * xxx
 
-## 他のモデルとの関係
+## 他のモデルとの関係 <!-- 造語は避ける・英語圏・日本語圏で知られているもの --- >
 
-* **補完的:** xxx 
+* **補完的:** xxx <!-- あれば--- >
 * **関連:** xxx
-* **対立:** xxx
+* **対立:** xxx <!-- あれば--- >
