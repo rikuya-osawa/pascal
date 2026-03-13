@@ -1,7 +1,7 @@
 @import './variables.css';
 
 .markdown-content {
-  max-width: var(--max-width);
+  max-width: var(--max-width-text);
   margin: 0 auto;
   padding: var(--space-lg) var(--space-sm);
   line-height: 1.7;
