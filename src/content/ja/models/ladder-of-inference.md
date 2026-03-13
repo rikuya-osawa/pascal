@@ -7,7 +7,7 @@ application:
   - DM
   - LT
   - PS
-layer: CORE
+nature: COGNITION
 related_models:
   - bias-awareness
   - systems-thinking

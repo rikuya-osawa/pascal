@@ -2,12 +2,14 @@
 type: mental-model
 name: Statistical Thinking
 abbreviation: Statistical Thinking
-description: A thinking model that treats data as part of a larger distribution to infer underlying laws and risks from a probabilistic perspective.
+description: >-
+  A thinking model that treats data as part of a larger distribution to infer
+  underlying laws and risks from a probabilistic perspective.
 application:
   - DM
   - PS
   - LT
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - pareto-principle
   - bias-awareness

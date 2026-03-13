@@ -7,7 +7,7 @@ application:
   - NB
   - LT
   - PS
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - systems-thinking
   - economic-moat

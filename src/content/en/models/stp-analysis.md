@@ -1,13 +1,15 @@
 ---
 type: mental-model
-name: Segmentation, Targeting, Positioning
+name: 'Segmentation, Targeting, Positioning'
 abbreviation: STP
-description: A strategic framework for dividing the market, selecting a target audience, and designing a unique value proposition for a specific position.
+description: >-
+  A strategic framework for dividing the market, selecting a target audience,
+  and designing a unique value proposition for a specific position.
 application:
   - NB
   - DM
   - PS
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - economic-moat
   - 4p-4c

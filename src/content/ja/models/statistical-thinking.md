@@ -7,7 +7,7 @@ application:
   - DM
   - PS
   - LT
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - pareto-analysis
   - bias-awareness

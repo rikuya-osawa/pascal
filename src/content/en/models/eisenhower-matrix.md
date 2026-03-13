@@ -2,12 +2,14 @@
 type: mental-model
 name: Eisenhower Matrix
 abbreviation: Eisenhower Matrix
-description: A time management framework that categorizes tasks into four quadrants based on "Urgency" and "Importance" to determine priorities.
+description: >-
+  A time management framework that categorizes tasks into four quadrants based
+  on "Urgency" and "Importance" to determine priorities.
 application:
   - DM
   - PS
   - LIFE
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - pareto-principle
   - smart-goals

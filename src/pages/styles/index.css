@@ -131,34 +131,34 @@
     font-size: 0.95rem;
   }
 
-  /* Layer Guide Section */
-  .layer-guide {
+  /* nature Guide Section */
+  .nature-guide {
     padding: var(--space-lg) var(--space-md);
     background-color: var(--color-surface);
     margin: var(--space-lg) 0;
   }
 
-  .layer-guide-header {
+  .nature-guide-header {
     max-width: var(--max-width);
     margin: 0 auto var(--space-lg) auto;
     text-align: center;
   }
 
-  .layer-guide h2 {
+  .nature-guide h2 {
     font-size: 2rem;
     font-weight: 700;
     margin: 0 0 var(--space-sm) 0;
     color: var(--color-text);
   }
 
-  .layer-guide-header p {
+  .nature-guide-header p {
     color: var(--color-muted);
     font-size: 1.1rem;
     line-height: 1.6;
     margin: 0;
   }
 
-  .layers-grid {
+  .natures-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--space-md);
@@ -166,7 +166,7 @@
     margin: 0 auto;
   }
 
-  .layer-card {
+  .nature-card {
     padding: var(--space-md);
     border-radius: var(--radius-lg);
     background-color: white;
@@ -174,42 +174,42 @@
     transition: all var(--transition-smooth);
   }
 
-  :root[data-theme="dark"] .layer-card {
+  :root[data-theme="dark"] .nature-card {
     background-color: var(--color-bg);
   }
 
-  .layer-card h3 {
+  .nature-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0 0 var(--space-sm) 0;
     color: var(--color-text);
   }
 
-  .layer-card p {
+  .nature-card p {
     color: var(--color-muted);
     line-height: 1.6;
     margin: 0;
     font-size: 0.95rem;
   }
 
-  .layer-meta {
-    border-left-color: var(--color-layer-meta);
+  .nature-framework {
+    border-left-color: var(--color-nature-framework);
   }
 
-  .layer-core {
-    border-left-color: var(--color-layer-core);
+  .nature-cognition {
+    border-left-color: var(--color-nature-cognition);
   }
 
-  .layer-tool {
-    border-left-color: var(--color-layer-tool);
+  .nature-principle {
+    border-left-color: var(--color-nature-principle);
   }
 
-  .layer-card:hover {
+  .nature-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   }
 
-  :root[data-theme="dark"] .layer-card:hover {
+  :root[data-theme="dark"] .nature-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 
@@ -259,18 +259,18 @@
     }
 
     .concept h2,
-    .layer-guide h2,
+    .nature-guide h2,
     .github-section h2 {
       font-size: 1.5rem;
     }
 
     .benefits-grid,
-    .layers-grid {
+    .natures-grid {
       grid-template-columns: 1fr;
     }
 
     .benefit-card,
-    .layer-card {
+    .nature-card {
       padding: var(--space-sm);
     }
 

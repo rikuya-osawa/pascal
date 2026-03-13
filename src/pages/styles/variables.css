@@ -13,10 +13,10 @@
   --color-surface: #f9fafb;
   --color-surface-hover: #f3f4f6;
 
-  /* Layer専用色 */
-  --color-layer-meta: #d97706; /* Amber 600 */
-  --color-layer-core: #059669; /* Emerald 600 */
-  --color-layer-tool: #e11d48; /* Rose 600 */
+  /* 性質（Nature）専用色 */
+  --color-nature-framework: #d97706; /* Amber 600 */
+  --color-nature-cognition: #059669; /* Emerald 600 */
+  --color-nature-principle: #e11d48; /* Rose 600 */
   
   --max-width: 1100px; /* カードグリッド向けに少し広げています */
   --max-width-text: 780px; /* 読み物ページ（Aboutなど）用 */
@@ -47,7 +47,7 @@
   --color-surface: #161b22;
   --color-surface-hover: #1f2630;
 
-  --color-layer-meta: #f59e0b;
-  --color-layer-core: #10b981;
-  --color-layer-tool: #fb7185;
+  --color-nature-framework: #f59e0b;
+  --color-nature-cognition: #10b981;
+  --color-nature-principle: #fb7185;
 }

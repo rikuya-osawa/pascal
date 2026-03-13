@@ -2,11 +2,12 @@
 type: mental-model
 name: ジョブ理論
 abbreviation: JTBD
-description: 顧客は単に「製品」を買うのではなく、特定の「進歩」を達成するための「ジョブ（用事・仕事）」を片付けるために製品を「雇用」している、というレンズを通して価値を見る思考モデル。
+description: >-
+  顧客は単に「製品」を買うのではなく、特定の「進歩」を達成するための「ジョブ（用事・仕事）」を片付けるために製品を「雇用」している、というレンズを通して価値を見る思考モデル。
 application:
   - DM
   - NB
-layer: TOOL
+nature: PRINCIPLE
 related_models:
   - hypothesis-thinking
 format_version: 0.3

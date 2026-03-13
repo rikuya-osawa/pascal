@@ -2,12 +2,15 @@
 type: mental-model
 name: Pyramid Principle
 abbreviation: Pyramid Principle
-description: A thinking model for organizing and expressing communication by placing the conclusion at the top and supporting it with a layered structure of logic and evidence.
+description: >-
+  A thinking model for organizing and expressing communication by placing the
+  conclusion at the top and supporting it with a layered structure of logic and
+  evidence.
 application:
   - LT
   - PS
   - DM
-layer: TOOL
+nature: COGNITION
 related_models:
   - mece
   - hypothesis-thinking

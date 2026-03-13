@@ -2,12 +2,15 @@
 type: mental-model
 name: Premortem Analysis
 abbreviation: Premortem
-description: A thinking model for identifying potential risks and blind spots by imagining a "future failure" in advance and working backward to determine why it happened.
+description: >-
+  A thinking model for identifying potential risks and blind spots by imagining
+  a "future failure" in advance and working backward to determine why it
+  happened.
 application:
   - DM
   - PS
   - NB
-layer: TOOL
+nature: COGNITION
 related_models:
   - second-order-thinking
   - bayesian-thinking

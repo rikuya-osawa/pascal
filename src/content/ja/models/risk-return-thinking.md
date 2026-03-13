@@ -2,12 +2,13 @@
 type: mental-model
 name: リスク・リターン思考
 abbreviation: リスク＆リターン
-description: 「どれだけの見返りが期待できるか」と「どれだけのリスクを取る必要があるか」という2つの軸に基づいて選択肢を評価し、潜在的な報酬がリスクに見合うかどうかを判断するための思考モデル。
+description: >-
+  「どれだけの見返りが期待できるか」と「どれだけのリスクを取る必要があるか」という2つの軸に基づいて選択肢を評価し、潜在的な報酬がリスクに見合うかどうかを判断するための思考モデル。
 application:
   - DM
   - NB
   - LIFE
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - expected-value-thinking
   - trade-off-thinking

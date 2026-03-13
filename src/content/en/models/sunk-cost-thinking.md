@@ -6,7 +6,7 @@ description: A model for making rational decisions by ignoring irrecoverable pas
 application:
   - DM
   - LIFE
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - cognitive-bias
   - expected-value-thinking

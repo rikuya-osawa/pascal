@@ -7,7 +7,7 @@ application:
   - DM
   - NB
   - LIFE
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - antifragile-thinking
   - black-swan-thinking

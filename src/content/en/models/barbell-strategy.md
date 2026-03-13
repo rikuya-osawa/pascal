@@ -2,12 +2,14 @@
 type: mental-model
 name: Barbell Strategy
 abbreviation: BBS
-description: A risk management strategy that combines extreme conservatism with extreme speculation, eliminating the mediocrity of mid-risk/mid-return choices.
+description: >-
+  A risk management strategy that combines extreme conservatism with extreme
+  speculation, eliminating the mediocrity of mid-risk/mid-return choices.
 application:
   - DM
   - NB
   - LIFE
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - antifragile-thinking
   - black-swan-thinking

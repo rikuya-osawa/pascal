@@ -2,11 +2,13 @@
 type: mental-model
 name: Five Whys Analysis
 abbreviation: 5 Whys
-description: A root-cause analysis model that repeatedly asks "Why?" to move past surface-level symptoms and reach the underlying structural cause of a problem.
+description: >-
+  A root-cause analysis model that repeatedly asks "Why?" to move past
+  surface-level symptoms and reach the underlying structural cause of a problem.
 application:
   - PS
   - LT
-layer: TOOL
+nature: COGNITION
 related_models:
   - root-cause-analysis
   - fishbone-diagram

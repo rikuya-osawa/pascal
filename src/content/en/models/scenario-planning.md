@@ -2,12 +2,14 @@
 type: mental-model
 name: Scenario Planning
 abbreviation: Scenario Planning
-description: A model for preparing strategies by mapping multiple plausible future scenarios based on critical uncertainties.
+description: >-
+  A model for preparing strategies by mapping multiple plausible future
+  scenarios based on critical uncertainties.
 application:
   - DM
   - NB
   - LT
-layer: TOOL
+nature: COGNITION
 format_version: 0.3
 related_models:
   - second-order-thinking

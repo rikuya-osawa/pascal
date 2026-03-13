@@ -1,7 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components';
 import { MODEL_ICONS } from '../constants/model-icons';
-import { APPLICATION, LAYERS, getLabel, type Language } from '../constants/filters';
+import { APPLICATION, NATURES, getLabel, type Language } from '../constants/filters';
 
 interface Props {
   model: any;
@@ -16,8 +16,8 @@ if (!model) {
 
 const iconName = MODEL_ICONS[model.slug] || MODEL_ICONS["default"];
 
-const layerKey = model.data.layer as keyof typeof LAYERS;
-const layerLabel = LAYERS[layerKey] ? getLabel(LAYERS[layerKey], lang) : model.data.layer;
+const natureKey = model.data.nature as keyof typeof NATURES;
+const natureLabel = NATURES[natureKey] ? getLabel(NATURES[natureKey], lang) : model.data.nature;
 const applicationLabels: string[] = (model.data.application || []).map((application: keyof typeof APPLICATION) => {
   return APPLICATION[application] ? getLabel(APPLICATION[application], lang) : application;
 });
@@ -25,13 +25,13 @@ const applicationLabels: string[] = (model.data.application || []).map((applicat
 
 <div
   class="card model-item"
-  data-layer={model?.data?.layer}
+  data-nature={model?.data?.nature}
   data-views={model?.data?.application?.join(',')}
 >
   <a href={`/${lang}/models/${model.slug.split('/').pop()}`} class="card-link">
-    <div class="card-layer-top">
-      <span class={`badge layer badge--${model.data.layer.toLowerCase()}`}>
-        {layerLabel}
+    <div class="card-nature-top">
+      <span class={`badge nature badge--${model.data.nature.toLowerCase()}`}>
+        {natureLabel}
       </span>
     </div>
 

@@ -2,12 +2,15 @@
 type: mental-model
 name: Risk-Return Thinking
 abbreviation: Risk & Return
-description: A thinking model for evaluating options based on two axes- "how much return can be expected" and "how much risk must be taken," to determine if the potential reward justifies the risk.
+description: >-
+  A thinking model for evaluating options based on two axes- "how much return
+  can be expected" and "how much risk must be taken," to determine if the
+  potential reward justifies the risk.
 application:
   - DM
   - NB
   - LIFE
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - expected-value-thinking
   - trade-off-thinking

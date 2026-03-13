@@ -6,7 +6,7 @@ description: PEST分析に「環境的（Environmental）」と「法的（Legal
 application:
   - NB
   - DM
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - scenario-planning
   - 3c-analysis

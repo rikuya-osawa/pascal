@@ -2,12 +2,14 @@
 type: mental-model
 name: Ladder of Inference
 abbreviation: LOA
-description: A model for visualizing the mental steps from raw data to conclusions to identify cognitive biases and logical leaps.
+description: >-
+  A model for visualizing the mental steps from raw data to conclusions to
+  identify cognitive biases and logical leaps.
 application:
   - DM
   - LT
   - PS
-layer: CORE
+nature: COGNITION
 related_models:
   - bias-awareness
   - systems-thinking

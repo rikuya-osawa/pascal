@@ -2,11 +2,13 @@
 type: mental-model
 name: 期待値思考
 abbreviation: 期待値思考
-description: 短期的な損益ではなく、不確実な選択肢に対して「起こりうる結果 × その確率 × 影響の大きさ」を考慮することで、長期的に合理的な意思決定を行うための思考モデル。
+description: >-
+  短期的な損益ではなく、不確実な選択肢に対して「起こりうる結果 × その確率 ×
+  影響の大きさ」を考慮することで、長期的に合理的な意思決定を行うための思考モデル。
 application:
   - LT
   - DM
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - decision-theory
   - bayesian-thinking

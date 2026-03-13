@@ -7,7 +7,7 @@ application:
   - NB
   - PS
   - DM
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - minimum-viable-product
   - kanban

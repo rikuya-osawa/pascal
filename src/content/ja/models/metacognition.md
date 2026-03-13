@@ -7,7 +7,7 @@ application:
   - DM
   - LIFE
   - PS
-layer: META
+nature: COGNITION
 related_models:
   - bias-awareness
   - bayesian thinking

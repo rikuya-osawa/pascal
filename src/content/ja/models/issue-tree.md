@@ -7,7 +7,7 @@ application:
   - LT
   - PS
   - DM
-layer: TOOL
+nature: COGNITION
 related_models:
   - pyramid-principle
   - mece

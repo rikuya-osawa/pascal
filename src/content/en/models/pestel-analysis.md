@@ -2,11 +2,13 @@
 type: mental-model
 name: PESTEL Analysis
 abbreviation: PESTEL
-description: An expanded macro-environment framework that adds "Environmental" and "Legal" perspectives to PEST analysis for a more comprehensive market assessment.
+description: >-
+  An expanded macro-environment framework that adds "Environmental" and "Legal"
+  perspectives to PEST analysis for a more comprehensive market assessment.
 application:
   - NB
   - DM
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - scenario-planning
   - 3c-analysis

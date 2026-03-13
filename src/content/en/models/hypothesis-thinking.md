@@ -2,11 +2,14 @@
 type: mental-model
 name: Hypothesis-Driven Thinking
 abbreviation: Hypothesis Thinking
-description: A thinking model for rapidly advancing thought and action by establishing a "tentative answer" first, then refining it through verification within limited time and information.
+description: >-
+  A thinking model for rapidly advancing thought and action by establishing a
+  "tentative answer" first, then refining it through verification within limited
+  time and information.
 application:
   - PS
   - NB
-layer: CORE
+nature: COGNITION
 related_models:
   - issue-driven-thinking
 format_version: 0.3

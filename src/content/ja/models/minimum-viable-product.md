@@ -7,7 +7,7 @@ application:
   - NB
   - PS
   - DM
-layer: TOOL
+nature: PRINCIPLE
 related_models:
   - hypothesis-thinking
   - ooda-loop

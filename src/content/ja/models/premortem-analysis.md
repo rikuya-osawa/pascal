@@ -7,7 +7,7 @@ application:
   - DM
   - PS
   - NB
-layer: TOOL
+nature: COGNITION
 related_models:
   - second-order-thinking
   - bayesian-thinking

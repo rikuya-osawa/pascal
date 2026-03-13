@@ -2,12 +2,14 @@
 type: mental-model
 name: Kanban Board
 abbreviation: KB
-description: A method for optimizing workflow by visualizing task status and limiting Work-in-Progress (WIP).
+description: >-
+  A method for optimizing workflow by visualizing task status and limiting
+  Work-in-Progress (WIP).
 application:
   - PS
   - DM
   - LIFE
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - lean-thinking
   - work-planning-strategy

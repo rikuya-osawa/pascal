@@ -2,11 +2,12 @@
 type: mental-model
 name: 本質思考
 abbreviation: 本質思考
-description: 表面的な事象や手段に囚われることなく、「解くべき本当の問いは何か」や「何が最も重要か」を見極めるための思考モデル。課題設定そのものの質を向上させることを目的とする。
+description: >-
+  表面的な事象や手段に囚われることなく、「解くべき本当の問いは何か」や「何が最も重要か」を見極めるための思考モデル。課題設定そのものの質を向上させることを目的とする。
 application:
   - PS
   - DM
-layer: CORE
+nature: COGNITION
 related_models:
   - issue-driven-thinking
   - five-whys-analysis

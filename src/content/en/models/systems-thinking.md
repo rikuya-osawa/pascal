@@ -2,11 +2,13 @@
 type: mental-model
 name: Systems Thinking
 abbreviation: Systems Thinking
-description: A model that views problems as interconnected relationships and circular structures rather than isolated events.
+description: >-
+  A model that views problems as interconnected relationships and circular
+  structures rather than isolated events.
 application:
   - LT
   - PS
-layer: META
+nature: COGNITION
 related_models:
   - second-order-thinking
   - first-principles-thinking

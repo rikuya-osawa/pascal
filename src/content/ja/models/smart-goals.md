@@ -7,7 +7,7 @@ application:
   - NB
   - DM
   - LIFE
-layer: TOOL
+nature: FRAMEWORK
 format_version: 0.3
 tags:
   - mental-model

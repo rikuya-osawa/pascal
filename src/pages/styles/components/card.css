@@ -32,7 +32,7 @@
   color: inherit;
 }
 
-.card-layer-top {
+.card-nature-top {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -89,20 +89,20 @@
   transition: background-color var(--transition-smooth), color var(--transition-smooth), border-color var(--transition-smooth);
 }
 
-.card[data-layer="META"]:hover .badge.layer {
-  background-color: var(--color-layer-meta);
-  border-color: var(--color-layer-meta);
+.card[data-nature="FRAMEWORK"]:hover .badge.nature {
+  background-color: var(--color-nature-framework);
+  border-color: var(--color-nature-framework);
   color: var(--color-bg);
 }
 
-.card[data-layer="CORE"]:hover .badge.layer {
-  background-color: var(--color-layer-core);
-  border-color: var(--color-layer-core);
+.card[data-nature="COGNITION"]:hover .badge.nature {
+  background-color: var(--color-nature-cognition);
+  border-color: var(--color-nature-cognition);
   color: var(--color-bg);
 }
 
-.card[data-layer="TOOL"]:hover .badge.layer {
-  background-color: var(--color-layer-tool);
-  border-color: var(--color-layer-tool);
+.card[data-nature="PRINCIPLE"]:hover .badge.nature {
+  background-color: var(--color-nature-principle);
+  border-color: var(--color-nature-principle);
   color: var(--color-bg);
 }

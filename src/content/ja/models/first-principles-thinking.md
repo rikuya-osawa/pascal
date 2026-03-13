@@ -7,7 +7,7 @@ application:
   - PS
   - LT
   - DM
-layer: META
+nature: COGNITION
 related_models:
   - abstraction-and-concretization
 format_version: 0.3

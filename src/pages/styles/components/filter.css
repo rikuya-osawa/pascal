@@ -62,24 +62,24 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.filter-link[data-value="META"].active,
-.filter-link[data-value="META"]:hover {
-  background-color: var(--color-layer-meta);
-  border-color: var(--color-layer-meta);
+.filter-link[data-value="FRAMEWORK"].active,
+.filter-link[data-value="FRAMEWORK"]:hover {
+  background-color: var(--color-nature-framework);
+  border-color: var(--color-nature-framework);
   color: white;
 }
 
-.filter-link[data-value="CORE"].active,
-.filter-link[data-value="CORE"]:hover {
-  background-color: var(--color-layer-core);
-  border-color: var(--color-layer-core);
+.filter-link[data-value="COGNITION"].active,
+.filter-link[data-value="COGNITION"]:hover {
+  background-color: var(--color-nature-cognition);
+  border-color: var(--color-nature-cognition);
   color: white;
 }
 
-.filter-link[data-value="TOOL"].active,
-.filter-link[data-value="TOOL"]:hover {
-  background-color: var(--color-layer-tool);
-  border-color: var(--color-layer-tool);
+.filter-link[data-value="PRINCIPLE"].active,
+.filter-link[data-value="PRINCIPLE"]:hover {
+  background-color: var(--color-nature-principle);
+  border-color: var(--color-nature-principle);
   color: white;
 }
 

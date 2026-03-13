@@ -4,10 +4,10 @@ name: Moat（モート）
 abbreviation: Moat
 description: 競争環境において、長期的に利益を守り続けるための構造的な優位性を構築・維持するという戦略思想。
 application:
-- NB
-- DM
-- LT
-layer: CORE
+  - NB
+  - DM
+  - LT
+nature: PRINCIPLE
 related_models:
   - vrio-analysis
   - five-forces-analysis
@@ -15,7 +15,7 @@ related_models:
   - leverage-thinking
 format_version: 0.3
 tags:
-- mental-model
+  - mental-model
 ---
 
 # MOAT（競争優位）

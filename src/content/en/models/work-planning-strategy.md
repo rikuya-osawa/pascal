@@ -2,10 +2,12 @@
 type: mental-model
 name: Work Planning Strategy
 abbreviation: WPS
-description: A framework for improving execution accuracy by redefining objectives and visualizing milestones and tasks through backward induction from the goal.
+description: >-
+  A framework for improving execution accuracy by redefining objectives and
+  visualizing milestones and tasks through backward induction from the goal.
 application:
   - PS
-layer: TOOL
+nature: FRAMEWORK
 format_version: 0.3
 tags:
   - mental-model

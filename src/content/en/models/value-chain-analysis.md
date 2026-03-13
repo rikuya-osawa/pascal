@@ -2,12 +2,14 @@
 type: mental-model
 name: Value Chain Analysis
 abbreviation: VCA
-description: A framework for breaking down company activities into value-creating processes to identify exactly where competitive advantages are generated.
+description: >-
+  A framework for breaking down company activities into value-creating processes
+  to identify exactly where competitive advantages are generated.
 application:
   - NB
   - DM
   - PS
-layer: TOOL
+nature: FRAMEWORK
 format_version: 0.3
 tags:
   - mental-model

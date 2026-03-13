@@ -7,7 +7,7 @@ application:
   - LT
   - DM
   - LIFE
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - constraint-based-thinking
   - expected-value-thinking

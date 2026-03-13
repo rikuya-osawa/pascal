@@ -7,7 +7,7 @@ application:
   - DM
   - PS
   - LIFE
-layer: META
+nature: PRINCIPLE
 related_models:
   - bayesian-thinking
   - ladder-of-inference

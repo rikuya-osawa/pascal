@@ -7,7 +7,7 @@ application:
   - LIFE
   - NB
   - DM
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - optionality-thinking
   - black-swan-thinking

@@ -1,9 +1,9 @@
 export type Language = 'ja' | 'en';
 
-export const LAYERS = {
-  META: { ja: "メタ", en: "META" },
-  CORE: { ja: "コア", en: "CORE" },
-  TOOL: { ja: "ツール", en: "TOOL" },
+export const NATURES = {
+  FRAMEWORK: { ja: "フレームワーク", en: "FRAMEWORK" },
+  COGNITION: { ja: "認知", en: "COGNITION" },
+  PRINCIPLE: { ja: "原則", en: "PRINCIPLE" },
 } as const;
 
 export const APPLICATION = {

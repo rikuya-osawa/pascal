@@ -6,7 +6,7 @@ description: 市場環境を「顧客・競合・自社」の3つの視点で捉
 application:
   - NB
   - DM
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - stp-analysis
   - swot-analysis

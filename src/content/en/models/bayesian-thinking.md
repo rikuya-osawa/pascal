@@ -2,11 +2,13 @@
 type: mental-model
 name: Bayesian Thinking
 abbreviation: Bayesian Thinking
-description: A thinking model for flexibly revising judgments and beliefs by updating previous assumptions (prior probability) whenever new information is obtained.
+description: >-
+  A thinking model for flexibly revising judgments and beliefs by updating
+  previous assumptions (prior probability) whenever new information is obtained.
 application:
   - LT
   - DM
-layer: CORE
+nature: COGNITION
 related_models:
   - bias-awareness
   - statistical-thinking

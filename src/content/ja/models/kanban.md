@@ -7,7 +7,7 @@ application:
   - PS
   - DM
   - LIFE
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - lean-thinking
   - work-planning-strategy

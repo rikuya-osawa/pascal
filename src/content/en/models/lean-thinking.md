@@ -2,12 +2,14 @@
 type: mental-model
 name: Lean Thinking
 abbreviation: Lean
-description: A philosophy for maximizing the efficiency of value creation by eliminating waste and accelerating the "Hypothesis → Experiment → Learn" loop.
+description: >-
+  A philosophy for maximizing the efficiency of value creation by eliminating
+  waste and accelerating the "Hypothesis → Experiment → Learn" loop.
 application:
   - NB
   - PS
   - DM
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - minimum-viable-product
   - kanban

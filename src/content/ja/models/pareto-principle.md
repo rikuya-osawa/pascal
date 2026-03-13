@@ -3,11 +3,11 @@ type: mental-model
 name: パレートの法則
 abbreviation: 80/20の法則
 description: 結果や効果の約80%は、原因の約20%（重要で少数の要素）から生み出されるという考え方に基づき、そこに集中するための思考モデル。
-application: 
+application:
   - PS
   - DM
   - NB
-layer: TOOL
+nature: PRINCIPLE
 related_models:
   - leverage-thinking
   - systems-thinking

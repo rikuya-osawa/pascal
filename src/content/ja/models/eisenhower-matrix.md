@@ -7,7 +7,7 @@ application:
   - DM
   - PS
   - LIFE
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - pareto-principle
   - smart-goals

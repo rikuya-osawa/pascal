@@ -7,7 +7,7 @@ application:
   - NB
   - DM
   - PS
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - economic-moat
   - 4p-4c

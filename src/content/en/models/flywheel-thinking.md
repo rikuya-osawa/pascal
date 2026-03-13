@@ -2,12 +2,15 @@
 type: mental-model
 name: Flywheel Thinking
 abbreviation: Flywheel
-description: A thinking model for designing or discovering "self-reinforcing structures" where elements strengthen each other, creating accelerated growth once the momentum builds.
+description: >-
+  A thinking model for designing or discovering "self-reinforcing structures"
+  where elements strengthen each other, creating accelerated growth once the
+  momentum builds.
 application:
   - NB
   - LT
   - PS
-layer: CORE
+nature: PRINCIPLE
 related_models:
   - systems-thinking
   - economic-moat

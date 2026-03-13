@@ -2,11 +2,13 @@
 type: mental-model
 name: Jobs To Be Done
 abbreviation: JTBD
-description: A thinking model that views value through the lens that customers don't just buy "products"; they "hire" them to achieve a specific "progress" (a Job).
+description: >-
+  A thinking model that views value through the lens that customers don't just
+  buy "products"; they "hire" them to achieve a specific "progress" (a Job).
 application:
   - DM
   - NB
-layer: TOOL
+nature: PRINCIPLE
 related_models:
   - hypothesis-thinking
 format_version: 0.3

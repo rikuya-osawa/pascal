@@ -7,7 +7,7 @@ application:
   - NB
   - PS
   - DM
-layer: TOOL
+nature: FRAMEWORK
 related_models:
   - value-chain-analysis
   - 4p-4c
