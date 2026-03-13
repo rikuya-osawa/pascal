@@ -9,6 +9,10 @@ application:
   - LT
 layer: TOOL
 format_version: 0.3
+related_models:
+  - second-order-thinking
+  - bayesian-thinking
+  - optionality-thinking
 tags:
   - mental-model
 ---
@@ -98,4 +102,3 @@ A high-level model for addressing deep uncertainty. By structuring **"Future Vis
 
 * **Related:** Second-Order Thinking (considering the consequences of each scenario), Bayesian Thinking (updating scenario probabilities as news arrives).
 * **Complementary:** **"Optionality Thinking"** (buying options that pay off in specific scenarios).
-* **Opposing:** Single-Point Forecasting, "Wait and See" approaches.

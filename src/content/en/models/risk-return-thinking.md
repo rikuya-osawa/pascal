@@ -1,19 +1,23 @@
 ---
 type: mental-model
-name: Risk-Return Trade-off
-abbreviation: R×R
+name: Risk-Return Thinking
+abbreviation: Risk & Return
 description: A thinking model for evaluating options based on two axes- "how much return can be expected" and "how much risk must be taken," to determine if the potential reward justifies the risk.
 application:
   - DM
   - NB
   - LIFE
 layer: CORE
+related_models:
+  - expected-value-thinking
+  - trade-off-thinking
+  - reversible-irreversible-decisions
 format_version: 0.3
 tags:
   - mental-model
 ---
 
-# Risk-Return Trade-off
+# Risk-Return Thinking
 
 ## Overview
 
@@ -96,5 +100,4 @@ Highly intuitive and widely applicable. However, it is common to misinterpret **
 ## Relationship with Other Models
 
 * **Related:** Expected Value Thinking, Trade-off Thinking.
-* **Complementary:** Reversible / Irreversible Decisions (can you turn back if the risk manifests?), Margin of Safety.
-* **Opposing:** Risk-Aversion Bias (refusing all risk), Gambler’s Fallacy.
+* **Complementary:** Reversible / Irreversible Decisions (can you turn back if the risk manifests?).

@@ -8,6 +8,9 @@ application:
   - PS
   - DM
 layer: TOOL
+related_models:
+  - mece
+  - hypothesis-thinking
 format_version: 0.3
 tags:
   - mental-model
@@ -94,6 +97,5 @@ Significantly enhances the quality of document creation and presentations. Howev
 
 ## Relationship with Other Models
 
-* **Related:** Logical Thinking, Storytelling (the "Why" behind the logic).
 * **Complementary:** MECE (organizing the base of the pyramid), Hypothesis-Driven Thinking (setting the tentative conclusion).
 * **Opposing:** Chronological Explanation (telling a story in the order it happened, saving the conclusion for last).

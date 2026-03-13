@@ -97,4 +97,3 @@ Extremely effective for visualizing the sources of competitive advantage from wi
 * **Higher Concept:** Economic Moat (competitive advantage).
 * **Complementary:** Five Forces Analysis (external structure), SWOT Analysis.
 * **Related:** Leverage Thinking (focusing on the high-impact link).
-* **Opposing:** Functional Silo Optimization (optimizing one department without looking at the whole chain).

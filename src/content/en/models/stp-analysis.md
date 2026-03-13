@@ -8,6 +8,10 @@ application:
   - DM
   - PS
 layer: TOOL
+related_models:
+  - economic-moat
+  - 4p-4c
+  - jobs-to-be-done
 format_version: 0.3
 tags:
   - mental-model
@@ -75,8 +79,6 @@ A powerful starting point for any market strategy. It forces you to make choices
 * **Axis 2 (Y):** Customization (Standardized vs. Bespoke)
 * **Result:** Identifying an "Empty Quadrant" where high-end, standardized service is missing.
 
-
-
 ### 2. Segment Profile
 * **Target:** "The Time-Poor PMO Professional."
 * **Pain Point:** Overwhelmed by administrative tasks but lacks the budget for a full-scale consultancy.
@@ -100,5 +102,4 @@ A powerful starting point for any market strategy. It forces you to make choices
 
 * **High-level Concept:** Economic Moat (Positioning is often the first step to building a moat).
 * **Complementary:** **"4P / 4C Marketing Mix"** (The 4Ps are the tools used to execute the STP strategy).
-* **Related:** JTBD (Jobs to be Done), Persona Design.
-* **Opposing:** Omni-directional Strategy (trying to be all things to all people).
+* **Related:** JTBD (Jobs to be Done).
