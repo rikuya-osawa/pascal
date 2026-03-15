@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Toyota Production System"
+    author: "Taiichi Ohno (Toyota)"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A visual system for managing work as it moves through a process."
 ---
 
 # Kanban Board

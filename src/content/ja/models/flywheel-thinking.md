@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "ビジョナリー・カンパニー 2"
+    author: "ジム・コリンズ"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "小さな成功を積み重ねることで勢いが増す、持続的な成長モデル。"
 ---
 
 # フライホイール思考

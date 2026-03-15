@@ -14,6 +14,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "アマゾン株主への手紙 (1997)"
+    author: "ジェフ・ベゾス"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "意思決定を「後戻りできるか否か」で分類し、判断速度を最適化。"
 ---
 
 # 可逆的・不可逆的判断思考

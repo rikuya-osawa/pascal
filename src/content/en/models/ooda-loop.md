@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Destruction and Creation (Essay)"
+    author: "John Boyd"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A decision-making cycle of Observe, Orient, Decide, and Act."
 ---
 
 # OODA Loop

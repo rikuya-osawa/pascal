@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Metacognition and Cognitive Monitoring"
+    author: "John H. Flavell"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Research on \"thinking about thinking\" and self-regulated learning."
 ---
 
 # Metacognition

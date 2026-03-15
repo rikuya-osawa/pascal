@@ -14,6 +14,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "反脆弱性"
+    author: "ナシーム・ニコラス・タレブ"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "選択権（オプション）を確保し、不確実性を味方につける思考法。"
 ---
 
 # オプショナリティ思考

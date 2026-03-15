@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "トヨタ生産方式"
+    author: "大野耐一（トヨタ自動車）"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "ジャスト・イン・タイムを実現するための生産管理・可視化ツール。"
 ---
 
 # カンバン・ボード

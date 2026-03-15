@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "ブラック・スワン / 反脆弱性"
+    author: "ナシーム・ニコラス・タレブ"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "極端なリスク回避と極端なリスクテイクを組み合わせる投資・思考法。"
 ---
 
 # バーベル戦略

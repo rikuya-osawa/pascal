@@ -14,6 +14,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "マンダラ思考法"
+    author: "今泉浩晃"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "3×3の9マスを用いて思考の整理や目標設定を行う日本発の手法。"
 ---
 
 # マンダラ・チャート

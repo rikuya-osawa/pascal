@@ -14,6 +14,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "リーン・スタートアップ"
+    author: "エリック・リース"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "実証に必要な最小限の機能を備えた製品を早期に市場へ出す手法。"
 ---
 
 # 実用最小限のプロダクト (MVP)

@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "完訳 7つの習慣"
+    author: "スティーブン・コヴィー（普及）"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "重要度と緊急度の二軸でタスクを管理する手法。"
 ---
 
 # アイゼンハワー・マトリクス

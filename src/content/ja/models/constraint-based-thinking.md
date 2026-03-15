@@ -14,6 +14,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "ザ・ゴール"
+    author: "エリヤフ・ゴールドラット"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "システムの全体最適を妨げる「制約（ボトルネック）」に着目する理論。"
 ---
 
 # 制約条件思考

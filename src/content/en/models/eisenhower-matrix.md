@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "The 7 Habits of Highly Effective People"
+    author: "Stephen Covey (Popularized)"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A tool for prioritizing tasks based on urgency and importance."
 ---
 
 # Eisenhower Matrix

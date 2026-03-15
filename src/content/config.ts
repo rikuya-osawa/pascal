@@ -17,7 +17,7 @@ const mentalModelSchema = z.object({
       author: z.string().optional(),
       url: z.string().url().optional().or(z.literal("")), // 空文字も許容
       sourceType: z.enum(["primary", "reference", "inspiration"]),
-      sourceLanguage: z.enum(["ja", "en"]),
+      sourceLanguage: z.enum(["ja", "en", ""]), // 空文字も許容（のちに必須にする）
       description: z.string().optional(),
     })
   ).optional(), // 既存ファイルのエラー防止のため optional

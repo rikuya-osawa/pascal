@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "The Pyramid Principle"
+    author: "Barbara Minto"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A structured technique for clear business writing and logic."
 ---
 
 # Pyramid Principle

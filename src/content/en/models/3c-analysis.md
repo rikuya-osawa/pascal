@@ -15,9 +15,16 @@ related_models:
   - swot-analysis
   - pestel-analysis
   - 4p-4c
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
+sources:
+  - title: "The Mind of the Strategist"
+    author: "Kenichi Ohmae"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: "en"
+    description: "Defines the strategic triangle of Customer, Competitor, and Corporation."
 ---
 
 # 3C Analysis

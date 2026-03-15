@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "学習する組織（明文化）"
+    author: "クリス・アージリス"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "人が経験から主観的な結論を導き出すまでの認知プロセスを階層化。"
 ---
 
 # 推論の梯子

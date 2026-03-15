@@ -1,6 +1,6 @@
 ---
 type: mental-model
-name: 'Segmentation, Targeting, Positioning'
+name: STP Marketing Strategy
 abbreviation: STP
 description: >-
   A strategic framework for dividing the market, selecting a target audience,
@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Marketing Management"
+    author: "Philip Kotler"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Framework for Segmentation, Targeting, and Positioning."
 ---
 
 # Segmentation, Targeting, Positioning (or STP Analysis)

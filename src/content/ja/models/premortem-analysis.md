@@ -16,6 +16,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "事前死因分析（HBR論文）"
+    author: "ゲイリー・クライン"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "実行前に「失敗した」と仮定し、その原因を逆算して対策する手法。"
 ---
 
 # プレモーテム分析

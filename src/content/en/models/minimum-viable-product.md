@@ -16,6 +16,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "The Lean Startup"
+    author: "Eric Ries"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A version of a product with just enough features to learn from customers."
 ---
 
 # Minimum Viable Product (MVP)

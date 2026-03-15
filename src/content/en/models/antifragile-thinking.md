@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Antifragile"
+    author: "Nassim Nicholas Taleb"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Describes systems that gain strength from disorder and volatility."
 ---
 
 # Antifragile Thinking

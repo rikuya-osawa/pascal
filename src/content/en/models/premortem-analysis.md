@@ -19,6 +19,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Performing a Project Premortem (HBR)"
+    author: "Gary Klein"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A strategy to prevent failure by imagining a project has already failed."
 ---
 
 # Premortem Analysis

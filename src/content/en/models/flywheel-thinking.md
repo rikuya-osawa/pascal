@@ -18,6 +18,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Good to Great"
+    author: "Jim Collins"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Explains how small wins accumulate over time to create unstoppable momentum."
 ---
 
 # Flywheel Thinking

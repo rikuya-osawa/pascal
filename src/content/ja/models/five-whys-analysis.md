@@ -14,6 +14,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "トヨタ生産方式"
+    author: "大野耐一（トヨタ自動車）"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "事象に対して5回「なぜ」を繰り返すことで問題の真因を突き止める。"
 ---
 
 # なぜなぜ分析

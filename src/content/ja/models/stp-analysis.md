@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "マーケティング・マネジメント"
+    author: "フィリップ・コトラー"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "セグメンテーション、ターゲティング、ポジショニングによる戦略策定。"
 ---
 
 # STP分析

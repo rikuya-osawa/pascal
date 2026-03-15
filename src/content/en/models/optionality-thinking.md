@@ -16,6 +16,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Antifragile"
+    author: "Nassim Nicholas Taleb"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Emphasizes keeping options open to benefit from favorable uncertainty."
 ---
 
 # Optionality Thinking (Option Thinking)

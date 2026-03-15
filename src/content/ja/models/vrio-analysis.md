@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "企業戦略論"
+    author: "ジェイ・B・バーニー"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "経営資源の価値、希少性、模倣困難性、組織を評価するフレームワーク。"
 ---
 
 # VRIO分析

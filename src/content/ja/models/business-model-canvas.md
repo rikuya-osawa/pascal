@@ -18,6 +18,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "ビジネスモデル・ジェネレーション"
+    author: "A.オスターワルダー / Y.ピニュール"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "ビジネスモデルを9つの要素で可視化する共通言語として提唱。"
 ---
 
 # ビジネスモデル・キャンバス

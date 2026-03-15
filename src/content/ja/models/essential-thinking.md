@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "エッセンシャル思考"
+    author: "グレッグ・マキューン"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "最小の時間で成果を最大にするため、非本質的なものを捨てる思考法。"
 ---
 
 # 本質思考

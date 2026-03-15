@@ -18,6 +18,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Berkshire Hathaway Shareholder Letter"
+    author: "Warren Buffett"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Describes a business's ability to maintain competitive advantages over time."
 ---
 
 # Economic Moat

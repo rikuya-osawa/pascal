@@ -17,6 +17,13 @@ related_models:
   - optionality-thinking
 tags:
   - mental-model
+sources:
+  - title: "Scenarios: Uncharted Waters Ahead"
+    author: "Pierre Wack (Shell)"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A method for long-term planning by imagining multiple future scenarios."
 ---
 
 # Scenario Planning

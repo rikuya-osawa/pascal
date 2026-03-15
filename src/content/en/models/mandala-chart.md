@@ -16,6 +16,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Mandala Thinking Method"
+    author: "Hiroaki Imaizumi"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A Japanese framework for organizing thoughts using a 3x3 grid."
 ---
 
 # Mandala Chart
