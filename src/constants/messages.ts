@@ -51,6 +51,8 @@ export const MESSAGES = {
     modelDetailRelatedTitle: "関連するモデル",
     modelDetailRelatedShowMore: "もっと見る（+{count}）",
     modelDetailRelatedShowLess: "閉じる",
+    referencesTitle: "参考文献・出典",
+    referenceDisclaimer: "本内容は、記載の出典および一般的なフレームワークの定義に基づき、実務的な観点から本アトラスにて独自に再構成・執筆したものです。",
   },
   en: {
     title: "Mental Model Atlas",
@@ -102,6 +104,8 @@ export const MESSAGES = {
     modelDetailRelatedTitle: "Related Models",
     modelDetailRelatedShowMore: "Show more (+{count})",
     modelDetailRelatedShowLess: "Show less",
+    referencesTitle: "References & Sources",
+    referenceDisclaimer: "This content has been independently restructured and written for this Atlas from a practical perspective, based on the cited sources and general framework definitions.",
   },
 } as const;
 

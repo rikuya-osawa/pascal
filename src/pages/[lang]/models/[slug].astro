@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/base-layout.astro";
 import "../../styles/markdown.css";
 import "../../styles/components/model-detail.css";
+import "../../styles/components/source-section.css";
 import { NATURES, APPLICATION, type Language } from "../../../constants/filters";
 import { getMessages } from "../../../constants/messages";
 import ModelCard from "../../../components/model-card.astro";
@@ -50,6 +51,11 @@ const hiddenRelatedCount = hiddenRelatedModels.length;
 const relatedShowMoreText = msg.modelDetailRelatedShowMore.replace("{count}", String(hiddenRelatedCount));
 
 const { Content } = await entry.render();
+
+const SOURCE_TYPE_ORDER = { primary: 0, reference: 1, inspiration: 2 } as const;
+const sortedSources = (entry.data.sources ?? []).slice().sort(
+  (a, b) => SOURCE_TYPE_ORDER[a.sourceType] - SOURCE_TYPE_ORDER[b.sourceType]
+);
 
 // Schema.org 用データを組み立てる
 const site = Astro.site || 'https://mental-model-atlas.pages.dev';
@@ -115,6 +121,32 @@ const natureInfo = NATURES[entry.data.nature as keyof typeof NATURES];
 
     <Content content={entry.body} />
   </article>
+
+  {sortedSources.length > 0 && (
+    <section class="sources-section" aria-labelledby="sources-title">
+      <h2 id="sources-title" class="sources-title">{msg.referencesTitle}</h2>
+      <ol class="sources-list">
+        {sortedSources.map((source) => (
+          <li class="source-item">
+            <div class="source-item__main">
+              <span class={`source-type-badge source-type-badge--${source.sourceType}`}>
+                {source.sourceType}
+              </span>
+              {source.url ? (
+                <a href={source.url} class="source-link" target="_blank" rel="noopener noreferrer">
+                  {source.title}
+                </a>
+              ) : (
+                <span class="source-title">{source.title}</span>
+              )}
+              {source.author && <span class="source-author">{source.author}</span>}
+            </div>
+          </li>
+        ))}
+      </ol>
+      <p class="sources-disclaimer">{msg.referenceDisclaimer}</p>
+    </section>
+  )}
 
   {relatedModels.length > 0 && (
     <section class="related-models-section" aria-labelledby="related-models-title">
