@@ -15,8 +15,11 @@
 
   /* 性質（Nature）専用色 */
   --color-nature-framework: #d97706; /* Amber 600 */
+  --color-nature-framework-light: #ffedd5; /* Amber 100 */
   --color-nature-cognition: #059669; /* Emerald 600 */
+  --color-nature-cognition-light: #d1fae5; /* Emerald 100 */
   --color-nature-principle: #e11d48; /* Rose 600 */
+  --color-nature-principle-light: #ffe4e6; /* Rose 100 */
   
   --max-width: 1100px; /* カードグリッド向けに少し広げています */
   --max-width-text: 780px; /* 読み物ページ（Aboutなど）用 */
@@ -47,7 +50,10 @@
   --color-surface: #161b22;
   --color-surface-hover: #1f2630;
 
-  --color-nature-framework: #f59e0b;
-  --color-nature-cognition: #10b981;
-  --color-nature-principle: #fb7185;
+  --color-nature-framework: #b45309;
+  --color-nature-framework-light: #3a2a12;
+  --color-nature-cognition: #047857;
+  --color-nature-cognition-light: #12372d;
+  --color-nature-principle: #be123c;
+  --color-nature-principle-light: #3f1a24;
 }

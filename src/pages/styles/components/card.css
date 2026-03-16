@@ -52,14 +52,13 @@
 }
 
 .card-title {
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 1.8rem;
   line-height: 1.4;
-  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
 }
 
 .card-description {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-muted);
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -76,6 +75,7 @@
   gap: 8px;
   align-items: center;
   flex-wrap: wrap;
+  border-color: var(--color-border);
 }
 
 .badge {
@@ -86,23 +86,22 @@
   color: var(--color-muted);
   border-radius: 6px;
   border: 1px solid var(--color-border);
-  transition: background-color var(--transition-smooth), color var(--transition-smooth), border-color var(--transition-smooth);
 }
 
-.card[data-nature="FRAMEWORK"]:hover .badge.nature {
-  background-color: var(--color-nature-framework);
-  border-color: var(--color-nature-framework);
-  color: var(--color-bg);
+.card[data-nature="FRAMEWORK"] .badge.nature {
+  background-color: var(--color-nature-framework-light);
+  border: 1px solid var(--color-nature-framework-light);
+  color: var(--color-nature-framework);
 }
 
-.card[data-nature="COGNITION"]:hover .badge.nature {
-  background-color: var(--color-nature-cognition);
-  border-color: var(--color-nature-cognition);
-  color: var(--color-bg);
+.card[data-nature="COGNITION"] .badge.nature {
+  background-color: var(--color-nature-cognition-light);
+  border: 1px solid var(--color-nature-cognition-light);
+  color: var(--color-nature-cognition);
 }
 
-.card[data-nature="PRINCIPLE"]:hover .badge.nature {
-  background-color: var(--color-nature-principle);
-  border-color: var(--color-nature-principle);
-  color: var(--color-bg);
+.card[data-nature="PRINCIPLE"] .badge.nature {
+  background-color: var(--color-nature-principle-light);
+  border: 1px solid var(--color-nature-principle-light);
+  color: var(--color-nature-principle);
 }
