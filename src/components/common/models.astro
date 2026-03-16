@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import ModelCard from "../model-card.astro";
 import { NATURES, APPLICATION, getLabel, type Language } from "../../constants/filters";
 import { getMessages } from "../../constants/messages";
+import { GITHUB_URL } from "../../constants/site-config";
 
 interface Props {
   lang: Language;
@@ -17,6 +18,7 @@ const natureList = Object.entries(NATURES);
 const viewList = Object.entries(APPLICATION);
 
 const msg = getMessages(lang);
+const modelRequestUrl = `${GITHUB_URL}/issues/new/choose`;
 
 // モデルの統計情報
 const totalCount = allModels.length;
@@ -111,7 +113,16 @@ const natureCounts = {
   ))}
 </div>
 <div id="search-fallback" class="hidden">
-  <p>{msg.searchFallback}</p>
+  <p class="search-fallback-message">{msg.searchFallback}</p>
+  <p class="search-fallback-help">{msg.modelsRequestDescription}</p>
+  <a
+    class="search-fallback-button"
+    href={modelRequestUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {msg.modelsRequestCta}
+  </a>
 </div>
 
 <script define:vars={{ searchPlaceholder: msg.searchPlaceholder }}>

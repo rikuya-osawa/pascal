@@ -45,6 +45,8 @@ export const MESSAGES = {
     modelsFilterTitle: "フィルターで絞り込む",
     modelsActiveFilters: "アクティブフィルター",
     modelsClearFilters: "すべてクリア",
+    modelsRequestDescription: "探しているモデルが見つからない場合は、GitHub から追加リクエストしてください。",
+    modelsRequestCta: "モデル追加リクエストを送る",
     // Model detail page
     modelDetailHome: "ホーム",
     modelDetailModels: "モデル一覧",
@@ -98,6 +100,8 @@ export const MESSAGES = {
     modelsFilterTitle: "Filter by",
     modelsActiveFilters: "Active Filters",
     modelsClearFilters: "Clear All",
+    modelsRequestDescription: "Can't find the model you need? Request a new one on GitHub.",
+    modelsRequestCta: "Request a model addition",
     // Model detail page
     modelDetailHome: "Home",
     modelDetailModels: "Models",
