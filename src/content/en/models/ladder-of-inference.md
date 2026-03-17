@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Overcoming Organizational Defenses"
+    author: "Chris Argyris"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Describes the thinking process of going from data to conclusions and actions."
 ---
 
 # Ladder of Inference

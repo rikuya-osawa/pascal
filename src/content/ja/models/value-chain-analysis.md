@@ -16,6 +16,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "競争優位の戦略"
+    author: "マイケル・ポーター"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "企業の活動を価値の連鎖として捉え、強みとコストを分析する。"
 ---
 
 # バリューチェーン分析

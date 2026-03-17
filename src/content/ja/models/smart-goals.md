@@ -11,6 +11,13 @@ nature: FRAMEWORK
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "There's a S.M.A.R.T. Way to Write Management's Goals"
+    author: "ジョージ・T・ドラン"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "目標設定に必要な5つの要素（具体性、測定可能性など）の頭文字。"
 ---
 
 # SMARTの法則 (目標設定の5基準)

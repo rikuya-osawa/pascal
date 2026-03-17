@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "不確実な未来への備え"
+    author: "ピエール・ワック（シェル）"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "起こりうる複数の未来シナリオを描き、戦略の柔軟性を高める。"
 ---
 
 # シナリオ・プランニング

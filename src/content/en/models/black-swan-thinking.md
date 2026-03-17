@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "The Black Swan"
+    author: "Nassim Nicholas Taleb"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Focuses on extreme, unpredictable events and how to deal with them."
 ---
 
 # Black Swan Thinking

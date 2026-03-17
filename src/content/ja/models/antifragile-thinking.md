@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "反脆弱性"
+    author: "ナシーム・ニコラス・タレブ"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "衝撃や混乱によって、かえって強くなる性質（反脆弱性）を定義。"
 ---
 
 # アンチフラジャイル思考

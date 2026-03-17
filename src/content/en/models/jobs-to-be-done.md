@@ -14,6 +14,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "The Innovator's Solution"
+    author: "C. Christensen / A. Ulwick"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Identifies the specific task or \"job\" customers hire a product to do."
 ---
 
 # Jobs To Be Done (JTBD)

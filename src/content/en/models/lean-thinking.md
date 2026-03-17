@@ -19,6 +19,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Lean Thinking"
+    author: "J. Womack / D. Jones"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A management philosophy focused on eliminating waste to create value."
 ---
 
 # Lean Thinking

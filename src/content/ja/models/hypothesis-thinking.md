@@ -12,6 +12,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "仮説思考"
+    author: "内田和成"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "情報が不十分な段階で結論を想定し、効率的に検証を進める手法。"
 ---
 
 # 仮説思考

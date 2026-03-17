@@ -14,6 +14,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "認知発達（論文）"
+    author: "ジョン・H・フラベル"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "自分の認知活動を客観的に把握し、制御する「思考についての思考」。"
 ---
 
 # メタ認知

@@ -16,6 +16,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Quality Control Handbook"
+    author: "Joseph Juran"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "The observation that 80% of consequences come from 20% of causes."
 ---
 
 # Pareto Principle (80/20 Rule)

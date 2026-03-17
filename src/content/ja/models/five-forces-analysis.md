@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "競争の戦略"
+    author: "マイケル・ポーター"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "業界の収益性を決定づける5つの競争要因を分析する枠組み。"
 ---
 
 # ファイブフォース分析

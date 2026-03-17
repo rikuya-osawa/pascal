@@ -13,6 +13,13 @@ nature: FRAMEWORK
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Gaining and Sustaining Competitive Advantage"
+    author: "Jay B. Barney"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Evaluates a firm's resources for Value, Rarity, Imitability, and Organization."
 ---
 
 # VRIO Analysis

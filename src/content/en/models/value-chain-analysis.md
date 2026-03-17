@@ -13,6 +13,13 @@ nature: FRAMEWORK
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Competitive Advantage"
+    author: "Michael Porter"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Analyzes the chain of activities a firm performs to deliver value."
 ---
 
 # Value Chain Analysis

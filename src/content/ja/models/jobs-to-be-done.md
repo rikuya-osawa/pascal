@@ -13,6 +13,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "ジョブ理論"
+    author: "C.クリステンセン / A.ウルウィック"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "顧客が特定の製品を「雇う」目的（片づけたい用事）を解明する。"
 ---
 
 # ジョブ理論

@@ -2,6 +2,7 @@
 .models-hero {
   padding: var(--space-sm) 0 var(--space-md);
   text-align: center;
+  margin: var(--space-lg) 0 0 0;
 }
 
 .models-hero-content {
@@ -88,21 +89,70 @@
 
 /* ========== Filter Section ========== */
 .filter-section {
-  margin: var(--space-md) 0 var(--space-sm) 0;
-}
-
-.filter-section-title {
-  font-size: 1rem;
-  font-weight: 650;
-  color: var(--color-text);
-  margin: 0 0 10px 0;
+  margin: var(--space-sm) 0;
 }
 
 .filter-icon {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
   vertical-align: middle;
+}
+
+/* ========== Search Fallback ========== */
+#search-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: var(--space-md) 0;
+  padding: 20px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0.03) 100%);
+  text-align: center;
+}
+
+#search-fallback.hidden {
+  display: none;
+}
+
+.search-fallback-message {
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.search-fallback-help {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.search-fallback-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--color-primary);
+  color: var(--color-bg);
+  background-color: var(--color-primary);
+  font-weight: 650;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.search-fallback-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  opacity: 0.95;
+}
+
+.search-fallback-button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-primary) 38%, white);
+  outline-offset: 2px;
 }
 
 /* ========== Responsive ========== */
@@ -141,8 +191,13 @@
     margin: var(--space-sm) 0 10px 0;
   }
 
-  .filter-section-title {
-    font-size: 0.92rem;
-    margin-bottom: 8px;
+  #search-fallback {
+    margin: var(--space-sm) 0;
+    padding: 16px 12px;
+    gap: 8px;
+  }
+
+  .search-fallback-help {
+    font-size: 0.95rem;
   }
 }

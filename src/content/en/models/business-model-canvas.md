@@ -21,6 +21,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Business Model Generation"
+    author: "A. Osterwalder / Y. Pigneur"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A visual chart for developing and documenting business models."
 ---
 
 # Business Model Canvas (BMC)

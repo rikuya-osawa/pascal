@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Hypothesis-Based Thinking"
+    author: "Kazunari Uchida"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A method to solve problems efficiently by forming a conclusion first."
 ---
 
 # Hypothesis-Driven Thinking

@@ -14,6 +14,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "投資で一番大切な20の教え"
+    author: "ハワード・マークス"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "ある行動がもたらす直接的結果だけでなく、その先の連鎖的影響を考える。"
 ---
 
 # 二次的思考

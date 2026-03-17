@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "1997 Letter to Shareholders"
+    author: "Jeff Bezos"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Categorizes decisions into Type 1 (one-way) and Type 2 (two-way) doors."
 ---
 
 # Reversible / Irreversible Decisions

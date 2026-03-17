@@ -14,6 +14,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "考える技術・書く技術"
+    author: "バーバラ・ミント"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "結論を頂点に置き、根拠を論理的な階層構造で配置する技術。"
 ---
 
 # ピラミッド原則

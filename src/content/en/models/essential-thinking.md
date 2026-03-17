@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Essentialism"
+    author: "Greg McKeown"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Focuses on doing fewer things better by eliminating the non-essential."
 ---
 
 # Essential Thinking

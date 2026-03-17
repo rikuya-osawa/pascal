@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "リーン・シンキング"
+    author: "J.ウォーマック / D.ジョーンズ"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "ムダを徹底的に排除し、価値創造に集中するマネジメント思想。"
 ---
 
 # リーン思考

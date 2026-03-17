@@ -33,7 +33,9 @@ const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
         document.documentElement.dataset.theme = initialTheme;
       })();
     </script>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="canonical" href={Astro.url} />
     {/*

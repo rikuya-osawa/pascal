@@ -12,9 +12,17 @@ related_models:
   - swot-analysis
   - pestel-analysis
   - 4p-4c
-format_version: 0.3
+  - blue-ocean-strategy
+format_version: 0.4
 tags:
   - mental-model
+sources:
+  - title: "企業参謀"
+    author: "大前研一"
+    url: "" # 任意
+    sourceType: "primary" # primary(原典) | reference(参照) | inspiration(着想元)
+    sourceLanguage: "en" # ja | en
+    description: "戦略的思考の三要素として、顧客・競合・自社の分析枠組みを提示。" # 任意
 ---
 
 # 3C分析 (三者環境分析)
@@ -68,12 +76,12 @@ tags:
 
 ## アウトプット例
 
-* **1. 戦略の方向性チェックリスト**
+1. **戦略の方向性チェックリスト**
     * **Customer:** 顧客が抱えている「未充足の悩み（インサイト）」は何か。
     * **Competitor:** 競合が真似できない、あるいは真似したくない領域はどこか。
     * **Company:** 自社の資産をどう組み合わせれば、顧客に選ばれる理由（USP）を作れるか。
 
-* **2. 視覚化のイメージ**
+2. **視覚化のイメージ**
     * 3つの円が重なり合うベン図。
     * 中心にある「顧客」の円に対して、左側に「自社」、右側に「競合」を配置する。
     * 自社と顧客だけが重なり、競合が重なっていない領域を「勝ち筋（バリュープロポジション）」として強調する。

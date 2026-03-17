@@ -1,8 +1,11 @@
 ---
+import { Icon } from 'astro-icon/components';
 import { getCollection } from "astro:content";
 import ModelCard from "../model-card.astro";
 import { NATURES, APPLICATION, getLabel, type Language } from "../../constants/filters";
+import { UI_ICONS } from '../../constants/model-icons';
 import { getMessages } from "../../constants/messages";
+import { GITHUB_URL } from "../../constants/site-config";
 
 interface Props {
   lang: Language;
@@ -17,6 +20,7 @@ const natureList = Object.entries(NATURES);
 const viewList = Object.entries(APPLICATION);
 
 const msg = getMessages(lang);
+const modelRequestUrl = `${GITHUB_URL}/issues/new/choose`;
 
 // モデルの統計情報
 const totalCount = allModels.length;
@@ -57,8 +61,26 @@ const natureCounts = {
 
 <!-- Filter Section -->
 <section class="filter-section">
-  <h2 class="filter-section-title">{msg.modelsFilterTitle}</h2>
-  
+  <button
+    class="filter-toggle"
+    id="open-filter-panel"
+    type="button"
+    aria-controls="filter-panel"
+    aria-expanded="false"
+  >
+    <Icon name={UI_ICONS.filter} class="filter-icon filter-icon-open" />
+    <Icon name={UI_ICONS.filterClose} class="filter-icon filter-icon-close" />
+    <span>{msg.modelsFilterTitle}</span>
+  </button>
+</section>
+
+<div id="filter-overlay" class="filter-overlay" aria-hidden="true"></div>
+
+<aside id="filter-panel" class="filter-panel is-open" aria-hidden="false" aria-label={msg.modelsFilterTitle}>
+  <div class="filter-panel-header">
+    <h2 class="filter-section-title">{msg.modelsFilterTitle}</h2>
+  </div>
+
   <div class="filter-container">
     <div class="filter-group">
       <span class="filter-label">
@@ -70,9 +92,9 @@ const natureCounts = {
       <div class="filter-options">
         <button class="filter-link" data-type="nature" data-value="">{msg.allLabel}</button>
         {natureList.map(([id, labels]) => (
-          <button 
-            class="filter-link" 
-            data-type="nature" 
+          <button
+            class="filter-link"
+            data-type="nature"
             data-value={id}
           >
             {getLabel(labels, lang)}
@@ -91,9 +113,9 @@ const natureCounts = {
       <div class="filter-options">
         <button class="filter-link" data-type="view" data-value="">{msg.allLabel}</button>
         {viewList.map(([id, labels]) => (
-          <button 
-            class="filter-link" 
-            data-type="view" 
+          <button
+            class="filter-link"
+            data-type="view"
             data-value={id}
           >
             {getLabel(labels, lang)}
@@ -102,7 +124,7 @@ const natureCounts = {
       </div>
     </div>
   </div>
-</section>
+</aside>
 
 <!-- Models Grid -->
 <div class="model-grid">
@@ -111,12 +133,43 @@ const natureCounts = {
   ))}
 </div>
 <div id="search-fallback" class="hidden">
-  <p>{msg.searchFallback}</p>
+  <p class="search-fallback-message">{msg.searchFallback}</p>
+  <p class="search-fallback-help">{msg.modelsRequestDescription}</p>
+  <a
+    class="search-fallback-button"
+    href={modelRequestUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {msg.modelsRequestCta}
+  </a>
 </div>
 
 <script define:vars={{ searchPlaceholder: msg.searchPlaceholder }}>
   const links = document.querySelectorAll('.filter-link');
   const items = document.querySelectorAll('.model-item');
+  const openFilterPanelButton = document.getElementById('open-filter-panel');
+  const filterPanel = document.getElementById('filter-panel');
+
+  function openFilterPanel() {
+    filterPanel?.classList.add('is-open');
+    filterPanel?.setAttribute('aria-hidden', 'false');
+    openFilterPanelButton?.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeFilterPanel() {
+    filterPanel?.classList.remove('is-open');
+    filterPanel?.setAttribute('aria-hidden', 'true');
+    openFilterPanelButton?.setAttribute('aria-expanded', 'false');
+  }
+
+  function toggleFilterPanel() {
+    if (filterPanel?.classList.contains('is-open')) {
+      closeFilterPanel();
+      return;
+    }
+    openFilterPanel();
+  }
 
   function updateAllFilters() {
     const url = new URL(window.location.href);
@@ -179,6 +232,14 @@ const natureCounts = {
   // グローバルに公開（Header から呼び出す）
   window.updateAllFilters = updateAllFilters;
 
+  openFilterPanelButton?.addEventListener('click', toggleFilterPanel);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && filterPanel?.classList.contains('is-open')) {
+      closeFilterPanel();
+    }
+  });
+
   links.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -207,6 +268,10 @@ const natureCounts = {
   });
 
   window.addEventListener('popstate', updateAllFilters);
-  document.addEventListener('astro:page-load', updateAllFilters);
+  document.addEventListener('astro:page-load', () => {
+    openFilterPanel();
+    updateAllFilters();
+  });
+  openFilterPanel();
   updateAllFilters();
 </script>

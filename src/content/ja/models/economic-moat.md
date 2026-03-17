@@ -16,6 +16,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "バークシャー・ハサウェイ株主への手紙"
+    author: "ウォーレン・バフェット"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "他社の参入を阻む競争優位性を「経済的な堀」として概念化。"
 ---
 
 # MOAT（競争優位）

@@ -16,6 +16,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "The Most Important Thing"
+    author: "Howard Marks"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Analyzes the long-term consequences and chain reactions of decisions."
 ---
 
 # Second-Order Thinking

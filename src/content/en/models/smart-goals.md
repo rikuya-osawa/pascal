@@ -14,6 +14,13 @@ nature: FRAMEWORK
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Management Review (Article)"
+    author: "George T. Doran"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Criteria to guide the setting of objectives: Specific, Measurable, etc."
 ---
 
 # SMART Goals (Five Criteria for Goal Setting)

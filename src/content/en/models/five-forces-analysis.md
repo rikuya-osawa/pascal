@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "Competitive Strategy"
+    author: "Michael Porter"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A framework to analyze the competitive forces within an industry."
 ---
 
 # Five Forces Analysis

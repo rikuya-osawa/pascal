@@ -69,5 +69,7 @@ export const MODEL_ICONS: Record<string, string> = {
 export const UI_ICONS = {
   search: 'lucide:search',
   themeLight: 'lucide:sun',
-  themeDark: 'lucide:moon'
+  themeDark: 'lucide:moon',
+  filter: 'lucide:sliders-horizontal',
+  filterClose: 'lucide:x'
 } as const;

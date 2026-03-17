@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "The Goal"
+    author: "Eliyahu M. Goldratt"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "Introduces the Theory of Constraints (TOC) to optimize system flow."
 ---
 
 # Constraint-based Thinking

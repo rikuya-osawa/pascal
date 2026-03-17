@@ -17,6 +17,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "The Black Swan / Antifragile"
+    author: "Nassim Nicholas Taleb"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "A strategy of playing it safe in some areas and taking high risks in others."
 ---
 
 # Barbell Strategy

@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "ブラック・スワン"
+    author: "ナシーム・ニコラス・タレブ"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "予測不能で極めて大きな影響を及ぼす事象への向き合い方を提示。"
 ---
 
 # ブラックスワン思考

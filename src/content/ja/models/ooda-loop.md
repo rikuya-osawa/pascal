@@ -15,6 +15,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "破壊と創造（論文）"
+    author: "ジョン・ボイド"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "観察、情勢判断、意思決定、実行のサイクルを回す迅速な判断法。"
 ---
 
 # OODAループ

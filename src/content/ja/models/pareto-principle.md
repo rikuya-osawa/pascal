@@ -14,6 +14,13 @@ related_models:
 format_version: 0.3
 tags:
   - mental-model
+sources:
+  - title: "品質管理ハンドブック（命名）"
+    author: "ジョセフ・ジュラン"
+    url: ""
+    sourceType: "primary"
+    sourceLanguage: ""
+    description: "全体の成果の8割は、要素の2割から生み出されるという経験則。"
 ---
 
 # パレートの法則 (80/20 Rule)
