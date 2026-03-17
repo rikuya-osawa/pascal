@@ -14,6 +14,8 @@ export const LUCIDE_ICONS = [
     'moon',
     'telescope',
     'sliders-horizontal',
+    'rotate-cw',
+    'arrow-left',
     // ビジネス・戦略
     'component',
     'layout-dashboard',

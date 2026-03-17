@@ -71,5 +71,7 @@ export const UI_ICONS = {
   themeLight: 'lucide:sun',
   themeDark: 'lucide:moon',
   filter: 'lucide:sliders-horizontal',
-  filterClose: 'lucide:x'
+  filterClose: 'lucide:x',
+  filterReset: 'lucide:rotate-cw',
+  modelsGoBack: 'lucide:arrow-left',
 } as const;
