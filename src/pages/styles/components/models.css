@@ -2,6 +2,7 @@
 .models-hero {
   padding: var(--space-sm) 0 var(--space-md);
   text-align: center;
+  margin: var(--space-lg) 0 0 0;
 }
 
 .models-hero-content {
@@ -88,19 +89,12 @@
 
 /* ========== Filter Section ========== */
 .filter-section {
-  margin: var(--space-md) 0 var(--space-sm) 0;
-}
-
-.filter-section-title {
-  font-size: 1rem;
-  font-weight: 650;
-  color: var(--color-text);
-  margin: 0 0 10px 0;
+  margin: var(--space-sm) 0;
 }
 
 .filter-icon {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
   vertical-align: middle;
 }
@@ -195,11 +189,6 @@
 
   .filter-section {
     margin: var(--space-sm) 0 10px 0;
-  }
-
-  .filter-section-title {
-    font-size: 0.92rem;
-    margin-bottom: 8px;
   }
 
   #search-fallback {
