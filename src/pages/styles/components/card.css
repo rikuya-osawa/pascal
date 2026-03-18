@@ -52,14 +52,14 @@
 }
 
 .card-title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.4;
   letter-spacing: 0.02em;
 }
 
 .card-description {
   font-size: 1rem;
-  color: var(--color-muted);
+  color: var(--color-text);
   line-height: 1.6;
   margin-bottom: 1.5rem;
   flex-grow: 1;
