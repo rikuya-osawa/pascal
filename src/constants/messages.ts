@@ -2,11 +2,11 @@ import type { Language } from './filters';
 
 export const MESSAGES = {
   ja: {
+    // Common
     title: "Mental Model Atlas",
     natureLabel: "モデルの性質",
     applicationLabel: "活用場面",
     allLabel: "全て",
-    goBackText: "← モデル一覧に戻る",
     searchFallback: "一致するメンタルモデルが見つかりませんでした。",
     searchPlaceholder: "「/」を入力して検索...",
     notFoundTitle: "ページが見つかりません",
@@ -39,15 +39,16 @@ export const MESSAGES = {
     homeGithubDesc: "Mental Model Atlas は完成度よりも、継続的な改善を大切にしています。あなたの気づきやアイデアが、すべてのユーザーのためになります。",
     homeGithubCtaText: "GitHub で貢献する",
     // Models page
+    modelsBackText: "モデル一覧",
     modelsPageTitle: "すべてのメンタルモデル",
     modelsPageDesc: "思考の地図を探索し、あなたの課題に最適なフレームワークを見つけましょう。",
     modelsTotalCount: "件のメンタルモデル",
     modelsFilterTitle: "フィルター",
     modelsActiveFilters: "アクティブフィルター",
-    modelsClearFilters: "すべてクリア",
+    modelsResetFilters: "リセット",
+    modelsResetFiltersAriaLabel: "すべてのフィルターをリセット",
     modelsRequestDescription: "探しているモデルが見つからない場合は、GitHub から追加リクエストしてください。",
     modelsRequestCta: "モデル追加リクエストを送る",
-    // Model detail page
     modelDetailHome: "ホーム",
     modelDetailModels: "モデル一覧",
     modelDetailRelatedTitle: "関連するモデル",
@@ -61,7 +62,6 @@ export const MESSAGES = {
     natureLabel: "NATURE of MODEL",
     applicationLabel: "APPLICATION",
     allLabel: "ALL",
-    goBackText: "← Back to Models",
     searchFallback: "No mental models found matching your criteria.",
     searchPlaceholder: "Type / to search models...",
     notFoundTitle: "Page Not Found",
@@ -94,15 +94,16 @@ export const MESSAGES = {
     homeGithubDesc: "Mental Model Atlas values continuous improvement over perfection. Your insights and ideas make a difference for everyone.",
     homeGithubCtaText: "Contribute on GitHub",
     // Models page
+    modelsBackText: "All models",
     modelsPageTitle: "All Mental Models",
     modelsPageDesc: "Explore the map of thinking and find the perfect framework for your challenge.",
     modelsTotalCount: "mental models",
     modelsFilterTitle: "Filters",
     modelsActiveFilters: "Active Filters",
-    modelsClearFilters: "Clear All",
+    modelsResetFilters: "Reset all",
+    modelsResetFiltersAriaLabel: "Reset all filters",
     modelsRequestDescription: "Can't find the model you need? Request a new one on GitHub.",
     modelsRequestCta: "Request a model addition",
-    // Model detail page
     modelDetailHome: "Home",
     modelDetailModels: "Models",
     modelDetailRelatedTitle: "Related Models",

@@ -99,3 +99,55 @@
   margin: var(--space-md) auto;
   border-radius: var(--radius);
 }
+
+/* 共通設定：見出しの前にアイコンを表示 */
+.markdown-content h2::before {
+  content: "";
+  display: none;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 0.6rem;
+  vertical-align: text-bottom;
+  background-color: var(--color-primary); /* アイコンの色 */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* アイコンを付ける見出しだけ表示（Astro が付与する h2 id で判定） */
+.markdown-content h2:is(
+  [id='overview'],
+  [id='rating-15'],
+  [id='the-first-question'],
+  [id^='how-to-use'],
+  [id='output-examples'],
+  [id='use-cases'],
+  [id='typical-misuses'],
+  [id='relationship-with-other-models'],
+  [id='概要'],
+  [id^='評価'],
+  [id^='最初の'],
+  [id^='使い方'],
+  [id='アウトプット例'],
+  [id='出力例'],
+  [id='ユースケース'],
+  [id^='使いどころ'],
+  [id='典型的な誤用'],
+  [id*='モデルとの関係']
+)::before {
+  display: inline-block;
+}
+
+/* 各セクションごとのアイコン出し分け */
+.markdown-content h2:is([id='overview'], [id='概要'])::before { -webkit-mask-image: var(--icon-overview); mask-image: var(--icon-overview); }
+.markdown-content h2:is([id='rating-15'], [id^='評価'])::before { -webkit-mask-image: var(--icon-eval); mask-image: var(--icon-eval); }
+.markdown-content h2:is([id='the-first-question'], [id^='最初の'])::before { -webkit-mask-image: var(--icon-question); mask-image: var(--icon-question); }
+.markdown-content h2:is([id^='how-to-use'], [id^='使い方'])::before { -webkit-mask-image: var(--icon-steps); mask-image: var(--icon-steps); }
+.markdown-content h2:is([id='output-examples'], [id='アウトプット例'], [id='出力例'])::before { -webkit-mask-image: var(--icon-output); mask-image: var(--icon-output); }
+.markdown-content h2:is([id='use-cases'], [id='ユースケース'], [id^='使いどころ'])::before { -webkit-mask-image: var(--icon-case); mask-image: var(--icon-case); }
+.markdown-content h2:is([id='typical-misuses'], [id='典型的な誤用'])::before {
+  -webkit-mask-image: var(--icon-error); mask-image: var(--icon-error);
+  background-color: #e11d48; /* 誤用だけは警告色（赤）にする */
+}
+.markdown-content h2:is([id='relationship-with-other-models'], [id*='モデルとの関係'])::before { -webkit-mask-image: var(--icon-link); mask-image: var(--icon-link); }

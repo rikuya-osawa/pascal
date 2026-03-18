@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon/components';
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/base-layout.astro";
 import "../../styles/markdown.css";
@@ -6,6 +7,7 @@ import "../../styles/components/model-detail.css";
 import "../../styles/components/source-section.css";
 import { NATURES, APPLICATION, type Language } from "../../../constants/filters";
 import { getMessages } from "../../../constants/messages";
+import { UI_ICONS } from '../../../constants/model-icons';
 import ModelCard from "../../../components/model-card.astro";
 import { validateModelSync } from "../../../utils/validator";
 
@@ -104,7 +106,10 @@ const natureInfo = NATURES[entry.data.nature as keyof typeof NATURES];
 ---
 
 <BaseLayout lang={currentLang}>
-  <a href={`/${currentLang}/models`}>{msg.goBackText}</a>
+  <a href={`/${currentLang}/models`} class="goback-link">
+    <Icon name={UI_ICONS.modelsGoBack} class="goback-icon" />
+    <span class="goback-text">{msg.modelsBackText}</span>
+  </a>
   
   <article class="markdown-content">
    
