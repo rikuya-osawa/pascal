@@ -74,7 +74,7 @@ const natureCounts = {
   </button>
 </section>
 
-<aside id="filter-panel" class="filter-panel is-open" aria-hidden="false" aria-label={msg.modelsFilterTitle}>
+<aside id="filter-panel" class="filter-panel" aria-hidden="true" aria-label={msg.modelsFilterTitle}>
   <div class="filter-panel-header">
     <h2 class="filter-section-title">{msg.modelsFilterTitle}</h2>
     <div class="filter-panel-actions">
@@ -165,17 +165,61 @@ const natureCounts = {
   const closeFilterPanelButton = document.getElementById('close-filter-panel');
   const resetFilterPanelButton = document.getElementById('reset-filter-panel');
   const filterPanel = document.getElementById('filter-panel');
+  const layoutShiftTargets = document.querySelectorAll('.container');
+
+  function setLayoutShift(offsetPx) {
+    layoutShiftTargets.forEach((target) => {
+      if (!(target instanceof HTMLElement)) return;
+      target.style.marginInlineStart = offsetPx > 0 ? `${offsetPx}px` : '';
+    });
+  }
+
+  function getMaxResponsiveShift(panelWidth) {
+    const viewportWidth = window.innerWidth;
+
+    if (viewportWidth <= 768) {
+      return 0;
+    }
+
+    if (viewportWidth <= 992) {
+      return Math.min(panelWidth, 180);
+    }
+
+    if (viewportWidth <= 1200) {
+      return Math.min(panelWidth, Math.round(viewportWidth * 0.24));
+    }
+
+    return panelWidth;
+  }
+
+  function syncLayoutShiftWithFilterPanel() {
+    if (!(filterPanel instanceof HTMLElement)) {
+      setLayoutShift(0);
+      return;
+    }
+
+    if (!filterPanel.classList.contains('is-open')) {
+      setLayoutShift(0);
+      return;
+    }
+
+    const panelWidth = Math.ceil(filterPanel.getBoundingClientRect().width);
+    const shiftPx = getMaxResponsiveShift(panelWidth);
+    setLayoutShift(shiftPx);
+  }
 
   function openFilterPanel() {
     filterPanel?.classList.add('is-open');
     filterPanel?.setAttribute('aria-hidden', 'false');
     openFilterPanelButton?.setAttribute('aria-expanded', 'true');
+    syncLayoutShiftWithFilterPanel();
   }
 
   function closeFilterPanel() {
     filterPanel?.classList.remove('is-open');
     filterPanel?.setAttribute('aria-hidden', 'true');
     openFilterPanelButton?.setAttribute('aria-expanded', 'false');
+    syncLayoutShiftWithFilterPanel();
   }
 
   function toggleFilterPanel() {
@@ -192,7 +236,6 @@ const natureCounts = {
     const activeView = url.searchParams.get('view');
     const activeQuery = url.searchParams.get('q')?.toLowerCase() || "";
 
-    // 1. リンク（ボタン）の見た目更新
     links.forEach(link => {
       const type = link.getAttribute('data-type');
       const value = link.getAttribute('data-value');
@@ -206,7 +249,6 @@ const natureCounts = {
       }
     });
 
-    // 2. カードの表示・非表示判定
     items.forEach(item => {
       const itemNature = item.getAttribute('data-nature');
       const itemViews = item.getAttribute('data-views')?.split(',') || [];
@@ -224,7 +266,7 @@ const natureCounts = {
       }
     });
 
-    // 3. フォールバックの制御
+    // フォールバックの制御
     const fallback = document.getElementById('search-fallback');
     if (fallback) {
       const anyVisible = Array.from(items).some(item => !item.classList.contains('hidden'));
@@ -299,10 +341,12 @@ const natureCounts = {
   });
 
   window.addEventListener('popstate', updateAllFilters);
+  window.addEventListener('resize', syncLayoutShiftWithFilterPanel);
+  document.addEventListener('astro:before-swap', () => setLayoutShift(0));
   document.addEventListener('astro:page-load', () => {
-    openFilterPanel();
     updateAllFilters();
+    syncLayoutShiftWithFilterPanel();
   });
-  openFilterPanel();
   updateAllFilters();
+  syncLayoutShiftWithFilterPanel();
 </script>
