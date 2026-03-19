@@ -11,9 +11,9 @@
 
   <rect width="100" height="100" rx="20" fill="#1a1a1a"/>
 
-  <text x="50%" y="45%" dominant-baseline="central" text-anchor="middle" 
-        font-family="'Noto Serif JP', serif" font-weight="bold" font-size="70" 
-        fill="url(#blueGradient)">
-    P
-  </text>
+  <path
+    fill="url(#blueGradient)"
+    fill-rule="evenodd"
+    d="M26 18h26c15.464 0 28 12.536 28 28S67.464 74 52 74H42v8H26zm16 16v24h10c6.627 0 12-5.373 12-12s-5.373-12-12-12z"
+  />
 </svg>
