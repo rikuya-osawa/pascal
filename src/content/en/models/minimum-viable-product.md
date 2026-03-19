@@ -82,7 +82,7 @@ An extremely powerful tool for reducing waste. However, it is frequently misunde
 
 ### 1. The Validation Plan
 * **Hypothesis:** Professional consultants want a bilingual mental model dictionary.
-* **MVP:** A simple Markdown-based static site (like the **"Mental Model Atlas"**) with 10 core models.
+* **MVP:** A simple Markdown-based static site with 10 core models.
 * **Metric:** Number of return visitors and newsletter sign-ups.
 
 ### 2. Visualization

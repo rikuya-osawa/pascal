@@ -1,14 +1,8 @@
 ---
 import BaseLayout from "../layouts/base-layout.astro";
-import '../styles/markdown.css';
-
-const modules = import.meta.glob('../../content/en/about/*.md', { eager: true });
-const entries = Object.values(modules) as any[];
-const AboutComp = entries.length ? (entries[0] as any).default : null;
+import AboutContent from "../../components/common/about.astro";
 ---
 
 <BaseLayout>
-	<article class="markdown-content">
-		{AboutComp ? <AboutComp /> : <p>About content not found.</p>}
-	</article>
+	<AboutContent lang="en" />
 </BaseLayout>

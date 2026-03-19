@@ -1,4 +1,4 @@
-# Mental Model Atlas
+# PASCAL
 
 実践的な意思決定のためのメンタルモデル辞典。
 

@@ -26,10 +26,10 @@ const messages = MESSAGES[currentLang];
       <p class="not-found-message">{messages.notFoundLinks}</p>
       <div class="links-grid">
         <a href="/ja/models" class="link-button">
-          {currentLang === 'ja' ? '📚 日本語モデル一覧' : '📚 Japanese Models'}
+          {messages.notFoundJaModelsLink}
         </a>
         <a href="/en/models" class="link-button">
-          {currentLang === 'ja' ? '📘 English Models' : '📘 English Models'}
+          {messages.notFoundEnModelsLink}
         </a>
       </div>
     </div>
@@ -38,12 +38,12 @@ const messages = MESSAGES[currentLang];
       <h3>🐛 {messages.notFoundIssue}</h3>
       <p>{messages.notFoundIssueDesc}</p>
       <a href={`${GITHUB_URL}/issues/new?title=Broken%20Link&body=URL:%20${Astro.url}`} class="issue-button" target="_blank" rel="noopener noreferrer">
-        {currentLang === 'ja' ? 'GitHub Issues へ' : 'Report on GitHub Issues'}
+        {messages.notFoundIssueCta}
       </a>
     </div>
 
     <div class="home-link">
-      <a href="/">← {currentLang === 'ja' ? 'Mental Model Atlas へ戻る' : 'Back to Mental Model Atlas'}</a>
+      <a href="/">← {messages.notFoundBackHome}</a>
     </div>
   </div>
 </BaseLayout>

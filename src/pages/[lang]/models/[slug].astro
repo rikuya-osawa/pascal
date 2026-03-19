@@ -8,6 +8,7 @@ import "../../styles/components/source-section.css";
 import { NATURES, APPLICATION, type Language } from "../../../constants/filters";
 import { getMessages } from "../../../constants/messages";
 import { UI_ICONS } from '../../../constants/model-icons';
+import { SITE_NAME } from '../../../constants/site-config';
 import ModelCard from "../../../components/model-card.astro";
 import { validateModelSync } from "../../../utils/validator";
 
@@ -73,7 +74,7 @@ const schemaData = {
   dateModified: new Date().toISOString(),
   author: {
     "@type": "Organization",
-    name: "Mental Model Atlas",
+    name: SITE_NAME,
   },
 };
 
