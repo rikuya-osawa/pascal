@@ -15,8 +15,9 @@
 }
 
 .site-header-inner {
-  max-width: 100%;
+  max-width: calc(var(--max-width) + 200px);
   width: 100%;
+  margin-inline: auto;
   box-sizing: border-box;
   padding: 12px 24px;
   display: flex;
@@ -31,6 +32,7 @@
 
 .site-title {
   font-weight: 700;
+  font-size: 1.5rem;
   text-decoration: none;
   color: var(--color-text);
 }
@@ -70,7 +72,7 @@
   background: transparent;
   color: var(--color-text);
   font-size: 0.9rem;
-  min-width: 140px;
+  min-width: 300px;
   padding: 0;
   outline: none;
 }
