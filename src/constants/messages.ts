@@ -1,9 +1,10 @@
 import type { Language } from './filters';
+import { SITE_NAME } from './site-config';
 
 export const MESSAGES = {
   ja: {
     // Common
-    title: "Mental Model Atlas",
+    title: SITE_NAME,
     natureLabel: "モデルの性質",
     applicationLabel: "活用場面",
     allLabel: "全て",
@@ -15,11 +16,15 @@ export const MESSAGES = {
     notFoundLinks: "以下のリンクをご利用ください：",
     notFoundIssue: "問題を報告する",
     notFoundIssueDesc: "バグや問題が見つかった場合は、GitHub Issues にお知らせください。",
+    notFoundJaModelsLink: "📚 日本語モデル一覧",
+    notFoundEnModelsLink: "📘 English Models",
+    notFoundIssueCta: "GitHub Issues へ",
+    notFoundBackHome: `${SITE_NAME} へ戻る`,
     // Home page
     homeHeroMainLine1: "より良い意思決定を、", // 全文: "より良い意思決定を、<br>本質的な問題解決を"
     homeHeroMainLine2: "より本質的な問題解決を",
-    homeHeroSub: "複雑な世界をシンプルに捉えるための思考の地図（Mental Model Atlas）",
-    homeHeroCtaText: "アトラスを探索する",
+    homeHeroSub: "複雑な世界をシンプルに捉えるための思考の地図",
+    homeHeroCtaText: "探索する",
     homeConceptTitle: "なぜメンタルモデルが必要なのか？",
     homeBenefitFasterDecisions: "意思決定の迅速化",
     homeBenefitFasterDecisionsDesc: "フレームワークを活用することで、複雑な課題を構造化し、素早く最良の判断ができます。",
@@ -36,11 +41,11 @@ export const MESSAGES = {
     homeNaturePrinciple: "原則 / PRINCIPLE",
     homeNaturePrincipleDesc: "社会や自然、心理に備わっている「客観的」な性質を捉えるモデルです。",
     homeGithubTitle: "未完成を公開し、共創する",
-    homeGithubDesc: "Mental Model Atlas は完成度よりも、継続的な改善を大切にしています。あなたの気づきやアイデアが、すべてのユーザーのためになります。",
+    homeGithubDesc: `${SITE_NAME} は完成度よりも、継続的な改善を大切にしています。あなたの気づきやアイデアが、すべてのユーザーのためになります。`,
     homeGithubCtaText: "GitHub で貢献する",
     // About page
-    aboutTitle: "Mental Model Atlas とは何か？",
-    aboutLead1: "Mental Model Atlas は、「思考の地図」を構築するオープンなプロジェクトです。",
+    aboutTitle: `About ${SITE_NAME} `,
+    aboutLead1: `${SITE_NAME} は、「思考の地図」を構築するオープンなプロジェクトです。`,
     aboutLead2: "複雑な現代社会において、より良い意思決定を行い、本質的な問題解決を行うための「知的OS」を提供することを目指しています。",
     aboutPurposeTitle: "プロジェクトの目的",
     aboutPurposeIntro: "単なる情報の集積ではなく、以下の3つを軸とした「思考の道具箱」を構築します。",
@@ -126,10 +131,10 @@ export const MESSAGES = {
     modelDetailRelatedShowMore: "もっと見る（+{count}）",
     modelDetailRelatedShowLess: "閉じる",
     referencesTitle: "参考文献・出典",
-    referenceDisclaimer: "本内容は、記載の出典および一般的なフレームワークの定義に基づき、実務的な観点から本アトラスにて独自に再構成・執筆したものです。",
+    referenceDisclaimer: `本内容は、記載の出典および一般的なフレームワークの定義に基づき、実務的な観点から ${SITE_NAME} にて独自に再構成・執筆したものです。`,
   },
   en: {
-    title: "Mental Model Atlas",
+    title: SITE_NAME,
     natureLabel: "NATURE of MODEL",
     applicationLabel: "APPLICATION",
     allLabel: "ALL",
@@ -141,11 +146,15 @@ export const MESSAGES = {
     notFoundLinks: "Please use one of the following links:",
     notFoundIssue: "Report an Issue",
     notFoundIssueDesc: "If you found a bug or issue, please let us know on GitHub Issues.",
+    notFoundJaModelsLink: "📚 Japanese Models",
+    notFoundEnModelsLink: "📘 English Models",
+    notFoundIssueCta: "Report on GitHub Issues",
+    notFoundBackHome: `Back to ${SITE_NAME}`,
     // Home page
     homeHeroMainLine1: "Better Decision-Making,", // 全文: "Better Decision-Making,<br>Lasting Problem-Solving"
     homeHeroMainLine2: "Lasting Problem-Solving",
-    homeHeroSub: "A map of thinking to understand complex world simply - Mental Model Atlas",
-    homeHeroCtaText: "Explore the Atlas",
+    homeHeroSub: "A map of thinking to understand complex world simply.",
+    homeHeroCtaText: "Explore",
     homeConceptTitle: "Why Mental Models Matter",
     homeBenefitFasterDecisions: "Faster Decision-Making",
     homeBenefitFasterDecisionsDesc: "Frameworks help you structure complex challenges and make better decisions quickly.",
@@ -162,11 +171,11 @@ export const MESSAGES = {
     homeNaturePrinciple: "PRINCIPLE",
     homeNaturePrincipleDesc: "Models that capture 'objective' properties inherent in society, nature, and psychology.",
     homeGithubTitle: "Embrace the Unfinished, Create Together",
-    homeGithubDesc: "Mental Model Atlas values continuous improvement over perfection. Your insights and ideas make a difference for everyone.",
+    homeGithubDesc: `${SITE_NAME} values continuous improvement over perfection. Your insights and ideas make a difference for everyone.`,
     homeGithubCtaText: "Contribute on GitHub",
     // About page
-    aboutTitle: "What is Mental Model Atlas?",
-    aboutLead1: "Mental Model Atlas is an open project dedicated to constructing a Map of Thought.",
+    aboutTitle: `About ${SITE_NAME}`,
+    aboutLead1: `${SITE_NAME} is an open project dedicated to constructing a Map of Thought.`,
     aboutLead2: "In our complex modern society, we aim to provide an Intellectual OS to facilitate better decision-making and essential problem-solving.",
     aboutPurposeTitle: "Project Objectives",
     aboutPurposeIntro: "Rather than a mere accumulation of information, we are building a Thinking Toolbox centered on the following three pillars:",
@@ -252,7 +261,7 @@ export const MESSAGES = {
     modelDetailRelatedShowMore: "Show more (+{count})",
     modelDetailRelatedShowLess: "Show less",
     referencesTitle: "References & Sources",
-    referenceDisclaimer: "This content has been independently restructured and written for this Atlas from a practical perspective, based on the cited sources and general framework definitions.",
+    referenceDisclaimer: `This content has been independently restructured and written for ${SITE_NAME} from a practical perspective, based on the cited sources and general framework definitions.`,
   },
 } as const;
 

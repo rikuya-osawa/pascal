@@ -2,7 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import { UI_ICONS } from '../constants/model-icons';
 import { getMessages } from "../constants/messages";
-import { GITHUB_URL } from '../constants/site-config';
+import { GITHUB_URL, SITE_NAME } from '../constants/site-config';
 
 const pathname = Astro.url.pathname;
 interface Props {
@@ -23,7 +23,7 @@ const msg = getMessages(currentLang);
 
 <header class="site-header">
   <div class="site-header-inner">
-    <a class="site-title" href={`/${currentLang}`}>MENTAL MODEL ATLAS</a>
+    <a class="site-title" href={`/${currentLang}`}>{SITE_NAME}</a>
     <div class="header-right">
     <form action={`/${currentLang}/models`} method="get" class="header-search-form">
       <div class="header-search-wrapper">
