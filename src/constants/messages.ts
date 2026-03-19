@@ -38,6 +38,77 @@ export const MESSAGES = {
     homeGithubTitle: "未完成を公開し、共創する",
     homeGithubDesc: "Mental Model Atlas は完成度よりも、継続的な改善を大切にしています。あなたの気づきやアイデアが、すべてのユーザーのためになります。",
     homeGithubCtaText: "GitHub で貢献する",
+    // About page
+    aboutTitle: "Mental Model Atlas とは何か？",
+    aboutLead1: "Mental Model Atlas は、「思考の地図」を構築するオープンなプロジェクトです。",
+    aboutLead2: "複雑な現代社会において、より良い意思決定を行い、本質的な問題解決を行うための「知的OS」を提供することを目指しています。",
+    aboutPurposeTitle: "プロジェクトの目的",
+    aboutPurposeIntro: "単なる情報の集積ではなく、以下の3つを軸とした「思考の道具箱」を構築します。",
+    aboutPurposePillars: [
+      {
+        title: "体系化",
+        description: "散在する知見を統一フォーマットで整理",
+      },
+      {
+        title: "構造化",
+        description: "抽象度や思考タイプによる関係性の明示",
+      },
+      {
+        title: "実践化",
+        description: "状況に応じたモデルの組み合わせ（レシピ）の提示",
+      },
+    ],
+    aboutScoreTitle: "評価スコア（1-5）の定義",
+    aboutScoreIntro: "当サイトでは、各メンタルモデルを4つの観点から独自にスコアリングしています。これは、あなたが「今どの思考ツールを手に取るべきか」を判断するためのガイド（等高線）です。",
+    aboutScoreHeaderItem: "項目",
+    aboutScoreHeaderDescription: "説明",
+    aboutScoreHeaderMin: "1 (Min)",
+    aboutScoreHeaderMax: "5 (Max)",
+    aboutScoreRows: [
+      {
+        item: "応用度",
+        description: "汎用性の高さ",
+        min: "特定分野に限定",
+        max: "領域を問わず万能",
+      },
+      {
+        item: "即効性",
+        description: "習得後の効果速度",
+        min: "長期的な修練が必要",
+        max: "知った瞬間から使える",
+      },
+      {
+        item: "理解難易度",
+        description: "概念の複雑さ",
+        min: "直感的にわかる",
+        max: "高度な抽象思考を要する",
+      },
+      {
+        item: "誤用リスク",
+        description: "解釈ミスの危険性",
+        min: "害が少ない",
+        max: "逆効果・思考停止の恐れ",
+      },
+    ],
+    aboutScoreNote: "Note: スコアはあくまで編集部の主観による「暫定値」です。使用者のコンテキストによって変化するため、一つの目安として活用してください。",
+    aboutRoadmapTitle: "ロードマップ",
+    aboutRoadmapPhases: [
+      {
+        label: "Phase 1（現在）",
+        description: "厳選された50モデルの公開と構造化",
+      },
+      {
+        label: "Phase 2",
+        description: "掲載モデルの拡充（100-200）と「思考タイプ」別の分類強化",
+      },
+      {
+        label: "Phase 3",
+        description: "複数のモデルを組み合わせた「思考のレシピ」とグラフ可視化の導入",
+      },
+    ],
+    aboutContactTitle: "Contact / Feedback",
+    aboutContactText: "この「地図」は未完成です。誤用リスクの指摘や、新しいモデルの提案など、フィードバックをお待ちしております。",
+    aboutContactLinkText: "GitHub",
     // Models page
     modelsBackText: "モデル一覧",
     modelsPageTitle: "すべてのメンタルモデル",
@@ -93,6 +164,77 @@ export const MESSAGES = {
     homeGithubTitle: "Embrace the Unfinished, Create Together",
     homeGithubDesc: "Mental Model Atlas values continuous improvement over perfection. Your insights and ideas make a difference for everyone.",
     homeGithubCtaText: "Contribute on GitHub",
+    // About page
+    aboutTitle: "What is Mental Model Atlas?",
+    aboutLead1: "Mental Model Atlas is an open project dedicated to constructing a Map of Thought.",
+    aboutLead2: "In our complex modern society, we aim to provide an Intellectual OS to facilitate better decision-making and essential problem-solving.",
+    aboutPurposeTitle: "Project Objectives",
+    aboutPurposeIntro: "Rather than a mere accumulation of information, we are building a Thinking Toolbox centered on the following three pillars:",
+    aboutPurposePillars: [
+      {
+        title: "Systematization",
+        description: "Organizing scattered insights into a unified format.",
+      },
+      {
+        title: "Structuring",
+        description: "Clarifying relationships based on abstraction levels and thinking types.",
+      },
+      {
+        title: "Practicality",
+        description: "Presenting Recipes, combinations of models suited to specific situations.",
+      },
+    ],
+    aboutScoreTitle: "Definition of Evaluation Scores (1-5)",
+    aboutScoreIntro: "On this site, each mental model is uniquely scored across four dimensions. This serves as a guide to help you determine which thinking tool to pick up right now.",
+    aboutScoreHeaderItem: "Item",
+    aboutScoreHeaderDescription: "Description",
+    aboutScoreHeaderMin: "1 (Min)",
+    aboutScoreHeaderMax: "5 (Max)",
+    aboutScoreRows: [
+      {
+        item: "Versatility",
+        description: "Degree of general applicability",
+        min: "Limited to specific fields",
+        max: "Universal across all domains",
+      },
+      {
+        item: "Immediacy",
+        description: "Speed of effect after learning",
+        min: "Requires long-term practice",
+        max: "Usable the moment you learn it",
+      },
+      {
+        item: "Difficulty",
+        description: "Complexity of the concept",
+        min: "Intuitively understood",
+        max: "Requires high-level abstraction",
+      },
+      {
+        item: "Misuse Risk",
+        description: "Danger of misinterpretation",
+        min: "Low potential for harm",
+        max: "Risk of backfiring or mental bias",
+      },
+    ],
+    aboutScoreNote: "Note: These scores are provisional values based on the editorial team's subjective assessment. Since they vary depending on the user's context, please use them as a general reference.",
+    aboutRoadmapTitle: "Roadmap",
+    aboutRoadmapPhases: [
+      {
+        label: "Phase 1 (Current)",
+        description: "Publication and structuring of 50 selected models.",
+      },
+      {
+        label: "Phase 2",
+        description: "Expansion of featured models (100-200) and strengthening classification by Thinking Type.",
+      },
+      {
+        label: "Phase 3",
+        description: "Introduction of Thinking Recipes, combining multiple models, and graph visualization.",
+      },
+    ],
+    aboutContactTitle: "Contact / Feedback",
+    aboutContactText: "This Map is a work in progress. We welcome your feedback, including pointers on misuse risks or proposals for new models.",
+    aboutContactLinkText: "GitHub",
     // Models page
     modelsBackText: "All models",
     modelsPageTitle: "All Mental Models",

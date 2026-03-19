@@ -1,0 +1,79 @@
+---
+import "../../pages/styles/about.css";
+import { getMessages } from "../../constants/messages";
+import { GITHUB_URL } from "../../constants/site-config";
+
+interface Props {
+	lang: "ja" | "en";
+}
+
+const { lang } = Astro.props as Props;
+const messages = getMessages(lang);
+---
+
+<main class="about-page">
+	<section class="about-section about-hero">
+		<h1>{messages.aboutTitle}</h1>
+		<p>{messages.aboutLead1}</p>
+		<p>{messages.aboutLead2}</p>
+	</section>
+
+	<section class="about-section">
+		<h2>{messages.aboutPurposeTitle}</h2>
+		<p>{messages.aboutPurposeIntro}</p>
+		<ol class="about-pillars">
+			{messages.aboutPurposePillars.map((pillar) => (
+				<li>
+					<strong>{pillar.title}</strong>
+					<span>{pillar.description}</span>
+				</li>
+			))}
+		</ol>
+	</section>
+
+	<section class="about-section">
+		<h2>{messages.aboutScoreTitle}</h2>
+		<p>{messages.aboutScoreIntro}</p>
+		<div class="about-table-wrap">
+			<table class="about-table">
+				<thead>
+					<tr>
+						<th>{messages.aboutScoreHeaderItem}</th>
+						<th>{messages.aboutScoreHeaderDescription}</th>
+						<th>{messages.aboutScoreHeaderMin}</th>
+						<th>{messages.aboutScoreHeaderMax}</th>
+					</tr>
+				</thead>
+				<tbody>
+					{messages.aboutScoreRows.map((row) => (
+						<tr>
+							<th>{row.item}</th>
+							<td>{row.description}</td>
+							<td>{row.min}</td>
+							<td>{row.max}</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
+		</div>
+		<p class="about-note">{messages.aboutScoreNote}</p>
+	</section>
+
+	<section class="about-section">
+		<h2>{messages.aboutRoadmapTitle}</h2>
+		<ul class="about-roadmap">
+			{messages.aboutRoadmapPhases.map((phase) => (
+				<li>
+					<strong>{phase.label}</strong>
+					<span>{phase.description}</span>
+				</li>
+			))}
+		</ul>
+	</section>
+
+	<section class="about-section about-contact">
+		<h2>{messages.aboutContactTitle}</h2>
+		<p>{messages.aboutContactText}</p>
+		<a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">{messages.aboutContactLinkText}</a>
+	</section>
+</main>
