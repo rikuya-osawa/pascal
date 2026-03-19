@@ -25,11 +25,20 @@ const modelRequestUrl = `${GITHUB_URL}/issues/new/choose`;
 
 // モデルの統計情報
 const totalCount = allModels.length;
-const natureCounts = {
-  FRAMEWORK: allModels.filter(m => m.data.nature === 'FRAMEWORK').length,
-  COGNITION: allModels.filter(m => m.data.nature === 'COGNITION').length,
-  PRINCIPLE: allModels.filter(m => m.data.nature === 'PRINCIPLE').length,
-};
+const natureCounts = allModels.reduce(
+  (counts, model) => {
+    const nature = model.data.nature;
+    if (nature in counts) {
+      counts[nature as keyof typeof counts] += 1;
+    }
+    return counts;
+  },
+  {
+    FRAMEWORK: 0,
+    COGNITION: 0,
+    PRINCIPLE: 0,
+  }
+);
 ---
 
 <!-- Page Hero Section -->
@@ -156,7 +165,6 @@ const natureCounts = {
   >
     {msg.modelsRequestCta}
   </a>
-  <a>{msg.modelsRequestDescription}</a>
 </div>
 
 <script define:vars={{
@@ -164,13 +172,30 @@ const natureCounts = {
   filterPanelStorageKey: STORAGE_KEYS.filterPanelOpen,
   modelFiltersStorageKey: STORAGE_KEYS.modelFilters,
 }}>
-  const links = document.querySelectorAll('.filter-link');
-  const items = document.querySelectorAll('.model-item');
+  const filterLinks = Array.from(document.querySelectorAll('.filter-link'));
+  const modelItems = Array.from(document.querySelectorAll('.model-item'));
   const openFilterPanelButton = document.getElementById('open-filter-panel');
   const closeFilterPanelButton = document.getElementById('close-filter-panel');
   const resetFilterPanelButton = document.getElementById('reset-filter-panel');
   const filterPanel = document.getElementById('filter-panel');
-  const layoutShiftTargets = document.querySelectorAll('.container');
+  const searchFallback = document.getElementById('search-fallback');
+  const layoutShiftTargets = Array.from(document.querySelectorAll('.container'));
+
+  function getSearchInput() {
+    const input = document.querySelector('.header-search');
+    return input instanceof HTMLInputElement ? input : null;
+  }
+
+  function getFilterStateFromUrl() {
+    const url = new URL(window.location.href);
+    return {
+      url,
+      activeNature: url.searchParams.get('nature') || '',
+      activeView: url.searchParams.get('view') || '',
+      activeQuery: (url.searchParams.get('q') || '').toLowerCase(),
+    };
+  }
+
   function persistFilterPanelState(isOpen) {
     try {
       window.localStorage.setItem(filterPanelStorageKey, String(isOpen));
@@ -275,20 +300,20 @@ const natureCounts = {
     setLayoutShift(shiftPx);
   }
 
-  function openFilterPanel() {
-    filterPanel?.classList.add('is-open');
-    filterPanel?.setAttribute('aria-hidden', 'false');
-    openFilterPanelButton?.setAttribute('aria-expanded', 'true');
-    persistFilterPanelState(true);
+  function setFilterPanelOpenState(isOpen) {
+    filterPanel?.classList.toggle('is-open', isOpen);
+    filterPanel?.setAttribute('aria-hidden', String(!isOpen));
+    openFilterPanelButton?.setAttribute('aria-expanded', String(isOpen));
+    persistFilterPanelState(isOpen);
     syncLayoutShiftWithFilterPanel();
   }
 
+  function openFilterPanel() {
+    setFilterPanelOpenState(true);
+  }
+
   function closeFilterPanel() {
-    filterPanel?.classList.remove('is-open');
-    filterPanel?.setAttribute('aria-hidden', 'true');
-    openFilterPanelButton?.setAttribute('aria-expanded', 'false');
-    persistFilterPanelState(false);
-    syncLayoutShiftWithFilterPanel();
+    setFilterPanelOpenState(false);
   }
 
   function restoreFilterPanelState() {
@@ -308,61 +333,66 @@ const natureCounts = {
     openFilterPanel();
   }
 
-  function updateAllFilters() {
-    const url = new URL(window.location.href);
-    const activeNature = url.searchParams.get('nature');
-    const activeView = url.searchParams.get('view');
-    const activeQuery = url.searchParams.get('q')?.toLowerCase() || "";
-
-    persistModelFilters(activeNature || '', activeView || '');
-
-    links.forEach(link => {
+  function updateActiveFilterLinkStates(url) {
+    filterLinks.forEach((link) => {
       const type = link.getAttribute('data-type');
-      const value = link.getAttribute('data-value');
+      const value = link.getAttribute('data-value') || '';
       if (!type) return;
 
-      const currentParam = url.searchParams.get(type);
-      if ((!currentParam && !value) || (currentParam === value)) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
+      const currentParam = url.searchParams.get(type) || '';
+      const isActive = (!currentParam && !value) || currentParam === value;
+      link.classList.toggle('active', isActive);
     });
+  }
 
-    items.forEach(item => {
-      const itemNature = item.getAttribute('data-nature');
-      const itemViews = item.getAttribute('data-views')?.split(',') || [];
-      const itemTitle = item.querySelector('.card-title')?.textContent.toLowerCase() || "";
+  function applyItemVisibility(activeNature, activeView, activeQuery) {
+    let visibleCount = 0;
+    let onlyVisibleLink = null;
 
-      // 排他的ロジック：各パラメータが存在する場合のみチェック
+    modelItems.forEach((item) => {
+      const itemNature = item.getAttribute('data-nature') || '';
+      const itemViews = (item.getAttribute('data-views') || '').split(',').filter(Boolean);
+      const itemTitle = item.querySelector('.card-title')?.textContent.toLowerCase() || '';
+
       const natureMatch = !activeNature || itemNature === activeNature;
       const viewMatch = !activeView || itemViews.includes(activeView);
       const queryMatch = !activeQuery || itemTitle.includes(activeQuery);
+      const isVisible = natureMatch && viewMatch && queryMatch;
 
-      if (natureMatch && viewMatch && queryMatch) {
-        item.classList.remove('hidden');
-      } else {
-        item.classList.add('hidden');
+      item.classList.toggle('hidden', !isVisible);
+
+      if (isVisible) {
+        visibleCount += 1;
+        const link = item.querySelector('.card-link');
+        if (visibleCount === 1 && link instanceof HTMLAnchorElement) {
+          onlyVisibleLink = link;
+        } else {
+          onlyVisibleLink = null;
+        }
       }
     });
 
-    // フォールバックの制御
-    const fallback = document.getElementById('search-fallback');
-    if (fallback) {
-      const anyVisible = Array.from(items).some(item => !item.classList.contains('hidden'));
-      fallback.classList.toggle('hidden', anyVisible);
-    }
+    return { visibleCount, onlyVisibleLink };
+  }
+
+  function updateSearchFallbackVisibility(visibleCount) {
+    searchFallback?.classList.toggle('hidden', visibleCount > 0);
+  }
+
+  function updateAllFilters() {
+    const { url, activeNature, activeView, activeQuery } = getFilterStateFromUrl();
+
+    persistModelFilters(activeNature, activeView);
+
+    updateActiveFilterLinkStates(url);
+
+    const { visibleCount, onlyVisibleLink } = applyItemVisibility(activeNature, activeView, activeQuery);
+
+    updateSearchFallbackVisibility(visibleCount);
 
     // 検索クエリがあり、結果が1件のみなら詳細ページへ遷移
-    if (activeQuery) {
-      const visibleItems = Array.from(items).filter(item => !item.classList.contains('hidden'));
-      if (visibleItems.length === 1) {
-        const onlyLink = visibleItems[0].querySelector('.card-link');
-        if (onlyLink instanceof HTMLAnchorElement) {
-          window.location.href = onlyLink.href;
-          return;
-        }
-      }
+    if (activeQuery && visibleCount === 1 && onlyVisibleLink instanceof HTMLAnchorElement) {
+      window.location.href = onlyVisibleLink.href;
     }
   }
 
@@ -381,8 +411,8 @@ const natureCounts = {
     persistModelFilters('', '');
     updateAllFilters();
 
-    const searchInput = document.querySelector('.header-search');
-    if (searchInput instanceof HTMLInputElement) {
+    const searchInput = getSearchInput();
+    if (searchInput) {
       searchInput.value = '';
       searchInput.placeholder = searchPlaceholder;
     }
@@ -394,11 +424,11 @@ const natureCounts = {
     }
   });
 
-  links.forEach(link => {
+  filterLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       const type = link.getAttribute('data-type');
-      const value = link.getAttribute('data-value');
+      const value = link.getAttribute('data-value') || '';
       if (!type) return;
 
       const url = new URL(window.location.href);
@@ -414,24 +444,33 @@ const natureCounts = {
       window.history.pushState({}, '', url);
       updateAllFilters();
 
-      const searchInput = document.querySelector('.header-search');
+      const searchInput = getSearchInput();
       if (searchInput) {
         searchInput.placeholder = searchPlaceholder;
       }
     });
   });
 
-  window.addEventListener('popstate', updateAllFilters);
-  window.addEventListener('resize', syncLayoutShiftWithFilterPanel);
-  document.addEventListener('astro:before-swap', () => setLayoutShift(0));
-  document.addEventListener('astro:page-load', () => {
+  let isResizeTicking = false;
+  function handleResize() {
+    if (isResizeTicking) return;
+    isResizeTicking = true;
+    window.requestAnimationFrame(() => {
+      syncLayoutShiftWithFilterPanel();
+      isResizeTicking = false;
+    });
+  }
+
+  function initializeModelsPage() {
     restoreModelFiltersIntoUrl();
     restoreFilterPanelState();
     updateAllFilters();
     syncLayoutShiftWithFilterPanel();
-  });
-  restoreModelFiltersIntoUrl();
-  restoreFilterPanelState();
-  updateAllFilters();
-  syncLayoutShiftWithFilterPanel();
+  }
+
+  window.addEventListener('popstate', updateAllFilters);
+  window.addEventListener('resize', handleResize);
+  document.addEventListener('astro:before-swap', () => setLayoutShift(0));
+  document.addEventListener('astro:page-load', initializeModelsPage);
+  initializeModelsPage();
 </script>
