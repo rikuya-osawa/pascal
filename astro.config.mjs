@@ -7,7 +7,7 @@ import icon from 'astro-icon';
 import { SIMPLE_ICONS, LUCIDE_ICONS } from './src/constants/icon-list';
 
 export default defineConfig({
-  site: 'https://mental-model-atlas.pages.dev',
+  site: 'https://pascal-bpf.pages.dev',
   integrations: [
     sitemap(),
     icon({
