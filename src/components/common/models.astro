@@ -6,6 +6,7 @@ import { NATURES, APPLICATION, getLabel, type Language } from "../../constants/f
 import { UI_ICONS } from '../../constants/model-icons';
 import { getMessages } from "../../constants/messages";
 import { GITHUB_URL } from "../../constants/site-config";
+import { STORAGE_KEYS } from '../../constants/storage-keys';
 
 interface Props {
   lang: Language;
@@ -158,7 +159,11 @@ const natureCounts = {
   <a>{msg.modelsRequestDescription}</a>
 </div>
 
-<script define:vars={{ searchPlaceholder: msg.searchPlaceholder }}>
+<script define:vars={{
+  searchPlaceholder: msg.searchPlaceholder,
+  filterPanelStorageKey: STORAGE_KEYS.filterPanelOpen,
+  modelFiltersStorageKey: STORAGE_KEYS.modelFilters,
+}}>
   const links = document.querySelectorAll('.filter-link');
   const items = document.querySelectorAll('.model-item');
   const openFilterPanelButton = document.getElementById('open-filter-panel');
@@ -166,6 +171,68 @@ const natureCounts = {
   const resetFilterPanelButton = document.getElementById('reset-filter-panel');
   const filterPanel = document.getElementById('filter-panel');
   const layoutShiftTargets = document.querySelectorAll('.container');
+  function persistFilterPanelState(isOpen) {
+    try {
+      window.localStorage.setItem(filterPanelStorageKey, String(isOpen));
+    } catch {
+      // Ignore storage failures and keep runtime behavior intact.
+    }
+  }
+
+  function getPersistedFilterPanelState() {
+    try {
+      return window.localStorage.getItem(filterPanelStorageKey) === 'true';
+    } catch {
+      return false;
+    }
+  }
+
+  function persistModelFilters(nature, view) {
+    try {
+      if (!nature && !view) {
+        window.localStorage.removeItem(modelFiltersStorageKey);
+        return;
+      }
+
+      window.localStorage.setItem(modelFiltersStorageKey, JSON.stringify({ nature, view }));
+    } catch {
+      // Ignore storage failures and keep runtime behavior intact.
+    }
+  }
+
+  function getPersistedModelFilters() {
+    try {
+      const raw = window.localStorage.getItem(modelFiltersStorageKey);
+      if (!raw) return null;
+
+      const parsed = JSON.parse(raw);
+      const nature = typeof parsed?.nature === 'string' ? parsed.nature : '';
+      const view = typeof parsed?.view === 'string' ? parsed.view : '';
+
+      if (!nature && !view) return null;
+      return { nature, view };
+    } catch {
+      return null;
+    }
+  }
+
+  function restoreModelFiltersIntoUrl() {
+    const url = new URL(window.location.href);
+    if (url.searchParams.has('nature') || url.searchParams.has('view')) return;
+
+    const persisted = getPersistedModelFilters();
+    if (!persisted) return;
+
+    if (persisted.nature) {
+      url.searchParams.set('nature', persisted.nature);
+    }
+
+    if (persisted.view) {
+      url.searchParams.set('view', persisted.view);
+    }
+
+    window.history.replaceState({}, '', url);
+  }
 
   function setLayoutShift(offsetPx) {
     layoutShiftTargets.forEach((target) => {
@@ -212,6 +279,7 @@ const natureCounts = {
     filterPanel?.classList.add('is-open');
     filterPanel?.setAttribute('aria-hidden', 'false');
     openFilterPanelButton?.setAttribute('aria-expanded', 'true');
+    persistFilterPanelState(true);
     syncLayoutShiftWithFilterPanel();
   }
 
@@ -219,7 +287,17 @@ const natureCounts = {
     filterPanel?.classList.remove('is-open');
     filterPanel?.setAttribute('aria-hidden', 'true');
     openFilterPanelButton?.setAttribute('aria-expanded', 'false');
+    persistFilterPanelState(false);
     syncLayoutShiftWithFilterPanel();
+  }
+
+  function restoreFilterPanelState() {
+    if (getPersistedFilterPanelState()) {
+      openFilterPanel();
+      return;
+    }
+
+    closeFilterPanel();
   }
 
   function toggleFilterPanel() {
@@ -235,6 +313,8 @@ const natureCounts = {
     const activeNature = url.searchParams.get('nature');
     const activeView = url.searchParams.get('view');
     const activeQuery = url.searchParams.get('q')?.toLowerCase() || "";
+
+    persistModelFilters(activeNature || '', activeView || '');
 
     links.forEach(link => {
       const type = link.getAttribute('data-type');
@@ -298,6 +378,7 @@ const natureCounts = {
     url.searchParams.delete('view');
     url.searchParams.delete('q');
     window.history.pushState({}, '', url);
+    persistModelFilters('', '');
     updateAllFilters();
 
     const searchInput = document.querySelector('.header-search');
@@ -344,9 +425,13 @@ const natureCounts = {
   window.addEventListener('resize', syncLayoutShiftWithFilterPanel);
   document.addEventListener('astro:before-swap', () => setLayoutShift(0));
   document.addEventListener('astro:page-load', () => {
+    restoreModelFiltersIntoUrl();
+    restoreFilterPanelState();
     updateAllFilters();
     syncLayoutShiftWithFilterPanel();
   });
+  restoreModelFiltersIntoUrl();
+  restoreFilterPanelState();
   updateAllFilters();
   syncLayoutShiftWithFilterPanel();
 </script>
