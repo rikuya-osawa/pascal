@@ -11,12 +11,14 @@ import { UI_ICONS } from '../../../constants/model-icons';
 import { SITE_NAME } from '../../../constants/site-config';
 import ModelCard from "../../../components/model-card.astro";
 import { validateModelSync } from "../../../utils/validator";
+import { validateModelTemplateSync } from "../../../utils/model-template-validator";
 
 export async function getStaticPaths() {
   const jaEntries = await getCollection("ja/models");
   const enEntries = await getCollection("en/models");
 
   validateModelSync(jaEntries, enEntries);
+  validateModelTemplateSync(jaEntries, enEntries);
 
   return [
     ...jaEntries.map((entry) => ({

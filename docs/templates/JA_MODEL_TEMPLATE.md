@@ -9,11 +9,19 @@ application: # 最大３つまで
   - LT # Logical Thinking
   - PS # Problem Solving
   - LIFE # Life & Career
-layer: TOOL # １つ（META (思考の土台), CORE (思考法等実務の中核), TOOL (実践的なメソッド・ツール))
+nature: FRAMEWORK # １つ（FRAMEWORK, COGNITION, PRINCIPLE)
 related_models: # モデルのファイル名（[slug]）と一致させること
   - 
+format_version: 
 tags:
   - mental-model
+sources:
+  - title: ""
+    author: ""
+    url: ""
+    sourceType: ""
+    sourceLanguage: ""
+    description: ""
 ---
 
 # xxx <!-- モデル名 (英語名は含めない）--->

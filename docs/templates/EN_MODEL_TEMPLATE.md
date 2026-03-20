@@ -1,5 +1,4 @@
 ---
-
 type: mental-model
 name: 
 abbreviation: 
@@ -10,11 +9,19 @@ application: # max three applications
   - LT # Logical Thinking
   - PS # Problem Solving
   - LIFE # Life & Career
-layer: TOOL # single layer per model: （META (cognitive foundation), CORE (core thinking models), TOOL (practical methods and frameworks))
+layer: FRAMEWORK #（FRAMEWORK, COGNITION, PRINCIPLE)
 related_models: # Cebab-casing that matches [slug] | multiple ok
   - 
+format_version: 
 tags:
   - mental-model
+sources:
+  - title: ""
+    author: "" # optional
+    url: "" # empty string is ok
+    sourceType: "" # enum ["primary", "reference", "inspiration"]
+    description: "" # optioinal
+    sourceLanguage: ""
 ---
 
 # xxx <!-- Model Name--->
