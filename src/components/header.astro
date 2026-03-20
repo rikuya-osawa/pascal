@@ -70,21 +70,31 @@ const msg = getMessages(currentLang);
 </header>
 
 <script type="module" define:vars={{ currentLang, themeStorageKey: STORAGE_KEYS.theme }}>
-  
-  function sanitizeInput(input) {
-    if (typeof input !== 'string') return '';
-    const map = {
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      '"': '&quot;',
-      "'": '&#039;'
-    };
-    return input.replace(/[&<>"']/g, char => map[char]);
+  function notifyModelsFiltersShouldUpdate() {
+    document.dispatchEvent(new CustomEvent('models:filters:update'));
+    if (typeof window.updateAllFilters === 'function') {
+      window.updateAllFilters();
+    }
+  }
+
+  function syncSearchInputFromUrl(searchInput) {
+    const onModelsPage = window.location.pathname === `/${currentLang}/models`;
+    if (!onModelsPage) return;
+
+    const q = new URLSearchParams(window.location.search).get('q') || '';
+    searchInput.value = q;
+
+    if (q) {
+      notifyModelsFiltersShouldUpdate();
+    }
   }
 
   // --- スクロール動作 ---
   (() => {
+    const root = document.documentElement;
+    if (root.dataset.headerScrollBound === 'true') return;
+    root.dataset.headerScrollBound = 'true';
+
     const header = document.querySelector('.site-header');
     if (!header) return;
 
@@ -124,7 +134,16 @@ const msg = getMessages(currentLang);
     const searchInput = document.querySelector('.header-search');
     const searchIcon = document.querySelector('.search-icon');
 
-    if (!searchForm || !searchInput) return;
+    if (!(searchForm instanceof HTMLFormElement) || !(searchInput instanceof HTMLInputElement)) {
+      return;
+    }
+
+    syncSearchInputFromUrl(searchInput);
+
+    if (searchForm.dataset.bound === 'true') {
+      return;
+    }
+    searchForm.dataset.bound = 'true';
 
     searchForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -139,31 +158,19 @@ const msg = getMessages(currentLang);
         window.location.href = url.toString();
       } else {
         window.history.pushState({}, '', url);
-        
-        if (typeof window.updateAllFilters === 'function') {
-          window.updateAllFilters();
-        }
+        notifyModelsFiltersShouldUpdate();
         
         searchInput.blur();
       }
     });
 
     // 検索アイコンクリック時にフォーム送信
-    if (searchIcon) {
+    if (searchIcon instanceof HTMLElement && searchIcon.dataset.bound !== 'true') {
+      searchIcon.dataset.bound = 'true';
       searchIcon.addEventListener('click', (e) => {
         e.preventDefault();
         searchForm.requestSubmit();
       });
-    }
-
-    const params = new URLSearchParams(window.location.search);
-    const q = params.get('q');
-    if (q && window.location.pathname === `/${currentLang}/models`) {
-      // クエリパラメータをサニタイズして設定
-      searchInput.value = sanitizeInput(q);
-      if (typeof window.updateAllFilters === 'function') {
-        window.updateAllFilters();
-      }
     }
   }
 
@@ -228,7 +235,11 @@ const msg = getMessages(currentLang);
       const root = document.documentElement;
       const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
       root.dataset.theme = nextTheme;
-      localStorage.setItem(themeStorageKey, nextTheme);
+      try {
+        localStorage.setItem(themeStorageKey, nextTheme);
+      } catch {
+        // Keep runtime behavior even if storage is unavailable.
+      }
       setToggleLabel();
     });
   }
