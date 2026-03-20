@@ -11,7 +11,7 @@ application:
 nature: PRINCIPLE
 related_models:
   - hypothesis-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

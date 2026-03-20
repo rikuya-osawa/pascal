@@ -11,7 +11,7 @@ related_models:
   - systems-thinking
   - expected-value-thinking
   - trade-off-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

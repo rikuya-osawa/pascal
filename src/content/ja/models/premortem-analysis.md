@@ -13,7 +13,7 @@ related_models:
   - bayesian-thinking
   - risk-return-thinking
   - bias-awareness
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

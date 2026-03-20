@@ -11,7 +11,7 @@ nature: PRINCIPLE
 related_models:
   - constraint-based-thinking
   - expected-value-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

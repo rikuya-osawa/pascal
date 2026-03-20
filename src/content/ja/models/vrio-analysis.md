@@ -14,7 +14,7 @@ related_models:
   - flywheel-thinking
   - swot-analysis
   - blue-ocean-strategy
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

@@ -12,7 +12,7 @@ related_models:
   - second-order-thinking
   - bayesian-thinking
   - optionality-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

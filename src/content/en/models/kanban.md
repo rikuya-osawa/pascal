@@ -14,7 +14,7 @@ related_models:
   - lean-thinking
   - work-planning-strategy
   - theory-of-constraints
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

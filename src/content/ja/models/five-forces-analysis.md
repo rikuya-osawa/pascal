@@ -12,7 +12,7 @@ related_models:
   - 4p-4c
   - pestel-analysis
   - systems-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:
@@ -45,7 +45,9 @@ sources:
 
 ## 最初の問い
 
->  **「この業界は構造的に儲かるか？」** ### 目的
+>  **「この業界は構造的に儲かるか？」**
+
+### 目的
 
 * 「構造」を通じて競争の本質を把握すること。
 * 表面的なトレンドを排除し、長期的な利益の可能性に焦点を当てること。

@@ -14,7 +14,7 @@ related_models:
   - hypothesis-thinking
   - ooda-loop
   - pareto-principle
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

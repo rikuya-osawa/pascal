@@ -13,7 +13,7 @@ related_models:
   - smart-goals
   - 5w1h
   - mind-map
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

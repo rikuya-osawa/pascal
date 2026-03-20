@@ -13,8 +13,8 @@ application:
 nature: COGNITION
 related_models:
   - bias-awareness
-  - bayesian thinking
-format_version: 0.3
+  - bayesian-thinking
+format_version: 0.4
 tags:
   - mental-model
 sources:

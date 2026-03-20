@@ -14,7 +14,7 @@ related_models:
   - economic-moat
   - 4p-4c
   - jobs-to-be-done
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

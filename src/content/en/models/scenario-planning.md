@@ -10,7 +10,7 @@ application:
   - NB
   - LT
 nature: COGNITION
-format_version: 0.3
+format_version: 0.4
 related_models:
   - second-order-thinking
   - bayesian-thinking
