@@ -89,7 +89,7 @@ const msg = getMessages(currentLang);
     }
   }
 
-  // --- スクロール動作 ---
+  // --- scroll behavior ---
   (() => {
     const root = document.documentElement;
     if (root.dataset.headerScrollBound === 'true') return;
@@ -128,7 +128,7 @@ const msg = getMessages(currentLang);
     }, { passive: true });
   })();
 
-  // --- 検索ロジック ---
+  // --- search logic ---
   function initSearch() {
     const searchForm = document.querySelector('.header-search-form');
     const searchInput = document.querySelector('.header-search');
@@ -164,7 +164,7 @@ const msg = getMessages(currentLang);
       }
     });
 
-    // 検索アイコンクリック時にフォーム送信
+    // --- search icon click ---
     if (searchIcon instanceof HTMLElement && searchIcon.dataset.bound !== 'true') {
       searchIcon.dataset.bound = 'true';
       searchIcon.addEventListener('click', (e) => {
@@ -174,7 +174,7 @@ const msg = getMessages(currentLang);
     }
   }
 
-  // --- 検索ショートカット (/) ---
+  // --- search shortcut (/) ---
   function initSearchShortcut() {
     const root = document.documentElement;
     if (root.dataset.searchShortcutBound === 'true') return;
@@ -212,7 +212,7 @@ const msg = getMessages(currentLang);
     });
   }
 
-  // --- テーマ切り替え ---
+  // --- theme toggle ---
   function initThemeToggle() {
     const themeToggle = document.querySelector('.theme-toggle');
     if (!themeToggle) return;
