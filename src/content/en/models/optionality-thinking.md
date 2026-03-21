@@ -11,8 +11,8 @@ application:
   - PS
 nature: COGNITION
 related_models:
-  - antifragile-thinking
-  - black-swan-thinking
+  - antifragility
+  - black-swan
 format_version: 0.4
 tags:
   - mental-model

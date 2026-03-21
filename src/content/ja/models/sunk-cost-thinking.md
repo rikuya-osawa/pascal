@@ -1,7 +1,7 @@
 ---
 type: mental-model
-name: サンクコスト思考
-abbreviation: サンクコスト
+name: サンク・コスト思考
+abbreviation: サンク・コスト
 description: 回収不可能な過去のコストを無視し、合理的な意思決定を行うための思考モデル。
 application:
   - DM
@@ -15,7 +15,7 @@ tags:
   - mental-model
 ---
 
-# サンクコスト思考
+# サンク・コスト思考
 
 ## 概要
 

@@ -9,8 +9,8 @@ application:
   - LIFE
 nature: PRINCIPLE
 related_models:
-  - antifragile-thinking
-  - black-swan-thinking
+  - antifragility
+  - black-swan
   - risk-return-thinking
 format_version: 0.4
 tags:
@@ -96,5 +96,5 @@ sources:
 
 ## 他のモデルとの関係
 
-* **補完的:** アンチフラジャイル思考（ストレスによってかえって強くなる性質をバーベルで作る）
+* **補完的:** アンチフラジリティ（ストレスによってかえって強くなる性質をバーベルで作る）
 * **関連:** ポートフォリオ理論、オプション思考

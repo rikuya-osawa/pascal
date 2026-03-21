@@ -9,7 +9,7 @@ application: # max three applications
   - LT # Logical Thinking
   - PS # Problem Solving
   - LIFE # Life & Career
-layer: FRAMEWORK #（FRAMEWORK, COGNITION, PRINCIPLE)
+nature: FRAMEWORK #（FRAMEWORK, COGNITION, PRINCIPLE)
 related_models: # Cebab-casing that matches [slug] | multiple ok
   - 
 format_version: 

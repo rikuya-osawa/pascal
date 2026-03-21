@@ -11,7 +11,7 @@ nature: FRAMEWORK
 related_models:
   - economic-moat
   - five-forces-analysis
-  - flywheel-thinking
+  - flywheel-effect
   - swot-analysis
   - blue-ocean-strategy
 format_version: 0.4

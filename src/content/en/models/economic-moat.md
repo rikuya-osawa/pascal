@@ -13,7 +13,7 @@ nature: PRINCIPLE
 related_models:
   - vrio-analysis
   - five-forces-analysis
-  - flywheel-thinking
+  - flywheel-effect
   - leverage-thinking
 format_version: 0.4
 tags:

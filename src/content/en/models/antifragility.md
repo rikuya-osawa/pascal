@@ -1,18 +1,18 @@
 ---
 type: mental-model
-name: Antifragile Thinking
+name: Antifragility
 abbreviation: Antifragile
 description: >-
-  A thinking model focused on designing structures that do not just "endure"
-  uncertainty, stress, or shock, but actually "gain strength from them."
+  A model focused on designing structures that do not just "endure" uncertainty, stress, or shock, but actually "gain strength from them."
 application:
   - LIFE
   - NB
   - DM
 nature: PRINCIPLE
 related_models:
+  - barbell-strategy
   - optionality-thinking
-  - black-swan-thinking
+  - black-swan
   - risk-return-thinking
 format_version: 0.4
 tags:
@@ -26,7 +26,7 @@ sources:
     description: "Describes systems that gain strength from disorder and volatility."
 ---
 
-# Antifragile Thinking
+# Antifragility
 
 ## Overview
 
@@ -41,7 +41,7 @@ A concept that goes beyond resilience or robustness. While the robust resists sh
 
 ### Evaluation Comment
 
-Extremely powerful for long-term strategy and life planning. However, a misunderstanding of **"risk tolerance"** can be dangerous; antifragility requires a solid foundation (the "Barbell Strategy") to prevent total failure during a shock.
+Extremely powerful for long-term strategy and life planning. However, a misunderstanding of **"risk tolerance"** can be dangerous; antifragility requires a solid foundation to prevent total failure during a shock.
 
 ---
 
@@ -104,4 +104,4 @@ Extremely powerful for long-term strategy and life planning. However, a misunder
 ## Relationship with Other Models
 
 * **Related:** Optionality Thinking, Black Swan Thinking
-* **Complementary:** Risk-Reward Thinking.
+* **Complementary:** Barbell Strategy, Risk-Reward Thinking.

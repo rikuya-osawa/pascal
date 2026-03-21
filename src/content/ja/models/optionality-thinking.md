@@ -9,8 +9,8 @@ application:
   - PS
 nature: COGNITION
 related_models:
-  - antifragile-thinking
-  - black-swan-thinking
+  - antifragility
+  - black-swan
 format_version: 0.4
 tags:
   - mental-model
@@ -96,4 +96,4 @@ sources:
 ## 他のモデルとの関係
 
 * **補完的:** 可逆的な決定と不可逆的な決定（可逆的な決定は当然ながらオプションであるため）、MVP（実用最小限のプロダクト）（MVPはアップサイドを見るために支払うプレミアムであるため）
-* **関連:** アンチフラジャイル思考（オプショナリティは反脆弱性のエンジンであるため）
+* **関連:** アンチフラジリティ（オプショナリティは反脆弱性のエンジンであるため）

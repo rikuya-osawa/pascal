@@ -31,18 +31,19 @@ export const MODEL_ICONS: Record<string, string> = {
 
   // --- 戦略・システム系 ---
   "systems-thinking": "lucide:network", // システム思考
-  "antifragile-thinking": "lucide:dumbbell", // アンチフラジャイル思考
+  "antifragility": "lucide:dumbbell", // アンチフラジリティ
   "scenario-planning": "lucide:map", // シナリオプランニング
-  "flywheel-thinking": "lucide:disc-3", // フライホイール思考
+  "flywheel-effect": "lucide:disc-3", // フライホイール思考
   "leverage-thinking": "lucide:wrench", // レバレッジ思考
   "lean-thinking": "lucide:recycle", // リーン思考
   "constraint-based-thinking": "lucide:hourglass", // 制約条件思考
+  "blue-ocean-strategy": "lucide:waves", // ブルーオーシャン戦略
 
   // --- 確率・統計・判断系 ---
   "bayesian-thinking": "lucide:scale", // ベイズ思考
   "expected-value-thinking": "lucide:calculator", // 期待値思考
   "risk-return-thinking": "lucide:trending-up-down", // リスクリターン思考
-  "black-swan-thinking": "lucide:bird", // ブラックスワン思考
+  "black-swan": "lucide:bird", // ブラックスワン
   "reversible-irreversible-decisions": "lucide:door-open", // 可逆不可逆判断
   "marginal-thinking": "lucide:arrow-right-to-line", // 限界思考
   "statistical-thinking": "lucide:chart-scatter", // 統計的思考

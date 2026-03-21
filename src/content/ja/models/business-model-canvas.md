@@ -14,7 +14,7 @@ related_models:
   - lean-canvas
   - value-proposition-canvas
   - vrio-analysis
-  - flywheel-thinking
+  - flywheel-effect
 format_version: 0.4
 tags:
   - mental-model

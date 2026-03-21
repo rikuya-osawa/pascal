@@ -16,6 +16,7 @@ export const LUCIDE_ICONS = [
     'sliders-horizontal',
     'rotate-cw',
     'arrow-left',
+    'waves',
     // ビジネス・戦略
     'component',
     'layout-dashboard',
