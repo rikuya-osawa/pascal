@@ -8,7 +8,6 @@ description: >-
 application:
   - PS
   - DM
-  - LIFE
 nature: FRAMEWORK
 related_models:
   - lean-thinking
