@@ -16,6 +16,7 @@ export const MODEL_ICONS: Record<string, string> = {
   "5w1h": "lucide:list-check", // 5W1H
   "3c-analysis": "lucide:triangle", // 3C分析
   "eisenhower-matrix": "lucide:grid-2x2", // アイゼンハワーマトリクス
+  "theory-of-constraints": "lucide:link", // 制約理論
 
   // --- 思考法・プロセス系 ---
   "mece": "lucide:columns-4",
