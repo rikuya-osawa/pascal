@@ -21,6 +21,7 @@ export const MODEL_ICONS: Record<string, string> = {
   "osborn-checklist": "lucide:lightbulb", // オズボーンのチェックリスト
   "morphological-analysis": "lucide:layers", // morphological analysis
   "logic-tree": "lucide:git-fork", // ロジックツリー
+  "earned-value-management": "lucide:coins", // アーンドバリューマネジメント
 
   // --- COGNITION ---
   "abstraction-and-concretization": "lucide:layers", // 抽象化具体化

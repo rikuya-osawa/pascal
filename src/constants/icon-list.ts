@@ -13,6 +13,7 @@ export const LUCIDE_ICONS = [
     'castle',
     'chart-scatter',
     'chess-king',
+    'coins',
     'columns-4',
     'columns-4',
     'component',
