@@ -10,7 +10,7 @@ application:
   - DM
   - PS
   - LIFE
-nature: PRINCIPLE
+nature: COGNITION
 related_models:
   - bayesian-thinking
   - ladder-of-inference

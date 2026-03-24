@@ -8,7 +8,7 @@ description: >-
 application:
   - PS
   - LT
-nature: COGNITION
+nature: FRAMEWORK
 related_models:
   - root-cause-analysis
   - fishbone-diagram

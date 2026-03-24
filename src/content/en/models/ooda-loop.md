@@ -8,7 +8,7 @@ description: >-
 application:
   - PS
   - DM
-nature: COGNITION
+nature: FRAMEWORK
 related_models:
   - hypothesis-thinking
   - bayesian-thinking

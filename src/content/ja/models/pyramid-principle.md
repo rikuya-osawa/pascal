@@ -7,7 +7,7 @@ application:
   - LT
   - PS
   - DM
-nature: COGNITION
+nature: PRINCIPLE
 related_models:
   - mece
   - hypothesis-thinking

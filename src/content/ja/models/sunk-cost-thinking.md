@@ -8,7 +8,7 @@ application:
   - LIFE
 nature: PRINCIPLE
 related_models:
-  - cognitive-bias
+  - bias-awareness
   - expected-value-thinking
 format_version: 0.3
 tags:

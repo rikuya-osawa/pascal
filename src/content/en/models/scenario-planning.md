@@ -9,7 +9,7 @@ application:
   - DM
   - NB
   - LT
-nature: COGNITION
+nature: FRAMEWORK
 format_version: 0.4
 related_models:
   - second-order-thinking

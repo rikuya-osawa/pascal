@@ -7,7 +7,7 @@ application:
   - DM
   - NB
   - LT
-nature: COGNITION
+nature: FRAMEWORK
 related_models:
   - second-order-thinking
   - bayesian-thinking

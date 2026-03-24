@@ -9,7 +9,7 @@ application:
   - LT
 nature: PRINCIPLE
 related_models:
-  - pareto-analysis
+  - pareto-principle
   - bias-awareness
   - expected-value-thinking
 format_version: 0.3
