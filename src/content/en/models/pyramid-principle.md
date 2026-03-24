@@ -11,6 +11,9 @@ application:
   - PS
   - DM
 nature: PRINCIPLE
+methodology:
+  - structural
+  - interactive
 related_models:
   - mece
   - hypothesis-thinking

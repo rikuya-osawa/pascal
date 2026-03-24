@@ -36,6 +36,7 @@ type LangRules = {
 
 const ALLOWED_APPLICATIONS = new Set(['NB', 'DM', 'LT', 'PS', 'LIFE']);
 const ALLOWED_NATURES = new Set(['FRAMEWORK', 'COGNITION', 'PRINCIPLE']);
+const ALLOWED_METHODOLOGY = new Set(['generative', 'structural', 'critical', 'decisive', 'interactive']);
 const ALLOWED_SOURCE_TYPES = new Set(['primary', 'reference', 'inspiration']);
 const ALLOWED_SOURCE_LANGUAGES = new Set(['ja', 'en', '']);
 const KEBAB_CASE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -180,10 +181,12 @@ function validateFrontMatter(lang: SupportedLang, slug: string, issues: Validati
     'description',
     'application',
     'nature',
+    'methodology',
     'related_models',
     'tags',
     'format_version',
     'sources',
+    'last_updated',
   ]);
 
   for (const key of Object.keys(data)) {
@@ -223,6 +226,26 @@ function validateFrontMatter(lang: SupportedLang, slug: string, issues: Validati
 
   if (typeof data.nature !== 'string' || !ALLOWED_NATURES.has(data.nature)) {
     issues.push({ source, rule: 'FM_NATURE', message: 'nature must be FRAMEWORK, COGNITION, or PRINCIPLE.' });
+  }
+
+  if ('methodology' in data) {
+    if (!Array.isArray(data.methodology)) {
+      issues.push({ source, rule: 'FM_METHODOLOGY_TYPE', message: 'methodology must be an array when provided.' });
+    } else {
+      if (data.methodology.length > 3) {
+        issues.push({ source, rule: 'FM_METHODOLOGY_MAX', message: 'methodology should contain up to 3 values.' });
+      }
+
+      for (const value of data.methodology) {
+        if (typeof value !== 'string' || !ALLOWED_METHODOLOGY.has(value)) {
+          issues.push({
+            source,
+            rule: 'FM_METHODOLOGY_ENUM',
+            message: `Invalid methodology value: ${String(value)}`,
+          });
+        }
+      }
+    }
   }
 
   if (!Array.isArray(data.tags) || !data.tags.includes('mental-model')) {

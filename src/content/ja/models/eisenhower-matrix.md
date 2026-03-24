@@ -8,6 +8,9 @@ application:
   - PS
   - LIFE
 nature: FRAMEWORK
+methodology:
+  - decisive
+  - structural
 related_models:
   - pareto-principle
   - smart-goals

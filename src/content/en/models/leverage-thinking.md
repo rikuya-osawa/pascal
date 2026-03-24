@@ -10,6 +10,9 @@ application:
   - PS
   - LT
 nature: COGNITION
+methodology:
+  - decisive
+  - structural
 related_models:
   - systems-thinking
   - pareto-principle

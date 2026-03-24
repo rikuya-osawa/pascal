@@ -7,6 +7,9 @@ application:
   - PS
   - DM
 nature: FRAMEWORK
+methodology:
+  - decisive
+  - interactive
 related_models:
   - hypothesis-thinking
   - bayesian-thinking

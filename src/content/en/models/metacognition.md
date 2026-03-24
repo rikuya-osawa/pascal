@@ -11,6 +11,9 @@ application:
   - LIFE
   - PS
 nature: COGNITION
+methodology:
+  - critical
+  - structural
 related_models:
   - bias-awareness
   - bayesian-thinking

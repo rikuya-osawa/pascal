@@ -8,6 +8,9 @@ application:
   - NB
   - DM
 nature: PRINCIPLE
+methodology:
+  - critical
+  - decisive
 related_models:
   - barbell-strategy
   - optionality-thinking

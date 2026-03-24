@@ -8,6 +8,9 @@ application:
   - PS
   - LIFE
 nature: FRAMEWORK
+methodology:
+  - generative
+  - structural
 related_models:
   - systems-thinking
   - mandala-chart

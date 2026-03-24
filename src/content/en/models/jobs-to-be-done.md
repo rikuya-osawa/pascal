@@ -9,6 +9,9 @@ application:
   - DM
   - NB
 nature: PRINCIPLE
+methodology:
+  - critical
+  - generative
 related_models:
   - hypothesis-thinking
 format_version: 0.4

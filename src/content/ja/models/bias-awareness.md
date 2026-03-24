@@ -8,6 +8,9 @@ application:
   - PS
   - LIFE
 nature: COGNITION
+methodology:
+  - critical
+  - structural
 related_models:
   - bayesian-thinking
   - ladder-of-inference

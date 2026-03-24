@@ -8,6 +8,9 @@ application:
   - DM
   - PS
 nature: FRAMEWORK
+methodology:
+  - structural
+  - critical
 related_models:
   - economic-moat
   - five-forces-analysis

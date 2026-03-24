@@ -8,6 +8,9 @@ application:
   - PS
   - LT
 nature: PRINCIPLE
+methodology:
+  - structural
+  - critical
 related_models:
   - pareto-principle
   - bias-awareness

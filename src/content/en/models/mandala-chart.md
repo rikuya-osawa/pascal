@@ -9,6 +9,9 @@ application:
   - LIFE
   - PS
 nature: FRAMEWORK
+methodology:
+  - generative
+  - structural
 related_models:
   - smart-goals
   - 5w1h

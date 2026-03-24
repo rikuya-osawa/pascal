@@ -8,6 +8,9 @@ application:
   - NB
   - LIFE
 nature: PRINCIPLE
+methodology:
+  - critical
+  - decisive
 related_models:
   - antifragility
   - barbell-strategy

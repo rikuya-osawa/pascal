@@ -8,6 +8,9 @@ application:
   - NB
   - LIFE
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - critical
 related_models:
   - antifragility
   - black-swan

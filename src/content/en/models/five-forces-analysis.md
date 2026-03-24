@@ -9,6 +9,9 @@ application:
   - NB
   - DM
 nature: FRAMEWORK
+methodology:
+  - structural
+  - decisive
 related_models:
   - economic-moat
   - 4p-4c

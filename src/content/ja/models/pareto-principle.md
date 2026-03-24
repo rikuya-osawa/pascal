@@ -8,6 +8,9 @@ application:
   - DM
   - NB
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - structural
 related_models:
   - leverage-thinking
   - systems-thinking

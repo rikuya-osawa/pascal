@@ -8,6 +8,9 @@ application:
   - PS
   - LT
 nature: FRAMEWORK
+methodology:
+  - generative
+  - structural
 related_models:
   - first-principles-thinking
   - osborn-checklist

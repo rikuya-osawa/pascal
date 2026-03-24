@@ -8,6 +8,9 @@ description: >-
 application:
   - PS
 nature: FRAMEWORK
+methodology:
+  - structural
+  - interactive
 format_version: 0.3
 tags:
   - mental-model

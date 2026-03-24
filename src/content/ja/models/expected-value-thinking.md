@@ -9,6 +9,9 @@ application:
   - LT
   - DM
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - structural
 related_models:
   - decision-theory
   - bayesian-thinking

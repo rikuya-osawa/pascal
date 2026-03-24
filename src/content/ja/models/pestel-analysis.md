@@ -7,6 +7,9 @@ application:
   - NB
   - DM
 nature: FRAMEWORK
+methodology:
+  - structural
+  - critical
 related_models:
   - scenario-planning
   - 3c-analysis

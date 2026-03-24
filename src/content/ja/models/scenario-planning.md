@@ -8,6 +8,9 @@ application:
   - NB
   - LT
 nature: FRAMEWORK
+methodology:
+  - generative
+  - decisive
 related_models:
   - second-order-thinking
   - bayesian-thinking

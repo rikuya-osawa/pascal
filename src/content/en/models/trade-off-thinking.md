@@ -10,6 +10,9 @@ application:
   - DM
   - LIFE
 nature: COGNITION
+methodology:
+  - decisive
+  - critical
 related_models:
   - essential-thinking
   - expected-value-thinking

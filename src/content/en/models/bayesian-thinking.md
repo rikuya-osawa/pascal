@@ -9,6 +9,9 @@ application:
   - LT
   - DM
 nature: COGNITION
+methodology:
+  - decisive
+  - critical
 related_models:
   - bias-awareness
   - statistical-thinking

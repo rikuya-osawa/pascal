@@ -8,6 +8,9 @@ application:
   - DM
   - NB
 nature: PRINCIPLE
+methodology:
+  - structural
+  - decisive
 related_models:
   - kanban
   - systems-thinking

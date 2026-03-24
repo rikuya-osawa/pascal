@@ -8,6 +8,9 @@ application:
   - PS
   - DM
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - interactive
 related_models:
   - hypothesis-thinking
   - ooda-loop

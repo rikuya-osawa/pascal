@@ -8,6 +8,9 @@ application:
   - LT
   - PS
 nature: PRINCIPLE
+methodology:
+  - structural
+  - decisive
 related_models:
   - systems-thinking
   - economic-moat

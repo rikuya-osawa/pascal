@@ -10,6 +10,9 @@ application:
   - PS
   - DM
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - generative
 related_models:
   - minimum-viable-product
   - kanban

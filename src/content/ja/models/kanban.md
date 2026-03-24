@@ -7,6 +7,9 @@ application:
   - PS
   - DM
 nature: FRAMEWORK
+methodology:
+  - structural
+  - interactive
 related_models:
   - lean-thinking
   - work-planning-strategy

@@ -8,6 +8,9 @@ application:
   - DM
   - LIFE
 nature: FRAMEWORK
+methodology:
+  - structural
+  - decisive
 format_version: 0.4
 tags:
   - mental-model

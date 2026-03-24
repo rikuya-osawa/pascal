@@ -8,6 +8,9 @@ application:
   - DM
   - LIFE
 nature: PRINCIPLE
+methodology:
+  - generative
+  - decisive
 related_models:
   - value-innovation
   - five-forces-analysis

@@ -7,6 +7,9 @@ application:
   - DM
   - LIFE
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - critical
 related_models:
   - bias-awareness
   - expected-value-thinking

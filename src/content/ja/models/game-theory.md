@@ -8,6 +8,9 @@ application:
   - NB
   - PS
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - interactive
 related_models:
   - zero-sum-game
   - nash-equilibrium

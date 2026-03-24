@@ -11,6 +11,9 @@ application:
   - PS
   - NB
 nature: FRAMEWORK
+methodology:
+  - critical
+  - decisive
 related_models:
   - second-order-thinking
   - bayesian-thinking

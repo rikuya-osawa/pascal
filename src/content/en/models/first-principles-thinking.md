@@ -11,6 +11,9 @@ application:
   - LT
   - DM
 nature: COGNITION
+methodology:
+  - critical
+  - structural
 related_models:
   - abstraction-and-concretization
 format_version: 0.3

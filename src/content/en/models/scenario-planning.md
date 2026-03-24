@@ -10,6 +10,9 @@ application:
   - NB
   - LT
 nature: FRAMEWORK
+methodology:
+  - generative
+  - decisive
 format_version: 0.4
 related_models:
   - second-order-thinking

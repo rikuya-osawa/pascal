@@ -8,6 +8,9 @@ application:
   - DM
   - LIFE
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - critical
 related_models:
   - constraint-based-thinking
   - expected-value-thinking

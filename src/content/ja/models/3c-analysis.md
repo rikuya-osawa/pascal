@@ -7,6 +7,9 @@ application:
   - NB
   - DM
 nature: FRAMEWORK
+methodology:
+  - structural
+  - decisive
 related_models:
   - stp-analysis
   - swot-analysis

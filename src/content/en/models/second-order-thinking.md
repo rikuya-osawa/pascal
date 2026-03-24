@@ -9,6 +9,9 @@ application:
   - LT
   - DM
 nature: COGNITION
+methodology:
+  - critical
+  - decisive
 related_models:
   - systems-thinking
   - expected-value-thinking

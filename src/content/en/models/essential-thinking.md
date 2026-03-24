@@ -10,6 +10,9 @@ application:
   - PS
   - DM
 nature: COGNITION
+methodology:
+  - critical
+  - structural
 related_models:
   - issue-driven-thinking
   - five-whys-analysis

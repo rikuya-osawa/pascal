@@ -9,6 +9,9 @@ application:
   - LT
   - PS
 nature: COGNITION
+methodology:
+  - structural
+  - critical
 related_models:
   - second-order-thinking
   - first-principles-thinking

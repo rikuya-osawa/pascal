@@ -8,6 +8,9 @@ application:
   - LT
   - NB
 nature: FRAMEWORK
+methodology:
+  - structural
+  - critical
 related_models:
   - mece
   - five-whys

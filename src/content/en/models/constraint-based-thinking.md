@@ -10,6 +10,9 @@ application:
   - PS
   - DM
 nature: COGNITION
+methodology:
+  - structural
+  - decisive
 related_models:
   - theory-of-constraints
   - trade-off-thinking

@@ -9,6 +9,9 @@ application:
   - PS
   - DM
 nature: COGNITION
+methodology:
+  - structural
+  - generative
 related_models:
   - pyramid-principle
   - first-principles-thinking

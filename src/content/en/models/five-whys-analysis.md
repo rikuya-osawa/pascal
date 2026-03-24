@@ -9,6 +9,9 @@ application:
   - PS
   - LT
 nature: FRAMEWORK
+methodology:
+  - critical
+  - structural
 related_models:
   - root-cause-analysis
   - fishbone-diagram

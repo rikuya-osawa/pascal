@@ -10,6 +10,9 @@ application:
   - DM
   - LT
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - structural
 related_models:
   - vrio-analysis
   - five-forces-analysis

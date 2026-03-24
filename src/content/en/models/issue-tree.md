@@ -11,6 +11,9 @@ application:
   - PS
   - DM
 nature: COGNITION
+methodology:
+  - structural
+  - decisive
 related_models:
   - pyramid-principle
   - mece

@@ -11,6 +11,9 @@ application:
   - NB
   - LIFE
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - structural
 related_models:
   - expected-value-thinking
   - trade-off-thinking

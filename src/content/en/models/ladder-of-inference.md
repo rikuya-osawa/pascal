@@ -10,6 +10,9 @@ application:
   - LT
   - PS
 nature: COGNITION
+methodology:
+  - critical
+  - interactive
 related_models:
   - bias-awareness
   - systems-thinking

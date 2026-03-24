@@ -8,6 +8,9 @@ application:
   - PS
   - LT
 nature: FRAMEWORK
+methodology:
+  - generative
+  - critical
 related_models:
   - scamper
   - mind-map

@@ -11,6 +11,9 @@ application:
   - PS
   - DM
 nature: FRAMEWORK
+methodology:
+  - structural
+  - generative
 related_models:
   - value-chain-analysis
   - 4p-4c

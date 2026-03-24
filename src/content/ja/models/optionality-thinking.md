@@ -8,6 +8,9 @@ application:
   - NB
   - PS
 nature: COGNITION
+methodology:
+  - generative
+  - decisive
 related_models:
   - antifragility
   - black-swan

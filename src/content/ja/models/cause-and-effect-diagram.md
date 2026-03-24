@@ -8,6 +8,9 @@ application:
   - DM
   - LT
 nature: FRAMEWORK
+methodology:
+  - structural
+  - critical
 related_models:
   - five-whys-analysis
   - root-cause-analysis

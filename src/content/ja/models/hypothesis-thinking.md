@@ -7,6 +7,9 @@ application:
   - PS
   - NB
 nature: COGNITION
+methodology:
+  - decisive
+  - critical
 related_models:
   - issue-driven-thinking
 format_version: 0.4

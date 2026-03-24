@@ -7,6 +7,8 @@ application:
   - PS
   - LT
 nature: COGNITION
+methodology:
+  - structural
 related_models:
   - issue-tree
   - pyramid-principle

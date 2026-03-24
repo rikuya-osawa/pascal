@@ -8,6 +8,9 @@ application:
   - NB
   - LIFE
 nature: FRAMEWORK
+methodology:
+  - structural
+  - decisive
 related_models:
   - gap-analysis
   - smart-goals
