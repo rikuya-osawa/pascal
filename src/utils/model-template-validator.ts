@@ -34,7 +34,6 @@ type LangRules = {
   dividerAfter: string[];
 };
 
-const ALLOWED_APPLICATIONS = new Set(['NB', 'DM', 'LT', 'PS', 'LIFE']);
 const ALLOWED_NATURES = new Set(['FRAMEWORK', 'COGNITION', 'PRINCIPLE']);
 const ALLOWED_METHODOLOGY = new Set(['generative', 'structural', 'critical', 'decisive', 'interactive']);
 const ALLOWED_SOURCE_TYPES = new Set(['primary', 'reference', 'inspiration']);
@@ -163,7 +162,7 @@ function validateFrontMatter(lang: SupportedLang, slug: string, issues: Validati
   const parsed = matter(raw);
   const data = parsed.data as Record<string, unknown>;
 
-  const requiredKeys = ['type', 'name', 'abbreviation', 'description', 'application', 'nature', 'tags'];
+  const requiredKeys = ['type', 'name', 'abbreviation', 'description', 'methodology', 'nature', 'tags'];
   for (const key of requiredKeys) {
     if (!(key in data)) {
       issues.push({ source, rule: 'FM_REQUIRED_KEY', message: `Missing required front matter key: ${key}` });
@@ -179,7 +178,7 @@ function validateFrontMatter(lang: SupportedLang, slug: string, issues: Validati
     'name',
     'abbreviation',
     'description',
-    'application',
+    'methodology',
     'nature',
     'methodology',
     'related_models',
@@ -211,16 +210,11 @@ function validateFrontMatter(lang: SupportedLang, slug: string, issues: Validati
     issues.push({ source, rule: 'FM_DESCRIPTION', message: 'description must be a non-empty string.' });
   }
 
-  if (!Array.isArray(data.application)) {
-    issues.push({ source, rule: 'FM_APPLICATION_TYPE', message: 'application must be an array.' });
+  if (!Array.isArray(data.methodology)) {
+    issues.push({ source, rule: 'FM_METHODOLOGY_TYPE', message: 'methodology must be an array.' });
   } else {
-    if (data.application.length > 3) {
-      issues.push({ source, rule: 'FM_APPLICATION_MAX', message: 'application should contain up to 3 values.' });
-    }
-    for (const value of data.application) {
-      if (typeof value !== 'string' || !ALLOWED_APPLICATIONS.has(value)) {
-        issues.push({ source, rule: 'FM_APPLICATION_ENUM', message: `Invalid application value: ${String(value)}` });
-      }
+    if (data.methodology.length > 3) {
+      issues.push({ source, rule: 'FM_METHODOLOGY_MAX', message: 'methodology should contain up to 3 values.' });
     }
   }
 
@@ -246,10 +240,6 @@ function validateFrontMatter(lang: SupportedLang, slug: string, issues: Validati
         }
       }
     }
-  }
-
-  if (!Array.isArray(data.tags) || !data.tags.includes('mental-model')) {
-    issues.push({ source, rule: 'FM_TAGS', message: 'tags must be an array that includes "mental-model".' });
   }
 
   if ('related_models' in data) {
