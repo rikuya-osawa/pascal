@@ -1,12 +1,17 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import ModelCard from "../model-card.astro";
-import { NATURES, APPLICATION, getLabel, type Language } from "../../constants/filters";
-import { UI_ICONS } from '../../constants/model-icons';
+import {
+  NATURES,
+  APPLICATION,
+  getLabel,
+  type Language,
+} from "../../constants/filters";
+import { UI_ICONS } from "../../constants/model-icons";
 import { getMessages } from "../../constants/messages";
 import { GITHUB_URL } from "../../constants/site-config";
-import { STORAGE_KEYS } from '../../constants/storage-keys';
+import { STORAGE_KEYS } from "../../constants/storage-keys";
 
 interface Props {
   lang: Language;
@@ -37,7 +42,7 @@ const natureCounts = allModels.reduce(
     FRAMEWORK: 0,
     COGNITION: 0,
     PRINCIPLE: 0,
-  }
+  },
 );
 ---
 
@@ -46,7 +51,7 @@ const natureCounts = allModels.reduce(
   <div class="models-hero-content">
     <h1 class="models-hero-title">{msg.modelsPageTitle}</h1>
     <p class="models-hero-desc">{msg.modelsPageDesc}</p>
-    
+
     <div class="models-stats">
       <div class="stat-item stat-total">
         <span class="stat-number">{totalCount}</span>
@@ -84,75 +89,13 @@ const natureCounts = allModels.reduce(
   </button>
 </section>
 
-<aside id="filter-panel" class="filter-panel" aria-hidden="true" aria-label={msg.modelsFilterTitle}>
-  <div class="filter-panel-header">
-    <h2 class="filter-section-title">{msg.modelsFilterTitle}</h2>
-    <div class="filter-panel-actions">
-      <button class="filter-reset" id="reset-filter-panel" type="button" aria-label={msg.modelsResetFiltersAriaLabel}>
-        <Icon name={UI_ICONS.filterReset} class="filter-reset-icon" />
-        <span>{msg.modelsResetFilters}</span>
-      </button>
-      <button
-        class="filter-close"
-        id="close-filter-panel"
-        type="button"
-        aria-label={`Close ${msg.modelsFilterTitle} panel`}
-      >
-        <Icon name={UI_ICONS.filterClose} class="filter-close-icon" />
-      </button>
-    </div>
-  </div>
-
-  <div class="filter-container">
-    <div class="filter-group">
-      <span class="filter-label">
-        <svg class="filter-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="3 3 21 3 21 9 12 18 3 9 3 3"></polygon>
-        </svg>
-        {msg.natureLabel}
-      </span>
-      <div class="filter-options">
-        <button class="filter-link" data-type="nature" data-value="">{msg.allLabel}</button>
-        {natureList.map(([id, labels]) => (
-          <button
-            class="filter-link"
-            data-type="nature"
-            data-value={id}
-          >
-            {getLabel(labels, lang)}
-          </button>
-        ))}
-      </div>
-    </div>
-
-    <div class="filter-group">
-      <span class="filter-label">
-        <svg class="filter-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-        </svg>
-        {msg.applicationLabel}
-      </span>
-      <div class="filter-options">
-        <button class="filter-link" data-type="view" data-value="">{msg.allLabel}</button>
-        {viewList.map(([id, labels]) => (
-          <button
-            class="filter-link"
-            data-type="view"
-            data-value={id}
-          >
-            {getLabel(labels, lang)}
-          </button>
-        ))}
-      </div>
-    </div>
-  </div>
-</aside>
-
 <!-- Models Grid -->
 <div class="model-grid">
-  {allModels.filter(Boolean).map((model) => (
-      <ModelCard model={model} lang={lang} />
-  ))}
+  {
+    allModels
+      .filter(Boolean)
+      .map((model) => <ModelCard model={model} lang={lang} />)
+  }
 </div>
 <div id="search-fallback" class="hidden">
   <p class="search-fallback-message">{msg.searchFallback}</p>
@@ -167,22 +110,23 @@ const natureCounts = allModels.reduce(
   </a>
 </div>
 
-<script define:vars={{
-  searchPlaceholder: msg.searchPlaceholder,
-  filterPanelStorageKey: STORAGE_KEYS.filterPanelOpen,
-  modelFiltersStorageKey: STORAGE_KEYS.modelFilters,
-}}>
-  const filterLinks = Array.from(document.querySelectorAll('.filter-link'));
-  const modelItems = Array.from(document.querySelectorAll('.model-item'));
-  const openFilterPanelButton = document.getElementById('open-filter-panel');
-  const closeFilterPanelButton = document.getElementById('close-filter-panel');
-  const resetFilterPanelButton = document.getElementById('reset-filter-panel');
-  const filterPanel = document.getElementById('filter-panel');
-  const searchFallback = document.getElementById('search-fallback');
-  const layoutShiftTargets = Array.from(document.querySelectorAll('.container'));
+<script
+  define:vars={{
+    searchPlaceholder: msg.searchPlaceholder,
+    filterPanelStorageKey: STORAGE_KEYS.filterPanelOpen,
+    modelFiltersStorageKey: STORAGE_KEYS.modelFilters,
+  }}
+>
+  const filterLinks = Array.from(document.querySelectorAll(".filter-link"));
+  const modelItems = Array.from(document.querySelectorAll(".model-item"));
+  const openFilterPanelButton = document.getElementById("open-filter-panel");
+  const closeFilterPanelButton = document.getElementById("close-filter-panel");
+  const resetFilterPanelButton = document.getElementById("reset-filter-panel");
+  const filterPanel = document.getElementById("filter-panel");
+  const searchFallback = document.getElementById("search-fallback");
 
   function getSearchInput() {
-    const input = document.querySelector('.header-search');
+    const input = document.querySelector(".header-search");
     return input instanceof HTMLInputElement ? input : null;
   }
 
@@ -190,9 +134,9 @@ const natureCounts = allModels.reduce(
     const url = new URL(window.location.href);
     return {
       url,
-      activeNature: url.searchParams.get('nature') || '',
-      activeView: url.searchParams.get('view') || '',
-      activeQuery: (url.searchParams.get('q') || '').toLowerCase(),
+      activeNature: url.searchParams.get("nature") || "",
+      activeView: url.searchParams.get("view") || "",
+      activeQuery: (url.searchParams.get("q") || "").toLowerCase(),
     };
   }
 
@@ -206,7 +150,7 @@ const natureCounts = allModels.reduce(
 
   function getPersistedFilterPanelState() {
     try {
-      return window.localStorage.getItem(filterPanelStorageKey) === 'true';
+      return window.localStorage.getItem(filterPanelStorageKey) === "true";
     } catch {
       return false;
     }
@@ -219,7 +163,10 @@ const natureCounts = allModels.reduce(
         return;
       }
 
-      window.localStorage.setItem(modelFiltersStorageKey, JSON.stringify({ nature, view }));
+      window.localStorage.setItem(
+        modelFiltersStorageKey,
+        JSON.stringify({ nature, view }),
+      );
     } catch {
       // Ignore storage failures and keep runtime behavior intact.
     }
@@ -231,8 +178,8 @@ const natureCounts = allModels.reduce(
       if (!raw) return null;
 
       const parsed = JSON.parse(raw);
-      const nature = typeof parsed?.nature === 'string' ? parsed.nature : '';
-      const view = typeof parsed?.view === 'string' ? parsed.view : '';
+      const nature = typeof parsed?.nature === "string" ? parsed.nature : "";
+      const view = typeof parsed?.view === "string" ? parsed.view : "";
 
       if (!nature && !view) return null;
       return { nature, view };
@@ -243,69 +190,28 @@ const natureCounts = allModels.reduce(
 
   function restoreModelFiltersIntoUrl() {
     const url = new URL(window.location.href);
-    if (url.searchParams.has('nature') || url.searchParams.has('view')) return;
+    if (url.searchParams.has("nature") || url.searchParams.has("view")) return;
 
     const persisted = getPersistedModelFilters();
     if (!persisted) return;
 
     if (persisted.nature) {
-      url.searchParams.set('nature', persisted.nature);
+      url.searchParams.set("nature", persisted.nature);
     }
 
     if (persisted.view) {
-      url.searchParams.set('view', persisted.view);
+      url.searchParams.set("view", persisted.view);
     }
 
-    window.history.replaceState({}, '', url);
-  }
-
-  function setLayoutShift(offsetPx) {
-    layoutShiftTargets.forEach((target) => {
-      if (!(target instanceof HTMLElement)) return;
-      target.style.marginInlineStart = offsetPx > 0 ? `${offsetPx}px` : '';
-    });
-  }
-
-  function getMaxResponsiveShift(panelWidth) {
-    const viewportWidth = window.innerWidth;
-
-    if (viewportWidth <= 768) {
-      return 0;
-    }
-
-    if (viewportWidth <= 992) {
-      return Math.min(panelWidth, 180);
-    }
-
-    if (viewportWidth <= 1200) {
-      return Math.min(panelWidth, Math.round(viewportWidth * 0.24));
-    }
-
-    return panelWidth;
-  }
-
-  function syncLayoutShiftWithFilterPanel() {
-    if (!(filterPanel instanceof HTMLElement)) {
-      setLayoutShift(0);
-      return;
-    }
-
-    if (!filterPanel.classList.contains('is-open')) {
-      setLayoutShift(0);
-      return;
-    }
-
-    const panelWidth = Math.ceil(filterPanel.getBoundingClientRect().width);
-    const shiftPx = getMaxResponsiveShift(panelWidth);
-    setLayoutShift(shiftPx);
+    window.history.replaceState({}, "", url);
   }
 
   function setFilterPanelOpenState(isOpen) {
-    filterPanel?.classList.toggle('is-open', isOpen);
-    filterPanel?.setAttribute('aria-hidden', String(!isOpen));
-    openFilterPanelButton?.setAttribute('aria-expanded', String(isOpen));
+    filterPanel?.classList.toggle("is-open", isOpen);
+    filterPanel?.setAttribute("aria-hidden", String(!isOpen));
+    document.body.classList.toggle("filter-panel-open", isOpen);
+    openFilterPanelButton?.setAttribute("aria-expanded", String(isOpen));
     persistFilterPanelState(isOpen);
-    syncLayoutShiftWithFilterPanel();
   }
 
   function openFilterPanel() {
@@ -326,7 +232,7 @@ const natureCounts = allModels.reduce(
   }
 
   function toggleFilterPanel() {
-    if (filterPanel?.classList.contains('is-open')) {
+    if (filterPanel?.classList.contains("is-open")) {
       closeFilterPanel();
       return;
     }
@@ -335,13 +241,13 @@ const natureCounts = allModels.reduce(
 
   function updateActiveFilterLinkStates(url) {
     filterLinks.forEach((link) => {
-      const type = link.getAttribute('data-type');
-      const value = link.getAttribute('data-value') || '';
+      const type = link.getAttribute("data-type");
+      const value = link.getAttribute("data-value") || "";
       if (!type) return;
 
-      const currentParam = url.searchParams.get(type) || '';
+      const currentParam = url.searchParams.get(type) || "";
       const isActive = (!currentParam && !value) || currentParam === value;
-      link.classList.toggle('active', isActive);
+      link.classList.toggle("active", isActive);
     });
   }
 
@@ -350,20 +256,23 @@ const natureCounts = allModels.reduce(
     let onlyVisibleLink = null;
 
     modelItems.forEach((item) => {
-      const itemNature = item.getAttribute('data-nature') || '';
-      const itemViews = (item.getAttribute('data-views') || '').split(',').filter(Boolean);
-      const itemTitle = item.querySelector('.card-title')?.textContent.toLowerCase() || '';
+      const itemNature = item.getAttribute("data-nature") || "";
+      const itemViews = (item.getAttribute("data-views") || "")
+        .split(",")
+        .filter(Boolean);
+      const itemTitle =
+        item.querySelector(".card-title")?.textContent.toLowerCase() || "";
 
       const natureMatch = !activeNature || itemNature === activeNature;
       const viewMatch = !activeView || itemViews.includes(activeView);
       const queryMatch = !activeQuery || itemTitle.includes(activeQuery);
       const isVisible = natureMatch && viewMatch && queryMatch;
 
-      item.classList.toggle('hidden', !isVisible);
+      item.classList.toggle("hidden", !isVisible);
 
       if (isVisible) {
         visibleCount += 1;
-        const link = item.querySelector('.card-link');
+        const link = item.querySelector(".card-link");
         if (visibleCount === 1 && link instanceof HTMLAnchorElement) {
           onlyVisibleLink = link;
         } else {
@@ -376,22 +285,31 @@ const natureCounts = allModels.reduce(
   }
 
   function updateSearchFallbackVisibility(visibleCount) {
-    searchFallback?.classList.toggle('hidden', visibleCount > 0);
+    searchFallback?.classList.toggle("hidden", visibleCount > 0);
   }
 
   function updateAllFilters() {
-    const { url, activeNature, activeView, activeQuery } = getFilterStateFromUrl();
+    const { url, activeNature, activeView, activeQuery } =
+      getFilterStateFromUrl();
 
     persistModelFilters(activeNature, activeView);
 
     updateActiveFilterLinkStates(url);
 
-    const { visibleCount, onlyVisibleLink } = applyItemVisibility(activeNature, activeView, activeQuery);
+    const { visibleCount, onlyVisibleLink } = applyItemVisibility(
+      activeNature,
+      activeView,
+      activeQuery,
+    );
 
     updateSearchFallbackVisibility(visibleCount);
 
     // 検索クエリがあり、結果が1件のみなら詳細ページへ遷移
-    if (activeQuery && visibleCount === 1 && onlyVisibleLink instanceof HTMLAnchorElement) {
+    if (
+      activeQuery &&
+      visibleCount === 1 &&
+      onlyVisibleLink instanceof HTMLAnchorElement
+    ) {
       window.location.href = onlyVisibleLink.href;
     }
   }
@@ -399,41 +317,41 @@ const natureCounts = allModels.reduce(
   // グローバルに公開（Header から呼び出す）
   window.updateAllFilters = updateAllFilters;
 
-  openFilterPanelButton?.addEventListener('click', toggleFilterPanel);
-  closeFilterPanelButton?.addEventListener('click', closeFilterPanel);
+  openFilterPanelButton?.addEventListener("click", toggleFilterPanel);
+  closeFilterPanelButton?.addEventListener("click", closeFilterPanel);
 
-  resetFilterPanelButton?.addEventListener('click', () => {
+  resetFilterPanelButton?.addEventListener("click", () => {
     const url = new URL(window.location.href);
-    url.searchParams.delete('nature');
-    url.searchParams.delete('view');
-    url.searchParams.delete('q');
-    window.history.pushState({}, '', url);
-    persistModelFilters('', '');
+    url.searchParams.delete("nature");
+    url.searchParams.delete("view");
+    url.searchParams.delete("q");
+    window.history.pushState({}, "", url);
+    persistModelFilters("", "");
     updateAllFilters();
 
     const searchInput = getSearchInput();
     if (searchInput) {
-      searchInput.value = '';
+      searchInput.value = "";
       searchInput.placeholder = searchPlaceholder;
     }
   });
 
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && filterPanel?.classList.contains('is-open')) {
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && filterPanel?.classList.contains("is-open")) {
       closeFilterPanel();
     }
   });
 
   filterLinks.forEach((link) => {
-    link.addEventListener('click', (e) => {
+    link.addEventListener("click", (e) => {
       e.preventDefault();
-      const type = link.getAttribute('data-type');
-      const value = link.getAttribute('data-value') || '';
+      const type = link.getAttribute("data-type");
+      const value = link.getAttribute("data-value") || "";
       if (!type) return;
 
       const url = new URL(window.location.href);
 
-      url.searchParams.delete('q');
+      url.searchParams.delete("q");
 
       if (value) {
         url.searchParams.set(type, value);
@@ -441,7 +359,7 @@ const natureCounts = allModels.reduce(
         url.searchParams.delete(type);
       }
 
-      window.history.pushState({}, '', url);
+      window.history.pushState({}, "", url);
       updateAllFilters();
 
       const searchInput = getSearchInput();
@@ -451,26 +369,16 @@ const natureCounts = allModels.reduce(
     });
   });
 
-  let isResizeTicking = false;
-  function handleResize() {
-    if (isResizeTicking) return;
-    isResizeTicking = true;
-    window.requestAnimationFrame(() => {
-      syncLayoutShiftWithFilterPanel();
-      isResizeTicking = false;
-    });
-  }
-
   function initializeModelsPage() {
     restoreModelFiltersIntoUrl();
     restoreFilterPanelState();
     updateAllFilters();
-    syncLayoutShiftWithFilterPanel();
   }
 
-  window.addEventListener('popstate', updateAllFilters);
-  window.addEventListener('resize', handleResize);
-  document.addEventListener('astro:before-swap', () => setLayoutShift(0));
-  document.addEventListener('astro:page-load', initializeModelsPage);
+  window.addEventListener("popstate", updateAllFilters);
+  document.addEventListener("astro:before-swap", () => {
+    document.body.classList.remove("filter-panel-open");
+  });
+  document.addEventListener("astro:page-load", initializeModelsPage);
   initializeModelsPage();
 </script>

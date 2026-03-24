@@ -1,0 +1,118 @@
+---
+import { Icon } from "astro-icon/components";
+import {
+  NATURES,
+  APPLICATION,
+  getLabel,
+  type Language,
+} from "../../constants/filters";
+import { UI_ICONS } from "../../constants/model-icons";
+import { getMessages } from "../../constants/messages";
+
+interface Props {
+  lang: Language;
+}
+
+const { lang } = Astro.props;
+const natureList = Object.entries(NATURES);
+const viewList = Object.entries(APPLICATION);
+const msg = getMessages(lang);
+---
+
+<aside
+  id="filter-panel"
+  class="filter-panel"
+  aria-hidden="true"
+  aria-label={msg.modelsFilterTitle}
+>
+  <div class="filter-panel-header">
+    <h2 class="filter-section-title">{msg.modelsFilterTitle}</h2>
+    <div class="filter-panel-actions">
+      <button
+        class="filter-reset"
+        id="reset-filter-panel"
+        type="button"
+        aria-label={msg.modelsResetFiltersAriaLabel}
+      >
+        <Icon name={UI_ICONS.filterReset} class="filter-reset-icon" />
+        <span>{msg.modelsResetFilters}</span>
+      </button>
+      <button
+        class="filter-close"
+        id="close-filter-panel"
+        type="button"
+        aria-label={`Close ${msg.modelsFilterTitle} panel`}
+      >
+        <Icon name={UI_ICONS.filterClose} class="filter-close-icon" />
+      </button>
+    </div>
+  </div>
+
+  <div class="filter-container">
+    <div class="filter-group">
+      <span class="filter-label">
+        <svg
+          class="filter-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polygon points="3 3 21 3 21 9 12 18 3 9 3 3"></polygon>
+        </svg>
+        {msg.natureLabel}
+      </span>
+      <div class="filter-options">
+        <button class="filter-link" data-type="nature" data-value=""
+          >{msg.allLabel}</button
+        >
+        {
+          natureList.map(([id, labels]) => (
+            <button class="filter-link" data-type="nature" data-value={id}>
+              {getLabel(labels, lang)}
+            </button>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <span class="filter-label">
+        <svg
+          class="filter-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+          ></path>
+        </svg>
+        {msg.applicationLabel}
+      </span>
+      <div class="filter-options">
+        <button class="filter-link" data-type="view" data-value=""
+          >{msg.allLabel}</button
+        >
+        {
+          viewList.map(([id, labels]) => (
+            <button class="filter-link" data-type="view" data-value={id}>
+              {getLabel(labels, lang)}
+            </button>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</aside>

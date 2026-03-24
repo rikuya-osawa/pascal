@@ -24,6 +24,9 @@
   --max-width: 1100px; /* カードグリッド向けに少し広げています */
   --max-width-text: 900px; /* 読み物ページ（Aboutなど）用 */
 
+  --filter-panel-width: 300px;
+  --layout-shift-x: 0px; /* フィルタパネルの開閉に伴うレイアウトシフト量 */
+
   --radius: 8px;
   --radius-lg: 12px;
   --radius-round: 999px;
@@ -46,7 +49,7 @@
   /* HelpCircle */
   --icon-question: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'%3E%3C/path%3E%3Cline x1='12' y1='17' x2='12.01' y2='17'%3E%3C/line%3E%3C/svg%3E");
   /* ListChecks */
-    --icon-steps: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 5h8'%3E%3C/path%3E%3Cpath d='M13 12h8'%3E%3C/path%3E%3Cpath d='M13 19h8'%3E%3C/path%3E%3Cpath d='m3 17 2 2 4-4'%3E%3C/path%3E%3Cpath d='m3 7 2 2 4-4'%3E%3C/path%3E%3C/svg%3E");
+  --icon-steps: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 5h8'%3E%3C/path%3E%3Cpath d='M13 12h8'%3E%3C/path%3E%3Cpath d='M13 19h8'%3E%3C/path%3E%3Cpath d='m3 17 2 2 4-4'%3E%3C/path%3E%3Cpath d='m3 7 2 2 4-4'%3E%3C/path%3E%3C/svg%3E");
   /* FileText */
   --icon-output: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'%3E%3C/path%3E%3Cpolyline points='14 2 14 8 20 8'%3E%3C/polyline%3E%3Cline x1='16' y1='13' x2='8' y2='13'%3E%3C/line%3E%3Cline x1='16' y1='17' x2='8' y2='17'%3E%3C/line%3E%3Cline x1='10' y1='9' x2='8' y2='9'%3E%3C/line%3E%3C/svg%3E");
   /* Briefcase */
@@ -57,7 +60,11 @@
   --icon-link: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'%3E%3C/path%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'%3E%3C/path%3E%3C/svg%3E");
 }
 
-:root[data-theme='dark'] {
+body.filter-panel-open {
+  --layout-shift-x: var(--filter-panel-width);
+}
+
+:root[data-theme="dark"] {
   --color-bg: #0f1115;
   --color-text: #f3f4f6;
   --color-muted: #9ca3af;

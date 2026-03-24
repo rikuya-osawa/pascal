@@ -1,8 +1,10 @@
 ---
 import BaseLayout from "../layouts/base-layout.astro";
 import CommonModels from "../../components/common/models.astro";
+import FilterPanel from "../../components/common/filter-panel.astro";
 ---
 
 <BaseLayout>
+  <FilterPanel slot="overlay" lang="ja" />
   <CommonModels lang="ja" />
 </BaseLayout>

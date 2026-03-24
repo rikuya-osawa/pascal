@@ -4,6 +4,8 @@
   border-top: 1px solid var(--color-border);
   margin-top: var(--space-lg);
   padding: var(--space-lg) 0;
+  position: relative;
+  z-index: 70;
 }
 
 .site-footer-inner {
