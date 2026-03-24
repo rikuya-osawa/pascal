@@ -17,23 +17,23 @@ export const APPLICATION = {
 export const METHODOLOGY = {
   GENERATIVE: {
     en: { label: "Generative", description: "Expand possibilities and create something from nothing." },
-    ja: { label: "広げる", description: "可能性を拡散させ、無から有を生み出す。" }
+    ja: { label: "広げる", description: "可能性を拡散させ、無から有を生み出す" }
   },
   STRUCTURAL: {
     en: { label: "Structural", description: "Break down complex phenomena and visualize relationships." },
-    ja: { label: "整える", description: "複雑な事象を分解し、関係性を可視化する。" }
+    ja: { label: "整える", description: "複雑な事象を分解し、関係性を可視化する" }
   },
   CRITICAL: {
     en: { label: "Critical", description: "Question assumptions and uncover risks and biases." },
-    ja: { label: "疑う", description: "前提を疑い、リスクやバイアスを暴く。" }
+    ja: { label: "疑う", description: "前提を疑い、リスクやバイアスを暴く" }
   },
   DECISIVE: {
     en: { label: "Decisive", description: "Determine priorities and make choices in uncertainty." },
-    ja: { label: "決める", description: "優先順位を確定し、不確実な中で選択する。" }
+    ja: { label: "決める", description: "優先順位を確定し、不確実な中で選択する" }
   },
   INTERACTIVE: {
     en: { label: "Interactive", description: "Incorporate others' perspectives and co-create as a team." },
-    ja: { label: "繋げる", description: "他者の視点を取り入れ、チームで共創する。" }
+    ja: { label: "繋げる", description: "他者の視点を取り入れ、チームで共創する" }
   }
 } as const;
 
@@ -67,4 +67,17 @@ export const getLabelsByLang = (
     result[key] = getLabel(value, lang);
   }
   return result;
+};
+
+/**
+ * METHODOLOGY エントリから指定言語のラベルを取得
+ * @param entry { en: { label: string, description: string }, ja: { label: string, description: string } } 形式
+ * @param lang 取得対象言語
+ * @returns 指定言語のラベル
+ */
+export const getMethodologyLabel = (
+  entry: { en: { label: string; description: string }; ja: { label: string; description: string } },
+  lang: Language
+): string => {
+  return entry[lang]?.label || entry.ja.label;
 };

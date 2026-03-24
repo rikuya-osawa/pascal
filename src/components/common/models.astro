@@ -2,12 +2,7 @@
 import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import ModelCard from "../model-card.astro";
-import {
-  NATURES,
-  APPLICATION,
-  getLabel,
-  type Language,
-} from "../../constants/filters";
+import { NATURES, getLabel, type Language } from "../../constants/filters";
 import { UI_ICONS } from "../../constants/model-icons";
 import { getMessages } from "../../constants/messages";
 import { GITHUB_URL } from "../../constants/site-config";
@@ -23,7 +18,6 @@ const collectionName = `${lang}/models` as const;
 const allModels = await getCollection(collectionName);
 
 const natureList = Object.entries(NATURES);
-const viewList = Object.entries(APPLICATION);
 
 const msg = getMessages(lang);
 const modelRequestUrl = `${GITHUB_URL}/issues/new/choose`;

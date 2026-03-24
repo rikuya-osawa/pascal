@@ -2,8 +2,9 @@
 import { Icon } from "astro-icon/components";
 import {
   NATURES,
-  APPLICATION,
+  METHODOLOGY,
   getLabel,
+  getMethodologyLabel,
   type Language,
 } from "../../constants/filters";
 import { UI_ICONS } from "../../constants/model-icons";
@@ -15,7 +16,7 @@ interface Props {
 
 const { lang } = Astro.props;
 const natureList = Object.entries(NATURES);
-const viewList = Object.entries(APPLICATION);
+const viewList = Object.entries(METHODOLOGY);
 const msg = getMessages(lang);
 ---
 
@@ -99,7 +100,7 @@ const msg = getMessages(lang);
             d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
           ></path>
         </svg>
-        {msg.applicationLabel}
+        {msg.methodologyLabel}
       </span>
       <div class="filter-options">
         <button class="filter-link" data-type="view" data-value=""
@@ -107,8 +108,12 @@ const msg = getMessages(lang);
         >
         {
           viewList.map(([id, labels]) => (
-            <button class="filter-link" data-type="view" data-value={id}>
-              {getLabel(labels, lang)}
+            <button
+              class="filter-link"
+              data-type="view"
+              data-value={id.toLowerCase()}
+            >
+              {getMethodologyLabel(labels, lang)}
             </button>
           ))
         }

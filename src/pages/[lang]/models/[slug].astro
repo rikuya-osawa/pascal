@@ -1,14 +1,19 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/base-layout.astro";
 import "../../styles/markdown.css";
 import "../../styles/components/model-detail.css";
 import "../../styles/components/source-section.css";
-import { NATURES, APPLICATION, type Language } from "../../../constants/filters";
+import {
+  NATURES,
+  METHODOLOGY,
+  getMethodologyLabel,
+  type Language,
+} from "../../../constants/filters";
 import { getMessages } from "../../../constants/messages";
-import { UI_ICONS } from '../../../constants/model-icons';
-import { SITE_NAME } from '../../../constants/site-config';
+import { UI_ICONS } from "../../../constants/model-icons";
+import { SITE_NAME } from "../../../constants/site-config";
 import ModelCard from "../../../components/model-card.astro";
 import { validateModelSync } from "../../../utils/validator";
 import { validateModelTemplateSync } from "../../../utils/model-template-validator";
@@ -19,7 +24,7 @@ export async function getStaticPaths() {
 
   validateModelSync(jaEntries, enEntries);
   validateModelTemplateSync(jaEntries, enEntries);
-  
+
   return [
     ...jaEntries.map((entry) => ({
       params: {
@@ -44,26 +49,35 @@ const msg = getMessages(currentLang);
 
 const collectionName = `${currentLang}/models` as const;
 const allModels = await getCollection(collectionName);
-const modelBySlug = new Map(allModels.map((model) => [model.slug.split("/").pop(), model]));
+const modelBySlug = new Map(
+  allModels.map((model) => [model.slug.split("/").pop(), model]),
+);
 const currentSlug = entry.slug.split("/").pop();
 const relatedModels = (entry.data.related_models || [])
   .map((slug) => modelBySlug.get(slug))
-  .filter((model): model is NonNullable<typeof model> => Boolean(model && model.slug.split("/").pop() !== currentSlug));
+  .filter((model): model is NonNullable<typeof model> =>
+    Boolean(model && model.slug.split("/").pop() !== currentSlug),
+  );
 const INITIAL_RELATED_COUNT = 3;
 const visibleRelatedModels = relatedModels.slice(0, INITIAL_RELATED_COUNT);
 const hiddenRelatedModels = relatedModels.slice(INITIAL_RELATED_COUNT);
 const hiddenRelatedCount = hiddenRelatedModels.length;
-const relatedShowMoreText = msg.modelDetailRelatedShowMore.replace("{count}", String(hiddenRelatedCount));
+const relatedShowMoreText = msg.modelDetailRelatedShowMore.replace(
+  "{count}",
+  String(hiddenRelatedCount),
+);
 
 const { Content } = await entry.render();
 
 const SOURCE_TYPE_ORDER = { primary: 0, reference: 1, inspiration: 2 } as const;
-const sortedSources = (entry.data.sources ?? []).slice().sort(
-  (a, b) => SOURCE_TYPE_ORDER[a.sourceType] - SOURCE_TYPE_ORDER[b.sourceType]
-);
+const sortedSources = (entry.data.sources ?? [])
+  .slice()
+  .sort(
+    (a, b) => SOURCE_TYPE_ORDER[a.sourceType] - SOURCE_TYPE_ORDER[b.sourceType],
+  );
 
 // Schema.org 用データを組み立てる
-const site = Astro.site || 'https://pascal-bpf.pages.dev';
+const site = Astro.site || "https://pascal-bpf.pages.dev";
 // Astro.url はページの絶対パス部分のみなので、base を付与
 const pageUrl = new URL(Astro.url, site).toString();
 const schemaData = {
@@ -113,110 +127,141 @@ const natureInfo = NATURES[entry.data.nature as keyof typeof NATURES];
     <Icon name={UI_ICONS.modelsGoBack} class="goback-icon" />
     <span class="goback-text">{msg.modelsBackText}</span>
   </a>
-  
+
   <article class="markdown-content">
-   
     <div class="meta">
       <span class={`badge badge--${entry.data.nature.toLowerCase()}`}>
         {natureInfo[currentLang]}
       </span>
 
-      {entry.data.application.map((v) => {
-        const viewInfo = APPLICATION[v as keyof typeof APPLICATION];
-        return <span class="badge">{viewInfo[currentLang]}</span>;
-      })}
+      {
+        entry.data.methodology.map((v) => {
+          const methodologyKey = v.toUpperCase() as keyof typeof METHODOLOGY;
+          const methodologyInfo = METHODOLOGY[methodologyKey];
+          return (
+            <span class="badge">
+              {methodologyInfo
+                ? getMethodologyLabel(methodologyInfo, currentLang)
+                : v}
+            </span>
+          );
+        })
+      }
     </div>
 
     <Content content={entry.body} />
   </article>
 
-  {sortedSources.length > 0 && (
-    <section class="sources-section" aria-labelledby="sources-title">
-      <h2 id="sources-title" class="sources-title">{msg.referencesTitle}</h2>
-      <ol class="sources-list">
-        {sortedSources.map((source) => (
-          <li class="source-item">
-            <div class="source-item__main">
-              <span class={`source-type-badge source-type-badge--${source.sourceType}`}>
-                {source.sourceType}
-              </span>
-              {source.url ? (
-                <a href={source.url} class="source-link" target="_blank" rel="noopener noreferrer">
-                  {source.title}
-                </a>
-              ) : (
-                <span class="source-title">{source.title}</span>
-              )}
-              {source.author && <span class="source-author">{source.author}</span>}
-            </div>
-          </li>
-        ))}
-      </ol>
-      <p class="sources-disclaimer">{msg.referenceDisclaimer}</p>
-    </section>
-  )}
+  {
+    sortedSources.length > 0 && (
+      <section class="sources-section" aria-labelledby="sources-title">
+        <h2 id="sources-title" class="sources-title">
+          {msg.referencesTitle}
+        </h2>
+        <ol class="sources-list">
+          {sortedSources.map((source) => (
+            <li class="source-item">
+              <div class="source-item__main">
+                <span
+                  class={`source-type-badge source-type-badge--${source.sourceType}`}
+                >
+                  {source.sourceType}
+                </span>
+                {source.url ? (
+                  <a
+                    href={source.url}
+                    class="source-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {source.title}
+                  </a>
+                ) : (
+                  <span class="source-title">{source.title}</span>
+                )}
+                {source.author && (
+                  <span class="source-author">{source.author}</span>
+                )}
+              </div>
+            </li>
+          ))}
+        </ol>
+        <p class="sources-disclaimer">{msg.referenceDisclaimer}</p>
+      </section>
+    )
+  }
 
-  {relatedModels.length > 0 && (
-    <section class="related-models-section" aria-labelledby="related-models-title">
-      <h2 id="related-models-title" class="related-models-title">{msg.modelDetailRelatedTitle}</h2>
-      <div class="model-grid related-models-grid">
-        {visibleRelatedModels.map((relatedModel) => (
-          <ModelCard model={relatedModel} lang={currentLang} />
-        ))}
-
-        {hiddenRelatedModels.map((relatedModel) => (
-          <div class="related-model-hidden is-related-hidden" data-related-hidden>
+  {
+    relatedModels.length > 0 && (
+      <section
+        class="related-models-section"
+        aria-labelledby="related-models-title"
+      >
+        <h2 id="related-models-title" class="related-models-title">
+          {msg.modelDetailRelatedTitle}
+        </h2>
+        <div class="model-grid related-models-grid">
+          {visibleRelatedModels.map((relatedModel) => (
             <ModelCard model={relatedModel} lang={currentLang} />
-          </div>
-        ))}
-      </div>
+          ))}
 
-      {hiddenRelatedCount > 0 && (
-        <div class="related-models-toggle-wrap">
-          <button
-            type="button"
-            class="related-models-toggle"
-            data-show-more={relatedShowMoreText}
-            data-show-less={msg.modelDetailRelatedShowLess}
-            aria-expanded="false"
-          >
-            {relatedShowMoreText}
-          </button>
+          {hiddenRelatedModels.map((relatedModel) => (
+            <div
+              class="related-model-hidden is-related-hidden"
+              data-related-hidden
+            >
+              <ModelCard model={relatedModel} lang={currentLang} />
+            </div>
+          ))}
         </div>
-      )}
-    </section>
-  )}
+
+        {hiddenRelatedCount > 0 && (
+          <div class="related-models-toggle-wrap">
+            <button
+              type="button"
+              class="related-models-toggle"
+              data-show-more={relatedShowMoreText}
+              data-show-less={msg.modelDetailRelatedShowLess}
+              aria-expanded="false"
+            >
+              {relatedShowMoreText}
+            </button>
+          </div>
+        )}
+      </section>
+    )
+  }
 
   <script type="module">
     function initRelatedModelsToggle() {
-      const sections = document.querySelectorAll('.related-models-section');
+      const sections = document.querySelectorAll(".related-models-section");
       if (!sections.length) return;
 
       sections.forEach((section) => {
-        const toggle = section.querySelector('.related-models-toggle');
+        const toggle = section.querySelector(".related-models-toggle");
         if (!(toggle instanceof HTMLButtonElement)) return;
-        if (toggle.dataset.bound === 'true') return;
-        toggle.dataset.bound = 'true';
+        if (toggle.dataset.bound === "true") return;
+        toggle.dataset.bound = "true";
 
-        const hiddenItems = section.querySelectorAll('[data-related-hidden]');
+        const hiddenItems = section.querySelectorAll("[data-related-hidden]");
         let expanded = false;
 
-        toggle.addEventListener('click', () => {
+        toggle.addEventListener("click", () => {
           expanded = !expanded;
 
           hiddenItems.forEach((item) => {
-            item.classList.toggle('is-related-hidden', !expanded);
+            item.classList.toggle("is-related-hidden", !expanded);
           });
 
           toggle.textContent = expanded
-            ? (toggle.dataset.showLess || '')
-            : (toggle.dataset.showMore || '');
-          toggle.setAttribute('aria-expanded', String(expanded));
+            ? toggle.dataset.showLess || ""
+            : toggle.dataset.showMore || "";
+          toggle.setAttribute("aria-expanded", String(expanded));
         });
       });
     }
 
     initRelatedModelsToggle();
-    document.addEventListener('astro:page-load', initRelatedModelsToggle);
+    document.addEventListener("astro:page-load", initRelatedModelsToggle);
   </script>
 </BaseLayout>

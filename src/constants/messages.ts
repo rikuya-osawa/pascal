@@ -6,7 +6,7 @@ export const MESSAGES = {
     // Common
     title: SITE_NAME,
     natureLabel: "モデルの性質",
-    applicationLabel: "活用場面",
+    methodologyLabel: "アプローチ",
     allLabel: "全て",
     searchFallback: "一致するメンタルモデルが見つかりませんでした。",
     searchPlaceholder: "「/」を入力してモデルを検索...",
@@ -136,7 +136,7 @@ export const MESSAGES = {
   en: {
     title: SITE_NAME,
     natureLabel: "NATURE of MODEL",
-    applicationLabel: "APPLICATION",
+    methodologyLabel: "METHODOLOGY",
     allLabel: "ALL",
     searchFallback: "No mental models found matching your criteria.",
     searchPlaceholder: "Type / to search models...",
