@@ -5,10 +5,10 @@ abbreviation: Systems Thinking
 description: >-
   A model that views problems as interconnected relationships and circular
   structures rather than isolated events.
-application:
-  - LT
-  - PS
 nature: COGNITION
+methodology:
+  - structural
+  - critical
 related_models:
   - second-order-thinking
   - first-principles-thinking

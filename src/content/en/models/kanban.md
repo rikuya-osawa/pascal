@@ -5,16 +5,15 @@ abbreviation: KB
 description: >-
   A method for optimizing workflow by visualizing task status and limiting
   Work-in-Progress (WIP).
-application:
-  - PS
-  - DM
-  - LIFE
 nature: FRAMEWORK
+methodology:
+  - structural
+  - interactive
 related_models:
   - lean-thinking
   - work-planning-strategy
   - theory-of-constraints
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

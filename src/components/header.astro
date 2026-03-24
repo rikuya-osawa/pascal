@@ -1,58 +1,73 @@
 ---
-import { Icon } from 'astro-icon/components';
-import { UI_ICONS } from '../constants/model-icons';
+import { Icon } from "astro-icon/components";
+import { UI_ICONS } from "../constants/model-icons";
 import { getMessages } from "../constants/messages";
-import { GITHUB_URL, SITE_NAME } from '../constants/site-config';
+import { GITHUB_URL, SITE_NAME } from "../constants/site-config";
+import { STORAGE_KEYS } from "../constants/storage-keys";
 
 const pathname = Astro.url.pathname;
 interface Props {
-  lang?: 'ja' | 'en';
+  lang?: "ja" | "en";
 }
 
 const { lang } = Astro.props as Props;
-const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
+const currentLang = lang || (pathname.startsWith("/ja/") ? "ja" : "en");
 
-const getAlternateUrl = (targetLang: 'ja' | 'en') => {
-  const pathWithoutLang = pathname.replace(/^\/(ja|en)(?=\/|$)/, '') || '/';
+const getAlternateUrl = (targetLang: "ja" | "en") => {
+  const pathWithoutLang = pathname.replace(/^\/(ja|en)(?=\/|$)/, "") || "/";
   return `/${targetLang}${pathWithoutLang}`;
 };
 
 const msg = getMessages(currentLang);
-
 ---
 
 <header class="site-header">
   <div class="site-header-inner">
     <a class="site-title" href={`/${currentLang}`}>{SITE_NAME}</a>
     <div class="header-right">
-    <form action={`/${currentLang}/models`} method="get" class="header-search-form">
-      <div class="header-search-wrapper">
-        <Icon name={UI_ICONS.search} size={16} class="search-icon" />
-        <input 
-          type="text" 
-          name="q"
-          class="header-search" 
-          placeholder={msg.searchPlaceholder}
-          aria-label="Search mental models"
-        />
-      </div>
-    </form>
+      <form
+        action={`/${currentLang}/models`}
+        method="get"
+        class="header-search-form"
+      >
+        <div class="header-search-wrapper">
+          <Icon name={UI_ICONS.search} size={16} class="search-icon" />
+          <input
+            type="text"
+            name="q"
+            class="header-search"
+            placeholder={msg.searchPlaceholder}
+            aria-label="Search mental models"
+          />
+        </div>
+      </form>
       <nav class="header-nav">
         <a href={`/${currentLang}/models`}>Models</a>
         <a href={`/${currentLang}/about`}>About</a>
       </nav>
       <span class="header-divider"></span>
       <div class="language-switcher">
-        <a href={getAlternateUrl('ja')} class={currentLang === 'ja' ? 'active' : ''}>
+        <a
+          href={getAlternateUrl("ja")}
+          class={currentLang === "ja" ? "active" : ""}
+        >
           JA
         </a>
         <span class="separator">/</span>
-        <a href={getAlternateUrl('en')} class={currentLang === 'en' ? 'active' : ''}>
+        <a
+          href={getAlternateUrl("en")}
+          class={currentLang === "en" ? "active" : ""}
+        >
           EN
         </a>
       </div>
       <span class="header-divider"></span>
-      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
         <span class="theme-icon theme-icon-light" aria-hidden="true">
           <Icon name={UI_ICONS.themeLight} size={18} />
         </span>
@@ -61,30 +76,49 @@ const msg = getMessages(currentLang);
         </span>
       </button>
       <span class="header-divider"></span>
-      <a class="social-link" href={GITHUB_URL} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <Icon name="simple-icons:github" size={20}/>
+      <a
+        class="social-link"
+        href={GITHUB_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <Icon name="simple-icons:github" size={20} />
       </a>
     </div>
   </div>
 </header>
 
-<script type="module" define:vars={{ currentLang }}>
-  
-  function sanitizeInput(input) {
-    if (typeof input !== 'string') return '';
-    const map = {
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      '"': '&quot;',
-      "'": '&#039;'
-    };
-    return input.replace(/[&<>"']/g, char => map[char]);
+<script
+  type="module"
+  define:vars={{ currentLang, themeStorageKey: STORAGE_KEYS.theme }}
+>
+  function notifyModelsFiltersShouldUpdate() {
+    document.dispatchEvent(new CustomEvent("models:filters:update"));
+    if (typeof window.updateAllFilters === "function") {
+      window.updateAllFilters();
+    }
   }
 
-  // --- スクロール動作 ---
+  function syncSearchInputFromUrl(searchInput) {
+    const onModelsPage = window.location.pathname === `/${currentLang}/models`;
+    if (!onModelsPage) return;
+
+    const q = new URLSearchParams(window.location.search).get("q") || "";
+    searchInput.value = q;
+
+    if (q) {
+      notifyModelsFiltersShouldUpdate();
+    }
+  }
+
+  // --- scroll behavior ---
   (() => {
-    const header = document.querySelector('.site-header');
+    const root = document.documentElement;
+    if (root.dataset.headerScrollBound === "true") return;
+    root.dataset.headerScrollBound = "true";
+
+    const header = document.querySelector(".site-header");
     if (!header) return;
 
     let lastY = window.scrollY;
@@ -94,91 +128,98 @@ const msg = getMessages(currentLang);
     function onScroll() {
       const y = window.scrollY;
       if (y <= 0) {
-        header.classList.remove('site-header--hidden');
+        header.classList.remove("site-header--hidden");
         lastY = y;
         return;
       }
       if (y > lastY && y > THRESHOLD) {
-        header.classList.add('site-header--hidden');
+        header.classList.add("site-header--hidden");
       } else if (y < lastY) {
-        header.classList.remove('site-header--hidden');
+        header.classList.remove("site-header--hidden");
       }
       lastY = y;
     }
 
-    window.addEventListener('scroll', () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          onScroll();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    }, { passive: true });
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            onScroll();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      },
+      { passive: true },
+    );
   })();
 
-  // --- 検索ロジック ---
+  // --- search logic ---
   function initSearch() {
-    const searchForm = document.querySelector('.header-search-form');
-    const searchInput = document.querySelector('.header-search');
-    const searchIcon = document.querySelector('.search-icon');
+    const searchForm = document.querySelector(".header-search-form");
+    const searchInput = document.querySelector(".header-search");
+    const searchIcon = document.querySelector(".search-icon");
 
-    if (!searchForm || !searchInput) return;
+    if (
+      !(searchForm instanceof HTMLFormElement) ||
+      !(searchInput instanceof HTMLInputElement)
+    ) {
+      return;
+    }
 
-    searchForm.addEventListener('submit', (e) => {
+    syncSearchInputFromUrl(searchInput);
+
+    if (searchForm.dataset.bound === "true") {
+      return;
+    }
+    searchForm.dataset.bound = "true";
+
+    searchForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const query = searchInput.value.trim();
-      
+
       const url = new URL(window.location.origin + `/${currentLang}/models`);
       if (query) {
-        url.searchParams.set('q', query);
+        url.searchParams.set("q", query);
       }
 
       if (window.location.pathname !== `/${currentLang}/models`) {
         window.location.href = url.toString();
       } else {
-        window.history.pushState({}, '', url);
-        
-        if (typeof window.updateAllFilters === 'function') {
-          window.updateAllFilters();
-        }
-        
+        window.history.pushState({}, "", url);
+        notifyModelsFiltersShouldUpdate();
+
         searchInput.blur();
       }
     });
 
-    // 検索アイコンクリック時にフォーム送信
-    if (searchIcon) {
-      searchIcon.addEventListener('click', (e) => {
+    // --- search icon click ---
+    if (
+      searchIcon instanceof HTMLElement &&
+      searchIcon.dataset.bound !== "true"
+    ) {
+      searchIcon.dataset.bound = "true";
+      searchIcon.addEventListener("click", (e) => {
         e.preventDefault();
         searchForm.requestSubmit();
       });
     }
-
-    const params = new URLSearchParams(window.location.search);
-    const q = params.get('q');
-    if (q && window.location.pathname === `/${currentLang}/models`) {
-      // クエリパラメータをサニタイズして設定
-      searchInput.value = sanitizeInput(q);
-      if (typeof window.updateAllFilters === 'function') {
-        window.updateAllFilters();
-      }
-    }
   }
 
-  // --- 検索ショートカット (/) ---
+  // --- search shortcut (/) ---
   function initSearchShortcut() {
     const root = document.documentElement;
-    if (root.dataset.searchShortcutBound === 'true') return;
-    root.dataset.searchShortcutBound = 'true';
+    if (root.dataset.searchShortcutBound === "true") return;
+    root.dataset.searchShortcutBound = "true";
 
-    document.addEventListener('keydown', (e) => {
+    document.addEventListener("keydown", (e) => {
       if (e.defaultPrevented) return;
-      if (e.key !== '/' && e.key !== 'Escape') return;
+      if (e.key !== "/" && e.key !== "Escape") return;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
 
-      const header = document.querySelector('.site-header');
-      const searchInput = document.querySelector('.header-search');
+      const header = document.querySelector(".site-header");
+      const searchInput = document.querySelector(".header-search");
       if (!(searchInput instanceof HTMLInputElement)) return;
 
       const active = document.activeElement;
@@ -186,9 +227,9 @@ const msg = getMessages(currentLang);
         active instanceof HTMLInputElement ||
         active instanceof HTMLTextAreaElement ||
         active instanceof HTMLSelectElement ||
-        active?.hasAttribute('contenteditable');
+        active?.hasAttribute("contenteditable");
 
-      if (e.key === 'Escape') {
+      if (e.key === "Escape") {
         if (active === searchInput) {
           e.preventDefault();
           searchInput.blur();
@@ -199,35 +240,43 @@ const msg = getMessages(currentLang);
       if (isEditingElement) return;
 
       e.preventDefault();
-      header?.classList.remove('site-header--hidden');
+      header?.classList.remove("site-header--hidden");
       searchInput.focus();
     });
   }
 
-  // --- テーマ切り替え ---
+  // --- theme toggle ---
   function initThemeToggle() {
-    const themeToggle = document.querySelector('.theme-toggle');
+    const themeToggle = document.querySelector(".theme-toggle");
     if (!themeToggle) return;
 
     const setToggleLabel = () => {
-      const isDark = document.documentElement.dataset.theme === 'dark';
+      const isDark = document.documentElement.dataset.theme === "dark";
       const label = isDark
-        ? (currentLang === 'ja' ? 'ライトモードに切り替え' : 'Switch to light mode')
-        : (currentLang === 'ja' ? 'ダークモードに切り替え' : 'Switch to dark mode');
-      themeToggle.setAttribute('aria-label', label);
-      themeToggle.setAttribute('title', label);
+        ? currentLang === "ja"
+          ? "ライトモードに切り替え"
+          : "Switch to light mode"
+        : currentLang === "ja"
+          ? "ダークモードに切り替え"
+          : "Switch to dark mode";
+      themeToggle.setAttribute("aria-label", label);
+      themeToggle.setAttribute("title", label);
     };
 
     setToggleLabel();
 
-    if (themeToggle.dataset.bound === 'true') return;
-    themeToggle.dataset.bound = 'true';
+    if (themeToggle.dataset.bound === "true") return;
+    themeToggle.dataset.bound = "true";
 
-    themeToggle.addEventListener('click', () => {
+    themeToggle.addEventListener("click", () => {
       const root = document.documentElement;
-      const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
       root.dataset.theme = nextTheme;
-      localStorage.setItem('theme', nextTheme);
+      try {
+        localStorage.setItem(themeStorageKey, nextTheme);
+      } catch {
+        // Keep runtime behavior even if storage is unavailable.
+      }
       setToggleLabel();
     });
   }
@@ -235,7 +284,7 @@ const msg = getMessages(currentLang);
   initSearch();
   initSearchShortcut();
   initThemeToggle();
-  document.addEventListener('astro:page-load', initSearch);
-  document.addEventListener('astro:page-load', initSearchShortcut);
-  document.addEventListener('astro:page-load', initThemeToggle);
+  document.addEventListener("astro:page-load", initSearch);
+  document.addEventListener("astro:page-load", initSearchShortcut);
+  document.addEventListener("astro:page-load", initThemeToggle);
 </script>

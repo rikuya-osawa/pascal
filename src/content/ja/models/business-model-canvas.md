@@ -1,33 +1,32 @@
 ---
 type: mental-model
-name: ビジネスモデル・キャンバス
+name: ビジネス・モデル・キャンバス
 abbreviation: BMC
 description: 顧客、価値提案、収益源、コスト構造など9つの重要な要素をマッピングすることで、ビジネス全体を視覚化、設計、および検証するためのフレームワーク。
-application:
-  - NB
-  - PS
-  - DM
 nature: FRAMEWORK
+methodology:
+  - structural
+  - generative
 related_models:
   - value-chain-analysis
   - 4p-4c
   - lean-canvas
   - value-proposition-canvas
   - vrio-analysis
-  - flywheel-thinking
-format_version: 0.3
+  - flywheel-effect
+format_version: 0.4
 tags:
   - mental-model
 sources:
-  - title: "ビジネスモデル・ジェネレーション"
+  - title: "ビジネス・モデル・ジェネレーション"
     author: "A.オスターワルダー / Y.ピニュール"
     url: ""
     sourceType: "primary"
     sourceLanguage: ""
-    description: "ビジネスモデルを9つの要素で可視化する共通言語として提唱。"
+    description: "ビジネス・モデルを9つの要素で可視化する共通言語として提唱。"
 ---
 
-# ビジネスモデル・キャンバス
+# ビジネス・モデル・キャンバス
 
 ## 概要
 
@@ -98,7 +97,7 @@ sources:
 
 ## ユースケース
 
-* **ビジネス:** 新規事業の立ち上げ、停滞しているビジネスモデルの再構築、または **「競合分析」** （ライバルのBMCをマッピングすること）。
+* **ビジネス:** 新規事業の立ち上げ、停滞しているビジネス・モデルの再構築、または **「競合分析」** （ライバルのBMCをマッピングすること）。
 * **日常生活:** 時間を投資する価値があるかを確認するための **「副業モデル」** の設計。
 * **意思決定 / 思考:** ターゲット企業のロジックの隙間を探すことによる投資機会の評価。
 

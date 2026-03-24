@@ -6,11 +6,10 @@ description: >-
   A thinking model for questioning common sense, assumptions, and conventions by
   breaking them down into fundamental truths (First Principles) that cannot be
   deduced any further, then rebuilding from the ground up.
-application:
-  - PS
-  - LT
-  - DM
 nature: COGNITION
+methodology:
+  - critical
+  - structural
 related_models:
   - abstraction-and-concretization
 format_version: 0.3

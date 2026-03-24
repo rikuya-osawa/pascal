@@ -3,15 +3,14 @@ type: mental-model
 name: 可逆的・不可逆的判断思考
 abbreviation: 可逆性
 description: 意思決定を「可逆的（やり直しがきく）」と「不可逆的（やり直しがきかない）」に分類し、検討のスピード、慎重さ、深さを適切に調整するための思考モデル。
-application:
-  - LT
-  - DM
-  - LIFE
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - critical
 related_models:
   - constraint-based-thinking
   - expected-value-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

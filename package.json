@@ -5,6 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
+    "generate:models-table": "node src/utils/generate-models-table.mjs",
+    "prebuild": "npm run generate:models-table",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

@@ -3,12 +3,12 @@ type: mental-model
 name: Sunk Cost Thinking
 abbreviation: Sunk Cost
 description: A model for making rational decisions by ignoring irrecoverable past costs.
-application:
-  - DM
-  - LIFE
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - critical
 related_models:
-  - cognitive-bias
+  - bias-awareness
   - expected-value-thinking
 format_version: 0.3
 tags:

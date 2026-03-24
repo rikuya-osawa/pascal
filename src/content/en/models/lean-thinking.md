@@ -5,18 +5,17 @@ abbreviation: Lean
 description: >-
   A philosophy for maximizing the efficiency of value creation by eliminating
   waste and accelerating the "Hypothesis → Experiment → Learn" loop.
-application:
-  - NB
-  - PS
-  - DM
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - generative
 related_models:
   - minimum-viable-product
   - kanban
   - hypothesis-thinking
   - ooda-loop
   - pareto-principle
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

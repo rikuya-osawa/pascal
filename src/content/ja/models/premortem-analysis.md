@@ -3,17 +3,16 @@ type: mental-model
 name: プレモーテム分析
 abbreviation: プレモーテム
 description: 「将来の失敗」を事前に想像し、それがなぜ起こったのかを逆算することで、潜在的なリスクや盲点を特定するための思考モデル。
-application:
-  - DM
-  - PS
-  - NB
-nature: COGNITION
+nature: FRAMEWORK
+methodology:
+  - critical
+  - decisive
 related_models:
   - second-order-thinking
   - bayesian-thinking
   - risk-return-thinking
   - bias-awareness
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

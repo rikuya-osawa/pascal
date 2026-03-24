@@ -6,11 +6,10 @@ description: >-
   A thinking model for designing the overall framework of thought or analysis by
   breaking down a central "issue" into a tree-like structure of necessary
   sub-questions.
-application:
-  - LT
-  - PS
-  - DM
 nature: COGNITION
+methodology:
+  - structural
+  - decisive
 related_models:
   - pyramid-principle
   - mece

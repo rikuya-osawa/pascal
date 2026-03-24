@@ -1,18 +1,18 @@
 ---
 type: mental-model
-name: ファイブフォース分析
+name: ファイブ・フォース分析
 abbreviation: 5フォース
 description: 業界の収益性を決定する5つの競争要因を分析し、構造的な競争圧力を視覚化するためのフレームワーク。
-application:
-  - NB
-  - DM
 nature: FRAMEWORK
+methodology:
+  - structural
+  - decisive
 related_models:
   - economic-moat
   - 4p-4c
   - pestel-analysis
   - systems-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:
@@ -24,7 +24,7 @@ sources:
     description: "業界の収益性を決定づける5つの競争要因を分析する枠組み。"
 ---
 
-# ファイブフォース分析
+# ファイブ・フォース分析
 
 ## 概要
 
@@ -45,7 +45,9 @@ sources:
 
 ## 最初の問い
 
->  **「この業界は構造的に儲かるか？」** ### 目的
+>  **「この業界は構造的に儲かるか？」**
+
+### 目的
 
 * 「構造」を通じて競争の本質を把握すること。
 * 表面的なトレンドを排除し、長期的な利益の可能性に焦点を当てること。

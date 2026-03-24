@@ -3,10 +3,10 @@ type: mental-model
 name: トレードオフ思考
 abbreviation: トレードオフ
 description: すべてを同時に満たそうとするのではなく、何を得て何を犠牲にするかを明確に定義することで、現実的な意思決定を行うための思考モデル。
-application:
-  - DM
-  - LIFE
 nature: COGNITION
+methodology:
+  - decisive
+  - critical
 related_models:
   - essential-thinking
   - expected-value-thinking

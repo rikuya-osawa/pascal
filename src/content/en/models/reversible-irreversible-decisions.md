@@ -6,15 +6,14 @@ description: >-
   A thinking model for categorizing decisions into "reversible" (can be undone)
   and "irreversible" (cannot be undone) to appropriately adjust speed, caution,
   and depth of deliberation.
-application:
-  - LT
-  - DM
-  - LIFE
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - critical
 related_models:
   - constraint-based-thinking
   - expected-value-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

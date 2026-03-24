@@ -5,16 +5,15 @@ abbreviation: BBS
 description: >-
   A risk management strategy that combines extreme conservatism with extreme
   speculation, eliminating the mediocrity of mid-risk/mid-return choices.
-application:
-  - DM
-  - NB
-  - LIFE
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - critical
 related_models:
-  - antifragile-thinking
-  - black-swan-thinking
+  - antifragility
+  - black-swan
   - risk-return-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

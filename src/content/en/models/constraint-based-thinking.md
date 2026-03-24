@@ -6,15 +6,15 @@ description: >-
   A model for identifying fixed boundaries and using them as a foundation to
   discover optimal solutions and creative alternatives rather than seeing them
   as excuses.
-application:
-  - PS
-  - DM
 nature: COGNITION
+methodology:
+  - structural
+  - decisive
 related_models:
   - theory-of-constraints
   - trade-off-thinking
   - essential-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

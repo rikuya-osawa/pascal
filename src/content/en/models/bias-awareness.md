@@ -6,11 +6,10 @@ description: >-
   A meta-thinking model for questioning one's own judgment and correcting
   distortions, based on the premise that human thought is influenced by
   unconscious biases.
-application:
-  - DM
-  - PS
-  - LIFE
-nature: PRINCIPLE
+nature: COGNITION
+methodology:
+  - critical
+  - structural
 related_models:
   - bayesian-thinking
   - ladder-of-inference

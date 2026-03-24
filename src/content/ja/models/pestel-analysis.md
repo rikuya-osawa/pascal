@@ -3,10 +3,10 @@ type: mental-model
 name: PESTEL分析
 abbreviation: PESTEL
 description: PEST分析に「環境的（Environmental）」と「法的（Legal）」の視点を加え、より包括的な市場評価を行うためのマクロ環境分析フレームワーク。
-application:
-  - NB
-  - DM
 nature: FRAMEWORK
+methodology:
+  - structural
+  - critical
 related_models:
   - scenario-planning
   - 3c-analysis

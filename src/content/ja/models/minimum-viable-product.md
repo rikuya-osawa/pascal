@@ -3,15 +3,14 @@ type: mental-model
 name: ミニマム・バイアブル・プロダクト
 abbreviation: MVP
 description: 仮説検証のために、最小限の機能で価値をテストするプロダクト開発哲学。
-application:
-  - NB
-  - PS
-  - DM
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - interactive
 related_models:
   - hypothesis-thinking
   - ooda-loop
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

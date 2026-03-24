@@ -8,16 +8,17 @@ import "../styles/components/footer.css";
 import Header from "../../components/header.astro";
 import Footer from "../../components/footer.astro";
 import { SITE_NAME, DEFAULT_DESCRIPTION } from "../../constants/site-config";
+import { STORAGE_KEYS } from "../../constants/storage-keys";
 
 interface Props {
   title?: string;
   description?: string;
-  lang?: 'ja' | 'en';
+  lang?: "ja" | "en";
 }
 
 const { description, lang } = Astro.props as Props;
 const pathname = Astro.url.pathname;
-const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
+const currentLang = lang || (pathname.startsWith("/ja/") ? "ja" : "en");
 ---
 
 <html lang={currentLang}>
@@ -25,29 +26,44 @@ const currentLang = lang || (pathname.startsWith('/ja/') ? 'ja' : 'en');
     <meta charset="UTF-8" />
     <title>{SITE_NAME}</title>
     <meta name="description" content={description || DEFAULT_DESCRIPTION} />
-    <script is:inline>
+    <script is:inline define:vars={{ themeStorageKey: STORAGE_KEYS.theme }}>
       (() => {
-        const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+        const savedTheme = localStorage.getItem(themeStorageKey);
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
         document.documentElement.dataset.theme = initialTheme;
       })();
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="/apple-touch-icon.png"
+      sizes="180x180"
+      type="image/png"
+    />
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="canonical" href={Astro.url} />
-    {/*
+    {
+      /*
       Named slot allows individual pages to inject extra <head> elements such as
       JSON-LD structured data (schema.org) or additional meta tags.
       Usage in a page:
         <script slot="head" type="application/ld+json" set:html={...} />
-    */}
+    */
+    }
     <slot name="head" />
   </head>
   <body>
     <Header lang={currentLang} />
+    <slot name="overlay" />
     <div class="container">
       <slot />
     </div>

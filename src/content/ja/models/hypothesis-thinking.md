@@ -3,13 +3,13 @@ type: mental-model
 name: 仮説思考
 abbreviation: 仮説思考
 description: 限られた時間と情報の中で、まず「仮の答え」を設定し、それを検証によって洗練させることで、思考と行動を急速に進めるための思考モデル。
-application:
-  - PS
-  - NB
 nature: COGNITION
+methodology:
+  - decisive
+  - critical
 related_models:
   - issue-driven-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

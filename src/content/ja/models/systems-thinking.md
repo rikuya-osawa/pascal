@@ -3,10 +3,10 @@ type: mental-model
 name: システム思考
 abbreviation: システム思考
 description: 問題を孤立した出来事としてではなく、相互に関連する関係性や循環的な構造として捉えるための思考モデル。
-application:
-  - LT
-  - PS
 nature: COGNITION
+methodology:
+  - structural
+  - critical
 related_models:
   - second-order-thinking
   - first-principles-thinking

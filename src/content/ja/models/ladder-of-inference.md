@@ -3,16 +3,15 @@ type: mental-model
 name: 推論の梯子
 abbreviation: 推論の梯子
 description: 生のデータから「意味付け」を行い「結論」に至るまでの思考プロセスを階層化し、認知バイアスや飛躍を特定するためのモデル。
-application:
-  - DM
-  - LT
-  - PS
 nature: COGNITION
+methodology:
+  - critical
+  - interactive
 related_models:
   - bias-awareness
   - systems-thinking
   - double-loop-learning
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

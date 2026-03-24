@@ -6,10 +6,10 @@ description: >-
   A thinking model for identifying the specific points (leverage points) where a
   small input of time, resources, or action produces the maximum output or
   impact.
-application:
-  - PS
-  - LT
 nature: COGNITION
+methodology:
+  - decisive
+  - structural
 related_models:
   - systems-thinking
   - pareto-principle

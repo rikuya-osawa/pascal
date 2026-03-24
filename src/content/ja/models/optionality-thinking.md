@@ -3,15 +3,14 @@ type: mental-model
 name: オプショナリティ思考
 abbreviation: オプショナリティ
 description: 選択肢を「行使可能なオプション（権利）」として扱うことで、不確実性の高い状況においてリスクを限定しながら機会を最大化するための思考モデル。
-application:
-  - DM
-  - NB
-  - PS
 nature: COGNITION
+methodology:
+  - generative
+  - decisive
 related_models:
-  - antifragile-thinking
-  - black-swan-thinking
-format_version: 0.3
+  - antifragility
+  - black-swan
+format_version: 0.4
 tags:
   - mental-model
 sources:
@@ -96,4 +95,4 @@ sources:
 ## 他のモデルとの関係
 
 * **補完的:** 可逆的な決定と不可逆的な決定（可逆的な決定は当然ながらオプションであるため）、MVP（実用最小限のプロダクト）（MVPはアップサイドを見るために支払うプレミアムであるため）
-* **関連:** アンチフラジャイル思考（オプショナリティは反脆弱性のエンジンであるため）
+* **関連:** アンチフラジリティ（オプショナリティは反脆弱性のエンジンであるため）

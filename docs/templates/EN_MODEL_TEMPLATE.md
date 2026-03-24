@@ -1,20 +1,28 @@
 ---
-
 type: mental-model
-name: 
-abbreviation: 
+name:
+abbreviation:
 description: # concisely
-application: # max three applications 
-  - NB # New Business
-  - DM # Decision Making
-  - LT # Logical Thinking
-  - PS # Problem Solving
-  - LIFE # Life & Career
-layer: TOOL # single layer per model: （META (cognitive foundation), CORE (core thinking models), TOOL (practical methods and frameworks))
-related_models: # Cebab-casing that matches [slug] | multiple ok
-  - 
+nature: FRAMEWORK #（FRAMEWORK, COGNITION, PRINCIPLE)
+methodology: # max three methodology
+  - Generative
+  - Structural
+  - Critical
+  - Decisive
+  - Interactive
 tags:
-  - mental-model
+  -
+sources:
+  - title: ""
+    author: "" # optional
+    url: "" # empty string is ok
+    sourceType: "" # enum ["primary", "reference", "inspiration"]
+    description: "" # optioinal
+    sourceLanguage: ""
+related_models: # Cebab-casing that matches [slug] | multiple ok
+  -
+format_version: 0.5
+last_updated: 03-14-2026 # date format: MM-DD-YYYY
 ---
 
 # xxx <!-- Model Name--->
@@ -25,10 +33,10 @@ xxx
 
 ## Rating (1–5) <!-- 5 being High 1 being Low --->
 
-* **Applicability:** 1-5
-* **Effectiveness:** 1-5
-* **Complexity:** 1-5
-* **Misuse Risk:** 1-5 
+- **Applicability:** 1-5
+- **Effectiveness:** 1-5
+- **Complexity:** 1-5
+- **Misuse Risk:** 1-5
 
 ### Evaluation Comment
 
@@ -42,14 +50,14 @@ xxx
 
 ### Objectives <!-- multiple ok --->
 
-* xxx
-* xxx
+- xxx
+- xxx
 
 ### Poor Questions
 
-* "xxx?"（Why it is poor）
-* "xxx?"（Why it is poor）
-* "xxx?"（Why it is poor）
+- "xxx?"（Why it is poor）
+- "xxx?"（Why it is poor）
+- "xxx?"（Why it is poor）
 
 ---
 
@@ -63,26 +71,25 @@ xxx
 
 ## Output Examples
 
-* xxx
-* xxx
+- xxx
+- xxx
 
 ---
 
 ## Use Cases <!-- below are examples --->
 
-* **Business:** xxx
-* **Daily Life:** xxx
-* **Decision Making / Thinking:** xxx
-
+- **Business:** xxx
+- **Daily Life:** xxx
+- **Decision Making / Thinking:** xxx
 
 ## Typical Misuses
 
-* xxx
-* xxx
-* xxx
+- xxx
+- xxx
+- xxx
 
 ## Relationship with Other Models <!-- Do NOT create new words, only those that are recognized --- >
 
-* **Complementary:** xxx <!-- if any--- >
-* **Related:** xxx
-* **Opposing:** xxx <!-- if any --- >
+- **Complementary:** xxx <!-- if any--- >
+- **Related:** xxx
+- **Opposing:** xxx <!-- if any --- >

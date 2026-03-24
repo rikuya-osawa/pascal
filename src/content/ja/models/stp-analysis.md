@@ -3,16 +3,15 @@ type: mental-model
 name: STP分析
 abbreviation: STP
 description: 市場を細分化し、ターゲット層を選択し、特定のポジションに向けた独自の価値提案を設計するための戦略的フレームワーク。
-application:
-  - NB
-  - DM
-  - PS
 nature: FRAMEWORK
+methodology:
+  - decisive
+  - structural
 related_models:
   - economic-moat
   - 4p-4c
   - jobs-to-be-done
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

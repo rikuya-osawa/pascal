@@ -3,11 +3,10 @@ type: mental-model
 name: イシューツリー
 abbreviation: イシューツリー
 description: 中心となる「イシュー（課題）」を、必要なサブの問いへとツリー状の構造に分解することで、思考や分析の全体的な枠組みを設計するための思考モデル。
-application:
-  - LT
-  - PS
-  - DM
 nature: COGNITION
+methodology:
+  - structural
+  - decisive
 related_models:
   - pyramid-principle
   - mece

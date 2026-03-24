@@ -6,11 +6,10 @@ description: >-
   A strategic diagnostic tool for organizing internal factors
   (Strengths/Weaknesses) and external factors (Opportunities/Threats) to inform
   decision-making.
-application:
-  - NB
-  - DM
-  - PS
 nature: FRAMEWORK
+methodology:
+  - structural
+  - decisive
 format_version: 0.3
 tags:
   - mental-model

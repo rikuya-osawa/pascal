@@ -5,10 +5,10 @@ const mentalModelSchema = z.object({
   name: z.string(),
   abbreviation: z.string().optional(),
   description: z.string(),
-  application: z.array(
-    z.enum(["LIFE", "LT", "DM", "NB", "PS"])
-  ).default([]),
   nature: z.enum(["FRAMEWORK", "COGNITION", "PRINCIPLE"]),
+  methodology: z.array(
+    z.enum(["generative", "structural", "critical", "decisive", "interactive"])
+  ).default([]),
   related_models: z.array(z.string()).default([]),
   tags: z.array(z.string()).default([]),
   sources: z.array(
@@ -21,6 +21,8 @@ const mentalModelSchema = z.object({
       description: z.string().optional(),
     })
   ).optional(), // 既存ファイルのエラー防止のため optional
+  format_version: z.number().default(1).optional(),
+  last_updated: z.string().default(() => new Date().toISOString()).optional(),
 });
 
 

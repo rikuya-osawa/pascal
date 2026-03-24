@@ -3,18 +3,17 @@ type: mental-model
 name: リーン思考
 abbreviation: リーン
 description: 無駄を排除し、「仮説 → 実験 → 学習」のループを加速させることで、価値創造の効率を最大化するための哲学。
-application:
-  - NB
-  - PS
-  - DM
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - generative
 related_models:
   - minimum-viable-product
   - kanban
   - hypothesis-thinking
   - ooda-loop
   - pareto-principle
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

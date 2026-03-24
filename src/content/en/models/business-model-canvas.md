@@ -6,19 +6,18 @@ description: >-
   A framework for visualizing, designing, and validating an entire business by
   mapping nine key elements, including customers, value propositions, revenue
   streams, and cost structures.
-application:
-  - NB
-  - PS
-  - DM
 nature: FRAMEWORK
+methodology:
+  - structural
+  - generative
 related_models:
   - value-chain-analysis
   - 4p-4c
   - lean-canvas
   - value-proposition-canvas
   - vrio-analysis
-  - flywheel-thinking
-format_version: 0.3
+  - flywheel-effect
+format_version: 0.4
 tags:
   - mental-model
 sources:

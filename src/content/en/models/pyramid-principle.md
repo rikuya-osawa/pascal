@@ -6,15 +6,14 @@ description: >-
   A thinking model for organizing and expressing communication by placing the
   conclusion at the top and supporting it with a layered structure of logic and
   evidence.
-application:
-  - LT
-  - PS
-  - DM
-nature: COGNITION
+nature: PRINCIPLE
+methodology:
+  - structural
+  - interactive
 related_models:
   - mece
   - hypothesis-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

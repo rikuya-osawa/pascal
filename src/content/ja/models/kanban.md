@@ -3,16 +3,15 @@ type: mental-model
 name: カンバン・ボード
 abbreviation: KB
 description: 作業の状態を視覚化し、仕掛品（WIP）を制限することで、業務の流れを最適化する継続的改善メソッド。
-application:
-  - PS
-  - DM
-  - LIFE
 nature: FRAMEWORK
+methodology:
+  - structural
+  - interactive
 related_models:
   - lean-thinking
   - work-planning-strategy
   - theory-of-constraints
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

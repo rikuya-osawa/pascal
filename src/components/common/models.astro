@@ -1,11 +1,12 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import ModelCard from "../model-card.astro";
-import { NATURES, APPLICATION, getLabel, type Language } from "../../constants/filters";
-import { UI_ICONS } from '../../constants/model-icons';
+import { NATURES, getLabel, type Language } from "../../constants/filters";
+import { UI_ICONS } from "../../constants/model-icons";
 import { getMessages } from "../../constants/messages";
 import { GITHUB_URL } from "../../constants/site-config";
+import { STORAGE_KEYS } from "../../constants/storage-keys";
 
 interface Props {
   lang: Language;
@@ -17,18 +18,26 @@ const collectionName = `${lang}/models` as const;
 const allModels = await getCollection(collectionName);
 
 const natureList = Object.entries(NATURES);
-const viewList = Object.entries(APPLICATION);
 
 const msg = getMessages(lang);
 const modelRequestUrl = `${GITHUB_URL}/issues/new/choose`;
 
 // モデルの統計情報
 const totalCount = allModels.length;
-const natureCounts = {
-  FRAMEWORK: allModels.filter(m => m.data.nature === 'FRAMEWORK').length,
-  COGNITION: allModels.filter(m => m.data.nature === 'COGNITION').length,
-  PRINCIPLE: allModels.filter(m => m.data.nature === 'PRINCIPLE').length,
-};
+const natureCounts = allModels.reduce(
+  (counts, model) => {
+    const nature = model.data.nature;
+    if (nature in counts) {
+      counts[nature as keyof typeof counts] += 1;
+    }
+    return counts;
+  },
+  {
+    FRAMEWORK: 0,
+    COGNITION: 0,
+    PRINCIPLE: 0,
+  },
+);
 ---
 
 <!-- Page Hero Section -->
@@ -36,7 +45,7 @@ const natureCounts = {
   <div class="models-hero-content">
     <h1 class="models-hero-title">{msg.modelsPageTitle}</h1>
     <p class="models-hero-desc">{msg.modelsPageDesc}</p>
-    
+
     <div class="models-stats">
       <div class="stat-item stat-total">
         <span class="stat-number">{totalCount}</span>
@@ -74,75 +83,13 @@ const natureCounts = {
   </button>
 </section>
 
-<aside id="filter-panel" class="filter-panel is-open" aria-hidden="false" aria-label={msg.modelsFilterTitle}>
-  <div class="filter-panel-header">
-    <h2 class="filter-section-title">{msg.modelsFilterTitle}</h2>
-    <div class="filter-panel-actions">
-      <button class="filter-reset" id="reset-filter-panel" type="button" aria-label={msg.modelsResetFiltersAriaLabel}>
-        <Icon name={UI_ICONS.filterReset} class="filter-reset-icon" />
-        <span>{msg.modelsResetFilters}</span>
-      </button>
-      <button
-        class="filter-close"
-        id="close-filter-panel"
-        type="button"
-        aria-label={`Close ${msg.modelsFilterTitle} panel`}
-      >
-        <Icon name={UI_ICONS.filterClose} class="filter-close-icon" />
-      </button>
-    </div>
-  </div>
-
-  <div class="filter-container">
-    <div class="filter-group">
-      <span class="filter-label">
-        <svg class="filter-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="3 3 21 3 21 9 12 18 3 9 3 3"></polygon>
-        </svg>
-        {msg.natureLabel}
-      </span>
-      <div class="filter-options">
-        <button class="filter-link" data-type="nature" data-value="">{msg.allLabel}</button>
-        {natureList.map(([id, labels]) => (
-          <button
-            class="filter-link"
-            data-type="nature"
-            data-value={id}
-          >
-            {getLabel(labels, lang)}
-          </button>
-        ))}
-      </div>
-    </div>
-
-    <div class="filter-group">
-      <span class="filter-label">
-        <svg class="filter-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-        </svg>
-        {msg.applicationLabel}
-      </span>
-      <div class="filter-options">
-        <button class="filter-link" data-type="view" data-value="">{msg.allLabel}</button>
-        {viewList.map(([id, labels]) => (
-          <button
-            class="filter-link"
-            data-type="view"
-            data-value={id}
-          >
-            {getLabel(labels, lang)}
-          </button>
-        ))}
-      </div>
-    </div>
-  </div>
-</aside>
-
 <!-- Models Grid -->
 <div class="model-grid">
-  {allModels.filter(Boolean).map((model) => (
-      <ModelCard model={model} lang={lang} />
-  ))}
+  {
+    allModels
+      .filter(Boolean)
+      .map((model) => <ModelCard model={model} lang={lang} />)
+  }
 </div>
 <div id="search-fallback" class="hidden">
   <p class="search-fallback-message">{msg.searchFallback}</p>
@@ -155,132 +102,250 @@ const natureCounts = {
   >
     {msg.modelsRequestCta}
   </a>
-  <a>{msg.modelsRequestDescription}</a>
 </div>
 
-<script define:vars={{ searchPlaceholder: msg.searchPlaceholder }}>
-  const links = document.querySelectorAll('.filter-link');
-  const items = document.querySelectorAll('.model-item');
-  const openFilterPanelButton = document.getElementById('open-filter-panel');
-  const closeFilterPanelButton = document.getElementById('close-filter-panel');
-  const resetFilterPanelButton = document.getElementById('reset-filter-panel');
-  const filterPanel = document.getElementById('filter-panel');
+<script
+  define:vars={{
+    searchPlaceholder: msg.searchPlaceholder,
+    filterPanelStorageKey: STORAGE_KEYS.filterPanelOpen,
+    modelFiltersStorageKey: STORAGE_KEYS.modelFilters,
+  }}
+>
+  const filterLinks = Array.from(document.querySelectorAll(".filter-link"));
+  const modelItems = Array.from(document.querySelectorAll(".model-item"));
+  const openFilterPanelButton = document.getElementById("open-filter-panel");
+  const closeFilterPanelButton = document.getElementById("close-filter-panel");
+  const resetFilterPanelButton = document.getElementById("reset-filter-panel");
+  const filterPanel = document.getElementById("filter-panel");
+  const searchFallback = document.getElementById("search-fallback");
+
+  function getSearchInput() {
+    const input = document.querySelector(".header-search");
+    return input instanceof HTMLInputElement ? input : null;
+  }
+
+  function getFilterStateFromUrl() {
+    const url = new URL(window.location.href);
+    return {
+      url,
+      activeNature: url.searchParams.get("nature") || "",
+      activeView: url.searchParams.get("view") || "",
+      activeQuery: (url.searchParams.get("q") || "").toLowerCase(),
+    };
+  }
+
+  function persistFilterPanelState(isOpen) {
+    try {
+      window.localStorage.setItem(filterPanelStorageKey, String(isOpen));
+    } catch {
+      // Ignore storage failures and keep runtime behavior intact.
+    }
+  }
+
+  function getPersistedFilterPanelState() {
+    try {
+      return window.localStorage.getItem(filterPanelStorageKey) === "true";
+    } catch {
+      return false;
+    }
+  }
+
+  function persistModelFilters(nature, view) {
+    try {
+      if (!nature && !view) {
+        window.localStorage.removeItem(modelFiltersStorageKey);
+        return;
+      }
+
+      window.localStorage.setItem(
+        modelFiltersStorageKey,
+        JSON.stringify({ nature, view }),
+      );
+    } catch {
+      // Ignore storage failures and keep runtime behavior intact.
+    }
+  }
+
+  function getPersistedModelFilters() {
+    try {
+      const raw = window.localStorage.getItem(modelFiltersStorageKey);
+      if (!raw) return null;
+
+      const parsed = JSON.parse(raw);
+      const nature = typeof parsed?.nature === "string" ? parsed.nature : "";
+      const view = typeof parsed?.view === "string" ? parsed.view : "";
+
+      if (!nature && !view) return null;
+      return { nature, view };
+    } catch {
+      return null;
+    }
+  }
+
+  function restoreModelFiltersIntoUrl() {
+    const url = new URL(window.location.href);
+    if (url.searchParams.has("nature") || url.searchParams.has("view")) return;
+
+    const persisted = getPersistedModelFilters();
+    if (!persisted) return;
+
+    if (persisted.nature) {
+      url.searchParams.set("nature", persisted.nature);
+    }
+
+    if (persisted.view) {
+      url.searchParams.set("view", persisted.view);
+    }
+
+    window.history.replaceState({}, "", url);
+  }
+
+  function setFilterPanelOpenState(isOpen) {
+    filterPanel?.classList.toggle("is-open", isOpen);
+    filterPanel?.setAttribute("aria-hidden", String(!isOpen));
+    document.body.classList.toggle("filter-panel-open", isOpen);
+    openFilterPanelButton?.setAttribute("aria-expanded", String(isOpen));
+    persistFilterPanelState(isOpen);
+  }
 
   function openFilterPanel() {
-    filterPanel?.classList.add('is-open');
-    filterPanel?.setAttribute('aria-hidden', 'false');
-    openFilterPanelButton?.setAttribute('aria-expanded', 'true');
+    setFilterPanelOpenState(true);
   }
 
   function closeFilterPanel() {
-    filterPanel?.classList.remove('is-open');
-    filterPanel?.setAttribute('aria-hidden', 'true');
-    openFilterPanelButton?.setAttribute('aria-expanded', 'false');
+    setFilterPanelOpenState(false);
+  }
+
+  function restoreFilterPanelState() {
+    if (getPersistedFilterPanelState()) {
+      openFilterPanel();
+      return;
+    }
+
+    closeFilterPanel();
   }
 
   function toggleFilterPanel() {
-    if (filterPanel?.classList.contains('is-open')) {
+    if (filterPanel?.classList.contains("is-open")) {
       closeFilterPanel();
       return;
     }
     openFilterPanel();
   }
 
-  function updateAllFilters() {
-    const url = new URL(window.location.href);
-    const activeNature = url.searchParams.get('nature');
-    const activeView = url.searchParams.get('view');
-    const activeQuery = url.searchParams.get('q')?.toLowerCase() || "";
-
-    // 1. リンク（ボタン）の見た目更新
-    links.forEach(link => {
-      const type = link.getAttribute('data-type');
-      const value = link.getAttribute('data-value');
+  function updateActiveFilterLinkStates(url) {
+    filterLinks.forEach((link) => {
+      const type = link.getAttribute("data-type");
+      const value = link.getAttribute("data-value") || "";
       if (!type) return;
 
-      const currentParam = url.searchParams.get(type);
-      if ((!currentParam && !value) || (currentParam === value)) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
+      const currentParam = url.searchParams.get(type) || "";
+      const isActive = (!currentParam && !value) || currentParam === value;
+      link.classList.toggle("active", isActive);
     });
+  }
 
-    // 2. カードの表示・非表示判定
-    items.forEach(item => {
-      const itemNature = item.getAttribute('data-nature');
-      const itemViews = item.getAttribute('data-views')?.split(',') || [];
-      const itemTitle = item.querySelector('.card-title')?.textContent.toLowerCase() || "";
+  function applyItemVisibility(activeNature, activeView, activeQuery) {
+    let visibleCount = 0;
+    let onlyVisibleLink = null;
 
-      // 排他的ロジック：各パラメータが存在する場合のみチェック
+    modelItems.forEach((item) => {
+      const itemNature = item.getAttribute("data-nature") || "";
+      const itemViews = (item.getAttribute("data-views") || "")
+        .split(",")
+        .filter(Boolean);
+      const itemTitle =
+        item.querySelector(".card-title")?.textContent.toLowerCase() || "";
+
       const natureMatch = !activeNature || itemNature === activeNature;
       const viewMatch = !activeView || itemViews.includes(activeView);
       const queryMatch = !activeQuery || itemTitle.includes(activeQuery);
+      const isVisible = natureMatch && viewMatch && queryMatch;
 
-      if (natureMatch && viewMatch && queryMatch) {
-        item.classList.remove('hidden');
-      } else {
-        item.classList.add('hidden');
+      item.classList.toggle("hidden", !isVisible);
+
+      if (isVisible) {
+        visibleCount += 1;
+        const link = item.querySelector(".card-link");
+        if (visibleCount === 1 && link instanceof HTMLAnchorElement) {
+          onlyVisibleLink = link;
+        } else {
+          onlyVisibleLink = null;
+        }
       }
     });
 
-    // 3. フォールバックの制御
-    const fallback = document.getElementById('search-fallback');
-    if (fallback) {
-      const anyVisible = Array.from(items).some(item => !item.classList.contains('hidden'));
-      fallback.classList.toggle('hidden', anyVisible);
-    }
+    return { visibleCount, onlyVisibleLink };
+  }
+
+  function updateSearchFallbackVisibility(visibleCount) {
+    searchFallback?.classList.toggle("hidden", visibleCount > 0);
+  }
+
+  function updateAllFilters() {
+    const { url, activeNature, activeView, activeQuery } =
+      getFilterStateFromUrl();
+
+    persistModelFilters(activeNature, activeView);
+
+    updateActiveFilterLinkStates(url);
+
+    const { visibleCount, onlyVisibleLink } = applyItemVisibility(
+      activeNature,
+      activeView,
+      activeQuery,
+    );
+
+    updateSearchFallbackVisibility(visibleCount);
 
     // 検索クエリがあり、結果が1件のみなら詳細ページへ遷移
-    if (activeQuery) {
-      const visibleItems = Array.from(items).filter(item => !item.classList.contains('hidden'));
-      if (visibleItems.length === 1) {
-        const onlyLink = visibleItems[0].querySelector('.card-link');
-        if (onlyLink instanceof HTMLAnchorElement) {
-          window.location.href = onlyLink.href;
-          return;
-        }
-      }
+    if (
+      activeQuery &&
+      visibleCount === 1 &&
+      onlyVisibleLink instanceof HTMLAnchorElement
+    ) {
+      window.location.href = onlyVisibleLink.href;
     }
   }
 
   // グローバルに公開（Header から呼び出す）
   window.updateAllFilters = updateAllFilters;
 
-  openFilterPanelButton?.addEventListener('click', toggleFilterPanel);
-  closeFilterPanelButton?.addEventListener('click', closeFilterPanel);
+  openFilterPanelButton?.addEventListener("click", toggleFilterPanel);
+  closeFilterPanelButton?.addEventListener("click", closeFilterPanel);
 
-  resetFilterPanelButton?.addEventListener('click', () => {
+  resetFilterPanelButton?.addEventListener("click", () => {
     const url = new URL(window.location.href);
-    url.searchParams.delete('nature');
-    url.searchParams.delete('view');
-    url.searchParams.delete('q');
-    window.history.pushState({}, '', url);
+    url.searchParams.delete("nature");
+    url.searchParams.delete("view");
+    url.searchParams.delete("q");
+    window.history.pushState({}, "", url);
+    persistModelFilters("", "");
     updateAllFilters();
 
-    const searchInput = document.querySelector('.header-search');
-    if (searchInput instanceof HTMLInputElement) {
-      searchInput.value = '';
+    const searchInput = getSearchInput();
+    if (searchInput) {
+      searchInput.value = "";
       searchInput.placeholder = searchPlaceholder;
     }
   });
 
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && filterPanel?.classList.contains('is-open')) {
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && filterPanel?.classList.contains("is-open")) {
       closeFilterPanel();
     }
   });
 
-  links.forEach(link => {
-    link.addEventListener('click', (e) => {
+  filterLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
       e.preventDefault();
-      const type = link.getAttribute('data-type');
-      const value = link.getAttribute('data-value');
+      const type = link.getAttribute("data-type");
+      const value = link.getAttribute("data-value") || "";
       if (!type) return;
 
       const url = new URL(window.location.href);
 
-      url.searchParams.delete('q');
+      url.searchParams.delete("q");
 
       if (value) {
         url.searchParams.set(type, value);
@@ -288,21 +353,26 @@ const natureCounts = {
         url.searchParams.delete(type);
       }
 
-      window.history.pushState({}, '', url);
+      window.history.pushState({}, "", url);
       updateAllFilters();
 
-      const searchInput = document.querySelector('.header-search');
+      const searchInput = getSearchInput();
       if (searchInput) {
         searchInput.placeholder = searchPlaceholder;
       }
     });
   });
 
-  window.addEventListener('popstate', updateAllFilters);
-  document.addEventListener('astro:page-load', () => {
-    openFilterPanel();
+  function initializeModelsPage() {
+    restoreModelFiltersIntoUrl();
+    restoreFilterPanelState();
     updateAllFilters();
+  }
+
+  window.addEventListener("popstate", updateAllFilters);
+  document.addEventListener("astro:before-swap", () => {
+    document.body.classList.remove("filter-panel-open");
   });
-  openFilterPanel();
-  updateAllFilters();
+  document.addEventListener("astro:page-load", initializeModelsPage);
+  initializeModelsPage();
 </script>

@@ -6,12 +6,11 @@ description: >-
   A framework for refining goals based on five criteria—Specific, Measurable,
   Achievable, Relevant, and Time-bound—to increase execution precision and
   motivation.
-application:
-  - NB
-  - DM
-  - LIFE
 nature: FRAMEWORK
-format_version: 0.3
+methodology:
+  - structural
+  - decisive
+format_version: 0.4
 tags:
   - mental-model
 sources:

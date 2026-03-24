@@ -5,16 +5,15 @@ abbreviation: LOA
 description: >-
   A model for visualizing the mental steps from raw data to conclusions to
   identify cognitive biases and logical leaps.
-application:
-  - DM
-  - LT
-  - PS
 nature: COGNITION
+methodology:
+  - critical
+  - interactive
 related_models:
   - bias-awareness
   - systems-thinking
   - double-loop-learning
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

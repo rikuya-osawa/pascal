@@ -6,15 +6,14 @@ description: >-
   The ability to observe and control one's own thoughts, emotions, and
   decision-making processes from a higher perspective; the monitoring layer for
   your "Thinking OS."
-application:
-  - DM
-  - LIFE
-  - PS
 nature: COGNITION
+methodology:
+  - critical
+  - structural
 related_models:
   - bias-awareness
-  - bayesian thinking
-format_version: 0.3
+  - bayesian-thinking
+format_version: 0.4
 tags:
   - mental-model
 sources:

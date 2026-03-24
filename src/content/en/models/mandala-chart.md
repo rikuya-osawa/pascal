@@ -5,15 +5,15 @@ abbreviation: MDC
 description: >-
   A 9x9 matrix framework that deconstructs a core objective into 8 foundational
   elements and 64 specific actions for comprehensive planning.
-application:
-  - LIFE
-  - PS
 nature: FRAMEWORK
+methodology:
+  - generative
+  - structural
 related_models:
   - smart-goals
   - 5w1h
   - mind-map
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

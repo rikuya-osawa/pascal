@@ -5,15 +5,14 @@ abbreviation: Optionality
 description: >-
   A thinking model for maximizing opportunities while limiting risks in highly
   uncertain situations by treating choices as "exercisable options (rights)."
-application:
-  - DM
-  - NB
-  - PS
 nature: COGNITION
+methodology:
+  - generative
+  - decisive
 related_models:
-  - antifragile-thinking
-  - black-swan-thinking
-format_version: 0.3
+  - antifragility
+  - black-swan
+format_version: 0.4
 tags:
   - mental-model
 sources:

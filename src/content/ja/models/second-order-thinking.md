@@ -3,15 +3,15 @@ type: mental-model
 name: 二次的思考
 abbreviation: 2次思考
 description: 意思決定の直接的な結果だけでなく、その後の波及効果や長期的な結果までも考慮するためのモデル。
-application:
-  - LT
-  - DM
 nature: COGNITION
+methodology:
+  - critical
+  - decisive
 related_models:
   - systems-thinking
   - expected-value-thinking
   - trade-off-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

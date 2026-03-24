@@ -5,16 +5,16 @@ abbreviation: 5Forces
 description: >-
   A framework for analyzing the five competitive forces that determine industry
   profitability and visualizing structural competitive pressure.
-application:
-  - NB
-  - DM
 nature: FRAMEWORK
+methodology:
+  - structural
+  - decisive
 related_models:
   - economic-moat
   - 4p-4c
   - pestel-analysis
   - systems-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

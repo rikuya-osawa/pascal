@@ -5,15 +5,15 @@ abbreviation: 5 Whys
 description: >-
   A root-cause analysis model that repeatedly asks "Why?" to move past
   surface-level symptoms and reach the underlying structural cause of a problem.
-application:
-  - PS
-  - LT
-nature: COGNITION
+nature: FRAMEWORK
+methodology:
+  - critical
+  - structural
 related_models:
   - root-cause-analysis
   - fishbone-diagram
   - first-principles-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

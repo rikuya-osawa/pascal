@@ -5,17 +5,16 @@ abbreviation: Moat
 description: >-
   A strategic concept of building and maintaining structural advantages to
   protect long-term profitability within a competitive environment.
-application:
-  - NB
-  - DM
-  - LT
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - structural
 related_models:
   - vrio-analysis
   - five-forces-analysis
-  - flywheel-thinking
+  - flywheel-effect
   - leverage-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

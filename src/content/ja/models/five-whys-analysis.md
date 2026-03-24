@@ -3,15 +3,15 @@ type: mental-model
 name: なぜなぜ分析
 abbreviation: 5 Whys
 description: 表面的な症状を通り越し、問題の根底にある構造的な原因に到達するために、「なぜ？」を繰り返す根本原因分析モデル。
-application:
-  - PS
-  - LT
-nature: COGNITION
+nature: FRAMEWORK
+methodology:
+  - critical
+  - structural
 related_models:
   - root-cause-analysis
-  - fishbone-diagram
+  - cause-and-effect-diagram
   - first-principles-thinking
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

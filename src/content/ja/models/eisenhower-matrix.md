@@ -3,16 +3,15 @@ type: mental-model
 name: アイゼンハワー・マトリクス
 abbreviation: アイゼンハワー・マトリクス
 description: タスクを「重要度」と「緊急度」の2軸で4象限に分類し、優先順位を決定する時間管理フレームワーク。
-application:
-  - DM
-  - PS
-  - LIFE
 nature: FRAMEWORK
+methodology:
+  - decisive
+  - structural
 related_models:
   - pareto-principle
   - smart-goals
   - work-planning-strategy
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

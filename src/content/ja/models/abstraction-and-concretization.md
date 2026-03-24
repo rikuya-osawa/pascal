@@ -3,10 +3,10 @@ type: mental-model
 name: 抽象化・具体化
 abbreviation: 抽象化・具体化
 description: 複雑なシステムを理解し、説明し、設計するために、「上位レイヤー」（抽象）と「下位レイヤー」（具体）を行き来するための思考モデル。
-application:
-  - PS
-  - DM
 nature: COGNITION
+methodology:
+  - structural
+  - generative
 related_models:
   - pyramid-principle
   - first-principles-thinking

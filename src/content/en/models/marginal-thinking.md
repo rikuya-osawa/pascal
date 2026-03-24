@@ -6,11 +6,10 @@ description: >-
   A thinking model for decision-making by comparing the additional benefit and
   additional cost gained from performing "one more unit" (the margin), rather
   than looking at overall averages.
-application:
-  - DM
-  - NB
-  - LIFE
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - critical
 related_models:
   - expected-value-thinking
   - trade-off-thinking

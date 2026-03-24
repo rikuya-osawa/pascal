@@ -5,12 +5,11 @@ abbreviation: VCA
 description: >-
   A framework for breaking down company activities into value-creating processes
   to identify exactly where competitive advantages are generated.
-application:
-  - NB
-  - DM
-  - PS
 nature: FRAMEWORK
-format_version: 0.3
+methodology:
+  - structural
+  - critical
+format_version: 0.4
 tags:
   - mental-model
 sources:

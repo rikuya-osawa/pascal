@@ -6,11 +6,10 @@ description: >-
   A thinking model for evaluating options based on two axes- "how much return
   can be expected" and "how much risk must be taken," to determine if the
   potential reward justifies the risk.
-application:
-  - DM
-  - NB
-  - LIFE
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - structural
 related_models:
   - expected-value-thinking
   - trade-off-thinking

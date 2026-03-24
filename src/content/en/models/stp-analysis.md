@@ -5,16 +5,15 @@ abbreviation: STP
 description: >-
   A strategic framework for dividing the market, selecting a target audience,
   and designing a unique value proposition for a specific position.
-application:
-  - NB
-  - DM
-  - PS
 nature: FRAMEWORK
+methodology:
+  - decisive
+  - structural
 related_models:
   - economic-moat
   - 4p-4c
   - jobs-to-be-done
-format_version: 0.3
+format_version: 0.4
 tags:
   - mental-model
 sources:

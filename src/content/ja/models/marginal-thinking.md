@@ -3,11 +3,10 @@ type: mental-model
 name: 限界的思考
 abbreviation: 限界的思考
 description: 全体の平均ではなく、「もう1単位」を追加することで得られる追加の利益と追加のコストを比較して意思決定を行うための思考モデル。
-application:
-  - DM
-  - NB
-  - LIFE
 nature: PRINCIPLE
+methodology:
+  - decisive
+  - critical
 related_models:
   - expected-value-thinking
   - trade-off-thinking
