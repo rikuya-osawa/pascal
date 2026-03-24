@@ -5,9 +5,6 @@ abbreviation: 2nd-Order
 description: >-
   A model for considering not only the immediate effects of a decision but also
   the subsequent ripple effects and long-term consequences.
-application:
-  - LT
-  - DM
 nature: COGNITION
 methodology:
   - critical

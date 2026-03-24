@@ -3,10 +3,6 @@ type: mental-model
 name: 特性要因図
 abbreviation: 特性要因図
 description: 特定の結果（特性）に対して、影響を及ぼしていると考えられる原因（要因）を系統的に整理した図解。
-application:
-  - PS
-  - DM
-  - LT
 nature: FRAMEWORK
 methodology:
   - structural

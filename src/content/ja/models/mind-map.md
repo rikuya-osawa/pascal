@@ -3,10 +3,6 @@ type: mental-model
 name: マインド・マップ
 abbreviation: MM
 description: 中心となる概念から放射状にキーワードやイメージを繋げ、脳の自然な思考プロセスを可視化するノート術。
-application:
-  - LT
-  - PS
-  - LIFE
 nature: FRAMEWORK
 methodology:
   - generative

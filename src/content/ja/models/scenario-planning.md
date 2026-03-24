@@ -3,10 +3,6 @@ type: mental-model
 name: シナリオ・プランニング
 abbreviation: シナリオ・プランニング
 description: 重要な不確実性に基づき、複数の起こりうる未来のシナリオを描くことで戦略を準備するためのモデル。
-application:
-  - DM
-  - NB
-  - LT
 nature: FRAMEWORK
 methodology:
   - generative

@@ -5,9 +5,6 @@ abbreviation: 5Forces
 description: >-
   A framework for analyzing the five competitive forces that determine industry
   profitability and visualizing structural competitive pressure.
-application:
-  - NB
-  - DM
 nature: FRAMEWORK
 methodology:
   - structural

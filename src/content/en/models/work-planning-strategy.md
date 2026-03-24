@@ -5,8 +5,6 @@ abbreviation: WPS
 description: >-
   A framework for improving execution accuracy by redefining objectives and
   visualizing milestones and tasks through backward induction from the goal.
-application:
-  - PS
 nature: FRAMEWORK
 methodology:
   - structural

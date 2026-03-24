@@ -5,10 +5,6 @@ abbreviation: STP
 description: >-
   A strategic framework for dividing the market, selecting a target audience,
   and designing a unique value proposition for a specific position.
-application:
-  - NB
-  - DM
-  - PS
 nature: FRAMEWORK
 methodology:
   - decisive

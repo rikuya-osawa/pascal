@@ -5,9 +5,6 @@ abbreviation: Systems Thinking
 description: >-
   A model that views problems as interconnected relationships and circular
   structures rather than isolated events.
-application:
-  - LT
-  - PS
 nature: COGNITION
 methodology:
   - structural

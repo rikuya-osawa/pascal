@@ -3,10 +3,6 @@ type: mental-model
 name: Morphological Analysis
 abbreviation: MA
 description: A method for generating innovative ideas by deconstructing an object into its components and systematically combining their various attributes.
-application:
-  - NB
-  - PS
-  - LT
 nature: FRAMEWORK
 methodology:
   - generative

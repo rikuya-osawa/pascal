@@ -5,10 +5,6 @@ abbreviation: 80/20 Rule
 description: >-
   A thinking model focused on identifying and concentrating on the "vital
   few"—the roughly 20% of causes that produce 80% of the results or effects.
-application:
-  - PS
-  - DM
-  - NB
 nature: PRINCIPLE
 methodology:
   - decisive

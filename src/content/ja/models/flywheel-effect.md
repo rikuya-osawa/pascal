@@ -3,10 +3,6 @@ type: mental-model
 name: はずみ車の法則
 abbreviation: はずみ車の法則
 description: 複利的な勢いを生み出す、自己強化的な構造を設計するためのモデル。
-application:
-  - NB
-  - LT
-  - PS
 nature: PRINCIPLE
 methodology:
   - structural

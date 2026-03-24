@@ -3,10 +3,6 @@ type: mental-model
 name: メタ認知
 abbreviation: メタ認知
 description: 自分自身の思考、感情、意思決定プロセスをより高い視点から観察し、制御する能力。「思考OS」のための監視レイヤー。
-application:
-  - DM
-  - LIFE
-  - PS
 nature: COGNITION
 methodology:
   - critical

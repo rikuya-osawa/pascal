@@ -3,10 +3,6 @@ type: mental-model
 name: Theory of Constraints
 abbreviation: TOC
 description: A management philosophy based on the principle that a system's performance is determined by its weakest link (bottleneck).
-application:
-  - PS
-  - DM
-  - NB
 nature: PRINCIPLE
 methodology:
   - structural

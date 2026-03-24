@@ -6,9 +6,6 @@ description: >-
   A strategic framework for identifying Key Success Factors (KSF) by analyzing
   the market environment through three perspectives- Customer, Competitor, and
   Company.
-application:
-  - NB
-  - DM
 nature: FRAMEWORK
 methodology:
   - structural

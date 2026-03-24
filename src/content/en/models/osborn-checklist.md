@@ -3,10 +3,6 @@ type: mental-model
 name: Osborn's Checklist
 abbreviation: Osborn's Checklist
 description: A creative ideation method that uses nine specific perspectives to break through mental blocks and generate new concepts.
-application:
-  - NB
-  - PS
-  - LT
 nature: FRAMEWORK
 methodology:
   - generative

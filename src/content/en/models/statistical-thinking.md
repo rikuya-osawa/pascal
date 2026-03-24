@@ -5,10 +5,6 @@ abbreviation: Statistical Thinking
 description: >-
   A thinking model that treats data as part of a larger distribution to infer
   underlying laws and risks from a probabilistic perspective.
-application:
-  - DM
-  - PS
-  - LT
 nature: PRINCIPLE
 methodology:
   - structural

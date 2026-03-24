@@ -3,10 +3,6 @@ type: mental-model
 name: オプショナリティ思考
 abbreviation: オプショナリティ
 description: 選択肢を「行使可能なオプション（権利）」として扱うことで、不確実性の高い状況においてリスクを限定しながら機会を最大化するための思考モデル。
-application:
-  - DM
-  - NB
-  - PS
 nature: COGNITION
 methodology:
   - generative

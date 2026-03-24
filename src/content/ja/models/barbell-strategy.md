@@ -3,10 +3,6 @@ type: mental-model
 name: バーベル戦略
 abbreviation: BBS
 description: 極端に保守的な選択と、極端に投機的な選択を組み合わせ、中リスク・中リターンの「平庸さ」を排除するリスク管理戦略。
-application:
-  - DM
-  - NB
-  - LIFE
 nature: PRINCIPLE
 methodology:
   - decisive

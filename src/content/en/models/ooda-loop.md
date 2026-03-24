@@ -5,9 +5,6 @@ abbreviation: OODA
 description: >-
   A decision-making framework for gaining an advantage in uncertain environments
   by rapidly cycling through observing, orienting, deciding, and acting.
-application:
-  - PS
-  - DM
 nature: FRAMEWORK
 methodology:
   - decisive

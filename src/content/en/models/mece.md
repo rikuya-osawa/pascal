@@ -5,9 +5,6 @@ abbreviation: MECE
 description: >-
   A fundamental thinking model for breaking down and organizing information in a
   way that is exhaustive and non-overlapping.
-application:
-  - PS
-  - LT
 nature: COGNITION
 methodology:
   - structural

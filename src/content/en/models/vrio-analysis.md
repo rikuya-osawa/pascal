@@ -5,10 +5,6 @@ abbreviation: VRIO
 description: >-
   A framework for evaluating if an organization's resources provide a sustained
   competitive advantage.
-application:
-  - NB
-  - DM
-  - PS
 nature: FRAMEWORK
 methodology:
   - structural

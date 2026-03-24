@@ -3,10 +3,6 @@ type: mental-model
 name: VRIO分析
 abbreviation: VRIO
 description: 組織のリソースが持続的な競争優位性を提供するかどうかを評価するためのフレームワーク。
-application:
-  - NB
-  - DM
-  - PS
 nature: FRAMEWORK
 methodology:
   - structural

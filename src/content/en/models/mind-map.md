@@ -3,10 +3,6 @@ type: mental-model
 name: Mind Map
 abbreviation: MM
 description: A note-taking method that visualizes the brain's natural thinking process by connecting keywords and images radially from a central concept.
-application:
-  - LT
-  - PS
-  - LIFE
 nature: FRAMEWORK
 methodology:
   - generative

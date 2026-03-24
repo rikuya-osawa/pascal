@@ -3,10 +3,6 @@ type: mental-model
 name: ブルー・オーシャン戦略
 abbreviation: ブルー・オーシャン
 description: 既存の競争の激しい市場（レッド・オーシャン）で戦うのではなく、競争のない新たな市場空間（ブルー・オーシャン）を創造することで、競争を無意味にする戦略。
-application:
-  - NB
-  - DM
-  - LIFE
 nature: PRINCIPLE
 methodology:
   - generative

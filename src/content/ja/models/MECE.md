@@ -3,9 +3,6 @@ type: mental-model
 name: MECE
 abbreviation: MECE
 description: 情報を網羅的かつ重複のないように分解し、整理するための基本的な思考モデル。
-application:
-  - PS
-  - LT
 nature: COGNITION
 methodology:
   - structural

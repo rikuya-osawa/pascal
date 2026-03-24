@@ -5,9 +5,6 @@ abbreviation: Abstraction-Concretization
 description: >-
   A thinking model for moving between the "higher layer" (abstract) and "lower
   layer" (concrete) to understand, explain, and design complex systems.
-application:
-  - PS
-  - DM
 nature: COGNITION
 methodology:
   - structural

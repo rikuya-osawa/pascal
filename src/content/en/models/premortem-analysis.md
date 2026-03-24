@@ -6,10 +6,6 @@ description: >-
   A thinking model for identifying potential risks and blind spots by imagining
   a "future failure" in advance and working backward to determine why it
   happened.
-application:
-  - DM
-  - PS
-  - NB
 nature: FRAMEWORK
 methodology:
   - critical

@@ -3,10 +3,6 @@ type: mental-model
 name: 制約条件の理論
 abbreviation: TOC
 description: システムのパフォーマンスは最も弱い部分（ボトルネック）によって決定されるという原則に基づき、全体最適化を行う管理手法。
-application:
-  - PS
-  - DM
-  - NB
 nature: PRINCIPLE
 methodology:
   - structural

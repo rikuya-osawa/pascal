@@ -3,10 +3,6 @@ type: mental-model
 name: 第一原理思考
 abbreviation: 第一原理思考
 description: 常識、思い込み、慣習を、これ以上推論できない基本的な真理（第一原理）にまで分解し、ゼロから再構築することで疑問を投げかけるための思考モデル。
-application:
-  - PS
-  - LT
-  - DM
 nature: COGNITION
 methodology:
   - critical

@@ -5,10 +5,6 @@ abbreviation: BBS
 description: >-
   A risk management strategy that combines extreme conservatism with extreme
   speculation, eliminating the mediocrity of mid-risk/mid-return choices.
-application:
-  - DM
-  - NB
-  - LIFE
 nature: PRINCIPLE
 methodology:
   - decisive

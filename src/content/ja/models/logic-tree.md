@@ -3,10 +3,6 @@ type: mental-model
 name: ロジックツリー
 abbreviation: LT
 description: 複雑な事象を「漏れなくダブりなく」下位概念へ分解し、問題の真因特定や解決策の具体化を行う階層構造モデル。
-application:
-  - PS
-  - LT
-  - NB
 nature: FRAMEWORK
 methodology:
   - structural

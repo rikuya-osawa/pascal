@@ -3,10 +3,6 @@ type: mental-model
 name: The Flywheel Effect
 abbreviation: Flywheel
 description: A model for designing self-reinforcing structures that create compounding momentum.
-application:
-  - NB
-  - LT
-  - PS
 nature: PRINCIPLE
 methodology:
   - structural

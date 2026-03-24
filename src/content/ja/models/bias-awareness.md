@@ -3,10 +3,6 @@ type: mental-model
 name: バイアス認識
 abbreviation: バイアス認識
 description: 人間の思考は無意識のバイアスに影響されるという前提に基づき、自身の判断を疑い、歪みを修正するためのメタ思考モデル。
-application:
-  - DM
-  - PS
-  - LIFE
 nature: COGNITION
 methodology:
   - critical

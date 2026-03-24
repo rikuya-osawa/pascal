@@ -5,10 +5,6 @@ abbreviation: Moat
 description: >-
   A strategic concept of building and maintaining structural advantages to
   protect long-term profitability within a competitive environment.
-application:
-  - NB
-  - DM
-  - LT
 nature: PRINCIPLE
 methodology:
   - decisive

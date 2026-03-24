@@ -3,10 +3,6 @@ type: mental-model
 name: As-Is/To-Be
 abbreviation: As-Is-To-Be
 description: A thinking framework that contrasts the "Current State" with the "Ideal State" to identify the "Gap" as a core problem to solve.
-application:
-  - PS
-  - NB
-  - LIFE
 nature: FRAMEWORK
 methodology:
   - structural

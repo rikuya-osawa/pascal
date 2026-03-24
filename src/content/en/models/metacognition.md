@@ -6,10 +6,6 @@ description: >-
   The ability to observe and control one's own thoughts, emotions, and
   decision-making processes from a higher perspective; the monitoring layer for
   your "Thinking OS."
-application:
-  - DM
-  - LIFE
-  - PS
 nature: COGNITION
 methodology:
   - critical

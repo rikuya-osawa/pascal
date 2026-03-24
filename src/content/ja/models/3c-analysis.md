@@ -3,9 +3,6 @@ type: mental-model
 name: 3C分析
 abbreviation: 3C分析
 description: 市場環境を「顧客・競合・自社」の3つの視点で捉え、事業の成功要因（KSF）を見出すための戦略策定フレームワーク。
-application:
-  - NB
-  - DM
 nature: FRAMEWORK
 methodology:
   - structural

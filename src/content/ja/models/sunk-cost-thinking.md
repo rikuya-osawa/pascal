@@ -3,9 +3,6 @@ type: mental-model
 name: サンク・コスト思考
 abbreviation: サンク・コスト
 description: 回収不可能な過去のコストを無視し、合理的な意思決定を行うための思考モデル。
-application:
-  - DM
-  - LIFE
 nature: PRINCIPLE
 methodology:
   - decisive

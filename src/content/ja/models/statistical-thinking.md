@@ -3,10 +3,6 @@ type: mental-model
 name: 統計思考
 abbreviation: 統計思考
 description: 目の前のデータを「バラツキのある全体の一部」と捉え、確率的な観点から背後にある法則性やリスクを推測する思考法。
-application:
-  - DM
-  - PS
-  - LT
 nature: PRINCIPLE
 methodology:
   - structural

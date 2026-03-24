@@ -5,9 +5,6 @@ abbreviation: KB
 description: >-
   A method for optimizing workflow by visualizing task status and limiting
   Work-in-Progress (WIP).
-application:
-  - PS
-  - DM
 nature: FRAMEWORK
 methodology:
   - structural

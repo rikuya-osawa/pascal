@@ -5,10 +5,6 @@ abbreviation: Lean
 description: >-
   A philosophy for maximizing the efficiency of value creation by eliminating
   waste and accelerating the "Hypothesis → Experiment → Learn" loop.
-application:
-  - NB
-  - PS
-  - DM
 nature: PRINCIPLE
 methodology:
   - decisive

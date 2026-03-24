@@ -3,10 +3,6 @@ type: mental-model
 name: ビジネス・モデル・キャンバス
 abbreviation: BMC
 description: 顧客、価値提案、収益源、コスト構造など9つの重要な要素をマッピングすることで、ビジネス全体を視覚化、設計、および検証するためのフレームワーク。
-application:
-  - NB
-  - PS
-  - DM
 nature: FRAMEWORK
 methodology:
   - structural

@@ -4,10 +4,6 @@ name: Antifragility
 abbreviation: Antifragile
 description: >-
   A model focused on designing structures that do not just "endure" uncertainty, stress, or shock, but actually "gain strength from them."
-application:
-  - LIFE
-  - NB
-  - DM
 nature: PRINCIPLE
 methodology:
   - critical

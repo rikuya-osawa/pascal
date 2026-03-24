@@ -3,10 +3,6 @@ type: mental-model
 name: Cause-and-Effect Diagram
 abbreviation: Cause-and-Effect Diagram
 description: A systematic visualization of potential causes (factors) leading to a specific result (effect).
-application:
-  - PS
-  - DM
-  - LT
 nature: FRAMEWORK
 methodology:
   - structural

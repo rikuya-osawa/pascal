@@ -5,10 +5,6 @@ abbreviation: LOA
 description: >-
   A model for visualizing the mental steps from raw data to conclusions to
   identify cognitive biases and logical leaps.
-application:
-  - DM
-  - LT
-  - PS
 nature: COGNITION
 methodology:
   - critical

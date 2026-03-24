@@ -3,9 +3,6 @@ type: mental-model
 name: ファイブ・フォース分析
 abbreviation: 5フォース
 description: 業界の収益性を決定する5つの競争要因を分析し、構造的な競争圧力を視覚化するためのフレームワーク。
-application:
-  - NB
-  - DM
 nature: FRAMEWORK
 methodology:
   - structural

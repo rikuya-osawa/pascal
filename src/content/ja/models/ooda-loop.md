@@ -3,9 +3,6 @@ type: mental-model
 name: OODAループ
 abbreviation: OODA
 description: 不確実な環境下において、観察、情勢判断、意思決定、行動のサイクルを高速で回すことで優位に立つための意思決定フレームワーク。
-application:
-  - PS
-  - DM
 nature: FRAMEWORK
 methodology:
   - decisive

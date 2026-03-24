@@ -3,9 +3,6 @@ type: mental-model
 name: 制約条件思考
 abbreviation: 制約思考
 description: 「できない理由」として扱われがちな制約条件を前提として受け入れ、その中で最適な解や創造的な選択肢を見出すための思考モデル。
-application:
-  - PS
-  - DM
 nature: COGNITION
 methodology:
   - structural

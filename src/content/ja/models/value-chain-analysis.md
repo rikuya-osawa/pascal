@@ -3,10 +3,6 @@ type: mental-model
 name: バリュー・チェーン分析
 abbreviation: VCA
 description: 企業の活動を価値を生み出すプロセスに分解し、競争優位性が正確にどこで生み出されているかを特定するためのフレームワーク。
-application:
-  - NB
-  - DM
-  - PS
 nature: FRAMEWORK
 methodology:
   - structural

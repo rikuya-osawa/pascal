@@ -3,10 +3,6 @@ type: mental-model
 name: Black Swan
 abbreviation: Black Swan
 description: A model for managing extreme, unpredictable events with high impact.
-application:
-  - DM
-  - NB
-  - LIFE
 nature: PRINCIPLE
 methodology:
   - critical

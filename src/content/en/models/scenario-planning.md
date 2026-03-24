@@ -5,10 +5,6 @@ abbreviation: Scenario Planning
 description: >-
   A model for preparing strategies by mapping multiple plausible future
   scenarios based on critical uncertainties.
-application:
-  - DM
-  - NB
-  - LT
 nature: FRAMEWORK
 methodology:
   - generative

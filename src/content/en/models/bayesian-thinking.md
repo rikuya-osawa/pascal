@@ -5,9 +5,6 @@ abbreviation: Bayesian Thinking
 description: >-
   A thinking model for flexibly revising judgments and beliefs by updating
   previous assumptions (prior probability) whenever new information is obtained.
-application:
-  - LT
-  - DM
 nature: COGNITION
 methodology:
   - decisive

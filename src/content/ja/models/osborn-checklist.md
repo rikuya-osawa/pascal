@@ -3,10 +3,6 @@ type: mental-model
 name: オズボーンのチェックリスト
 abbreviation: オズボーンのチェックリスト
 description: アイデアが行き詰まった際、9つの異なる切り口から強制的に発想を転換させ、新しい着想を得るための発想法。
-application:
-  - NB
-  - PS
-  - LT
 nature: FRAMEWORK
 methodology:
   - generative

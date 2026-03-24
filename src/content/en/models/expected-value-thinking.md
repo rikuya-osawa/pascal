@@ -6,9 +6,6 @@ description: >-
   A thinking model for making long-term rational decisions by considering
   "possible outcomes × their probability × magnitude of impact" for uncertain
   options, rather than focusing on short-term gains or losses.
-application:
-  - LT
-  - DM
 nature: PRINCIPLE
 methodology:
   - decisive

@@ -3,10 +3,6 @@ type: mental-model
 name: Logic Tree
 abbreviation: LT
 description: A hierarchical model that decomposes complex phenomena into sub-concepts "without omissions or overlaps" to identify root causes and concretize solutions.
-application:
-  - PS
-  - LT
-  - NB
 nature: FRAMEWORK
 methodology:
   - structural

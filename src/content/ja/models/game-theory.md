@@ -3,10 +3,6 @@ type: mental-model
 name: ゲーム理論
 abbreviation: ゲーム理論
 description: 自分の利益が他者の行動に依存する状況（戦略的相互依存）において、最適な意思決定を数理的に分析する理論。
-application:
-  - DM
-  - NB
-  - PS
 nature: PRINCIPLE
 methodology:
   - decisive

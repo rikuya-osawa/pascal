@@ -6,9 +6,6 @@ description: >-
   A thinking model for rapidly advancing thought and action by establishing a
   "tentative answer" first, then refining it through verification within limited
   time and information.
-application:
-  - PS
-  - NB
 nature: COGNITION
 methodology:
   - decisive

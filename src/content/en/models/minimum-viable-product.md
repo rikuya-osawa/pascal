@@ -5,10 +5,6 @@ abbreviation: MVP
 description: >-
   A product development philosophy that tests value with minimum features for
   hypothesis testing.
-application:
-  - NB
-  - PS
-  - DM
 nature: PRINCIPLE
 methodology:
   - decisive

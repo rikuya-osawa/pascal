@@ -3,9 +3,6 @@ type: mental-model
 name: レバレッジ思考
 abbreviation: レバレッジ
 description: 時間、リソース、または行動の小さな入力で最大の出力や影響を生み出す特定のポイント（レバレッジポイント）を特定するための思考モデル。
-application:
-  - PS
-  - LT
 nature: COGNITION
 methodology:
   - decisive

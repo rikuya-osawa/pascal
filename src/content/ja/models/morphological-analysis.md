@@ -3,10 +3,6 @@ type: mental-model
 name: 形態分析法
 abbreviation: 形態分析法
 description: 対象を構成要素に分解し、それぞれの選択肢を掛け合わせることで、網羅的に新結合のアイデアを導き出す発想法。
-application:
-  - NB
-  - PS
-  - LT
 nature: FRAMEWORK
 methodology:
   - generative

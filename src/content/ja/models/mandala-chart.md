@@ -3,9 +3,6 @@ type: mental-model
 name: マンダラ・チャート
 abbreviation: マンダラ・チャート
 description: 中核となる目標を8つの基礎要素と64の具体的な行動に分解し、網羅的な計画を立てるための9×9のマトリクス・フレームワーク。
-application:
-  - LIFE
-  - PS
 nature: FRAMEWORK
 methodology:
   - generative

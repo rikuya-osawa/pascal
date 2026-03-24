@@ -3,10 +3,6 @@ type: mental-model
 name: アンチフラジリティ
 abbreviation: アンチフラジリティ
 description: 不確実性、ストレス、または衝撃にただ「耐える」だけでなく、実際に「それらから強さを得る」ような構造を設計することに焦点を当てたモデル/システム。
-application:
-  - LIFE
-  - NB
-  - DM
 nature: PRINCIPLE
 methodology:
   - critical

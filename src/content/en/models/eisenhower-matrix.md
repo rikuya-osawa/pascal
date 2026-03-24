@@ -5,10 +5,6 @@ abbreviation: Eisenhower Matrix
 description: >-
   A time management framework that categorizes tasks into four quadrants based
   on "Urgency" and "Importance" to determine priorities.
-application:
-  - DM
-  - PS
-  - LIFE
 nature: FRAMEWORK
 methodology:
   - decisive

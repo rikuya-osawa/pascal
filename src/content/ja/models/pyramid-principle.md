@@ -3,10 +3,6 @@ type: mental-model
 name: ピラミッド原則
 abbreviation: ピラミッド原則
 description: 結論を頂点に置き、論理と根拠の階層構造でそれを支えることで、コミュニケーションを構築し表現するための思考モデル。
-application:
-  - LT
-  - PS
-  - DM
 nature: PRINCIPLE
 methodology:
   - structural

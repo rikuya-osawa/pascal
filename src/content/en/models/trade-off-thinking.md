@@ -6,9 +6,6 @@ description: >-
   A thinking model for making realistic decisions by explicitly defining what to
   gain and what to sacrifice, rather than attempting to satisfy everything at
   once.
-application:
-  - DM
-  - LIFE
 nature: COGNITION
 methodology:
   - decisive

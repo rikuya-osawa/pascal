@@ -3,10 +3,6 @@ type: mental-model
 name: Game Theory
 abbreviation: Game Theory
 description: A mathematical framework for analyzing strategic decision-making in situations where one's payoff depends on the actions of others.
-application:
-  - DM
-  - NB
-  - PS
 nature: PRINCIPLE
 methodology:
   - decisive

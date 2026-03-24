@@ -3,10 +3,6 @@ type: mental-model
 name: SMARTの法則
 abbreviation: SMART
 description: 目標を5つの基準（具体性・計量性・達成可能性・関連性・期限）で洗練させ、実行の精度と意欲を高めるフレームワーク。
-application:
-  - NB
-  - DM
-  - LIFE
 nature: FRAMEWORK
 methodology:
   - structural

@@ -3,10 +3,6 @@ type: mental-model
 name: As-Is/To-Be
 abbreviation: As-Is-To-Be
 description: 「現状」と「あるべき姿」を対比させ、その間にある「ギャップ」を課題として特定する思考フレームワーク。
-application:
-  - PS
-  - NB
-  - LIFE
 nature: FRAMEWORK
 methodology:
   - structural

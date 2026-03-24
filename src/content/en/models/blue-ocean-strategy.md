@@ -3,10 +3,6 @@ type: mental-model
 name: Blue Ocean Strategy
 abbreviation: Blue Ocean
 description: A strategy to make competition irrelevant by creating uncontested market space (Blue Oceans) rather than fighting in existing crowded markets (Red Oceans).
-application:
-  - NB
-  - DM
-  - LIFE
 nature: PRINCIPLE
 methodology:
   - generative

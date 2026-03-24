@@ -6,10 +6,6 @@ description: >-
   A strategic diagnostic tool for organizing internal factors
   (Strengths/Weaknesses) and external factors (Opportunities/Threats) to inform
   decision-making.
-application:
-  - NB
-  - DM
-  - PS
 nature: FRAMEWORK
 methodology:
   - structural

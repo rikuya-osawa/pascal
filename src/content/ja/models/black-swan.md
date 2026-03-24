@@ -3,10 +3,6 @@ type: mental-model
 name: ブラック・スワン
 abbreviation: ブラック・スワン
 description: 予測不可能で極めて大きな影響をもたらす、極端な事象を管理するためのモデル。
-application:
-  - DM
-  - NB
-  - LIFE
 nature: PRINCIPLE
 methodology:
   - critical
