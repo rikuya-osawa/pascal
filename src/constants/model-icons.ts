@@ -44,6 +44,7 @@ export const MODEL_ICONS: Record<string, string> = {
   "second-order-thinking": "lucide:layers-3", // 二次思考
   "systems-thinking": "lucide:network", // システム思考
   "trade-off-thinking": "lucide:arrow-left-right", // トレードオフ思考
+  "double-loop-learning": "lucide:refresh-cw", // ダブルループ学習
 
   // --- PRINCIPLE ---
   "antifragility": "lucide:dumbbell", // アンチフラジリティ
