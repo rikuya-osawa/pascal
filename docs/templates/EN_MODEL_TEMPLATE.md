@@ -4,14 +4,14 @@ name:
 abbreviation:
 description: # concisely
 nature: FRAMEWORK #（FRAMEWORK, COGNITION, PRINCIPLE)
-methodology: # max three methodology
+methodology: # max two methodology
   - Generative
   - Structural
   - Critical
   - Decisive
   - Interactive
 tags:
-  -
+  -  # kebab case
 sources:
   - title: ""
     author: "" # optional

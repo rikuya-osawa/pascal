@@ -4,14 +4,14 @@ name:
 abbreviation:
 description: # 簡潔に
 nature: FRAMEWORK # １つ（FRAMEWORK, COGNITION, PRINCIPLE)
-methodology: # 最大３つ
+methodology: # 最大2つ
   - Generative
   - Structural
   - Critical
   - Decisive
   - Interactive
 tags:
-  -
+  -  # kebab case
 sources:
   - title: ""
     author: ""
