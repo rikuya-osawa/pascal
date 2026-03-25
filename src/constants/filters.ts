@@ -37,7 +37,24 @@ export const METHODOLOGY = {
   }
 } as const;
 
-export const TAGS = {} as const;
+export const TAGS = {
+  /* Core Domains */
+  Strategy: { ja: "戦略", en: "Strategy" },
+  Marketing: { ja: "マーケティング", en: "Marketing" },
+  Management: { ja: "組織・プロジェクト管理", en: "Organization & Project Management" },
+  Psychology: { ja: "心理学・行動経済学", en: "Psychology & Behavioral Economics" },
+  Statistics: { ja: "統計", en: "Statistics" },
+  Economics: { ja: "経済学", en: "Economics" },
+  Productivity: { ja: "生産性", en: "Productivity" },
+  Innovation: { ja: "新規事業", en: "Innovation" },
+  Communication: { ja: "コミュニケーション", en: "Communication" },
+
+  /* Meta Models */
+  SystemsThinking: { ja: "システム思考", en: "Systems Thinking" },
+  Lean: { ja: "リーン", en: "Lean" },
+  Agile: { ja: "アジャイル", en: "Agile" },
+  GameTheory: { ja: "ゲーム理論", en: "Game Theory" },
+} as const;
 
 /**
  * 言語別ラベルオブジェクトから指定言語のラベルを取得
