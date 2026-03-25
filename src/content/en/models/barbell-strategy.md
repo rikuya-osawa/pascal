@@ -15,7 +15,8 @@ related_models:
   - risk-return-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - statistics
 sources:
   - title: "The Black Swan / Antifragile"
     author: "Nassim Nicholas Taleb"

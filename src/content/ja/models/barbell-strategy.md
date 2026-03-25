@@ -13,7 +13,8 @@ related_models:
   - risk-return-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - statistics
 sources:
   - title: "ブラック・スワン / 反脆弱性"
     author: "ナシーム・ニコラス・タレブ"

@@ -13,7 +13,8 @@ related_models:
   - first-principles-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - management
+  - systems-thinking
 sources:
   - title: "トヨタ生産方式"
     author: "大野耐一（トヨタ自動車）"

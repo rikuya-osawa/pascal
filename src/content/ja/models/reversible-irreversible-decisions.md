@@ -12,7 +12,8 @@ related_models:
   - expected-value-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - economics
 sources:
   - title: "アマゾン株主への手紙 (1997)"
     author: "ジェフ・ベゾス"

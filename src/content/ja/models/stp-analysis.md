@@ -13,7 +13,8 @@ related_models:
   - jobs-to-be-done
 format_version: 0.4
 tags:
-  - mental-model
+  - marketing
+  - strategy
 sources:
   - title: "マーケティング・マネジメント"
     author: "フィリップ・コトラー"

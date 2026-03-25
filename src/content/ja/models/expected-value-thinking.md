@@ -14,7 +14,8 @@ related_models:
   - bayesian-thinking
 format_version: 0.3
 tags:
-  - mental-model
+  - statistics
+  - economics
 ---
 
 # 期待値思考

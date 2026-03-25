@@ -14,7 +14,8 @@ related_models:
   - issue-driven-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - management
+  - strategy
 sources:
   - title: "Hypothesis-Based Thinking"
     author: "Kazunari Uchida"

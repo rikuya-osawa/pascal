@@ -17,7 +17,8 @@ related_models:
   - bias-awareness
 format_version: 0.4
 tags:
-  - mental-model
+  - management
+  - psychology
 sources:
   - title: "Performing a Project Premortem (HBR)"
     author: "Gary Klein"

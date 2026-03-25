@@ -14,7 +14,8 @@ related_models:
   - reversible-irreversible-decisions
 format_version: 0.4
 tags:
-  - mental-model
+  - management
+  - strategy
 sources:
   - title: "破壊と創造（論文）"
     author: "ジョン・ボイド"

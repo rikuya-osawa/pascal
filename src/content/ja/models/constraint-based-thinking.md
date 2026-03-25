@@ -13,7 +13,8 @@ related_models:
   - essential-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - management
+  - productivity
 sources:
   - title: "ザ・ゴール"
     author: "エリヤフ・ゴールドラット"

@@ -11,7 +11,8 @@ related_models:
   - scamper
   - mind-map
 tags:
-  - mental-model
+  - innovation
+  - productivity
 sources:
   - title: "創造力を生かす"
     author: "A. オズボーン"

@@ -12,7 +12,8 @@ related_models:
   - barbell-strategy
 format_version: 0.4
 tags:
-  - mental-model
+  - statistics
+  - strategy
 sources:
   - title: "The Black Swan"
     author: "Nassim Nicholas Taleb"

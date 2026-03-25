@@ -14,7 +14,8 @@ related_models:
   - leverage-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - management
 sources:
   - title: "競争優位の戦略"
     author: "マイケル・ポーター"

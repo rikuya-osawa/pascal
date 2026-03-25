@@ -12,7 +12,8 @@ related_models:
   - systems-thinking
   - pareto-principle
 tags:
-  - mental-model
+  - management
+  - productivity
 sources:
   - title: "ザ・ゴール 企業の究極の目的とは何か"
     author: "エリヤフ・ゴールドラット"

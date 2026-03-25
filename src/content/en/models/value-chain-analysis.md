@@ -11,7 +11,8 @@ methodology:
   - critical
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - management
 sources:
   - title: "Competitive Advantage"
     author: "Michael Porter"

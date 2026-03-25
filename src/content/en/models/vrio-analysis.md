@@ -11,7 +11,8 @@ methodology:
   - decisive
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - management
 sources:
   - title: "Gaining and Sustaining Competitive Advantage"
     author: "Jay B. Barney"

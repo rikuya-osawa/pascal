@@ -9,7 +9,8 @@ methodology:
   - interactive
 format_version: 0.3
 tags:
-  - mental-model
+  - management
+  - communication
 ---
 
 # ワーク・プランニング (作業設計戦略)

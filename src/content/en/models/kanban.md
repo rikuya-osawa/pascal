@@ -15,7 +15,9 @@ related_models:
   - theory-of-constraints
 format_version: 0.4
 tags:
-  - mental-model
+  - management
+  - productivity
+  - lean
 sources:
   - title: "Toyota Production System"
     author: "Taiichi Ohno (Toyota)"

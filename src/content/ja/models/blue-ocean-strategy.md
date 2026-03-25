@@ -20,7 +20,8 @@ sources:
     sourceLanguage: "ja"
     description: "この戦略的フレームワークを定義した基礎的な書籍。"
 tags:
-  - mental-model
+  - strategy
+  - innovation
 ---
 
 # ブルー・オーシャン戦略 (Blue Ocean Strategy)

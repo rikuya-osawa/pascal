@@ -12,7 +12,8 @@ related_models:
   - smart-goals
   - backcasting
 tags:
-  - mental-model
+  - management
+  - strategy
 sources:
   - title: "Business Analysis Body of Knowledge (BABOK)"
     author: "IIBA"

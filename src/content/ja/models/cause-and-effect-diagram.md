@@ -13,7 +13,8 @@ related_models:
   - systems-thinking
   - pareto-principle
 tags:
-  - mental-model
+  - management
+  - systems-thinking
 sources:
   - title: "品質管理入門"
     author: "石川馨"

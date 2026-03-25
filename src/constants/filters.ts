@@ -48,12 +48,13 @@ export const TAGS = {
   Productivity: { ja: "生産性", en: "Productivity" },
   Innovation: { ja: "新規事業", en: "Innovation" },
   Communication: { ja: "コミュニケーション", en: "Communication" },
+  PHILOSOPHY: { ja: "哲学", en: "Philosophy" },
 
   /* Meta Models */
-  SystemsThinking: { ja: "システム思考", en: "Systems Thinking" },
+  "Systems-Thinking": { ja: "システム思考", en: "Systems Thinking" },
   Lean: { ja: "リーン", en: "Lean" },
   Agile: { ja: "アジャイル", en: "Agile" },
-  GameTheory: { ja: "ゲーム理論", en: "Game Theory" },
+  "Game-Theory": { ja: "ゲーム理論", en: "Game Theory" },
 } as const;
 
 /**

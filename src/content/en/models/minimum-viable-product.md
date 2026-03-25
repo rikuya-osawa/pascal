@@ -14,7 +14,9 @@ related_models:
   - ooda-loop
 format_version: 0.4
 tags:
-  - mental-model
+  - innovation
+  - lean
+  - management
 sources:
   - title: "The Lean Startup"
     author: "Eric Ries"

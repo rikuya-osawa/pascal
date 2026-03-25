@@ -11,7 +11,8 @@ methodology:
   - interactive
 format_version: 0.3
 tags:
-  - mental-model
+  - management
+  - communication
 ---
 
 # Work Planning Strategy (WPS)

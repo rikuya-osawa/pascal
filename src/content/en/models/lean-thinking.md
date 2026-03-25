@@ -17,7 +17,9 @@ related_models:
   - pareto-principle
 format_version: 0.4
 tags:
-  - mental-model
+  - lean
+  - innovation
+  - management
 sources:
   - title: "Lean Thinking"
     author: "J. Womack / D. Jones"

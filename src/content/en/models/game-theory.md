@@ -12,7 +12,9 @@ related_models:
   - nash-equilibrium
   - prisoners-dilemma
 tags:
-  - mental-model
+  - game-theory
+  - strategy
+  - economics
 sources:
   - title: "Theory of Games and Economic Behavior"
     author: "John von Neumann & Oskar Morgenstern"

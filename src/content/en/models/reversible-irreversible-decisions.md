@@ -15,7 +15,8 @@ related_models:
   - expected-value-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - economics
 sources:
   - title: "1997 Letter to Shareholders"
     author: "Jeff Bezos"

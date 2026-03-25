@@ -15,7 +15,9 @@ related_models:
   - pareto-principle
 format_version: 0.4
 tags:
-  - mental-model
+  - lean
+  - innovation
+  - management
 sources:
   - title: "リーン・シンキング"
     author: "J.ウォーマック / D.ジョーンズ"

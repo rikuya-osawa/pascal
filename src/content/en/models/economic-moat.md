@@ -16,7 +16,8 @@ related_models:
   - leverage-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - economics
 sources:
   - title: "Berkshire Hathaway Shareholder Letter"
     author: "Warren Buffett"
