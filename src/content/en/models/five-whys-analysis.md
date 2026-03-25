@@ -11,7 +11,7 @@ methodology:
   - structural
 related_models:
   - root-cause-analysis
-  - fishbone-diagram
+  - cause-and-effect-diagram
   - first-principles-thinking
 format_version: 0.4
 tags:
@@ -23,7 +23,7 @@ sources:
     url: ""
     sourceType: "primary"
     sourceLanguage: ""
-    description: "A root cause analysis technique by asking \"Why?\" five times."
+    description: 'A root cause analysis technique by asking "Why?" five times.'
 ---
 
 # Five Whys Analysis
@@ -34,10 +34,10 @@ A root-cause analysis model for deep-diving into the causes of a problem by repe
 
 ## Rating (1–5)
 
-* **Applicability:** 4
-* **Immediacy:** 5
-* **Difficulty to Understand:** 2
-* **Misuse Risk:** 4
+- **Applicability:** 4
+- **Immediacy:** 5
+- **Difficulty to Understand:** 2
+- **Misuse Risk:** 4
 
 ### Evaluation Comment
 
@@ -51,64 +51,66 @@ While extremely simple and highly effective, the quality of the analysis depends
 
 ### Objectives
 
-* To prevent **"jumping to solutions"** before the problem is understood.
-* To shift into an **"exploration mode"** for identifying structural vulnerabilities.
-* To ensure recurrence prevention rather than just a temporary fix.
+- To prevent **"jumping to solutions"** before the problem is understood.
+- To shift into an **"exploration mode"** for identifying structural vulnerabilities.
+- To ensure recurrence prevention rather than just a temporary fix.
 
 ### Poor Questions
 
-* **"Who is to blame for this?"** (Focuses on accountability rather than the process)
-* **"How do we fix this immediately?"** (Leads to symptomatic treatment)
+- **"Who is to blame for this?"** (Focuses on accountability rather than the process)
+- **"How do we fix this immediately?"** (Leads to symptomatic treatment)
 
 ---
 
 ## How to Use (Step-by-Step)
 
 1.  **Define the Problem**
-    * Describe the event in a single, fact-based sentence. Avoid vague or emotional language.
+    - Describe the event in a single, fact-based sentence. Avoid vague or emotional language.
 
 2.  **Trace the Causal Chain**
-    * Ask **"Why?"** for the initial event. For the resulting answer, ask **"Why?"** again.
-    * Ensure each step has a direct, logical connection (If A happened, then B must follow).
+    - Ask **"Why?"** for the initial event. For the resulting answer, ask **"Why?"** again.
+    - Ensure each step has a direct, logical connection (If A happened, then B must follow).
 
 3.  **Identify the Root Cause**
-    * Continue until you reach a cause that is actionable and relates to a process or system.
-    * Note: It may take more or fewer than five "Whys."
+    - Continue until you reach a cause that is actionable and relates to a process or system.
+    - Note: It may take more or fewer than five "Whys."
 
 4.  **Develop a Countermeasure**
-    * Create a solution specifically designed to neutralize the root cause identified in the final step.
+    - Create a solution specifically designed to neutralize the root cause identified in the final step.
 
 ---
 
 ## Output Examples
 
 ### 1. Causal Chain Log
-* **Problem:** The vehicle will not start.
-* **Why 1?** The battery is dead.
-* **Why 2?** The alternator is not functioning.
-* **Why 3?** The alternator belt has broken.
-* **Why 4?** The belt was well beyond its useful service life and not replaced.
-* **Why 5 (Root Cause):** The vehicle was not maintained according to the recommended service schedule.
+
+- **Problem:** The vehicle will not start.
+- **Why 1?** The battery is dead.
+- **Why 2?** The alternator is not functioning.
+- **Why 3?** The alternator belt has broken.
+- **Why 4?** The belt was well beyond its useful service life and not replaced.
+- **Why 5 (Root Cause):** The vehicle was not maintained according to the recommended service schedule.
 
 ### 2. Visualization
-* **Linear Path:** A simple "Event → Cause 1 → Cause 2 → Root Cause" flow.
-* **Fishbone Diagram (Ishikawa):** Used when multiple causal chains contribute to a single problem.
+
+- **Linear Path:** A simple "Event → Cause 1 → Cause 2 → Root Cause" flow.
+- **Fishbone Diagram (Ishikawa):** Used when multiple causal chains contribute to a single problem.
 
 ---
 
 ## Use Cases
 
-* **Business:** Troubleshooting manufacturing defects, conducting retrospectives on project delays, and improving service quality.
-* **Daily Life:** Reflecting on personal mistakes or identifying the true reason behind a recurring bad habit.
-* **Judgment / Thinking:** When you want to ensure a problem is "killed" permanently rather than just suppressed.
+- **Business:** Troubleshooting manufacturing defects, conducting retrospectives on project delays, and improving service quality.
+- **Daily Life:** Reflecting on personal mistakes or identifying the true reason behind a recurring bad habit.
+- **Judgment / Thinking:** When you want to ensure a problem is "killed" permanently rather than just suppressed.
 
 ## Typical Misuses
 
-* **The "Blame" Trap:** Attributing the cause to a person's **"personality"** or **"lack of effort"** instead of a flawed process.
-* **Broken Logic:** Skipping steps in the causal chain, leading to a conclusion that doesn't actually follow the facts.
-* **Stopping at Five:** Blindly following the number "five" even when the root cause is still layers deeper or already reached earlier.
+- **The "Blame" Trap:** Attributing the cause to a person's **"personality"** or **"lack of effort"** instead of a flawed process.
+- **Broken Logic:** Skipping steps in the causal chain, leading to a conclusion that doesn't actually follow the facts.
+- **Stopping at Five:** Blindly following the number "five" even when the root cause is still layers deeper or already reached earlier.
 
 ## Relationship with Other Models
 
-* **Related:** Root Cause Analysis (RCA), First Principles Thinking (deconstructing to facts).
-* **Complementary:** Fishbone Diagram, Essential Thinking (identifying the right problem).
+- **Related:** Root Cause Analysis (RCA), First Principles Thinking (deconstructing to facts).
+- **Complementary:** Fishbone Diagram, Essential Thinking (identifying the right problem).

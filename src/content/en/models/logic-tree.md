@@ -9,7 +9,7 @@ methodology:
   - critical
 related_models:
   - mece
-  - five-whys
+  - five-whys-analysis
   - issue-tree
 tags:
   - strategy
@@ -30,14 +30,12 @@ format_version: 0.4
 
 A Logic Tree is a thinking tool used to break down a primary challenge or theme into a tree-like structure. By repeatedly decomposing concepts from the top down according to the **"MECE (Mutually Exclusive, Collectively Exhaustive)"** principle, it visualizes the entire scope of a complex problem and bridges the gap to specific, actionable steps.
 
-
-
 ## Rating (1–5)
 
-* **Applicability:** 5
-* **Effectiveness:** 5
-* **Complexity:** 3
-* **Misuse Risk:** 2
+- **Applicability:** 5
+- **Effectiveness:** 5
+- **Complexity:** 3
+- **Misuse Risk:** 2
 
 ### Evaluation Comment
 
@@ -51,15 +49,15 @@ The "royal road" of logical thinking and an essential skill for business problem
 
 ### Objectives
 
-* To break down **"Complex Problems"** into manageable sizes and identify the true bottlenecks.
-* To prevent **"Omissions"** and **"Overlaps"** in discussions, ensuring logical consistency.
-* To visualize the big picture, forming a common understanding within a team and facilitating consensus.
+- To break down **"Complex Problems"** into manageable sizes and identify the true bottlenecks.
+- To prevent **"Omissions"** and **"Overlaps"** in discussions, ensuring logical consistency.
+- To visualize the big picture, forming a common understanding within a team and facilitating consensus.
 
 ### Poor Questions
 
-* "How can we increase sales?" (The question is too broad to see specific actions.)
-* "Let's list as many improvement ideas as we can think of." (A haphazard list carries a high risk of overlooking critical elements.)
-* "Whose fault is it?" (Focusing on individuals or surface events rather than structural defects.)
+- "How can we increase sales?" (The question is too broad to see specific actions.)
+- "Let's list as many improvement ideas as we can think of." (A haphazard list carries a high risk of overlooking critical elements.)
+- "Whose fault is it?" (Focusing on individuals or surface events rather than structural defects.)
 
 ---
 
@@ -76,26 +74,26 @@ The "royal road" of logical thinking and an essential skill for business problem
 
 ## Output Examples
 
-* **Root Cause Tree (Why Tree):**
+- **Root Cause Tree (Why Tree):**
   "Product sales dropped" → "Existing customer churn" OR "Fewer new customers acquired" → Decomposing "Existing customer churn" further into "Switching to competitors" or "Market exit" to identify the true cause.
-* **Solution Execution Tree (How Tree):**
+- **Solution Execution Tree (How Tree):**
   "Reduce costs" → "Cut variable costs" OR "Cut fixed costs" → Decomposing "Fixed costs" into "Rent," "Labor," "Communication," etc., to derive specific reduction actions.
 
 ---
 
 ## Use Cases
 
-* **Business:** Revenue improvement projects, formulating measures to prevent misconduct recurrence, and market analysis for new businesses.
-* **Daily Life:** Formulating savings plans, analyzing reasons for failed diets, and organizing complex travel itineraries.
-* **Decision Making / Thinking:** When faced with too many problems to solve and needing to write everything down to regain control.
+- **Business:** Revenue improvement projects, formulating measures to prevent misconduct recurrence, and market analysis for new businesses.
+- **Daily Life:** Formulating savings plans, analyzing reasons for failed diets, and organizing complex travel itineraries.
+- **Decision Making / Thinking:** When faced with too many problems to solve and needing to write everything down to regain control.
 
 ## Typical Misuses
 
-* **Lack of MECE:** Using inappropriate axes for decomposition, leading to missed critical elements or repetitive content.
-* **Vague Criteria:** Bringing qualitative or hard-to-decompose axes like "Motivation" or "Sense" into the higher levels of the tree.
-* **Satisfaction with the Drawing:** Spending too much time drawing a "beautiful" tree and failing to execute the identified actions at the bottom layer.
+- **Lack of MECE:** Using inappropriate axes for decomposition, leading to missed critical elements or repetitive content.
+- **Vague Criteria:** Bringing qualitative or hard-to-decompose axes like "Motivation" or "Sense" into the higher levels of the tree.
+- **Satisfaction with the Drawing:** Spending too much time drawing a "beautiful" tree and failing to execute the identified actions at the bottom layer.
 
 ## Relationship with Other Models
 
-* **Complementary:** MECE (the fundamental principle of decomposition), Five Whys (vertical deep-diving).
-* **Related:** 5W1H (used as criteria for decomposition), Mind Map (structuring from divergent thinking).
+- **Complementary:** MECE (the fundamental principle of decomposition), Five Whys (vertical deep-diving).
+- **Related:** 5W1H (used as criteria for decomposition), Mind Map (structuring from divergent thinking).
