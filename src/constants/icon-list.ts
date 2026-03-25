@@ -37,6 +37,7 @@ export const LUCIDE_ICONS = [
     'link',
     'list',
     'list-check',
+    'list-tree',
     'map',
     'microscope',
     'moon',

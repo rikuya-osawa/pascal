@@ -22,6 +22,7 @@ export const MODEL_ICONS: Record<string, string> = {
   "morphological-analysis": "lucide:layers", // morphological analysis
   "logic-tree": "lucide:git-fork", // ロジックツリー
   "earned-value-management": "lucide:coins", // アーンドバリューマネジメント
+  "work-breakdown-structure": "lucide:list-tree", // WBS
 
   // --- COGNITION ---
   "abstraction-and-concretization": "lucide:layers", // 抽象化具体化
@@ -63,7 +64,7 @@ export const MODEL_ICONS: Record<string, string> = {
   "reversible-irreversible-decisions": "lucide:door-open", // 可逆不可逆判断
   "risk-return-thinking": "lucide:trending-up-down", // リスクリターン思考
   "statistical-thinking": "lucide:chart-scatter", // 統計的思考
-  "sunk-cost-thinking": "lucide:trending-down", // サンクコスト思考
+  "sunk-cost": "lucide:trending-down", // サンクコスト思考
   "theory-of-constraints": "lucide:link", // 制約理論
   "game-theory": "lucide:chess-king", // ゲーム理論
 
