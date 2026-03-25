@@ -13,7 +13,7 @@ related_models:
   - expected-value-thinking
 format_version: 0.3
 tags:
-  - mental-model
+  - statistics
 ---
 
 # 統計思考

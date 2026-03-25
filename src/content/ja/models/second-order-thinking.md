@@ -13,7 +13,8 @@ related_models:
   - trade-off-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - psychology
 sources:
   - title: "投資で一番大切な20の教え"
     author: "ハワード・マークス"

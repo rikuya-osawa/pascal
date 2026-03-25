@@ -3,6 +3,7 @@ import { Icon } from "astro-icon/components";
 import {
   NATURES,
   METHODOLOGY,
+  TAGS,
   getLabel,
   getMethodologyLabel,
   type Language,
@@ -16,7 +17,8 @@ interface Props {
 
 const { lang } = Astro.props;
 const natureList = Object.entries(NATURES);
-const viewList = Object.entries(METHODOLOGY);
+const methodologyList = Object.entries(METHODOLOGY);
+const tagList = Object.entries(TAGS);
 const msg = getMessages(lang);
 ---
 
@@ -103,17 +105,54 @@ const msg = getMessages(lang);
         {msg.methodologyLabel}
       </span>
       <div class="filter-options">
-        <button class="filter-link" data-type="view" data-value=""
+        <button class="filter-link" data-type="methodology" data-value=""
           >{msg.allLabel}</button
         >
         {
-          viewList.map(([id, labels]) => (
+          methodologyList.map(([id, labels]) => (
             <button
               class="filter-link"
-              data-type="view"
+              data-type="methodology"
               data-value={id.toLowerCase()}
             >
               {getMethodologyLabel(labels, lang)}
+            </button>
+          ))
+        }
+      </div>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">
+        <svg
+          class="filter-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+          ></path>
+        </svg>
+        {msg.tagLabel}
+      </span>
+      <div class="filter-options">
+        <button class="filter-link" data-type="tag" data-value=""
+          >{msg.allLabel}</button
+        >
+        {
+          tagList.map(([id, labels]) => (
+            <button
+              class="filter-link"
+              data-type="tag"
+              data-value={id.toLowerCase()}
+            >
+              {getLabel(labels, lang)}
             </button>
           ))
         }

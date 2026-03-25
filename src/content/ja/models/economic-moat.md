@@ -14,7 +14,8 @@ related_models:
   - leverage-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - economics
 sources:
   - title: "バークシャー・ハサウェイ株主への手紙"
     author: "ウォーレン・バフェット"

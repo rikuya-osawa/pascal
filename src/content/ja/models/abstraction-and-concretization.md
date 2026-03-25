@@ -12,7 +12,8 @@ related_models:
   - first-principles-thinking
 format_version: 0.3
 tags:
-  - mental-model
+  - strategy
+  - innovation
 ---
 
 # 抽象化・具体化

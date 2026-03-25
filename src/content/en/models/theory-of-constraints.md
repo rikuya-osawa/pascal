@@ -12,7 +12,8 @@ related_models:
   - systems-thinking
   - pareto-principle
 tags:
-  - mental-model
+  - management
+  - productivity
 sources:
   - title: "The Goal: A Process of Ongoing Improvement"
     author: "Eliyahu M. Goldratt"

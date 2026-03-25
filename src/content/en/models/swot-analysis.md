@@ -12,7 +12,8 @@ methodology:
   - decisive
 format_version: 0.3
 tags:
-  - mental-model
+  - strategy
+  - management
 ---
 
 # SWOT Analysis (Internal & External Environment Analysis)

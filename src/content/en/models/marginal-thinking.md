@@ -16,7 +16,8 @@ related_models:
   - sunk-cost-thinking
 format_version: 0.3
 tags:
-  - mental-model
+  - economics
+  - statistics
 ---
 
 # Marginal Thinking

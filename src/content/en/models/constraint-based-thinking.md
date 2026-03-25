@@ -16,7 +16,8 @@ related_models:
   - essential-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - management
+  - productivity
 sources:
   - title: "The Goal"
     author: "Eliyahu M. Goldratt"

@@ -13,7 +13,9 @@ related_models:
   - theory-of-constraints
 format_version: 0.4
 tags:
-  - mental-model
+  - management
+  - productivity
+  - lean
 sources:
   - title: "トヨタ生産方式"
     author: "大野耐一（トヨタ自動車）"

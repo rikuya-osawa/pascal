@@ -15,7 +15,7 @@ related_models:
   - mind-map
 format_version: 0.4
 tags:
-  - mental-model
+  - productivity
 sources:
   - title: "Mandala Thinking Method"
     author: "Hiroaki Imaizumi"

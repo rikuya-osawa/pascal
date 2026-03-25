@@ -15,7 +15,8 @@ related_models:
   - double-loop-learning
 format_version: 0.4
 tags:
-  - mental-model
+  - communication
+  - psychology
 sources:
   - title: "Overcoming Organizational Defenses"
     author: "Chris Argyris"

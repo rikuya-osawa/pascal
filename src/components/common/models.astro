@@ -17,8 +17,6 @@ const { lang } = Astro.props;
 const collectionName = `${lang}/models` as const;
 const allModels = await getCollection(collectionName);
 
-const natureList = Object.entries(NATURES);
-
 const msg = getMessages(lang);
 const modelRequestUrl = `${GITHUB_URL}/issues/new/choose`;
 
@@ -129,7 +127,8 @@ const natureCounts = allModels.reduce(
     return {
       url,
       activeNature: url.searchParams.get("nature") || "",
-      activeView: url.searchParams.get("view") || "",
+      activeMethodology: url.searchParams.get("methodology") || "",
+      activeTag: url.searchParams.get("tag") || "",
       activeQuery: (url.searchParams.get("q") || "").toLowerCase(),
     };
   }
@@ -150,16 +149,16 @@ const natureCounts = allModels.reduce(
     }
   }
 
-  function persistModelFilters(nature, view) {
+  function persistModelFilters(nature, methodology, tag) {
     try {
-      if (!nature && !view) {
+      if (!nature && !methodology && !tag) {
         window.localStorage.removeItem(modelFiltersStorageKey);
         return;
       }
 
       window.localStorage.setItem(
         modelFiltersStorageKey,
-        JSON.stringify({ nature, view }),
+        JSON.stringify({ nature, methodology, tag }),
       );
     } catch {
       // Ignore storage failures and keep runtime behavior intact.
@@ -173,10 +172,12 @@ const natureCounts = allModels.reduce(
 
       const parsed = JSON.parse(raw);
       const nature = typeof parsed?.nature === "string" ? parsed.nature : "";
-      const view = typeof parsed?.view === "string" ? parsed.view : "";
+      const methodology =
+        typeof parsed?.methodology === "string" ? parsed.methodology : "";
+      const tag = typeof parsed?.tag === "string" ? parsed.tag : "";
 
-      if (!nature && !view) return null;
-      return { nature, view };
+      if (!nature && !methodology && !tag) return null;
+      return { nature, methodology, tag };
     } catch {
       return null;
     }
@@ -184,7 +185,12 @@ const natureCounts = allModels.reduce(
 
   function restoreModelFiltersIntoUrl() {
     const url = new URL(window.location.href);
-    if (url.searchParams.has("nature") || url.searchParams.has("view")) return;
+    if (
+      url.searchParams.has("nature") ||
+      url.searchParams.has("methodology") ||
+      url.searchParams.has("tag")
+    )
+      return;
 
     const persisted = getPersistedModelFilters();
     if (!persisted) return;
@@ -193,8 +199,12 @@ const natureCounts = allModels.reduce(
       url.searchParams.set("nature", persisted.nature);
     }
 
-    if (persisted.view) {
-      url.searchParams.set("view", persisted.view);
+    if (persisted.methodology) {
+      url.searchParams.set("methodology", persisted.methodology);
+    }
+
+    if (persisted.tag) {
+      url.searchParams.set("tag", persisted.tag);
     }
 
     window.history.replaceState({}, "", url);
@@ -245,22 +255,33 @@ const natureCounts = allModels.reduce(
     });
   }
 
-  function applyItemVisibility(activeNature, activeView, activeQuery) {
+  function applyItemVisibility(
+    activeNature,
+    activeMethodology,
+    activeTag,
+    activeQuery,
+  ) {
     let visibleCount = 0;
     let onlyVisibleLink = null;
 
     modelItems.forEach((item) => {
       const itemNature = item.getAttribute("data-nature") || "";
-      const itemViews = (item.getAttribute("data-views") || "")
+      const itemMethodology = (item.getAttribute("data-methodology") || "")
+        .split(",")
+        .filter(Boolean);
+      const itemTag = (item.getAttribute("data-tag") || "")
         .split(",")
         .filter(Boolean);
       const itemTitle =
         item.querySelector(".card-title")?.textContent.toLowerCase() || "";
 
       const natureMatch = !activeNature || itemNature === activeNature;
-      const viewMatch = !activeView || itemViews.includes(activeView);
+      const methodologyMatch =
+        !activeMethodology || itemMethodology.includes(activeMethodology);
+      const tagMatch = !activeTag || itemTag.includes(activeTag);
       const queryMatch = !activeQuery || itemTitle.includes(activeQuery);
-      const isVisible = natureMatch && viewMatch && queryMatch;
+      const isVisible =
+        natureMatch && methodologyMatch && tagMatch && queryMatch;
 
       item.classList.toggle("hidden", !isVisible);
 
@@ -283,16 +304,17 @@ const natureCounts = allModels.reduce(
   }
 
   function updateAllFilters() {
-    const { url, activeNature, activeView, activeQuery } =
+    const { url, activeNature, activeMethodology, activeTag, activeQuery } =
       getFilterStateFromUrl();
 
-    persistModelFilters(activeNature, activeView);
+    persistModelFilters(activeNature, activeMethodology, activeTag);
 
     updateActiveFilterLinkStates(url);
 
     const { visibleCount, onlyVisibleLink } = applyItemVisibility(
       activeNature,
-      activeView,
+      activeMethodology,
+      activeTag,
       activeQuery,
     );
 
@@ -317,10 +339,11 @@ const natureCounts = allModels.reduce(
   resetFilterPanelButton?.addEventListener("click", () => {
     const url = new URL(window.location.href);
     url.searchParams.delete("nature");
-    url.searchParams.delete("view");
+    url.searchParams.delete("methodology");
+    url.searchParams.delete("tag");
     url.searchParams.delete("q");
     window.history.pushState({}, "", url);
-    persistModelFilters("", "");
+    persistModelFilters("", "", "");
     updateAllFilters();
 
     const searchInput = getSearchInput();

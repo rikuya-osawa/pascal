@@ -5,6 +5,7 @@ import { MODEL_ICONS } from "../constants/model-icons";
 import {
   NATURES,
   METHODOLOGY,
+  TAGS,
   getLabel,
   getMethodologyLabel,
   type Language,
@@ -31,6 +32,7 @@ const natureKey = model.data.nature as keyof typeof NATURES;
 const natureLabel = NATURES[natureKey]
   ? getLabel(NATURES[natureKey], lang)
   : model.data.nature;
+
 const methodologyCodes = Array.isArray(model.data.methodology)
   ? model.data.methodology
   : [];
@@ -40,12 +42,15 @@ const methodologyLabels = methodologyCodes.map((methodology) => {
     ? getMethodologyLabel(METHODOLOGY[methodologyKey], lang)
     : methodology;
 });
+
+const tagCodes = Array.isArray(model.data.tags) ? model.data.tags : [];
 ---
 
 <div
   class="card model-item"
   data-nature={model.data.nature}
-  data-views={methodologyCodes.join(",")}
+  data-methodology={methodologyCodes.join(",")}
+  data-tag={tagCodes.join(",")}
 >
   <a href={`/${lang}/models/${modelSlug}`} class="card-link">
     <div class="card-nature-top">

@@ -14,7 +14,8 @@ related_models:
   - first-principles-thinking
 format_version: 0.3
 tags:
-  - mental-model
+  - strategy
+  - innovation
 ---
 
 # Abstraction & Concretization

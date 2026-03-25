@@ -12,7 +12,8 @@ related_models:
   - expected-value-thinking
 format_version: 0.3
 tags:
-  - mental-model
+  - economics
+  - psychology
 ---
 
 # Sunk Cost Thinking (Sunk Cost Fallacy)

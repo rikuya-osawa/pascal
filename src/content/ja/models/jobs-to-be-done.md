@@ -12,7 +12,8 @@ related_models:
   - hypothesis-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - marketing
+  - innovation
 sources:
   - title: "ジョブ理論"
     author: "C.クリステンセン / A.ウルウィック"

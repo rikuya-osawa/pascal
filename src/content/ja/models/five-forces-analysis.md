@@ -14,7 +14,8 @@ related_models:
   - systems-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - marketing
 sources:
   - title: "競争の戦略"
     author: "マイケル・ポーター"

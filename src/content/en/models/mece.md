@@ -13,7 +13,8 @@ related_models:
   - pyramid-principle
 format_version: 0.3
 tags:
-  - mental-model
+  - strategy
+  - communication
 ---
 
 # MECE (Mutually Exclusive, Collectively Exhaustive)

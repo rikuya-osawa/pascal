@@ -15,7 +15,8 @@ related_models:
   - bayesian-thinking
 format_version: 0.3
 tags:
-  - mental-model
+  - statistics
+  - economics
 ---
 
 # Expected Value Thinking

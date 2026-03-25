@@ -12,7 +12,8 @@ related_models:
   - mandala-chart
   - first-principles-thinking
 tags:
-  - mental-model
+  - productivity
+  - innovation
 sources:
   - title: "The Mind Map Book"
     author: "Tony Buzan"

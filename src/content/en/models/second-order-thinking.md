@@ -15,7 +15,8 @@ related_models:
   - trade-off-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - psychology
 sources:
   - title: "The Most Important Thing"
     author: "Howard Marks"

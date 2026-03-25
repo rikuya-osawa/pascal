@@ -14,7 +14,8 @@ related_models:
   - first-principles-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - philosophy
 sources:
   - title: "エッセンシャル思考"
     author: "グレッグ・マキューン"

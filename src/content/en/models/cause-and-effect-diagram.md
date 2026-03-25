@@ -13,7 +13,8 @@ related_models:
   - systems-thinking
   - pareto-principle
 tags:
-  - mental-model
+  - management
+  - systems-thinking
 sources:
   - title: "Guide to Quality Control"
     author: "Kaoru Ishikawa"

@@ -15,7 +15,8 @@ related_models:
   - blue-ocean-strategy
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - management
 sources:
   - title: "企業戦略論"
     author: "ジェイ・B・バーニー"

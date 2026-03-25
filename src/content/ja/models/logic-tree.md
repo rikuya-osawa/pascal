@@ -12,7 +12,8 @@ related_models:
   - five-whys
   - issue-tree
 tags:
-  - mental-model
+  - strategy
+  - communication
 sources:
   - title: "The McKinsey Way"
     author: "Ethan M. Rasiel"

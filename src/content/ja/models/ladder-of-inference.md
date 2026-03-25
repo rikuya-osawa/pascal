@@ -13,7 +13,8 @@ related_models:
   - double-loop-learning
 format_version: 0.4
 tags:
-  - mental-model
+  - communication
+  - psychology
 sources:
   - title: "学習する組織（明文化）"
     author: "クリス・アージリス"

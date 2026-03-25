@@ -13,7 +13,8 @@ related_models:
   - risk-return-thinking
 format_version: 0.3
 tags:
-  - mental-model
+  - economics
+  - strategy
 ---
 
 # トレードオフ思考

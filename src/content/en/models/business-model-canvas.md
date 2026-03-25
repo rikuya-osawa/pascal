@@ -19,7 +19,8 @@ related_models:
   - flywheel-effect
 format_version: 0.4
 tags:
-  - mental-model
+  - innovation
+  - strategy
 sources:
   - title: "Business Model Generation"
     author: "A. Osterwalder / Y. Pigneur"

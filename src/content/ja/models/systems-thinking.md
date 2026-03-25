@@ -13,7 +13,9 @@ related_models:
   - theory-of-constraints
 format_version: 0.3
 tags:
-  - mental-model
+  - systems-thinking
+  - strategy
+  - management
 ---
 
 # システム思考

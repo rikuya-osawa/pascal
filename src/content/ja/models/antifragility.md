@@ -14,7 +14,8 @@ related_models:
   - risk-return-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - economics
 sources:
   - title: "反脆弱性"
     author: "ナシーム・ニコラス・タレブ"
