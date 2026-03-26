@@ -5,6 +5,7 @@ import {
   METHODOLOGY,
   TAGS,
   getLabel,
+  getMethodologyDescription,
   getMethodologyLabel,
   type Language,
 } from "../../constants/filters";
@@ -114,6 +115,7 @@ const msg = getMessages(lang);
               class="filter-link"
               data-type="methodology"
               data-value={id.toLowerCase()}
+              data-tooltip={getMethodologyDescription(labels, lang)}
             >
               {getMethodologyLabel(labels, lang)}
             </button>
