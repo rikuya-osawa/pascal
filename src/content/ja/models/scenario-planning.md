@@ -13,7 +13,8 @@ related_models:
   - optionality-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - innovation
 sources:
   - title: "不確実な未来への備え"
     author: "ピエール・ワック（シェル）"

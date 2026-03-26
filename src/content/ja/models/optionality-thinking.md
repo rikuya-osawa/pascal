@@ -12,7 +12,8 @@ related_models:
   - black-swan
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - innovation
 sources:
   - title: "反脆弱性"
     author: "ナシーム・ニコラス・タレブ"

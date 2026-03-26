@@ -12,7 +12,7 @@ related_models:
   - bayesian-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - psychology
 sources:
   - title: "認知発達（論文）"
     author: "ジョン・H・フラベル"

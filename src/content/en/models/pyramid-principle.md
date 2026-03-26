@@ -15,7 +15,8 @@ related_models:
   - hypothesis-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - communication
+  - strategy
 sources:
   - title: "The Pyramid Principle"
     author: "Barbara Minto"

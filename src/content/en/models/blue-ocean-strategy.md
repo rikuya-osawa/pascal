@@ -19,7 +19,8 @@ sources:
     description: "The foundational book defining the strategic framework."
     sourceLanguage: "en"
 tags:
-  - mental-model
+  - strategy
+  - innovation
 format_version: 0.4
 ---
 

@@ -8,7 +8,8 @@ methodology:
   - structural
   - critical
 tags:
-  - project-management
+  - management
+  - statistics
 sources:
   - title: "A Guide to the Project Management Body of Knowledge (PMBOK Guide)"
     author: "Project Management Institute (PMI)"

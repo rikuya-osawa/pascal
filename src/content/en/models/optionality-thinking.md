@@ -14,7 +14,8 @@ related_models:
   - black-swan
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - innovation
 sources:
   - title: "Antifragile"
     author: "Nassim Nicholas Taleb"

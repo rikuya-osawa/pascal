@@ -12,7 +12,7 @@ related_models:
   - ladder-of-inference
 format_version: 0.3
 tags:
-  - mental-model
+  - psychology
 ---
 
 # バイアス認識

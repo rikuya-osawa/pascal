@@ -21,6 +21,44 @@
   --color-nature-principle: #e11d48; /* Rose 600 */
   --color-nature-principle-light: #ffe4e6; /* Rose 100 */
 
+  /* Filter link colors */
+  --filter-link-bg: color-mix(
+    in srgb,
+    var(--color-primary-light) 72%,
+    var(--color-bg)
+  );
+  --filter-link-text: color-mix(
+    in srgb,
+    var(--color-primary) 72%,
+    var(--color-text)
+  );
+  --filter-link-hover-bg: color-mix(
+    in srgb,
+    var(--color-primary) 16%,
+    var(--color-bg)
+  );
+  --filter-link-hover-text: color-mix(
+    in srgb,
+    var(--color-primary) 86%,
+    var(--color-text)
+  );
+
+  --filter-link-framework-hover-bg: color-mix(
+    in srgb,
+    var(--color-nature-framework) 82%,
+    var(--color-bg)
+  );
+  --filter-link-cognition-hover-bg: color-mix(
+    in srgb,
+    var(--color-nature-cognition) 82%,
+    var(--color-bg)
+  );
+  --filter-link-principle-hover-bg: color-mix(
+    in srgb,
+    var(--color-nature-principle) 82%,
+    var(--color-bg)
+  );
+
   --max-width: 1100px; /* カードグリッド向けに少し広げています */
   --max-width-text: 900px; /* 読み物ページ（Aboutなど）用 */
 
@@ -83,4 +121,41 @@ body.filter-panel-open {
   --color-nature-cognition-light: #12372d;
   --color-nature-principle: #be123c;
   --color-nature-principle-light: #3f1a24;
+
+  --filter-link-bg: color-mix(
+    in srgb,
+    var(--color-primary-light) 72%,
+    var(--color-bg)
+  );
+  --filter-link-text: color-mix(
+    in srgb,
+    var(--color-primary) 72%,
+    var(--color-text)
+  );
+  --filter-link-hover-bg: color-mix(
+    in srgb,
+    var(--color-primary) 16%,
+    var(--color-bg)
+  );
+  --filter-link-hover-text: color-mix(
+    in srgb,
+    var(--color-primary) 86%,
+    var(--color-text)
+  );
+
+  --filter-link-framework-hover-bg: color-mix(
+    in srgb,
+    var(--color-nature-framework) 82%,
+    var(--color-bg)
+  );
+  --filter-link-cognition-hover-bg: color-mix(
+    in srgb,
+    var(--color-nature-cognition) 82%,
+    var(--color-bg)
+  );
+  --filter-link-principle-hover-bg: color-mix(
+    in srgb,
+    var(--color-nature-principle) 82%,
+    var(--color-bg)
+  );
 }

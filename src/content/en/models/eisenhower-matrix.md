@@ -15,7 +15,8 @@ related_models:
   - work-planning-strategy
 format_version: 0.4
 tags:
-  - mental-model
+  - productivity
+  - management
 sources:
   - title: "The 7 Habits of Highly Effective People"
     author: "Stephen Covey (Popularized)"

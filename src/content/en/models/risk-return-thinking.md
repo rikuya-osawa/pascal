@@ -16,7 +16,8 @@ related_models:
   - reversible-irreversible-decisions
 format_version: 0.3
 tags:
-  - mental-model
+  - economics
+  - statistics
 ---
 
 # Risk-Return Thinking

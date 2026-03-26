@@ -9,7 +9,8 @@ methodology:
   - decisive
 format_version: 0.4
 tags:
-  - mental-model
+  - management
+  - productivity
 sources:
   - title: "There's a S.M.A.R.T. Way to Write Management's Goals"
     author: "ジョージ・T・ドラン"

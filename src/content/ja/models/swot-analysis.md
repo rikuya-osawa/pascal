@@ -9,7 +9,8 @@ methodology:
   - decisive
 format_version: 0.3
 tags:
-  - mental-model
+  - strategy
+  - management
 ---
 
 # SWOT分析 (内部・外部環境分析)

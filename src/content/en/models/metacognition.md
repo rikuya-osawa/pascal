@@ -15,7 +15,7 @@ related_models:
   - bayesian-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - psychology
 sources:
   - title: "Metacognition and Cognitive Monitoring"
     author: "John H. Flavell"

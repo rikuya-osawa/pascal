@@ -15,7 +15,8 @@ related_models:
   - swot-analysis
 format_version: 0.3
 tags:
-  - mental-model
+  - strategy
+  - marketing
 ---
 
 # PESTEL Analysis (Expanded Macro-Environmental Analysis)

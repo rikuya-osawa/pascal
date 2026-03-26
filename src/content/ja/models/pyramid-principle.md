@@ -12,7 +12,8 @@ related_models:
   - hypothesis-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - communication
+  - strategy
 sources:
   - title: "考える技術・書く技術"
     author: "バーバラ・ミント"

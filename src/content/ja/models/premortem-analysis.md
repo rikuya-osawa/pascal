@@ -14,7 +14,8 @@ related_models:
   - bias-awareness
 format_version: 0.4
 tags:
-  - mental-model
+  - management
+  - psychology
 sources:
   - title: "事前死因分析（HBR論文）"
     author: "ゲイリー・クライン"

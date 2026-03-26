@@ -13,7 +13,8 @@ related_models:
   - theory-of-constraints
 format_version: 0.3
 tags:
-  - mental-model
+  - strategy
+  - productivity
 ---
 
 # レバレッジ思考

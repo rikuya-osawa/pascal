@@ -15,7 +15,8 @@ related_models:
   - mece
 format_version: 0.3
 tags:
-  - mental-model
+  - strategy
+  - management
 ---
 
 # Issue Tree

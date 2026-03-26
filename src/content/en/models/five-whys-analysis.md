@@ -15,7 +15,8 @@ related_models:
   - first-principles-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - management
+  - systems-thinking
 sources:
   - title: "Toyota Production System"
     author: "Taiichi Ohno (Toyota)"

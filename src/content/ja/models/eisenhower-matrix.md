@@ -13,7 +13,8 @@ related_models:
   - work-planning-strategy
 format_version: 0.4
 tags:
-  - mental-model
+  - productivity
+  - management
 sources:
   - title: "完訳 7つの習慣"
     author: "スティーブン・コヴィー（普及）"

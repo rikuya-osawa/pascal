@@ -13,7 +13,8 @@ related_models:
   - leverage-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - management
 sources:
   - title: "ビジョナリー・カンパニー 2"
     author: "ジム・コリンズ"

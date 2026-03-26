@@ -14,7 +14,8 @@ related_models:
   - systems-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - statistics
+  - productivity
 sources:
   - title: "Quality Control Handbook"
     author: "Joseph Juran"

@@ -14,7 +14,8 @@ related_models:
   - reversible-irreversible-decisions
 format_version: 0.3
 tags:
-  - mental-model
+  - economics
+  - statistics
 ---
 
 # リスク・リターン思考

@@ -15,7 +15,8 @@ related_models:
   - bayesian-thinking
   - optionality-thinking
 tags:
-  - mental-model
+  - strategy
+  - innovation
 sources:
   - title: "Scenarios: Uncharted Waters Ahead"
     author: "Pierre Wack (Shell)"

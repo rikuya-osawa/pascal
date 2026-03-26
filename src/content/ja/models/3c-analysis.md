@@ -15,7 +15,8 @@ related_models:
   - blue-ocean-strategy
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - marketing
 sources:
   - title: "企業参謀"
     author: "大前研一"

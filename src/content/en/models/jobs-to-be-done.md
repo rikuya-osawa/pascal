@@ -13,7 +13,8 @@ related_models:
   - hypothesis-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - marketing
+  - innovation
 sources:
   - title: "The Innovator's Solution"
     author: "C. Christensen / A. Ulwick"

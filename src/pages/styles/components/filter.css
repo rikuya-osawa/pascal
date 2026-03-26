@@ -85,7 +85,7 @@
     transform 0.28s cubic-bezier(0.2, 0.9, 0.25, 1),
     width 0.28s cubic-bezier(0.2, 0.9, 0.25, 1);
   /* 片側の余白を計算 */
-  --side-gap: calc((100vw - var(--max-width)) / 2);
+  --side-gap: calc((97vw - var(--max-width)) / 2);
   /* パネル幅から余白を引いた「食い込み量」を計算。0以下なら0にする */
   --push-amount: max(0px, calc(var(--filter-panel-width) - var(--side-gap)));
 }
@@ -193,20 +193,24 @@ body.filter-panel-open .site-footer-inner {
 }
 
 .filter-options {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 7px;
+}
+
+.filter-options .filter-link:first-child {
+  grid-column: 1 / -1;
 }
 
 .filter-link {
   appearance: none;
-  background-color: var(--color-bg);
-  border: 1px solid var(--color-border);
+  background-color: var(--filter-link-bg);
+  border: 1px solid var(--filter-link-bg);
   border-radius: var(--radius);
-  color: var(--color-text);
+  color: var(--color-muted);
   cursor: pointer;
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 550;
   letter-spacing: 0.02em;
   padding: 7px 12px;
   transition: all var(--transition-smooth);
@@ -214,36 +218,51 @@ body.filter-panel-open .site-footer-inner {
 }
 
 .filter-link:hover {
-  background-color: var(--color-text);
-  color: var(--color-bg);
-  border-color: var(--color-text);
+  background-color: var(--filter-link-hover-bg);
+  color: var(--color-muted);
+  border-color: var(--filter-link-hover-bg);
   transform: translateY(-1px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .filter-link.active {
-  background-color: var(--color-text);
-  color: var(--color-bg);
-  border-color: var(--color-text);
+  background-color: var(--filter-link-hover-bg);
+  color: var(--color-text);
+  border-color: var(--filter-link-hover-bg);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.filter-link[data-value="FRAMEWORK"].active,
 .filter-link[data-value="FRAMEWORK"]:hover {
+  background-color: var(--filter-link-framework-hover-bg);
+  border-color: var(--filter-link-framework-hover-bg);
+  color: var(--color-bg);
+}
+
+.filter-link[data-value="FRAMEWORK"].active {
   background-color: var(--color-nature-framework);
   border-color: var(--color-nature-framework);
   color: white;
 }
 
-.filter-link[data-value="COGNITION"].active,
 .filter-link[data-value="COGNITION"]:hover {
+  background-color: var(--filter-link-cognition-hover-bg);
+  border-color: var(--filter-link-cognition-hover-bg);
+  color: var(--color-bg);
+}
+
+.filter-link[data-value="COGNITION"].active {
   background-color: var(--color-nature-cognition);
   border-color: var(--color-nature-cognition);
   color: white;
 }
 
-.filter-link[data-value="PRINCIPLE"].active,
 .filter-link[data-value="PRINCIPLE"]:hover {
+  background-color: var(--filter-link-principle-hover-bg);
+  border-color: var(--filter-link-principle-hover-bg);
+  color: var(--color-bg);
+}
+
+.filter-link[data-value="PRINCIPLE"].active {
   background-color: var(--color-nature-principle);
   border-color: var(--color-nature-principle);
   color: white;
@@ -297,6 +316,7 @@ body.filter-panel-open .site-footer-inner {
   }
 
   .filter-options {
+    grid-template-columns: 1fr;
     gap: 5px;
   }
 

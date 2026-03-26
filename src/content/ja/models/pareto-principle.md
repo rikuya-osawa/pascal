@@ -12,7 +12,8 @@ related_models:
   - systems-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - statistics
+  - productivity
 sources:
   - title: "品質管理ハンドブック（命名）"
     author: "ジョセフ・ジュラン"

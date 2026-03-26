@@ -16,7 +16,8 @@ related_models:
   - flywheel-effect
 format_version: 0.4
 tags:
-  - mental-model
+  - innovation
+  - strategy
 sources:
   - title: "ビジネス・モデル・ジェネレーション"
     author: "A.オスターワルダー / Y.ピニュール"

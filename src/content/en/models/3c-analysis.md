@@ -17,7 +17,8 @@ related_models:
   - 4p-4c
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - marketing
 sources:
   - title: "The Mind of the Strategist"
     author: "Kenichi Ohmae"

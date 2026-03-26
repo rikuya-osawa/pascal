@@ -15,7 +15,8 @@ related_models:
   - risk-return-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - economics
 sources:
   - title: "Antifragile"
     author: "Nassim Nicholas Taleb"

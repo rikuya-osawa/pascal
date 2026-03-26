@@ -16,7 +16,8 @@ related_models:
   - systems-thinking
 format_version: 0.4
 tags:
-  - mental-model
+  - strategy
+  - marketing
 sources:
   - title: "Competitive Strategy"
     author: "Michael Porter"

@@ -12,7 +12,8 @@ related_models:
   - osborn-checklist
   - scamper
 tags:
-  - mental-model
+  - innovation
+  - strategy
 sources:
   - title: "Discovery, Invention, Research: Through the Morphological Approach"
     author: "Fritz Zwicky"
