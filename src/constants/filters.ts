@@ -99,3 +99,16 @@ export const getMethodologyLabel = (
 ): string => {
   return entry[lang]?.label || entry.ja.label;
 };
+
+/**
+ * METHODOLOGY エントリから指定言語の説明文を取得
+ * @param entry { en: { label: string, description: string }, ja: { label: string, description: string } } 形式
+ * @param lang 取得対象言語
+ * @returns 指定言語の説明文
+ */
+export const getMethodologyDescription = (
+  entry: { en: { label: string; description: string }; ja: { label: string; description: string } },
+  lang: Language
+): string => {
+  return entry[lang]?.description || entry.ja.description;
+};
